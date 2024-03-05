@@ -1,0 +1,15 @@
+on: push
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: 'checkout'
+        uses: actions/checkout@v4
+      - name: 'build and deploy'
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          PAGES_BRANCH: master
+          BUILD_DIR: .
+          TOKEN: ${{ secrets.TOKEN }}
+          REPOSITORY: ${{ secrets.GHP_USER }}/${{ secrets.GHP_USER }}.github.io
