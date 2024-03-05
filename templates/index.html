@@ -16,33 +16,49 @@
     <title>{{ config.title }}</title>
     {% endif %}
     {% endblock title %}
-    {% endblock head %}
 
-	{% block css %}
+    {% block css %}
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
-	{% endblock css %}
-</head>
-<body>
-    <div class="container" style="padding-top: 10px;">
-		{% block navbar %}
-		{% include "navbar.html" %}
-		{% endblock navbar %}
+    {% endblock css %}
 
-		{% block content %}
-	    <div id="content">
-		    {{section.content}}
-	    </div>
-		{% endblock content %}
-        
-		{% block footer %}
-        {% include "footer.html" %}
-		{% endblock footer %}
-    </div>
-	
-	{% block javascript %}
-    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-{{ get_hash(path="static/js/bootstrap.bundle.min.js", sha_type=384, base64=true) | safe }}"></script>
-    <script src="/js/site.js" integrity="sha384-{{ get_hash(path="static/js/site.js", sha_type=384, base64=true) | safe }}"></script>
-	{% endblock javascript %}
+    {% endblock head %}
+</head>
+<body class="h-100 vh-100">
+<div class="container">
+    {% block navbar %}
+    <header id="navbar" style="padding-top: 10px;" class="row">
+        <div class="col">
+            {% include "navbar.html" %}
+        </div>
+    </header>
+    {% endblock navbar %}
+
+    {% block content %}
+    <main id="content" class="row pt-2">
+        <div class="col-md-9">
+            {{ section.content | safe }}
+        </div>
+        <div class="col-md-3">
+            {% include "sidebar.html" %}
+        </div>
+    </main>
+
+    {% block footer %}
+    <footer id="footer" class="row">
+        <div class="col">
+            {% include "footer.html" %}
+        </div>
+    </footer>
+    {% endblock footer %}
+
+    {% endblock content %}
+</div>
+
+{% block javascript %}
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js"></script>
+{% endblock javascript %}
+
 </body>
 </html>
