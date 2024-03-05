@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" data-bs-theme="dark">
+<head>
+    {% block head %}
+
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{config.description}}">
+    <meta name="author" content="{{config.author}}">
+
+    {% block title %}
+    {% if section.title %}
+    <title>{{ section.title }} | {{ config.title }}</title>
+    {% else %}
+    <title>{{ config.title }}</title>
+    {% endif %}
+    {% endblock title %}
+    {% endblock head %}
+
+	{% block css %}
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+	{% endblock css %}
+</head>
+<body>
+    <div class="container" style="padding-top: 10px;">
+		{% block navbar %}
+		{% include "navbar.html" %}
+		{% endblock navbar %}
+
+		{% block content %}
+	    <div id="content">
+		    {{section.content}}
+	    </div>
+		{% endblock content %}
+        
+		{% block footer %}
+        {% include "footer.html" %}
+		{% endblock footer %}
+    </div>
+	
+	{% block javascript %}
+    <script src="/js/bootstrap.bundle.min.js" integrity="sha384-{{ get_hash(path="static/js/bootstrap.bundle.min.js", sha_type=384, base64=true) | safe }}"></script>
+    <script src="/js/site.js" integrity="sha384-{{ get_hash(path="static/js/site.js", sha_type=384, base64=true) | safe }}"></script>
+	{% endblock javascript %}
+</body>
+</html>

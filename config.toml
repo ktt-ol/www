@@ -1,13 +1,12 @@
 # The URL the site will be built for
 base_url = "https://ktt-ol.de"
 
-title = "Kreativität trifft Technik"
+title = "Kreativität trifft Technik e.V."
 description = ""
 author = "KTT Webmaster"
 default_language = "de"
 
 # Compilation settings
-compile_sass = true
 minify_html = true
 build_search_index = true
 generate_feed = true
@@ -30,6 +29,21 @@ include_description = true
 include_path = true
 include_content = true
 index_format = "elasticlunr_javascript"
+
+[translations]
+
+[languages.en]
+build_search_index = true
+generate_feed = true
+
+[languages.en.search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_javascript"
+
+[languages.en.translations]
 
 [markdown]
 highlight_code = true
