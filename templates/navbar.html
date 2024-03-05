@@ -1,21 +1,30 @@
-<nav class="navbar navbar-expand-md bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/" style="padding-top: 10px; padding-bottom: 10px;">
-            <img style="height: 28px;" id="img-logo-mainframe" src="/media/img/logo-mainframe.svg" alt="Mainframe Logo">
-            <img style="height: 50px;" id="img-logo-ktt" src="/media/img/logo-ktt.png" alt="Kreativität trifft Technik e.V. Logo">
-        </a>
+{% block navbar %}
+<header id="navbar" style="padding-top: 10px;" class="row">
+    <div class="col">
+        <nav class="navbar navbar-expand-md bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/" style="padding-top: 10px; padding-bottom: 10px;">
+                    <img style="height: 28px;" id="img-logo-mainframe" src="/media/img/logo-mainframe.svg"
+                         alt="Mainframe Logo">
+                    <img style="height: 50px;" id="img-logo-ktt" src="/media/img/logo-ktt.png"
+                         alt="Kreativität trifft Technik e.V. Logo">
+                </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        {% block navbar_items %}
-            {% if lang == "de" %}
+                {% block navbar_items %}
+                {% if lang == "de" %}
                 {% include "navbar-items-de.html" %}
-            {% elif lang == "en" %}                
+                {% elif lang == "en" %}
                 {% include "navbar-items-en.html" %}
-            {% endif %}
-        {% endblock navbar_items %}
+                {% endif %}
+                {% endblock navbar_items %}
+            </div>
+        </nav>
     </div>
-</nav>
+</header>
+{% endblock navbar %}

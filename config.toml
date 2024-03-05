@@ -33,6 +33,13 @@ index_format = "elasticlunr_javascript"
 [translations]
 
 [languages.en]
+title = "Kreativität trifft Technik e.V."
+description = ""
+author = "KTT Webmaster"
+default_language = "de"
+
+# Compilation settings
+minify_html = true
 build_search_index = true
 generate_feed = true
 
