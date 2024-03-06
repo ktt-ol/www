@@ -70,7 +70,7 @@
 
     <ul class="navbar-nav navbar-right">
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="d-none d-sm-inline">
                     <img id="img-icon-lang" src="" style="height: 28px;" alt="Sprache">
                 </div>
@@ -79,8 +79,23 @@
                 </div>
             </a>
             <ul class="dropdown-menu">
-                <li><a href="/index.dark.html"><img src="/media/img/lang/de.png">Deutsch</a></li>
-                <li><a href="/en/"><img src="/media/img/lang/en.png">English</a></li>
+                {% if section.translations %}
+                {% for lang in section.translations %}
+                <li>
+                    <a class="dropdown-item" href="{{lang.permalink}}">
+                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                    </a>
+                </li>
+                {% endfor %}
+                {% elif page.translations %}
+                {% for lang in page.translations %}
+                <li>
+                    <a class="dropdown-item" href="{{lang.permalink}}">
+                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                    </a>
+                </li>
+                {% endfor %}
+                {% endif %}
             </ul>
         </li>
     </ul>
