@@ -1,4 +1,3 @@
-{% block navbar %}
 <header id="navbar" style="padding-top: 10px;" class="row">
     <div class="col">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
@@ -16,15 +15,14 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                {% block navbar_items %}
-                {% if lang == "de" %}
-                {% include "navbar-items-de.html" %}
-                {% elif lang == "en" %}
-                {% include "navbar-items-en.html" %}
-                {% endif %}
-                {% endblock navbar_items %}
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    {% if lang == "de" %}
+                    {% include "navbar-items-de.html" %}
+                    {% elif lang == "en" %}
+                    {% include "navbar-items-en.html" %}
+                    {% endif %}
+                </div>
             </div>
         </nav>
     </div>
 </header>
-{% endblock navbar %}

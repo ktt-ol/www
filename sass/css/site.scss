@@ -1,0 +1,27 @@
+body {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+.bg-dark-hover:hover {
+    background-color: rgba(var(--bs-danger-rgb), 0.9) !important;   
+}
+
+.bg-dark-hover {
+    background-color: rgba(var(--bs-danger-rgb), 1) !important;
+}
+
+@for $i from 1 through 6 {
+    .main-content * h#{$i} {
+        color: var(--bs-primary);
+        padding-bottom: 4px;
+        padding-left: 16px;
+        border-bottom: 1px var(--bs-primary) solid;
+    }
+
+    .main-content * h#{$i} > a {
+        color: var(--bs-primary);
+        text-decoration: none;
+    }
+}

@@ -7,9 +7,11 @@ author = "KTT Webmaster"
 default_language = "de"
 
 # Compilation settings
+compile_sass = true
 minify_html = true
 build_search_index = true
 generate_feed = true
+feed_filename = "rss.xml"
 
 [link_checker]
 skip_prefixes = []
@@ -39,9 +41,11 @@ author = "KTT Webmaster"
 default_language = "de"
 
 # Compilation settings
+compile_sass = true
 minify_html = true
 build_search_index = true
 generate_feed = true
+feed_filename = "rss.xml"
 
 [languages.en.search]
 include_title = true
@@ -62,3 +66,4 @@ smart_punctuation = true
 lazy_async_image = true
 
 [extra]
+ifs_base_path = "https://www.mainframe.io/media/ifs-images/"

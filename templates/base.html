@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{lang}}" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{config.description}}">
+    <meta name="author" content="{{config.author}}">
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    
+    {% if section.title %}
+    <title>{{ section.title }} | {{ config.title }}</title>
+    {% elif page.title %}
+    <title>{{ page.title }} | {{ config.title }}</title>
+    {% else %}
+    <title>{{ config.title }}</title>
+    {% endif %}
+
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/site.css">
+
+</head>
+
+<body class="h-100 m-0 p-0">
+<div class="container h-100 d-flex flex-column justify-content-between">
+
+    {% include "navbar.html" %}
+
+    {% block main %}
+    <main id="content" class="h-100 row pt-2">
+        <div class="col-md-9 main-content">
+            {% block content %}
+            {% if page.content %}
+            {{ page.content | safe }}
+            {% elif section.content %}
+            {{ section.content | safe }}
+            {% endif %}
+            {% endblock content %}
+        </div>
+        <div class="col-md-3">
+            {% block sidebar %}
+            {% include "sidebar.html" %}
+            {% endblock sidebar %}
+        </div>
+    </main>
+    {% endblock main %}
+
+    <footer id="footer" class="row">
+        <div class="col">
+            <p style="text-align: center;">
+                © 2024 <a href="{{config.base_url}}">Kreativität trifft Technik</a> | License: <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
+                    href="/impressum.dark.html">Impressum</a>
+            </p>
+        </div>
+    </footer>
+
+    {% if config.mode == "serve" %}
+    <pre class="d-none">
+        {{ __tera_context }}
+    </pre>
+    {% endif %}
+    
+</div>
+
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/site.js"></script>
+
+</body>
+</html>

@@ -1,29 +1,51 @@
-<!DOCTYPE html>
-<html lang="{{lang}}" data-bs-theme="dark">
+{% extends "base.html" %}
 
-{% include "head.html" %}
+{% block content %}
 
-<body class="h-100 vh-100">
-<div class="container">
-
-    {% include "navbar.html" %}
-
-    {% block content %}
-    <main id="content" class="row pt-2">
-        <div class="col-md-9">
-            {{ section.content | safe }}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h4>
+                <a href="/images/ifs">Images From Space</a>
+            </h4>
         </div>
-        <div class="col-md-3">
-            {% include "sidebar.html" %}
+    </div>
+    <div class="row">
+        <div class="col p-2 d-flex">
+            {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "meta-first.json", format="json") %}
+            {% set current = ifs_data.images | first %}
+            <img alt="Random image from the hackspace oldenburg" 
+                 class="img-fluid m-auto" 
+                 style="max-height: 500px;"
+                 src="{{config.extra.ifs_base_path}}.thumbs/750-{{current.filename}}">
         </div>
-    </main>
-    {% endblock content %}
+    </div>
 
-    {% include "footer.html" %}
+    <div class="row">
+        <div class="col p-2">
+            <h4>
+                News
+            </h4>
+        </div>
+    </div>
 
+    <div class="row">
+
+    </div>
 </div>
 
-{% include "scripts.html" %}
 
-</body>
-</html>
+{% if lang == config.default_language %}
+{% set projects = get_section(path="projects/_index.md", metadata_only=false) %}
+{% else %}
+{% set projects = get_section(path="projects/_index." ~ lang ~ ".md", metadata_only=false) %}
+{% endif %}
+
+{% for subsection in projects.subsections %}
+{% set project_section = get_section(path=subsection) %}
+{% for page in project_section.pages %}
+<a href="{{ page.path }}">{{page.title}}</a>
+{% endfor %}
+{% endfor %}
+
+{% endblock head %}
