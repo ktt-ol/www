@@ -2,7 +2,8 @@
     <div class="col">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href="/" style="padding-top: 10px; padding-bottom: 10px;">
+                <a class="navbar-brand" href="/{% if lang != config.default_language %}{{lang}}{% endif %}"
+                   style="padding-top: 10px; padding-bottom: 10px;">
                     <img style="height: 28px;" id="img-logo-mainframe" src="/media/img/logo-mainframe.svg"
                          alt="Mainframe Logo">
                     <img style="height: 50px;" id="img-logo-ktt" src="/media/img/logo-ktt.png"
@@ -10,17 +11,75 @@
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    {% if lang == "de" %}
-                    {% include "navbar-items-de.html" %}
-                    {% elif lang == "en" %}
-                    {% include "navbar-items-en.html" %}
-                    {% endif %}
+                    <ul class="navbar-nav me-auto">
+                        {% for subsectionPath in all_sections.subsections %}
+                        {% set subsection = get_section(path=subsectionPath) %}
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                {{ subsection.title }}
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% for page in subsection.pages %}
+                                <li>
+                                    <a class="dropdown-item" href="{{page.path}}">
+                                        {{page.title}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+
+                                {% for subsubsectionPath in subsection.subsections %}
+                                {% set subsubsection = get_section(path=subsubsectionPath) %}
+                                <li>
+                                    <a class="dropdown-item" href="{{subsubsection.path}}">
+                                        {{subsubsection.title}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        {% endfor %}
+                    </ul>
+
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <div class="d-none d-sm-inline">
+                                    <img id="img-icon-lang" src="" style="height: 28px;" alt="Language">
+                                </div>
+                                <div class="d-inline d-sm-none">
+                                    Language
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu">
+                                {% if section.translations %}
+                                {% for lang in section.translations %}
+                                <li>
+                                    <a class="dropdown-item" href="{{lang.permalink}}">
+                                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                                {% elif page.translations %}
+                                {% for lang in page.translations %}
+                                <li>
+                                    <a class="dropdown-item" href="{{lang.permalink}}">
+                                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                                {% endif %}
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>

@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col">
             <h4>
-                <a href="/images/ifs">Images From Space</a>
+                <a href="images/ifs">Images From Space</a>
             </h4>
         </div>
     </div>
@@ -50,12 +50,7 @@
 </div>
 
 
-{% if lang == config.default_language %}
 {% set projects = get_section(path="projects/_index.md", metadata_only=false) %}
-{% else %}
-{% set projects = get_section(path="projects/_index." ~ lang ~ ".md", metadata_only=false) %}
-{% endif %}
-
 {% for subsection in projects.subsections %}
 {% set project_section = get_section(path=subsection) %}
 {% for page in project_section.pages %}

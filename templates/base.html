@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="{{lang}}" data-bs-theme="light">
 
+{% if lang == config.default_language %}
+{% set all_sections = get_section(path="_index.md", metadata_only=true) %}
+{% else %}
+{% set all_sections = get_section(path="_index." ~ lang ~ ".md", metadata_only=true) %}
+{% endif %}
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -23,7 +29,7 @@
 
 </head>
 
-<body class="h-100 m-0 p-0">
+<body class="vh-100 m-0 p-0">
 <div class="container h-100 d-flex flex-column justify-content-between">
 
     {% include "navbar.html" %}

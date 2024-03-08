@@ -1,10 +1,10 @@
 # The URL the site will be built for
 base_url = "https://ktt-ol.de"
+default_language = "de"
 
 title = "Kreativität trifft Technik e.V."
 description = ""
 author = "KTT Webmaster"
-default_language = "de"
 
 # Compilation settings
 compile_sass = true
@@ -13,18 +13,6 @@ build_search_index = true
 generate_feed = true
 feed_filename = "rss.xml"
 
-[link_checker]
-skip_prefixes = []
-skip_anchor_prefixes = []
-internal_level = "error"
-external_level = "error"
-
-[slugify]
-paths = "on"
-taxonomies = "on"
-anchors = "on"
-paths_keep_dates = false
-
 [search]
 include_title = true
 include_description = true
@@ -32,13 +20,34 @@ include_path = true
 include_content = true
 index_format = "elasticlunr_javascript"
 
-[translations]
+[link_checker]
+skip_prefixes = []
+skip_anchor_prefixes = []
+internal_level = "error"
+external_level = "error"
+
+[slugify]
+paths = "off"
+taxonomies = "off"
+anchors = "off"
+paths_keep_dates = false
+
+[markdown]
+highlight_code = true
+render_emoji = false
+external_links_target_blank = true
+external_links_no_follow = true
+external_links_no_referrer = true
+smart_punctuation = true
+lazy_async_image = true
+
+[extra]
+ifs_base_path = "https://www.mainframe.io/media/ifs-images/"
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."
 description = ""
 author = "KTT Webmaster"
-default_language = "de"
 
 # Compilation settings
 compile_sass = true
@@ -53,17 +62,3 @@ include_description = true
 include_path = true
 include_content = true
 index_format = "elasticlunr_javascript"
-
-[languages.en.translations]
-
-[markdown]
-highlight_code = true
-render_emoji = false
-external_links_target_blank = true
-external_links_no_follow = true
-external_links_no_referrer = true
-smart_punctuation = true
-lazy_async_image = true
-
-[extra]
-ifs_base_path = "https://www.mainframe.io/media/ifs-images/"
