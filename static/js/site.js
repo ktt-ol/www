@@ -1,5 +1,27 @@
+const ifsImageCount = 5;
+var currentIfsImage = 0;
 function isDarkModeEnabled() {
     return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function nextIfsImage(direction)
+{
+    currentIfsImage += direction;
+    currentIfsImage = Math.abs(currentIfsImage % ifsImageCount);
+
+    for(let i = 0; i < ifsImageCount; i++)
+    {
+        let element = document.getElementById("ifs-image-" + i);
+        if(i === currentIfsImage)
+        {
+            element.classList.remove("d-none");
+        } else {
+            if(!element.classList.contains("d-none"))
+            {
+                element.classList.add("d-none")
+            }
+        }
+    }
 }
 
 if (isDarkModeEnabled()) {

@@ -11,13 +11,28 @@
         </div>
     </div>
     <div class="row">
-        <div class="col p-2 d-flex">
-            {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "meta-first.json", format="json") %}
-            {% set current = ifs_data.images | first %}
-            <img alt="Random image from the hackspace oldenburg" 
-                 class="img-fluid m-auto" 
-                 style="max-height: 500px;"
-                 src="{{config.extra.ifs_base_path}}.thumbs/750-{{current.filename}}">
+        <div class="col">
+            <div id="ifs-carousel" class="carousel slide mh-500" data-bs-ride="carousel">
+                {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "/meta-first.json", format="json") %}
+                <div class="carousel-inner p-2">
+                    {% for i in range(end=5) %}
+                    <div class="carousel-item text-center {% if i == 0 %} active {%endif%}">
+                        <img src="{{config.extra.ifs_base_path}}/.thumbs/750-{{ifs_data.images[i].filename}}"
+                             class="img-fluid shadow object-fit-contain"
+                             style="max-height: 500px;"
+                             alt="Random user submitted image from the hackspace oldenburg">
+                    </div>
+                    {% endfor %}
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#ifs-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#ifs-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
     </div>
 
