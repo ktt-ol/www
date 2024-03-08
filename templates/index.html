@@ -18,8 +18,8 @@
                     {% for i in range(end=5) %}
                     <div class="carousel-item text-center {% if i == 0 %} active {%endif%}">
                         <img src="{{config.extra.ifs_base_path}}/.thumbs/750-{{ifs_data.images[i].filename}}"
-                             class="img-fluid shadow object-fit-contain"
-                             style="max-height: 500px;"
+                             class="img-fluid object-fit-contain"
+                             style="max-height: 500px; min-height: 500px;"
                              alt="Random user submitted image from the hackspace oldenburg">
                     </div>
                     {% endfor %}
