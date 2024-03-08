@@ -41,6 +41,9 @@ external_links_no_referrer = true
 smart_punctuation = true
 lazy_async_image = true
 
+[translations]
+language = "Sprache"
+
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images/"
 
@@ -62,3 +65,6 @@ include_description = true
 include_path = true
 include_content = true
 index_format = "elasticlunr_javascript"
+
+[languages.en.translations]
+language = "Language"

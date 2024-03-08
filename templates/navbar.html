@@ -49,34 +49,41 @@
                     </ul>
 
                     <ul class="navbar-nav navbar-right">
+                        {% if lang != config.default_language %}
+                        {% set start = 1 %}
+                        {% else %}
+                        {% set start = 0 %}
+                        {% endif %}
+
+                        {% if page %}
+                        {% set raw_path = page.components | slice(start=start) | join(sep="/") %}
+                        {% elif section %}
+                        {% set raw_path = section.components | slice(start=start) | join(sep="/") %}
+                        {% endif %}
+
+                        {% set language = trans(key="language",lang=lang) %}
+
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                <div class="d-none d-sm-inline">
-                                    <img id="img-icon-lang" src="" style="height: 28px;" alt="Language">
-                                </div>
-                                <div class="d-inline d-sm-none">
-                                    Language
-                                </div>
+                                <img id="img-icon-lang"
+                                     src=""
+                                     style="height: 28px;"
+                                     alt="{{ language }}">
                             </a>
                             <ul class="dropdown-menu">
-                                {% if section.translations %}
-                                {% for lang in section.translations %}
                                 <li>
-                                    <a class="dropdown-item" href="{{lang.permalink}}">
-                                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                                    <a class="dropdown-item" href="/{{raw_path}}">
+                                        <img src="/media/img/lang/de.png" class="me-1">
+                                        Deutsch
                                     </a>
                                 </li>
-                                {% endfor %}
-                                {% elif page.translations %}
-                                {% for lang in page.translations %}
                                 <li>
-                                    <a class="dropdown-item" href="{{lang.permalink}}">
-                                        <img src="/media/img/lang/{{lang.lang}}.png" class="me-1">{{lang.lang}}
+                                    <a class="dropdown-item" href="/en/{{raw_path}}">
+                                        <img src="/media/img/lang/en.png" class="me-1">
+                                        Englisch
                                     </a>
                                 </li>
-                                {% endfor %}
-                                {% endif %}
                             </ul>
                         </li>
                     </ul>
