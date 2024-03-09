@@ -58,6 +58,8 @@
                         {% set raw_path = page.components | slice(start=start) | join(sep="/") %}
                         {% elif section %}
                         {% set raw_path = section.components | slice(start=start) | join(sep="/") %}
+                        {% else %}
+                        {% set raw_path = "" %}
                         {% endif %}
 
                         {% set language = trans(key="language",lang=lang) %}

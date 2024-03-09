@@ -20,9 +20,9 @@ internal_level = "error"
 external_level = "error"
 
 [slugify]
-paths = "off"
-taxonomies = "off"
-anchors = "off"
+paths = "on"
+taxonomies = "on"
+anchors = "on"
 paths_keep_dates = false
 
 [markdown]
@@ -36,6 +36,8 @@ lazy_async_image = true
 
 [translations]
 language = "Sprache"
+not_found_content = "Dies sind nicht die Inhalte die ihr sucht!"
+not_found = "Inhalt nicht gefunden"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images/"
@@ -54,3 +56,5 @@ feed_filename = "rss.xml"
 
 [languages.en.translations]
 language = "Language"
+not_found_content = "This is not the content you are looking for!"
+not_found = "Content not found"

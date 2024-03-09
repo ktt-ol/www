@@ -13,6 +13,13 @@ body {
 }
 
 @for $i from 1 through 6 {
+  .main-content > h#{$i} {
+    color: var(--bs-primary);
+    padding-bottom: 4px;
+    padding-left: 16px;
+    border-bottom: 1px var(--bs-primary) solid;
+  }
+
   .main-content * h#{$i} {
     color: var(--bs-primary);
     padding-bottom: 4px;
@@ -33,7 +40,6 @@ body {
 [data-bs-theme="dark"] .carousel .carousel-control-prev-icon {
   filter: invert(0) grayscale(100);
 }
-
 
 [data-bs-theme="dark"] .carousel .carousel-control-next-icon {
     filter: invert(0) grayscale(100);
