@@ -46,3 +46,7 @@ body {
 [data-bs-theme="light"] .carousel .carousel-control-next-icon {
     filter: invert(1) grayscale(100);
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
