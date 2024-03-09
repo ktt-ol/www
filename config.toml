@@ -9,16 +9,9 @@ author = "KTT Webmaster"
 # Compilation settings
 compile_sass = true
 minify_html = true
-build_search_index = true
+build_search_index = false
 generate_feed = true
 feed_filename = "rss.xml"
-
-[search]
-include_title = true
-include_description = true
-include_path = true
-include_content = true
-index_format = "elasticlunr_javascript"
 
 [link_checker]
 skip_prefixes = []
@@ -55,16 +48,9 @@ author = "KTT Webmaster"
 # Compilation settings
 compile_sass = true
 minify_html = true
-build_search_index = true
+build_search_index = false
 generate_feed = true
 feed_filename = "rss.xml"
-
-[languages.en.search]
-include_title = true
-include_description = true
-include_path = true
-include_content = true
-index_format = "elasticlunr_javascript"
 
 [languages.en.translations]
 language = "Language"
