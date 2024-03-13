@@ -1,2 +1,7 @@
 /public
 /.idea
+
+/content/images/ifs/all/*
+!/content/images/ifs/all/_index*
+
+/static/media/img/ifs
