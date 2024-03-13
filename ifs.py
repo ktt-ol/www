@@ -29,6 +29,11 @@ for image in ifs_images:
     f.write(frontmatter)
     f.write(content)
     f.close()
+    
+    f = open(ifs_folder_all + "/" + image_id_str + ".en.md", "w")
+    f.write(frontmatter)
+    f.write(content)
+    f.close()
 
     print("IFS markdown page for " + image_id_str + " created")
 
