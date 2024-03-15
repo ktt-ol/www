@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% set base_path = paginator.base_url | trim_start_matches(pat=config.base_url) %}
+<ul class="pagination my-2 mx-auto">
+    <li class="page-item">
+        <a class="page-link" href="{{paginator.previous}}">
+            <<
+        </a>
+    </li>
+    {% for i in range(end=paginator.number_pagers) %}
+    <li class="page-item">
+        <a class="page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}">
+            {{i + 1}}
+        </a>
+    </li>
+    {% endfor %}
+    <li class="page-item">
+        <a class="page-link" href="{{paginator.next}}">
+            >>
+        </a>
+    </li>
+</ul>
+<div class="image-gallery">
+    {% set pages = paginator.pages %}
+    {% for page in pages %}
+    {% set page_data = get_page(path=page.relative_path) %}
+    <a href="{{page_data.path}}">
+        <img alt="Random Image From Space Number {{page.slug}}" loading="lazy"
+             src="{{config.extra.ifs_base_path}}/.thumbs/300-{{page_data.extra.image_filename}}"/>
+    </a>
+    {% endfor %}
+</div>
+<ul class="pagination my-2 mx-auto">
+    <li class="page-item">
+        <a class="page-link" href="{{paginator.previous}}">
+            <<
+        </a>
+    </li>
+    {% for i in range(end=paginator.number_pagers) %}
+    <li class="page-item">
+        <a class="page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}">
+            {{i + 1}}
+        </a>
+    </li>
+    {% endfor %}
+    <li class="page-item">
+        <a class="page-link" href="{{paginator.next}}">
+            >>
+        </a>
+    </li>
+</ul>
+{% endblock main %}
