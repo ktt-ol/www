@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://ktt-ol.de"
+base_url = "/"
 default_language = "de"
 
 title = "Kreativität trifft Technik e.V."

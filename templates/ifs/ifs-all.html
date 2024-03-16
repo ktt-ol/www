@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 
 {% block main %}
-{% set base_path = paginator.base_url | trim_start_matches(pat=config.base_url) %}
+
+{% set base_path = paginator.base_url %}
+
 {% if paginator.previous %}
-{% set previous = paginator.previous | trim_start_matches(pat=config.base_url) %}
+{% set previous = paginator.previous %}
 {% else %}
 {% set previous = "" %}
 {% endif %}
+
 {% if paginator.next %}
-{% set next = paginator.next | trim_start_matches(pat=config.base_url) %}
+{% set next = paginator.next %}
 {% else %}
 {% set next = "" %}
 {% endif %}
