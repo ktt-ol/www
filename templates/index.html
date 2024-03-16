@@ -6,7 +6,7 @@
     <div class="row">
         <div class="col">
             <h4>
-                <a href="images/ifs">Images From Space</a>
+                <a href="images/ifs">Image From Space</a>
             </h4>
         </div>
     </div>
@@ -17,10 +17,10 @@
                 <div class="carousel-inner p-2">
                     {% for i in range(end=5) %}
                     <div class="carousel-item text-center {% if i == 0 %} active {%endif%}">
-                        <img src="{{config.extra.ifs_base_path}}/.thumbs/750-{{ifs_data.images[i].filename}}"
-                             class="img-fluid object-fit-contain"
-                             style="max-height: 500px; min-height: 500px;"
-                             alt="Random user submitted image from the hackspace oldenburg">
+                        {% set filename = ifs_data.images[i].filename %}
+                        {% set width = 10 %}
+                        {% set height = 10 %}
+                        {% include "shortcodes/ifs_image.html" %}
                     </div>
                     {% endfor %}
                 </div>

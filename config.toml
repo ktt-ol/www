@@ -40,7 +40,7 @@ not_found_content = "Dies sind nicht die Inhalte die ihr sucht!"
 not_found = "Inhalt nicht gefunden"
 
 [extra]
-ifs_base_path = "https://www.mainframe.io/media/ifs-images/"
+ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."

@@ -1,0 +1,13 @@
+{% if not color %}
+{% set color = "secondary" %}
+{% endif %}
+
+{% if disabled %}
+{% set disabled = disabled == "True" %}
+{% endif %}
+
+{% if not location %}
+<button type="button" class="mb-2 mx-2 btn btn-{{color}} {% if disabled %}disabled{%endif%}">{{ text }}</button>
+{% else %}
+<a class="mx-2 mb-2 btn btn-{{ color }} {% if disabled %}disabled{%endif%}" href="{{location}}" role="button">{{ text }}</a>
+{% endif %}

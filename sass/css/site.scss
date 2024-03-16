@@ -17,6 +17,9 @@ body {
     color: var(--bs-primary);
     padding-bottom: 4px;
     padding-left: 16px;
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
     border-bottom: 1px var(--bs-primary) solid;
   }
 
@@ -24,12 +27,26 @@ body {
     color: var(--bs-primary);
     padding-bottom: 4px;
     padding-left: 16px;
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
     border-bottom: 1px var(--bs-primary) solid;
   }
 
   .main-content * h#{$i} > a {
     color: var(--bs-primary);
     text-decoration: none;
+  }
+
+  .main-content img {
+    object-fit: contain;
+    padding: 8px;
+    max-width: 750px;
+  }
+
+  .main-content p {
+    width: 100%;
+    text-align: center;
   }
 }
 

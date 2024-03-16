@@ -21,7 +21,6 @@ for image in ifs_images:
     frontmatter = '+++\n'
     frontmatter += 'title = "IFS ' + image_id_str + '"\n'
     frontmatter += 'weight = ' + str(ifs_count - image_id) + '\n'
-    frontmatter += 'template = "ifs/ifs-single.html"\n'
     frontmatter += '[extra]\n'
     frontmatter += 'image_filename = "' + image["filename"] + '"'
     frontmatter += "\nwidth = " + str(image["width"])
@@ -29,16 +28,20 @@ for image in ifs_images:
     frontmatter += '\n+++\n'
 
     content = "\n"
-    content += "![IFS Image Number " + image_id_str + "](" + ifs_image_path + "/" + image["filename"] + ")"
+    content += "\n#### Image From Space " + image_id_str + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/") }}'
+    content += "\n"
+    content += '{{ button(text="<<", location="/images/ifs/all/' + str(image_id + 1) + '", disabled="' + str(image_id + 1 >= (ifs_count-1)) + '") }}'
+    content += '{{ ifs_image(filename="' + image["filename"] + '", height=' + str(image["height"]) + ', width=' + str(image["width"]) + ') }}'
+    content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 < 0) + '") }}'
 
     f = open(ifs_folder_all + "/" + image_id_str + ".md", "w")
     f.write(frontmatter)
-    f.write(content)
+    f.write(content.replace("%replace_with_text%", "Alle Images From Space"))
     f.close()
 
     f = open(ifs_folder_all + "/" + image_id_str + ".en.md", "w")
     f.write(frontmatter)
-    f.write(content)
+    f.write(content.replace("%replace_with_text%", "All Images From Space"))
     f.close()
 
     print("IFS markdown page for " + image_id_str + " created")

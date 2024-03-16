@@ -2,9 +2,20 @@
 
 {% block main %}
 {% set base_path = paginator.base_url | trim_start_matches(pat=config.base_url) %}
+{% if paginator.previous %}
+{% set previous = paginator.previous | trim_start_matches(pat=config.base_url) %}
+{% else %}
+{% set previous = "" %}
+{% endif %}
+{% if paginator.next %}
+{% set next = paginator.next | trim_start_matches(pat=config.base_url) %}
+{% else %}
+{% set next = "" %}
+{% endif %}
+
 <ul class="pagination my-2 mx-auto">
     <li class="page-item">
-        <a class="page-link" href="{{paginator.previous}}">
+        <a class="page-link  {% if not previous %}disabled{% endif %}" href="{{previous}}">
             <<
         </a>
     </li>
@@ -16,7 +27,7 @@
     </li>
     {% endfor %}
     <li class="page-item">
-        <a class="page-link" href="{{paginator.next}}">
+        <a class="page-link {% if not next %}disabled{% endif %}"  href="{{next}}">
             >>
         </a>
     </li>
@@ -33,7 +44,7 @@
 </div>
 <ul class="pagination my-2 mx-auto">
     <li class="page-item">
-        <a class="page-link" href="{{paginator.previous}}">
+        <a class="page-link  {% if not previous %}disabled{% endif %}" href="{{previous}}">
             <<
         </a>
     </li>
@@ -45,7 +56,7 @@
     </li>
     {% endfor %}
     <li class="page-item">
-        <a class="page-link" href="{{paginator.next}}">
+        <a class="page-link {% if not next %}disabled{% endif %}"  href="{{next}}">
             >>
         </a>
     </li>
