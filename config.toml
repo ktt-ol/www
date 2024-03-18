@@ -9,9 +9,13 @@ author = "KTT Webmaster"
 # Compilation settings
 compile_sass = true
 minify_html = true
-build_search_index = false
+build_search_index = true
 generate_feed = true
 feed_filename = "rss.xml"
+
+taxonomies = [
+    {name = "topics", feed = true}
+]
 
 [link_checker]
 skip_prefixes = []
@@ -50,9 +54,13 @@ author = "KTT Webmaster"
 # Compilation settings
 compile_sass = true
 minify_html = true
-build_search_index = false
+build_search_index = true
 generate_feed = true
 feed_filename = "rss.xml"
+
+taxonomies = [
+    {name = "topics", feed = true}
+]
 
 [languages.en.translations]
 language = "Language"

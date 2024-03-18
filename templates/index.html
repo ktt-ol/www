@@ -50,12 +50,4 @@
 </div>
 
 
-{% set projects = get_section(path="projects/_index.md", metadata_only=false) %}
-{% for subsection in projects.subsections %}
-{% set project_section = get_section(path=subsection) %}
-{% for page in project_section.pages %}
-<a href="{{ page.path }}">{{page.title}}</a>
-{% endfor %}
-{% endfor %}
-
-{% endblock head %}
+{% endblock content %}

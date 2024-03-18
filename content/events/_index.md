@@ -1,5 +1,5 @@
 +++
 title = "Events"
 sort_by = "weight"
-weight = 20
+weight = 50
 +++

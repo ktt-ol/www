@@ -1,5 +1,5 @@
 +++
 title = "Der Verein"
 sort_by = "weight"
-weight = 50
+weight = 10
 +++
