@@ -2,5 +2,11 @@
 {% set height = height * scaling %}
 
 <a target="_blank" class="text-decoration-none" href="{{config.extra.ifs_base_path}}/{{filename}}">
-<img class="object-fit-contain" style="max-height: {{height}}px; width: {{width}}px;" alt="Random image from space" src="{{config.extra.ifs_base_path}}/.thumbs/750-{{filename}}" />
+<img class="object-fit-contain"
+     alt=""
+     loading="lazy"
+     decoding="async"
+     style="max-height: {{height}}px; width: {{width}}px;"
+     src="{{config.extra.ifs_base_path}}/.thumbs/1200-{{filename}}"
+/>
 </a>

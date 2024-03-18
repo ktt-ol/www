@@ -11,16 +11,11 @@
         </a>
     </li>
 
-    {% set start = paginator.current_index - 2 %}
+    {% set start = paginator.current_index - 1 %}
     {% if start <= 0 %}
     {% set start = 1 %}
     {% endif %}
 
-    {% set end = paginator.current_index + 1 %}
-    {% if end > (paginator.number_pagers - 1) %}
-    {% set end = (paginator.number_pagers - 1) %}
-    {% endif %}
-    
     {% if start >= 2 %}
     <li class="page-item">
         <a class="text-center page-link disabled" href="{{current_path}}" style="width: 3em;">
@@ -28,16 +23,16 @@
         </a>
     </li>
     {% endif %}
-    
-    {% for i in range(start=start, end=end) %}
+
+    {% if paginator.current_index > 1 and paginator.current_index < paginator.number_pagers %}
     <li class="page-item">
-        <a class="text-center page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}" style="width: 3em;">
-            {{i + 1}}
+        <a class="text-center page-link active" href="{{base_path}}{{paginator.current_index}}" style="width: 3em;">
+            {{paginator.current_index}}
         </a>
     </li>
-    {% endfor %}
+    {% endif %}
 
-    {% if end < (paginator.number_pagers - 1) %}
+    {% if paginator.current_index < (paginator.number_pagers - 1) %}
     <li class="page-item">
         <a class="text-center page-link disabled" href="{{current_path}}" style="width: 3em;">
             ...

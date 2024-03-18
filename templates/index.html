@@ -14,15 +14,14 @@
         <div class="col">
             <div id="ifs-carousel" class="carousel slide mh-500" data-bs-ride="carousel">
                 {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "/meta-first.json", format="json") %}
+                {% for i in range(end=5) %}
                 <div class="carousel-inner p-2">
-                    {% for i in range(end=5) %}
                     <div class="carousel-item text-center {% if i == 0 %} active {%endif%}">
                         {% set filename = ifs_data.images[i].filename %}
-                        {% set width = 10 %}
-                        {% set height = 10 %}
+                        {% set width = ifs_data.images[i].width %}
+                        {% set height = ifs_data.images[i].height %}
                         {% include "shortcodes/ifs_image.html" %}
                     </div>
-                    {% endfor %}
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#ifs-carousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -32,6 +31,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+                {% endfor %}
             </div>
         </div>
     </div>
