@@ -12,8 +12,8 @@
     </li>
 
     {% set start = paginator.current_index - 2 %}
-    {% if start <= 1 %}
-    {% set start = 2 %}
+    {% if start <= 0 %}
+    {% set start = 1 %}
     {% endif %}
 
     {% set end = paginator.current_index + 1 %}
@@ -21,7 +21,7 @@
     {% set end = (paginator.number_pagers - 1) %}
     {% endif %}
     
-    {% if start > 2 %}
+    {% if start >= 2 %}
     <li class="page-item">
         <a class="text-center page-link disabled" href="{{current_path}}" style="width: 3em;">
             ...

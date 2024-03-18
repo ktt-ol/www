@@ -1,6 +1,6 @@
-{% set scaling = 750 / height %}
-{% set width = width * scaling %}
+{% set scaling = 750 / width %}
+{% set height = height * scaling %}
 
 <a target="_blank" class="text-decoration-none" href="{{config.extra.ifs_base_path}}/{{filename}}">
-<img class="object-fit-contain" style="max-height: 750px; width: {{width}}px;" alt="Random image from space" src="{{config.extra.ifs_base_path}}/.thumbs/750-{{filename}}" />
+<img class="object-fit-contain" style="max-height: {{height}}px; width: {{width}}px;" alt="Random image from space" src="{{config.extra.ifs_base_path}}/.thumbs/750-{{filename}}" />
 </a>

@@ -7,12 +7,20 @@
 {% include "ifs/ifs-pagination.html" %}
 
 <div class="image-gallery">
-    {% set pages = paginator.pages %}
-    {% for page in pages %}
+    {% for page in paginator.pages %}
+
     {% set page_data = get_page(path=page.relative_path) %}
-    <a href="{{page_data.path}}">
-        <img alt="Random Image From Space Number {{page.slug}}" loading="lazy"
-             src="{{config.extra.ifs_base_path}}/.thumbs/300-{{page_data.extra.image_filename}}"/>
+
+    {% set scaling = 200 / page_data.extra.height %}
+    {% set height = 200 %}
+
+    {% set width = page_data.extra.width * scaling %}
+    
+    <a href="{{page_data.path}}" style="height: {{height}}px; width: {{width}}px;">
+        <img alt=""
+             loading="lazy" 
+             decoding="async"
+             src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
     </a>
     {% endfor %}
 </div>
