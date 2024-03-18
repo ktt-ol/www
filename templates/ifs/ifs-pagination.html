@@ -1,0 +1,59 @@
+<ul class="pagination pagination-sm justify-content-center my-2 mx-auto">
+    <li class="page-item">
+        <a class="text-center page-link {% if not paginator.previous %}disabled{% endif %}" href="{{ paginator.previous }}" style="width: 3em;">
+            <<
+        </a>
+    </li>
+    
+    <li class="page-item">
+        <a class="text-center page-link {% if paginator.current_index == 1 %}active{% endif %}" href="{{base_path}}1" style="width: 3em;">
+            1
+        </a>
+    </li>
+
+    {% set start = paginator.current_index - 2 %}
+    {% if start <= 1 %}
+    {% set start = 2 %}
+    {% endif %}
+
+    {% set end = paginator.current_index + 1 %}
+    {% if end > (paginator.number_pagers - 1) %}
+    {% set end = (paginator.number_pagers - 1) %}
+    {% endif %}
+    
+    {% if start > 2 %}
+    <li class="page-item">
+        <a class="text-center page-link disabled" href="{{current_path}}" style="width: 3em;">
+            ...
+        </a>
+    </li>
+    {% endif %}
+    
+    {% for i in range(start=start, end=end) %}
+    <li class="page-item">
+        <a class="text-center page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}" style="width: 3em;">
+            {{i + 1}}
+        </a>
+    </li>
+    {% endfor %}
+
+    {% if end < (paginator.number_pagers - 1) %}
+    <li class="page-item">
+        <a class="text-center page-link disabled" href="{{current_path}}" style="width: 3em;">
+            ...
+        </a>
+    </li>
+    {% endif %}
+    
+    <li class="page-item">
+        <a class="text-center page-link {% if paginator.current_index == paginator.number_pagers %}active{% endif %}" href="{{base_path}}{{paginator.number_pagers}}" style="width: 3em;">
+            {{paginator.number_pagers}}
+        </a>
+    </li>
+    
+    <li class="page-item">
+        <a class="text-center page-link {% if not paginator.next %}disabled{% endif %}"  href="{{ paginator.next }}" style="width: 3em;">
+            >>
+        </a>
+    </li>
+</ul>

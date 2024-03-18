@@ -4,37 +4,8 @@
 
 {% set base_path = paginator.base_url %}
 
-{% if paginator.previous %}
-{% set previous = paginator.previous %}
-{% else %}
-{% set previous = "" %}
-{% endif %}
+{% include "ifs/ifs-pagination.html" %}
 
-{% if paginator.next %}
-{% set next = paginator.next %}
-{% else %}
-{% set next = "" %}
-{% endif %}
-
-<ul class="pagination my-2 mx-auto">
-    <li class="page-item">
-        <a class="page-link  {% if not previous %}disabled{% endif %}" href="{{previous}}">
-            <<
-        </a>
-    </li>
-    {% for i in range(end=paginator.number_pagers) %}
-    <li class="page-item">
-        <a class="page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}">
-            {{i + 1}}
-        </a>
-    </li>
-    {% endfor %}
-    <li class="page-item">
-        <a class="page-link {% if not next %}disabled{% endif %}"  href="{{next}}">
-            >>
-        </a>
-    </li>
-</ul>
 <div class="image-gallery">
     {% set pages = paginator.pages %}
     {% for page in pages %}
@@ -45,23 +16,7 @@
     </a>
     {% endfor %}
 </div>
-<ul class="pagination my-2 mx-auto">
-    <li class="page-item">
-        <a class="page-link  {% if not previous %}disabled{% endif %}" href="{{previous}}">
-            <<
-        </a>
-    </li>
-    {% for i in range(end=paginator.number_pagers) %}
-    <li class="page-item">
-        <a class="page-link {% if paginator.current_index == i + 1 %}active{% endif %}" href="{{base_path}}{{i + 1}}">
-            {{i + 1}}
-        </a>
-    </li>
-    {% endfor %}
-    <li class="page-item">
-        <a class="page-link {% if not next %}disabled{% endif %}"  href="{{next}}">
-            >>
-        </a>
-    </li>
-</ul>
+
+{% include "ifs/ifs-pagination.html" %}
+
 {% endblock main %}
