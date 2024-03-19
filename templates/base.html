@@ -13,9 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{config.description}}">
     <meta name="author" content="{{config.author}}">
-    
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
-    
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=" rss.xml
+    ", trailing_slash=false) }}">
+
     {% if section.title %}
     <title>{{ section.title }} | {{ config.title }}</title>
     {% elif page.title %}
@@ -58,7 +59,7 @@
             <p style="text-align: center;">
                 © 2024 <a href="{{config.base_url}}">Kreativität trifft Technik</a> | License: <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
-                    href="/impressum.dark.html">Impressum</a>
+                    href="/impressum">Impressum</a>
             </p>
         </div>
     </footer>
@@ -68,7 +69,7 @@
         {{ __tera_context }}
     </pre>
     {% endif %}
-    
+
 </div>
 
 <script src="/js/site.js"></script>
