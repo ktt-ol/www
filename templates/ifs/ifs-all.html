@@ -1,5 +1,22 @@
 {% extends "base.html" %}
 
+{% block extra_meta %}
+{% for page in paginator.pages %}
+{% set page_data = get_page(path=page.relative_path) %}
+
+{% set scaling = 750 / page_data.extra.height %}
+{% set height = 750 %}
+
+{% set width = page_data.extra.width * scaling %}
+
+<meta property="og:image" content="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
+<meta property="og:image:width" content="{{width}}" />
+<meta property="og:image:height" content="{{height}}" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:alt" content="Image From (the Hack-) Space" />
+{% endfor %}
+{% endblock extra_meta %}
+
 {% block main %}
 
 {% set base_path = paginator.base_url %}
