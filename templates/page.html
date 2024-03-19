@@ -29,7 +29,8 @@
             "@type": "Person",
             "name": "{{ page.author | default(value=config.author) }}",
             "url": "https://mainframe.io"
-        }]
+        }],
+        "description": {{ page.description | default(value=config.description) | json_encode | safe }}
     }
 </script>
 

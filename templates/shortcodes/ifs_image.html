@@ -10,3 +10,20 @@
      src="{{config.extra.ifs_base_path}}/.thumbs/1200-{{filename}}"
 />
 </a>
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "{{ config.extra.ifs_base_path ~ '/' ~ filename | json_encode | safe }}",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditText": "Image From (The Hack-) Space",
+        "creator": {
+            "@type": "Person",
+            "name": "{{ config.author }}",
+            "url": "https://mainframe.io"
+        },
+        "copyrightNotice": "{{ config.author }}"
+    }
+</script>
