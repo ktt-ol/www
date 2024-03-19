@@ -19,7 +19,7 @@ for image in ifs_images:
     image_id_str = str(image_id)
 
     frontmatter = '+++\n'
-    frontmatter += 'title = "Image From Space ' + image_id_str + '"\n'
+    frontmatter += 'title = "IFS ' + image_id_str + '"\n'
     frontmatter += 'weight = ' + str(ifs_count - image_id) + '\n'
     frontmatter += 'template = "ifs/ifs-single.html"\n'
     frontmatter += '[extra]\n'
@@ -27,6 +27,8 @@ for image in ifs_images:
     frontmatter += "\nwidth = " + str(image["width"])
     frontmatter += "\nheight = " + str(image["height"])
     frontmatter += "\nimage_id = " + image_id_str
+    frontmatter += '\nog_title = "IFS ' + image_id_str + '"'
+    frontmatter += '\nog_description = "Images From Space"'
     frontmatter += '\n+++\n'
 
     content = "\n"

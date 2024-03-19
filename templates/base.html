@@ -1,46 +1,52 @@
 <!DOCTYPE html>
 <html lang="{{lang}}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
 
-{% if lang == config.default_language %}
-{% set all_sections = get_section(path="_index.md", metadata_only=true) %}
-{% else %}
-{% set all_sections = get_section(path="_index." ~ lang ~ ".md", metadata_only=true) %}
-{% endif %}
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:site_name" content="{{ config.title }}" />
-    <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}' />
-    <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="de") }}' />
-    <meta property="og:locale:alternate" content='{{trans(key="locale_name", lang="en") }}' />
+    <meta property="og:site_name" content="{{ config.title }}"/>
+    <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}'/>
+    <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="de") }}'/>
+    <meta property="og:locale:alternate" content='{{trans(key="locale_name", lang="en") }}'/>
     {% if current_path %}
-    <meta property="og:url" content="https://mainframe.io{{ current_path }}" />
+    <meta property="og:url" content="https://mainframe.io{{ current_path }}"/>
     {% endif %}
-    <meta property="og:description" content='{{ trans(key="og_description", lang=lang) }}' />
-    <meta name="description" content="{{config.description}}">
-    <meta name="author" content="{{config.author}}">
+    <meta name="author" content="{{ page.author | default(value=config.author)}}">
 
     {% block extra_meta %}
     {% endblock extra_meta %}
 
-    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path=" rss.xml
-    ", trailing_slash=false) }}">
-
     {% if section.title %}
-    <title>{{ section.title }} | {{ config.title }}</title>
-    <meta property="og:title" content="{{ section.title }}" />
+
+    {% set title = section.extra.og_title | default(value=section.title ~ " | " ~ config.title) %}
+    {% set description = section.extra.og_description | default(value=config.description) %}
+
     {% elif page.title %}
-    <title>{{ page.title }} | {{ config.title }}</title>
-    <meta property="og:title" content="{{ page.title }}" />
+
+    {% set title = page.extra.og_title | default(value=page.title ~ " | " ~ config.title) %}
+    {% set description = page.extra.og_description | default(value=config.description) %}
+
     {% else %}
-    <title>{{ config.title }}</title>
+
+    {% set title = config.title %}
+    {% set description = config.description %}
+
     {% endif %}
+
+    {% include "structured-data.html" %}
+
+
+    <title>{{ title }}</title>
+    <meta name="description" content='{{ description }}'>
+    <meta property="og:description" content='{{ description }}'/>
+    <meta property="og:title" content='{{ title }}'/>
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/site.css">
 
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href='{{ get_url(path="rss.xml", trailing_slash=false) }}'>
 </head>
 
 <body class="vh-100 m-0 p-0">

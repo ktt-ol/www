@@ -1,3 +1,2 @@
 +++
-sort_by = "weight"
 +++

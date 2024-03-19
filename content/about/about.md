@@ -12,7 +12,7 @@ Auf [ca. 1200 Quadratmetern](https://map.mainframe.io) wird die nötige Infrastr
 
 Der Mainframe ist täglich ab spätestens 19:00 Uhr (häufig bereits früher) geöffnet und Besucher, insbesondere anderer Hackspaces, sind jederzeit willkommen.
 
-##### Über uns...
+##### Über uns ...
 Im Juli 2011 haben wir den gemeinnützigen Verein Kreativität trifft Technik gegründet und sich zum Ziel gesetzt, einen Hackspace, einen offenen Raum für Technikaffine und Kreativschaffende in Oldenburg zu errichten.
 
 Seit Anfang November 2011 haben wir es geschafft und haben einen Raum, den Mainframe. Hier treffen wir uns zum gemeinsamen Basteln und realisieren Projekte, wie z.B. 3D-Drucker und Styroporschneider. Alle zwei Wochen gibt es hier auch ein Vereinstreffen, in dem wir eine auf eine Stunde begrenzte Tagesordnung abarbeiten, die nächsten größeren Projekte planen, uns um Öffentlichkeitsarbeit und den allgemeinen Vereinsbetrieb regeln.

@@ -1,4 +1,5 @@
 +++
 title = "Spacewalk"
-weight = 20
+sort_by = "weight"
+render = false
 +++

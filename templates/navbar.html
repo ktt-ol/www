@@ -16,33 +16,30 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto">
-                        {% for subsectionPath in all_sections.subsections %}
-                        {% set subsection = get_section(path=subsectionPath) %}
 
-                        <li class="nav-item dropdown">
-                            <div class="nav-link dropdown-toggle" role="button" aria-expanded="false">
-                                {{ subsection.title }}
-                            </div>
-                            <ul class="dropdown-menu">
-                                {% for page in subsection.pages %}
-                                <li>
-                                    <a class="dropdown-item" href="{{page.path}}">
-                                        {{page.title}}
-                                    </a>
-                                </li>
-                                {% endfor %}
+                        {% set section_name = "about" %}
+                        {% include "navbar-pagelist.html" %}
 
-                                {% for subsubsectionPath in subsection.subsections %}
-                                {% set subsubsection = get_section(path=subsubsectionPath) %}
-                                <li>
-                                    <a class="dropdown-item" href="{{subsubsection.path}}">
-                                        {{subsubsection.title}}
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
+                        {% set section_name = "spacewalk" %}
+                        {% include "navbar-pagelist.html" %}
+
+                        {% set section_name = "images" %}
+                        {% include "navbar-pagelist.html" %}
+
+                        {% set section_name = "events" %}
+                        {% include "navbar-pagelist.html" %}
+
+                        {% if lang == config.default_language %}
+                        {% set section = get_section(path="blog/_index.md") %}
+                        {% else %}
+                        {% set section = get_section(path="blog/_index." ~ lang ~ ".md") %}
+                        {% endif %}
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{section.path}}">
+                                {{section.title}}
+                            </a>
                         </li>
-                        {% endfor %}
                     </ul>
 
                     <ul class="navbar-nav navbar-right">

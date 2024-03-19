@@ -1,4 +1,4 @@
 +++
 title = "Blog"
-weight = 60
+sort_by = "date"
 +++

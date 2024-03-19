@@ -1,4 +1,4 @@
 +++
 title = "Recurring Events"
-weight = 40
+weight = 20
 +++

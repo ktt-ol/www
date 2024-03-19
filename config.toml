@@ -3,7 +3,7 @@ base_url = "/"
 default_language = "de"
 
 title = "Kreativität trifft Technik e.V."
-description = ""
+description = "Website des Kreativität trifft Technik e.V."
 author = "KTT Webmaster"
 
 # Compilation settings
@@ -42,7 +42,6 @@ lazy_async_image = true
 language = "Sprache"
 not_found_content = "Dies sind nicht die Inhalte die ihr sucht!"
 not_found = "Inhalt nicht gefunden"
-og_description = "Website des Kreativität trifft Technik e.V."
 locale_name = "de_DE"
 
 [extra]
@@ -50,7 +49,7 @@ ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."
-description = ""
+description = "Website of Kreativität trifft Technik e.V."
 author = "KTT Webmaster"
 
 # Compilation settings
@@ -68,5 +67,4 @@ taxonomies = [
 language = "Language"
 not_found_content = "This is not the content you are looking for!"
 not_found = "Content not found"
-og_description = "Website of Kreativität trifft Technik e.V."
 locale_name = "en_US"

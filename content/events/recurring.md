@@ -1,4 +1,4 @@
 +++
 title = "Veranstaltungsreihen"
-weight = 40
+weight = 20
 +++

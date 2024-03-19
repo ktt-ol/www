@@ -5,10 +5,29 @@
 {% set height = 750 %}
 {% set width = page.extra.width * scaling %}
 
-<meta property="og:image" content="{{config.extra.ifs_base_path}}/.thumbs/750-{{page.extra.image_filename}}"/>
+<meta property="og:image" content="{{ config.extra.ifs_base_path}}/.thumbs/750-{{page.extra.image_filename}}"/>
+<meta property="og:image:secure_url" content="{{config.extra.ifs_base_path}}/.thumbs/750-{{page.extra.image_filename}}"/>
 <meta property="og:image:width" content="{{width}}" />
 <meta property="og:image:height" content="{{height}}" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:alt" content="Image From (the Hack-) Space" />
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "ImageObject",
+        "contentUrl": "{{config.extra.ifs_base_path | safe}}/{{page.extra.image_filename | safe}}",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditText": "Image From (The Hack-) Space",
+        "creator": {
+            "@type": "Person",
+            "name": "{{ config.author }}",
+            "url": "https://mainframe.io"
+        },
+        "copyrightNotice": "{{ config.author }}"
+    }
+</script>
+
 
 {% endblock extra_meta %}

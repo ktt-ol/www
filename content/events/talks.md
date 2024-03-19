@@ -1,4 +1,4 @@
 +++
 title = "Vorträge"
-weight = 20
+weight = 30
 +++

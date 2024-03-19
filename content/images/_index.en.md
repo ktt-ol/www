@@ -1,5 +1,4 @@
 +++
 title = "Images"
-sort_by = "weight"
-weight = 40
+render = false
 +++
