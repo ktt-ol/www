@@ -15,7 +15,7 @@
     {
         "@context": "https://schema.org/",
         "@type": "ImageObject",
-        "contentUrl": "{{ config.extra.ifs_base_path ~ '/' ~ filename | json_encode | safe }}",
+        "contentUrl": "{{ config.extra.ifs_base_path ~ '/' ~ filename | safe }}",
         "license": "https://creativecommons.org/licenses/by-sa/4.0/",
         "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
         "creditText": "Image From (The Hack-) Space",
