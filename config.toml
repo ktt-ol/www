@@ -4,7 +4,7 @@ default_language = "de"
 
 title = "Kreativität trifft Technik e.V."
 description = "Website des Kreativität trifft Technik e.V."
-author = "Erika Mustermann"
+author = "Markus Framer"
 
 # Compilation settings
 compile_sass = true
@@ -50,7 +50,6 @@ ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 [languages.en]
 title = "Kreativität trifft Technik e.V."
 description = "Website of Kreativität trifft Technik e.V."
-author = "John Doe"
 
 # Compilation settings
 compile_sass = true
