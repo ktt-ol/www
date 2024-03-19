@@ -16,7 +16,7 @@ body {
   background-color: rgba(var(--bs-danger-rgb), 1) !important;
 }
 
-@for $i from 3 through 6 {
+@for $i from 1 through 6 {
   .main-content > h#{$i} {
     color: var(--bs-primary);
     padding-bottom: 4px;
