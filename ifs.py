@@ -15,7 +15,7 @@ ifs_images = ifs_data["images"]
 ifs_count = len(ifs_images)
 total = 0
 for image in ifs_images:
-    image_id = int(image["filename"].split(".")[0]) + 1
+    image_id = int(image["filename"].split(".")[0])
     image_id_str = str(image_id)
     title = 'IFS ' + image_id_str
 
@@ -29,7 +29,7 @@ for image in ifs_images:
     frontmatter += "\nheight = " + str(image["height"])
     frontmatter += "\nimage_id = " + image_id_str
     frontmatter += '\nog_title = "' + title + '"'
-    frontmatter += '\nog_description = "Random image (Image From Space) from the hackspace oldenburg also known as Mainframe"'
+    frontmatter += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
     frontmatter += '\n+++\n'
 
     image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] +')'
@@ -41,18 +41,19 @@ for image in ifs_images:
     content += '[' + image_elem + '](' + ifs_image_path + '/' + image["filename"] + ')\n'
     content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 <= 0) + '") }}\n'
 
-    f = open(ifs_folder_all + "/" + image_id_str + ".md", "w")
-    f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "Alle Images From Space"))
-    f.close()
+    for i in range(1, 30):
+        f = open(ifs_folder_all + "/2024-03-0" + str(i).ljust(2, '0') + "-ifs" + image_id_str + ".md", "w")
+        f.write(frontmatter)
+        f.write(content.replace("%replace_with_text%", "Alle Images From Space" + str(i)))
+        f.close()
 
-    f = open(ifs_folder_all + "/" + image_id_str + ".en.md", "w")
-    f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "All Images From Space"))
-    f.close()
+        f = open(ifs_folder_all + "/2024-03-0" + str(i).ljust(2, '0') + "-ifs" + image_id_str + ".en.md", "w")
+        f.write(frontmatter)
+        f.write(content.replace("%replace_with_text%", "All Images From Space" + str(i)))
+        f.close()
+        total += 1
 
     print("IFS markdown page for " + image_id_str + " created")
 
-    total += 1
 
 print("Created a total of " + str(total) + " IFS markdown pages")
