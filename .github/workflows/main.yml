@@ -15,6 +15,12 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
+      - name: 'check links'
+        uses: shalzz/zola-deploy-action@v0.17.2
+        env:
+          CHECK_LINKS: true
+          BUILD_ONLY: true
+          BUILD_DIR: .
       - run: python ifs.py
         env:
           IFS_FOLDER: 'content/images/ifs'
@@ -22,7 +28,6 @@ jobs:
       - name: 'build and deploy'
         uses: shalzz/zola-deploy-action@v0.17.2
         env:
-          CHECK_LINKS: true
           PAGES_BRANCH: master
           BUILD_DIR: .
           TOKEN: ${{ secrets.TOKEN }}
