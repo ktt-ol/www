@@ -3,6 +3,18 @@
 
 {% block extra_meta %}
 <meta property="og:type" content="article" />
+{% for page in paginator.pages %}
+{% set page_data = get_page(path=page.relative_path) %}
+
+{{
+self::sd_image(
+image_url=config.extra.ifs_base_path ~ "/" ~ page_data.extra.image_filename,
+author=config.author,
+title="IFS"
+)
+}}
+
+{% endfor %}
 {% endblock extra_meta %}
 
 {% block main %}

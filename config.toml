@@ -46,6 +46,7 @@ locale_name = "de_DE"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
+resource_base = "https://ktt-ol.github.io"
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."

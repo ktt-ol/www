@@ -1,14 +1,43 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
 
 {% block extra_meta %}
-
-
-{% if page.extra.thumbnail and page.taxonomies.topics and page.components[1] and page.updated and page.date %}
 <meta property="og:type" content='article' />
 
+{% if page.extra.thumbnail %}
+{% set thumbnail_url = config.extra.resource_base ~ "/" ~ page.extra.thumbnail %}
+{% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
+{% set thumbnail_author = page.author | default(value=config.author) %}
+{% set thumbnail_title = page.title | default(value=config.title) %}
+
+{{
+self::sd_image(
+image_url=thumbnail_url,
+author=thumbnail_author,
+title=thumbnail_title
+)
+}}
+
+{{
+self::og_image(
+image_url=thumbnail_url,
+width=thumbnail_metadata.width,
+height=thumbnail_metadata.height,
+author=thumbnail_author,
+title=thumbnail_title,
+content_type=thumbnail_metadata.format
+)
+}}
+
+{% endif %}
+
+{% if page.taxonomies.topics %}
 {% for topic in page.taxonomies.topics %}
 <meta name="article:tag" content="{{ topic }}">
 {% endfor %}
+{% endif %}
+
+{% if page.extra.thumbnail and page.components[1] and page.updated and page.date %}
 
 <meta name="article:author" content="{{ page.author | default(value=config.author)}}">
 <meta name="article:section" content="{{ page.components[1] }}">
@@ -19,16 +48,16 @@
     {
         "@context": "https://schema.org",
         "@type": "NewsArticle",
-        "headline": "{{ page.title }}",
+        "headline": {{ page.title | json_encode | safe }},
         "image": [
-          {{ "https://mainframe.io" ~ page.extra.thumbnail | json_encode | safe }}
+          {{ thumbnail_url | json_encode | safe }}
         ],
         "datePublished": "{{ page.date }}",
         "dateModified": "{{ page.updated }}",
         "author": [{
             "@type": "Person",
-            "name": "{{ page.author | default(value=config.author) }}",
-            "url": "https://mainframe.io"
+            "name": {{ page.author | default(value=config.author) | json_encode | safe }},
+            "url": {{ config.extra.resource_base | json_encode | safe }}
         }],
         "description": {{ page.description | default(value=config.description) | json_encode | safe }}
     }

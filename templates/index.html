@@ -1,4 +1,21 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+
+{% block extra_meta %}
+{% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "/meta-first.json", format="json") %}
+{% for i in range(end=5) %}
+
+{{
+self::sd_image(
+image_url=config.extra.ifs_base_path ~ "/" ~ ifs_data.images[i].filename,
+author=config.author,
+title="IFS"
+)
+}}
+
+{% endfor %}
+{% endblock extra_meta %}
 
 {% block content %}
 
@@ -13,7 +30,6 @@
     <div class="row">
         <div class="col">
             <div id="ifs-carousel" class="carousel slide mh-500" data-bs-ride="carousel">
-                {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "/meta-first.json", format="json") %}
                 {% for i in range(end=5) %}
                 <div class="carousel-inner p-2">
                     <div class="carousel-item text-center {% if i == 0 %} active {%endif%}">
