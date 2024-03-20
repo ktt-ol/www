@@ -17,9 +17,10 @@ total = 0
 for image in ifs_images:
     image_id = int(image["filename"].split(".")[0]) + 1
     image_id_str = str(image_id)
+    title = 'IFS ' + image_id_str
 
     frontmatter = '+++\n'
-    frontmatter += 'title = "IFS ' + image_id_str + '"\n'
+    frontmatter += 'title = "' + title + '"\n'
     frontmatter += 'weight = ' + str(ifs_count - image_id) + '\n'
     frontmatter += 'template = "ifs/ifs-single.html"\n'
     frontmatter += '[extra]\n'
@@ -27,16 +28,18 @@ for image in ifs_images:
     frontmatter += "\nwidth = " + str(image["width"])
     frontmatter += "\nheight = " + str(image["height"])
     frontmatter += "\nimage_id = " + image_id_str
-    frontmatter += '\nog_title = "IFS ' + image_id_str + '"'
-    frontmatter += '\nog_description = "Images From Space"'
+    frontmatter += '\nog_title = "' + title + '"'
+    frontmatter += '\nog_description = "Random image (Image From Space) from the hackspace oldenburg also known as Mainframe"'
     frontmatter += '\n+++\n'
 
+    image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] +')'
+
     content = "\n"
-    content += "\n#### Image From Space " + image_id_str + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/") }}'
+    content += "\n#### " + title + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/") }}'
     content += "\n"
-    content += '{{ button(text="<<", location="/images/ifs/all/' + str(image_id + 1) + '", disabled="' + str(image_id + 1 >= (ifs_count)) + '") }}'
-    content += '{{ ifs_image(filename="' + image["filename"] + '", height=' + str(image["height"]) + ', width=' + str(image["width"]) + ') }}'
-    content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 <= 0) + '") }}'
+    content += '{{ button(text="<<", location="/images/ifs/all/' + str(image_id + 1) + '", disabled="' + str(image_id + 1 >= (ifs_count)) + '") }}\n'
+    content += '[' + image_elem + '](' + ifs_image_path + '/' + image["filename"] + ')\n'
+    content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 <= 0) + '") }}\n'
 
     f = open(ifs_folder_all + "/" + image_id_str + ".md", "w")
     f.write(frontmatter)

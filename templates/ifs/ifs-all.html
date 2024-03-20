@@ -1,40 +1,21 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
 
 {% block extra_meta %}
 <meta property="og:type" content="article" />
-
-{% for page in paginator.pages %}
-{% set page_data = get_page(path=page.relative_path) %}
-
-{% set scaling = 750 / page_data.extra.height %}
-{% set height = 750 %}
-
-{% set width = page_data.extra.width * scaling %}
-
-<meta property="og:image" content="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
-<meta property="og:image:secure_url" content="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
-<meta property="og:image:width" content="{{width}}" />
-<meta property="og:image:height" content="{{height}}" />
-<meta property="og:image:type" content="image/jpeg" />
-<meta property="og:image:alt" content="Image From (the Hack-) Space" />
-
-{% endfor %}
 {% endblock extra_meta %}
 
 {% block main %}
 
 {% set base_path = paginator.base_url %}
-
 {% include "ifs/ifs-pagination.html" %}
 
 <div class="image-gallery">
     {% for page in paginator.pages %}
 
     {% set page_data = get_page(path=page.relative_path) %}
-
     {% set scaling = 200 / page_data.extra.height %}
     {% set height = 200 %}
-
     {% set width = page_data.extra.width * scaling %}
     
     <a href="{{page_data.path}}" style="height: {{height}}px; width: {{width}}px;">
@@ -43,22 +24,7 @@
              decoding="async"
              src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
     </a>
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org/",
-            "@type": "ImageObject",
-            "contentUrl": "{{ config.extra.ifs_base_path ~ '/' ~ page_data.extra.image_filename | safe }}",
-            "license": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
-            "creditText": "Image From (The Hack-) Space",
-            "creator": {
-                "@type": "Person",
-                "name": "{{ config.author }}",
-                "url": "https://mainframe.io"
-            },
-            "copyrightNotice": "{{ config.author }}"
-        }
-    </script>
+    
     {% endfor %}
 </div>
 
