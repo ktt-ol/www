@@ -43,6 +43,7 @@ language = "Sprache"
 not_found_content = "Dies sind nicht die Inhalte die ihr sucht!"
 not_found = "Inhalt nicht gefunden"
 locale_name = "de_DE"
+publish_time = "veröffentlicht am %date% um %time% Uhr von %author%"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
@@ -68,3 +69,4 @@ language = "Language"
 not_found_content = "This is not the content you are looking for!"
 not_found = "Content not found"
 locale_name = "en_US"
+publish_time = "published on %date% at %time% by %author%"

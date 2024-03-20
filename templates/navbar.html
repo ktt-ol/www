@@ -30,14 +30,14 @@
                         {% include "navbar-pagelist.html" %}
 
                         {% if lang == config.default_language %}
-                        {% set section = get_section(path="blog/_index.md") %}
+                        {% set blog_section = get_section(path="blog/_index.md") %}
                         {% else %}
-                        {% set section = get_section(path="blog/_index." ~ lang ~ ".md") %}
+                        {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md") %}
                         {% endif %}
 
                         <li class="nav-item">
-                            <a class="nav-link" href="{{section.path}}">
-                                {{section.title}}
+                            <a class="nav-link" href="{{blog_section.path}}">
+                                {{blog_section.title}}
                             </a>
                         </li>
                     </ul>

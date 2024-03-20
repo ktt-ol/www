@@ -1,7 +1,7 @@
 +++
 title = "Workshop-Wochenende zum Abschluss von Fabulé"
-date = "2017-02-02T00:00:00"
-updated = "2023-03-19T00:00:00"
+date = "2017-02-02T23:42:00"
+updated = "2023-03-19T23:42:00"
 description = "Am 4. und 5. Februar beenden wir das von der Metropolregion Nordwest geförderte Projekt Fabulé mit einem großen Workshop-Wochenende."
 
 [taxonomies]

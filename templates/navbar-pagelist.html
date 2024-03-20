@@ -1,15 +1,15 @@
 {% if lang == config.default_language %}
-{% set section = get_section(path=section_name ~ "/_index.md") %}
+{% set index_section = get_section(path=section_name ~ "/_index.md") %}
 {% else %}
-{% set section = get_section(path=section_name ~ "/_index." ~ lang ~ ".md") %}
+{% set index_section = get_section(path=section_name ~ "/_index." ~ lang ~ ".md") %}
 {% endif %}
 
 <li class="nav-item dropdown">
     <div class="nav-link dropdown-toggle" role="button" aria-expanded="false">
-        {{ section.title }}
+        {{ index_section.title }}
     </div>
     <ul class="dropdown-menu">
-        {% for page in section.pages %}
+        {% for page in index_section.pages %}
         <li>
             <a class="dropdown-item" href="{{page.path}}">
                 {{page.title}}
@@ -17,7 +17,7 @@
         </li>
         {% endfor %}
 
-        {% for subsectionPath in section.subsections %}
+        {% for subsectionPath in index_section.subsections %}
         {% set subsection = get_section(path=subsectionPath) %}
         <li>
             <a class="dropdown-item" href="{{subsection.path}}">

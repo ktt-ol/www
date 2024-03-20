@@ -17,6 +17,29 @@
 </script>
 {% endmacro %}
 
+{% macro sd_article(title, image_url, created, updated, author, description) %}
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "NewsArticle",
+        "headline": "{{ title }}",
+        "image": [
+            "{{ image_url | safe }}"
+        ],
+        "datePublished": "{{ created }}",
+        "dateModified": "{{ updated }}",
+        "author": [
+            {
+                "@type": "Person",
+                "name": "{{ author }}",
+                "url": "{{ config.extra.resource_base | safe }}"
+            }
+        ],
+        "description": "{{ description }}"
+    }
+</script>
+{% endmacro %}
+
 {% macro og_image(image_url, width, height, title, author, content_type) %}
 
 <meta property="og:image" content="{{ image_url | safe }}"/>
@@ -37,6 +60,13 @@
 
 <meta property="og:image:alt" content="{{ title }}"/>
 <meta property="twitter:title" content="{{ title }}"/>
+{% endmacro %}
+
+{% macro og_article(author, section, created, updated) %}
+<meta name="article:author" content="{{ author }}">
+<meta name="article:section" content="{{ section }}">
+<meta name="article:modified_time" content="{{ updated }}"/>
+<meta name="article:published_time" content="{{ created }}"/>
 {% endmacro %}
 
 {% macro ifs_metadata(image_filename, width, height, title, preview_size=750) %}
@@ -60,4 +90,76 @@ content_type="image/jpeg"
 
 {{ self::sd_image(image_url=image_url, title=title, author=config.author) }}
 
+{% endmacro %}
+
+{% macro blog_list(pages, count) %}
+
+<div class="container-fluid">
+    {% for i in range(end=count) %}
+    {% set blog_page = pages[i] %}
+    <a style=""
+       href="{{ blog_page.path }}"
+       class="row text-reset text-decoration-none py-2 border-bottom">
+
+        {% if blog_page.extra.thumbnail %}
+
+        {% set thumbnail_url = config.extra.resource_base ~ "/" ~ blog_page.extra.thumbnail %}
+        {% set thumbnail_metadata = get_image_metadata(path=blog_page.extra.thumbnail) %}
+        {% set page_author = blog_page.author | default(value=config.author) %}
+        {% set page_title = blog_page.title | default(value="") %}
+        {% set page_description = blog_page.description | default(value="") %}
+
+        {{
+        self::sd_image(
+        image_url=thumbnail_url,
+        author=page_author,
+        title=page_title
+        )
+        }}
+
+        {{
+        macros::sd_article(
+        title=page_title,
+        image_url=thumbnail_url,
+        created=blog_page.date,
+        updated=blog_page.updated,
+        author=page_author,
+        description=page_description
+        )
+        }}
+
+        <div class="h-100 col-sm-3 text-center">
+            <img alt="Thumbnail Image for {{ page_title }}"
+                 src="{{ thumbnail_url }}"
+                 decoding="async"
+                 loading="lazy"
+                 style="height: 150px; max-height: 150px; max-width: 150px;"
+            />
+        </div>
+        <div class="h-100 col-sm-9 my-1 d-flex flex-column">
+            <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
+                {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
+                {% set time_str = blog_page.date | date(format="%H:%M") %}
+
+                {% set lang_str = trans(key="publish_time", lang=lang) %}
+                {% set lang_str = lang_str | replace(from="%date%", to=date_str) %}
+                {% set lang_str = lang_str | replace(from="%time%", to=time_str) %}
+                {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
+                {{ lang_str }}
+            </p>
+            <h3 class="text-primary mb-1 ps-0 border-bottom-0 text-truncate">
+                {{ page_title }}
+            </h3>
+            <p class="m-0">
+                {{ page_description }}
+            </p>
+        </div>
+        {% else %}
+        <div>
+            <!-- TODO: Render blog pages without thumbnail -->
+        </div>
+        {% endif %}
+    </a>
+    {% endfor %}
+</div>
 {% endmacro %}
