@@ -1,6 +1,8 @@
 {% extends "base.html" %}
 
 {% block extra_meta %}
+<meta property="og:type" content="article" />
+
 {% for page in paginator.pages %}
 {% set page_data = get_page(path=page.relative_path) %}
 
@@ -15,6 +17,7 @@
 <meta property="og:image:height" content="{{height}}" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:alt" content="Image From (the Hack-) Space" />
+
 {% endfor %}
 {% endblock extra_meta %}
 
