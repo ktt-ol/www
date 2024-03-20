@@ -41,17 +41,17 @@ for image in ifs_images:
     content += '[' + image_elem + '](' + ifs_image_path + '/' + image["filename"] + ')\n'
     content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 <= 0) + '") }}\n'
 
-    for i in range(1, 30):
-        f = open(ifs_folder_all + "/2024-03-0" + str(i).ljust(2, '0') + "-ifs" + image_id_str + ".md", "w")
-        f.write(frontmatter)
-        f.write(content.replace("%replace_with_text%", "Alle Images From Space" + str(i)))
-        f.close()
+    f = open(ifs_folder_all + "/" + image_id_str + ".md", "w")
+    f.write(frontmatter)
+    f.write(content.replace("%replace_with_text%", "Alle Images From Space"))
+    f.close()
 
-        f = open(ifs_folder_all + "/2024-03-0" + str(i).ljust(2, '0') + "-ifs" + image_id_str + ".en.md", "w")
-        f.write(frontmatter)
-        f.write(content.replace("%replace_with_text%", "All Images From Space" + str(i)))
-        f.close()
-        total += 1
+    f = open(ifs_folder_all + "/" + image_id_str + ".en.md", "w")
+    f.write(frontmatter)
+    f.write(content.replace("%replace_with_text%", "All Images From Space"))
+    f.close()
+
+    total += 1
 
     print("IFS markdown page for " + image_id_str + " created")
 
