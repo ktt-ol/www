@@ -3,7 +3,7 @@
 {% set scaling = preview_size / height %}
 {% set scaled_height = preview_size | round(precision=2) %}
 {% set scaled_width = (width * scaling) | round(precision=2) %}
-{% set image_url = config.extra.ifs_base_path ~ "/.thumbs/" ~ scaled_height ~ "-" ~ image_filename %}
+{% set image_url = config.extra.ifs_base_path ~ "/.thumbs/" ~ preview_size ~ "-" ~ image_filename %}
 
 <meta property="og:type" content="article" />
 
