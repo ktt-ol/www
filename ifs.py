@@ -72,6 +72,7 @@ for image in ifs_images:
     frontmatter += "\nwidth = " + str(image["width"])
     frontmatter += "\nheight = " + str(image["height"])
     frontmatter += "\nimage_id = " + image_id_str
+    frontmatter += "\nimage_year = " + year
     frontmatter += '\nog_title = "' + title + '"'
     frontmatter += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
     frontmatter += '\n+++\n'
