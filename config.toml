@@ -49,7 +49,7 @@ all = "Alle"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
-resource_base = "http://127.0.0.1:1111"
+resource_base = "https://ktt-ol.github.io"
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."
