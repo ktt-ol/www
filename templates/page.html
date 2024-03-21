@@ -6,7 +6,7 @@
 
 {% if page.extra.thumbnail %}
 
-{% set thumbnail_url = config.extra.resource_base ~ "/" ~ page.extra.thumbnail %}
+{% set thumbnail_url = config.extra.resource_base ~ page.extra.thumbnail %}
 {% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
 {% set thumbnail_author = page.author | default(value=config.author) %}
 {% set thumbnail_title = page.title | default(value=config.title) %}
@@ -31,6 +31,8 @@ card="summary"
 )
 }}
 
+{% else %}
+{% set thumbnail_url = "" %}
 {% endif %}
 
 {% if page.taxonomies.topics %}
@@ -56,7 +58,7 @@ updated=page.updated
 {{
 macros::sd_article(
 title=page.title | default(value=config.title),
-image_url=config.extra.resource_base ~ "/" ~ page.extra.thumbnail | default(value=""),
+image_url=thumbnail_url | default(value=""),
 created=page.date,
 updated=page.updated,
 author=page_author,
