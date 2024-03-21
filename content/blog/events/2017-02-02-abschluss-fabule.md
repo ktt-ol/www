@@ -11,7 +11,6 @@ topics = ["???"]
 thumbnail = "/media/img/logo-ktt.png"
 +++
 
-#### Workshop-Wochenende zum Abschluss von Fabulé
 Am 4. und 5. Februar beenden wir das von der Metropolregion Nordwest
 geförderte Projekt Fabulé mit einem großen Workshop-Wochenende.
 

@@ -36,12 +36,14 @@ for image in ifs_images:
             os.mkdir(ifs_year_folder)
             
         frontmatter = '+++\n'
-        frontmatter += 'title = "' + year + '"\n'
+        frontmatter += 'title = "Images From Space ' + year + '"\n'
         frontmatter += 'sort_by = "weight"\n'
         frontmatter += 'template = "ifs/ifs-all.html"\n'
         frontmatter += 'paginate_by = 100\n'
         frontmatter += 'weight = ' + year + '\n'
         frontmatter += 'transparent = true\n'
+        frontmatter += '[extra]\n'
+        frontmatter += 'year = ' + year + '\n'
         frontmatter += '+++\n'
 
         f = open(ifs_year_folder + "/_index.md", "w")
@@ -76,19 +78,12 @@ for image in ifs_images:
 
     image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] +')'
 
-    content = "\n"
-    content += "\n#### " + title + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/' + year + '") }}'
-    content += "\n"
-    content += '[' + image_elem + '](' + ifs_image_path + '/' + image["filename"] + ')\n'
-
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".md", "w")
     f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "Alle Images From Space aus " + year))
     f.close()
 
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".en.md", "w")
     f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "All Images From Space from " + year))
     f.close()
 
     total += 1

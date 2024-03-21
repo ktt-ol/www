@@ -3,7 +3,47 @@
 
 {% block extra_meta %}
 
-<meta property="og:type" content="article" />
+<meta property="og:type" content="article"/>
 {{ macros::ifs_metadata(image_filename=page.extra.image_filename, width=page.extra.width, title=page.title, height=page.extra.height) }}
 
 {% endblock extra_meta %}
+
+{% block content %}
+
+<h4 class="d-flex justify-content-between">
+    {{ page.title }}
+    <a class="btn btn-secondary btn-sm" href="{{ page.path }}..">
+        Images From Space {{ page.components[3] }}
+    </a>
+</h4>
+
+<div class="d-flex justify-content-around">
+
+    {% if page.lower %}
+    <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.lower.path }}">
+        <<
+    </a>
+    {% endif %}
+
+    <a target="_blank"
+       href="{{config.extra.ifs_base_path}}/{{page.extra.image_filename}}">
+        <img alt=""
+             class="mx-auto"
+             style="width: 750px;"
+             loading="lazy"
+             decoding="async"
+             src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page.extra.image_filename}}"
+        />
+    </a>
+
+    {% if page.higher %}
+    <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.higher.path }}">
+        >>
+    </a>
+    {% endif %}
+
+</div>
+
+{{ page.content | safe }}
+
+{% endblock content %}

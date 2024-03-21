@@ -4,6 +4,8 @@
 {% block extra_meta %}
 <meta property="og:type" content="article" />
 
+{% if paginator.pages | length > 0 %}
+
 {{
 macros::sd_article(
 title=section.title,
@@ -35,19 +37,21 @@ title=page_data.title
 }}
 
 {% endfor %}
+
+{% endif %}
 {% endblock extra_meta %}
 
 {% block main %}
 
 {% set base_path = paginator.base_url %}
 
-{% include "ifs/ifs-pagination.html" %}
-
-<h4 class="my-2 mt-3 pb-2 border-bottom text-primary border-primary d-flex justify-content-between">
-    Images From Space {{ section.title }}
+<h4 class="d-flex justify-content-between">
+    {{ section.title }}
 
     <a class="btn btn-secondary btn-sm" href="{{ section.path ~ '..' }}">{{trans(key="all", lang=lang)}}</a>
 </h4>
+
+{% include "ifs/ifs-pagination.html" %}
 
 <div class="image-gallery">
     {% for page in paginator.pages %}
@@ -59,7 +63,7 @@ title=page_data.title
     
     <a href="{{page_data.path}}" style="height: {{height}}px; width: {{width}}px;">
         <img alt=""
-             loading="lazy" 
+             loading="lazy"
              decoding="async"
              src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
     </a>

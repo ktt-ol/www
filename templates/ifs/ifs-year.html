@@ -8,6 +8,7 @@
 {% set all_section = get_section(path="images/ifs/all/_index.md") %}
 
 {% set latest_page = all_section.pages | first %}
+{% if latest_page %}
 {% set latest_page_data = get_page(path=latest_page.relative_path) %}
 
 {{
@@ -29,6 +30,7 @@ created="2012-01-01T23:42",
 updated=latest_page_data.date
 )
 }}
+{% endif %}
 
 {% endblock extra_meta %}
 
@@ -58,7 +60,7 @@ updated=latest_page_data.date
              src="{{ config.extra.ifs_base_path }}/.thumbs/750-{{ latest_page.extra.image_filename }}"/>
         <h3 class="float-start m-0 py-1 px-2 d-inline-flex text-white border-0 position-relative"
             style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
-            {{subsection_data.title}}
+            {{subsection_data.extra.year}}
         </h3>
     </a>
     {% endfor %}

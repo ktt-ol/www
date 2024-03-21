@@ -2,7 +2,7 @@
 {% import "macros.html" as macros %}
 
 {% block extra_meta %}
-<meta property="og:type" content='article' />
+<meta property="og:type" content='article'/>
 
 {% if page.extra.thumbnail %}
 
@@ -67,3 +67,11 @@ description=page.description | default(value=config.description)
 {% endif %}
 
 {% endblock extra_meta %}
+
+{% block content %}
+<h4>
+    {{page.title}}
+</h4>
+{{ page.content | safe }}
+
+{% endblock content %}
