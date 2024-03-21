@@ -11,7 +11,14 @@
     {% if current_path %}
     <meta property="og:url" content="https://mainframe.io{{ current_path }}"/>
     {% endif %}
-    <meta name="author" content="{{ page.author | default(value=config.author)}}">
+
+    {% if page.authors %}
+    {% set page_author = page.authors | join(sep=", ") %}
+    {% else %}
+    {% set page_author = config.author %}
+    {% endif %}
+
+    <meta name="author" content="{{ page_author }}">
 
     {% block extra_meta %}
     <meta property="og:type" content="website" />

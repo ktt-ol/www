@@ -8,7 +8,7 @@
 
 {% set thumbnail_url = config.extra.resource_base ~ page.extra.thumbnail %}
 {% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
-{% set thumbnail_author = page.author | default(value=config.author) %}
+{% set thumbnail_author = page_author %}
 {% set thumbnail_title = page.title | default(value=config.title) %}
 
 {{
@@ -42,8 +42,6 @@ card="summary"
 {% endif %}
 
 {% if page.date and page.updated %}
-
-{% set page_author = page.author | default(value=config.author) %}
 
 {{
 macros::og_article(
