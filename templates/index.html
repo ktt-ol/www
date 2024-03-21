@@ -36,7 +36,19 @@ title="IFS"
                         {% set filename = ifs_data.images[i].filename %}
                         {% set width = ifs_data.images[i].width %}
                         {% set height = ifs_data.images[i].height %}
-                        {% include "shortcodes/ifs_image.html" %}
+                        
+                        {% set scaling = 750 / width %}
+                        {% set height = height * scaling %}
+
+                        <a target="_blank" class="text-decoration-none" href="{{config.extra.ifs_base_path}}/{{filename}}">
+                            <img class="object-fit-contain"
+                                 alt=""
+                                 loading="lazy"
+                                 decoding="async"
+                                 style="max-height: {{height}}px; width: {{width}}px;"
+                                 src="{{config.extra.ifs_base_path}}/.thumbs/1200-{{filename}}"
+                            />
+                        </a>
                     </div>
                 </div>
                 <!--<button class="carousel-control-prev" type="button" data-bs-target="#ifs-carousel" data-bs-slide="prev">

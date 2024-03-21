@@ -14,7 +14,8 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "topics", feed = true}
+    {name = "topics", feed = true},
+    {name = "event", feed = true}
 ]
 
 [link_checker]
@@ -62,7 +63,8 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "topics", feed = true}
+    {name = "topics", feed = true},
+    {name = "event", feed = true}
 ]
 
 [languages.en.translations]
