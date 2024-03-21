@@ -7,7 +7,7 @@
 {% endif %}
 
 {% if not location %}
-<button type="button" class="mb-2 mx-2 btn btn-{{color}} {% if disabled %}disabled{%endif%}">{{ text }}</button>
+<button type="button" class="btn-sm mb-2 mx-2 btn btn-{{color}} {% if disabled %}disabled{%endif%}">{{ text }}</button>
 {% else %}
-<a class="mx-2 mb-2 btn btn-{{ color }} {% if disabled %}disabled{%endif%}" href="{{location}}" role="button">{{ text }}</a>
+<a class="btn btn-sm btn-{{ color }} {% if disabled %}disabled{%endif%}" href="{{location}}" role="button">{{ text }}</a>
 {% endif %}

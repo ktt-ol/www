@@ -43,8 +43,10 @@ title=page_data.title
 
 {% include "ifs/ifs-pagination.html" %}
 
-<h4 class="my-2 border-bottom text-primary border-primary">
+<h4 class="my-2 mt-3 pb-2 border-bottom text-primary border-primary d-flex justify-content-between">
     Images From Space {{ section.title }}
+
+    <a class="btn btn-secondary btn-sm" href="{{ section.path ~ '..' }}">{{trans(key="all", lang=lang)}}</a>
 </h4>
 
 <div class="image-gallery">
