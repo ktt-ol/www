@@ -5,7 +5,7 @@ updated = "2024-03-21T23:42:00"
 description = "In Oldenburg gibt es jetzt ein CoderDojo für Kinder und Jugendliche zwischen 7 und 17 Jahren"
 
 [taxonomies]
-topics = ["CoderDojo", "Programmieren", "Kinder", "Jugendliche", "Mentor", "Dojo", "Veranstaltungen", "Teilnahme", "Sponsor", "Technologie"]
+topics = ["CoderDojo", "Programmieren", "Fähigkeit", "Kinder", "Jugendliche", "Globale Bewegung", "Mentoren", "Projekte", "Workshops", "Laptop", "Mikrocontroller", "Anmeldung", "Termine", "Location", "Unterstützung", "Mentor", "Sponsor", "Anmeldungen", "Kontakt", "Technik"]
 series =  ["CoderDojo"]
 
 [extra]
@@ -22,7 +22,7 @@ laufen.
 ##### Unsere Mission
 
 CoderDojo ist eine globale Bewegung basierend auf einer Gemeinschaft aus Freiwilligen, die Programmierclubs für Kinder
-und Jugendliche organisiert. Mehr Infos über die globale Bewegung unter [CoderDojo.com](https://coderdojo.com/).
+und Jugendliche organisiert. Mehr Informationen über die globale Bewegung unter [CoderDojo.com](https://coderdojo.com/).
 
 ##### Unsere Vision
 
@@ -32,7 +32,7 @@ und ihre Fähigkeiten in einer ungezwungenen Atmosphäre auszutesten.
 ###### Was ist ein CoderDojo?
 
 Dojo ist ein Begriff, der ursprünglich einen Trainingsraum für japanische Kampfkunst umschreibt. In einem CoderDojo geht
-es allerding um das Trainieren von Programmierfähigkeiten. Der Fokus eines Dojos ist, dass Kinder und Jugendliche
+es allerdings um das Trainieren von Programmierfähigkeiten. Der Fokus eines Dojos ist, dass Kinder und Jugendliche
 voneinander und gemeinsam lernen und auf fundiertes Wissen von Mentoren zurückgreifen können. Ein CoderDojo ist kein
 Kurs und folgt demnach keinem Lehrplan. Kinder und Jugendliche sollen ermutigt werden eigene Projekte zu starten und
 selbständig zu lernen.
