@@ -3,7 +3,6 @@ title = "Vereinsgeschichte"
 weight = 80
 +++
 
-##### Vereinsgeschichte
 Das allererste Treffen, welches zur Gründung eines Hackspaces führen sollte, fand Anfang 2011 im Marvin's statt. Nachdem unerwartet viele Leute zu dem kurzfristig geplanten Termin gekommen sind, wurde ein regelmäßiger wöchentlicher Termin vereinbart.
 
 Im Juli 2011 wurde schließlich der gemeinnützige Verein Kreativität trifft Technik gegründet, welcher als Trägerverein für den Hackspace dienen soll. Da zunächst noch Räumlichkeiten fehlten, fanden die regelmäßigen Treffen weiterhin im Marvin's, als auch im Beppo statt.

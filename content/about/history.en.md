@@ -3,7 +3,6 @@ title = "History"
 weight = 80
 +++
 
-##### History
 The very first meeting that was to lead to the founding of a hackspace took place at Marvin's at the beginning of 2011. After an unexpectedly large number of people came to the meeting planned at short notice, a regular weekly meeting was arranged.
 
 In July 2011, the non-profit association Kreativität trifft Technik (Creativity Meets Technology) was finally founded to serve as the supporting association for the hackspace. As there was initially still a lack of premises, the regular meetings continued to take place at Marvin's and/or Beppo.

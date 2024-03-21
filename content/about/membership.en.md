@@ -3,7 +3,6 @@ title = "Membership"
 weight = 30
 +++
 
-##### Membership
 The regular membership is only possible for natural persons. The monthly fee is 25€ or 10€ reduced (e.g. for students). In addtion it's possible to support the registered association with a monthly donation. Apart from that legal persons and natural persons can become a supporting member (without voting rights) for a monthly fee of at least 5€.
 
 The association can provide an accumulative donation receipt for the total amount of money transfered in a year.
