@@ -3,6 +3,26 @@
 
 {% block extra_meta %}
 <meta property="og:type" content="article" />
+
+{{
+macros::sd_article(
+title=section.title,
+image_url=config.extra.resource_base ~ "/media/img/mainframe-logo.svg",
+created="2012-01-01T23:42",
+updated=paginator.pages[0].date,
+author=config.author,
+description=section.description | default(value="")
+)
+}}
+
+{{
+macros::og_article(
+author=config.author, 
+section="Images From Space",
+created="2012-01-01T23:42", 
+updated=paginator.pages[0].date)
+}}
+
 {% for page in paginator.pages %}
 {% set page_data = get_page(path=page.relative_path) %}
 
@@ -10,7 +30,7 @@
 self::sd_image(
 image_url=config.extra.ifs_base_path ~ "/" ~ page_data.extra.image_filename,
 author=config.author,
-title="IFS"
+title=page_data.title
 )
 }}
 
@@ -20,11 +40,12 @@ title="IFS"
 {% block main %}
 
 {% set base_path = paginator.base_url %}
+
 {% include "ifs/ifs-pagination.html" %}
 
 <div class="image-gallery">
     {% for page in paginator.pages %}
-
+    
     {% set page_data = get_page(path=page.relative_path) %}
     {% set scaling = 200 / page_data.extra.height %}
     {% set height = 200 %}

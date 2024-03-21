@@ -1,3 +1,4 @@
+{% if paginator.number_pagers > 1 %}
 <ul class="pagination pagination-sm justify-content-center my-2 mx-auto">
     <li class="page-item">
         <a class="text-center page-link {% if not paginator.previous %}disabled{% endif %}" href="{{ paginator.previous }}" style="width: 3em;">
@@ -52,3 +53,4 @@
         </a>
     </li>
 </ul>
+{% endif %}

@@ -1,6 +1,5 @@
 +++
 title = "Images From Space"
-weight = 10
-sort_by = "weight"
-redirect_to = "/images/ifs/all/"
+template = "ifs/ifs-year.html"
+description = "Liste aller Images From Space nach Jahr gruppiert"
 +++

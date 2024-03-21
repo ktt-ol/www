@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+
+{% block extra_meta %}
+<meta property="og:type" content="article" />
+
+{% set all_section = get_section(path="images/ifs/all/_index.md") %}
+
+{% set latest_page = all_section.pages | first %}
+{% set latest_page_data = get_page(path=latest_page.relative_path) %}
+
+{{ 
+macros::sd_article(
+title=section.title, 
+image_url=config.extra.resource_base ~ "/media/img/mainframe-logo.svg",
+created="2012-01-01T23:42",
+updated=latest_page_data.date, 
+author=config.author, 
+description=section.description
+)
+}}
+
+{{
+macros::og_article(
+author=config.author,
+section="Images From Space",
+created="2012-01-01T23:42",
+updated=latest_page_data.date
+)
+}}
+
+{% endblock extra_meta %}
+
+{% block content %}
+{% set all_section = get_section(path="images/ifs/all/_index.md") %}
+
+{% for subsection in all_section.subsections | reverse %}
+{% set subsection_data = get_section(path=subsection) %}
+{% set latest_page = subsection_data.pages | first %}
+
+<div class="d-flex">
+    <a class="shadow m-2" href="{{subsection_data.path}}">
+        <h5>
+            {{ subsection_data.title }}
+        </h5>
+        <img alt="{{ latest_page.title }}"
+             class="w-100 img-thumbnail"
+             style="max-height: 250px;"
+             loading="lazy"
+             decoding="async"
+             src="{{ config.extra.ifs_base_path }}/.thumbs/750-{{ latest_page.extra.filename }}" 
+        />
+    </a>
+</div>
+
+
+{% endfor %}
+
+{% endblock content %}
