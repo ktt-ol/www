@@ -35,22 +35,22 @@ for image in ifs_images:
         if not os.path.exists(ifs_year_folder):
             os.mkdir(ifs_year_folder)
             
-            frontmatter = '+++\n'
-            frontmatter += 'title = "Images From Space ' + year + '"\n'
-            frontmatter += 'sort_by = "weight"\n'
-            frontmatter += 'template = "ifs/ifs-all.html"\n'
-            frontmatter += 'paginate_by = 100\n'
-            frontmatter += 'weight = ' + year + '\n'
-            frontmatter += 'transparent = true\n'
-            frontmatter += '+++\n'
-                        
-            f = open(ifs_year_folder + "/_index.md", "w")
-            f.write(frontmatter)
-            f.close()
-            
-            f = open(ifs_year_folder + "/_index.en.md", "w")
-            f.write(frontmatter)
-            f.close()
+        frontmatter = '+++\n'
+        frontmatter += 'title = "' + year + '"\n'
+        frontmatter += 'sort_by = "weight"\n'
+        frontmatter += 'template = "ifs/ifs-all.html"\n'
+        frontmatter += 'paginate_by = 100\n'
+        frontmatter += 'weight = ' + year + '\n'
+        frontmatter += 'transparent = true\n'
+        frontmatter += '+++\n'
+
+        f = open(ifs_year_folder + "/_index.md", "w")
+        f.write(frontmatter)
+        f.close()
+
+        f = open(ifs_year_folder + "/_index.en.md", "w")
+        f.write(frontmatter)
+        f.close()
 
     image_id = int(image["filename"].split(".")[0])
     image_id_str = str(image_id)
@@ -77,20 +77,18 @@ for image in ifs_images:
     image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] +')'
 
     content = "\n"
-    content += "\n#### " + title + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/") }}'
+    content += "\n#### " + title + ' {{ button(text="%replace_with_text%", location="/images/ifs/all/' + year + '") }}'
     content += "\n"
-    content += '{{ button(text="<<", location="/images/ifs/all/' + str(image_id + 1) + '", disabled="' + str(image_id + 1 >= (ifs_count)) + '") }}\n'
     content += '[' + image_elem + '](' + ifs_image_path + '/' + image["filename"] + ')\n'
-    content += '{{ button(text=">>", location="/images/ifs/all/' + str(image_id - 1) + '", disabled="' + str(image_id - 1 <= 0) + '") }}\n'
 
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".md", "w")
     f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "Alle Images From Space"))
+    f.write(content.replace("%replace_with_text%", "Alle Images From Space aus " + year))
     f.close()
 
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".en.md", "w")
     f.write(frontmatter)
-    f.write(content.replace("%replace_with_text%", "All Images From Space"))
+    f.write(content.replace("%replace_with_text%", "All Images From Space from " + year))
     f.close()
 
     total += 1
