@@ -23,7 +23,7 @@ brauchen bis Ende Februar genug Stimmen, um mindestens unter die ersten 5 Projek
 natürlich noch weiter nach oben ;)
 
 Bitte stimmt
-auf [https://wir-hier-jetzt.com/kreativitat-trifft-technik-e-v/](https://wir-hier-jetzt.com/kreativitat-trifft-technik-e-v/)
+auf [https://wir-hier-jetzt.com/kreativitat-trifft-technik-e-v/](https://web.archive.org/web/20230215000000*/https://wir-hier-jetzt.com/kreativitat-trifft-technik-e-v/)
 für uns ab!
 
 Gewinnen und Energie sparen kann bei der Aktion nicht nur der Verein bzw. Space! Wer abstimmt, kann Preise wie smarte
