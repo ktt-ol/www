@@ -5,7 +5,6 @@ updated = "2024-03-21T23:42:00"
 description = "In Oldenburg gibt es jetzt ein CoderDojo für Kinder und Jugendliche zwischen 7 und 17 Jahren"
 
 [taxonomies]
-topics = ["CoderDojo", "Programmieren", "Fähigkeit", "Kinder", "Jugendliche", "Globale Bewegung", "Mentoren", "Projekte", "Workshops", "Laptop", "Mikrocontroller", "Anmeldung", "Termine", "Location", "Unterstützung", "Mentor", "Sponsor", "Anmeldungen", "Kontakt", "Technik"]
 series =  ["CoderDojo"]
 
 [extra]
