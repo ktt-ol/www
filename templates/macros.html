@@ -110,6 +110,12 @@ content_type="image/jpeg"
         {% set thumbnail_url = config.extra.resource_base ~ blog_page.extra.thumbnail %}
         {% set thumbnail_metadata = get_image_metadata(path=blog_page.extra.thumbnail) %}
 
+        {% else %}
+        {% set thumbnail_url = "/media/img/logo-ktt.png" %}
+        {% set thumbnail_metadata = get_image_metadata(path=thumbnail_url) %}
+
+        {% endif %}
+
         {{
         self::sd_image(
         image_url=thumbnail_url,
@@ -133,6 +139,7 @@ content_type="image/jpeg"
             <img alt="Thumbnail Image for {{ page_title }}"
                  src="{{ thumbnail_url }}"
                  decoding="async"
+                 class="rounded rounded-2"
                  loading="lazy"
                  style="height: 150px; max-height: 150px; max-width: 150px;"
             />
@@ -155,29 +162,6 @@ content_type="image/jpeg"
                 {{ page_description }}
             </p>
         </div>
-        {% else %}
-        <div class="h-100 col-sm-3 text-center"
-             style="height: 150px !important;">
-        </div>
-        <div class="h-100 col-sm-9 my-1 d-flex flex-column">
-            <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
-                {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
-                {% set time_str = blog_page.date | date(format="%H:%M") %}
-
-                {% set lang_str = trans(key="publish_time", lang=lang) %}
-                {% set lang_str = lang_str | replace(from="%date%", to=date_str) %}
-                {% set lang_str = lang_str | replace(from="%time%", to=time_str) %}
-                {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
-                {{ lang_str }}
-            </p>
-            <h3 class="text-primary mb-1 ps-0 border-bottom-0">
-                {{ page_title }}
-            </h3>
-            <p class="m-0">
-                {{ page_description }}
-            </p>
-        </div>
-        {% endif %}
     </a>
     {% endfor %}
 </div>
