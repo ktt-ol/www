@@ -106,14 +106,16 @@ content_type="image/jpeg"
         {% set page_description = blog_page.description | default(value="") %}
 
         {% if blog_page.extra.thumbnail %}
-
-        {% set thumbnail_url = config.extra.resource_base ~ blog_page.extra.thumbnail %}
-        {% set thumbnail_metadata = get_image_metadata(path=blog_page.extra.thumbnail) %}
-
+        {% set thumbnail_path = blog_page.extra.thumbnail %}
+        {% set thumbnail_url = config.extra.resource_base ~ thumbnail_path %}
         {% else %}
-        {% set thumbnail_url = "/media/img/logo-ktt.png" %}
-        {% set thumbnail_metadata = get_image_metadata(path=thumbnail_url) %}
+        {% set thumbnail_path = "/media/img/logo-ktt.png" %}
+        {% set thumbnail_url = thumbnail_path %}
+        {% endif %}
 
+        {% if thumbnail_url is not ending_with(".svg") %}
+        {% set resized_image = resize_image(path=thumbnail_path, format="auto", op="fit_height", width=150, height=150) %}
+        {% set thumbnail_url = resized_image.url %}
         {% endif %}
 
         {{
