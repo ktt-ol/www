@@ -10,7 +10,7 @@
 </a>
 {% endif %}
 {% set items = paginator.pages %}
-{{ macros::blog_list(pages=paginator.pages, count=items | length) }}
+{{ macros::blog_list(pages=paginator.pages) }}
 {% if paginator.current_index < paginator.number_pagers %}
 <a class="btn btn-outline-primary fw-bolder w-100" href="{{paginator.next}}">
     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">

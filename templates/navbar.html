@@ -35,10 +35,23 @@
                         {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md") %}
                         {% endif %}
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{blog_section.path}}">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  role="button" aria-expanded="false" href="{{blog_section.path}}">
                                 {{blog_section.title}}
                             </a>
+                            <ul class="dropdown-menu">
+                                {% for subsectionPath in blog_section.subsections | sort | reverse %}
+                                {% set subsection = get_section(path=subsectionPath) %}
+                                <li>
+                                    <a class="dropdown-item" href="{{subsection.path}}">
+                                        {{subsection.title}}
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
                         </li>
                     </ul>
 

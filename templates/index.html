@@ -79,7 +79,7 @@ title="IFS"
         {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md") %}
         {% endif %}
         <div class="col">
-            {{ macros::blog_list(pages=blog_section.pages, count=5) }}
+            {{ macros::blog_list(pages=blog_section.pages | slice(end=5)) }}
         </div>
     </div>
 </div>

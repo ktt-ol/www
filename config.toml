@@ -14,7 +14,8 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "series", feed = true}
+    {name = "series", feed = true},
+    {name = "type", feed = true}
 ]
 
 [link_checker]
@@ -62,7 +63,8 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "series", feed = true}
+    {name = "series", feed = true},
+    {name = "type", feed = true}
 ]
 
 [languages.en.translations]
