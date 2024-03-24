@@ -39,8 +39,6 @@ updated=latest_page_data.date
 
 <h4>
     {{ section.title }}
-    <!--{# TODO: BETTER BUTTON PLACEMENT #}-->
-    <!--{# TODO: TOTAL AMOUNT #}-->
 </h4>
 
 <div class="image-gallery">
@@ -60,11 +58,11 @@ updated=latest_page_data.date
              class="p-0 m-0"
              decoding="async"
              src="{{ config.extra.ifs_base_path }}/.thumbs/750-{{ latest_page.extra.image_filename }}"/>
-        <h3 class="float-start m-0 py-1 px-2 d-inline-flex text-white border-0 position-relative"
-            style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
-            {{subsection_data.extra.year}}
-            <!--{# TODO: TOTAL AMOUNT #}-->
-        </h3>
+        <div class="float-start m-0 py-1 px-2 d-inline-flex flex-column position-relative"
+             style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
+            <h3 class="p-0 m-0 text-white border-0"><span class="mx-auto">{{ subsection_data.extra.year }}</span></h3>
+            <span class="text-white">{{ subsection_data.pages | length }} {{trans(key="images", lang=lang)}}</span>
+        </div>
     </a>
     {% endfor %}
 </div>
