@@ -69,8 +69,14 @@ description=page.description | default(value=config.description)
 {% endblock extra_meta %}
 
 {% block content %}
-<h4>
+<h4 class="d-flex justify-content-between">
     {{page.title}}
+
+    <span class="text-end">
+        {% if page.extra.repository %}
+        <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light" href="{{ page.extra.repository }}">Repository</a>
+        {% endif %}
+    </span>
 </h4>
 {{ page.content | safe }}
 
