@@ -10,7 +10,6 @@ type = ["Projekt", "Software"]
 
 [extra]
 thumbnail = "/media/blog/2011/shopsystem/shopsystem.jpg"
-status = "active"
 repository = "https://github.com/ktt-ol/serial-barcode-scanner/"
 +++
 

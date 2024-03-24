@@ -9,7 +9,7 @@ type = ["Projekt", "Software"]
 
 [extra]
 thumbnail = "/media/blog/2011/inventarsystem/inventarsystem.jpg"
-status = "broken"
+repository = "https://github.com/ktt-ol/ktt-inventory-system"
 +++
 
 ![](/media/blog/2011/inventarsystem/inventarsystem.jpg)
