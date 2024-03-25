@@ -1,3 +1,9 @@
+{% if lang == config.default_language %}
+{% set lang_stub = "" %}
+{% else %}
+{% set lang_stub = "." ~ lang %}
+{% endif %}
+
 <!DOCTYPE html>
 <html lang="{{lang}}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
 <head>
@@ -21,7 +27,7 @@
     <meta name="author" content="{{ page_author }}">
 
     {% block extra_meta %}
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content="website"/>
     {% endblock extra_meta %}
 
     {% if section.title %}
@@ -49,8 +55,13 @@
     <meta property="og:description" content='{{ description }}'/>
     <meta property="og:title" content='{{ title }}'/>
 
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/site.css">
+    <link integrity='sha384-{{ get_hash(path="css/bootstrap.min.css", sha_type=384, base64=true) | safe }}'
+          rel="stylesheet"
+          href="/css/bootstrap.min.css">
+
+    <link integrity='sha384-{{ get_hash(path="css/site.css", sha_type=384, base64=true) | safe }}'
+          rel="stylesheet"
+          href="/css/site.css">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
           href='{{ get_url(path="rss.xml", trailing_slash=false) }}'>
@@ -58,12 +69,6 @@
 
 <body class="vh-100 m-0 p-0">
 <div class="container d-flex flex-column justify-content-between">
-
-    {% if lang == config.default_language %}
-    {% set blog_section = get_section(path="blog/_index.md") %}
-    {% else %}
-    {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md") %}
-    {% endif %}
 
     {% include "navbar.html" %}
 
@@ -89,7 +94,7 @@
     <footer id="footer" class="border-top pt-2 mt-5 row">
         <div class="col">
             <p style="text-align: center;">
-                © 2024 <a href="{{config.base_url}}">Kreativität trifft Technik</a> | License: <a
+                © 2024 <a href="{{ get_url(path='', lang=lang) }}">Kreativität trifft Technik</a> | License: <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
                     href="/impressum">Impressum</a>
             </p>
@@ -97,7 +102,9 @@
     </footer>
 </div>
 
-<script src="/js/site.js"></script>
+<script src="/js/site.js"
+        integrity='sha384-{{ get_hash(path="js/site.js", sha_type=384, base64=true) | safe }}'>
+</script>
 
 </body>
 </html>

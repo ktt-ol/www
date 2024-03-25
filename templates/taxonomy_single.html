@@ -2,6 +2,8 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
+{% set blog_section = get_section(path="blog/_index" ~ lang_stub ~ ".md")%}
+
 <h4>
     {{ blog_section.title }} - {{ taxonomy.name }} - {{ term.name }}
 </h4>

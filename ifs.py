@@ -23,8 +23,10 @@ ifs_year_folder = None
 for image in ifs_images:
     # check if time exists and is after IFS introduction year (2012)
     if image["exif"]["time"] and image["exif"]["time"] > 1325416332000:
-        date = datetime.utcfromtimestamp(int(image["exif"]["time"]) / 1000)
-        
+        new_date = datetime.utcfromtimestamp(int(image["exif"]["time"]) / 1000)
+        if(date == None or new_date > date):
+            date = new_date
+
         date_str = date.strftime("%Y-%m-%d")
         datetime_str = date_str + "T" + date.strftime("%H:%M:%S")
         
@@ -67,24 +69,28 @@ for image in ifs_images:
     if image["exif"]["time"]:
         frontmatter += 'date = "' + datetime_str + '"\n'
 
-    frontmatter += '[extra]\n'
-    frontmatter += 'image_filename = "' + image["filename"] + '"'
-    frontmatter += "\nwidth = " + str(image["width"])
-    frontmatter += "\nheight = " + str(image["height"])
-    frontmatter += "\nimage_id = " + image_id_str
-    frontmatter += "\nimage_year = " + year
-    frontmatter += '\nog_title = "' + title + '"'
-    frontmatter += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
-    frontmatter += '\n+++\n'
+    frontmatter_extra = '[extra]\n'
+    frontmatter_extra += 'image_filename = "' + image["filename"] + '"'
+    frontmatter_extra += "\nwidth = " + str(image["width"])
+    frontmatter_extra += "\nheight = " + str(image["height"])
+    frontmatter_extra += "\nimage_id = " + image_id_str
+    frontmatter_extra += "\nimage_year = " + year
+    frontmatter_extra += '\nog_title = "' + title + '"'
+    frontmatter_extra += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
+    frontmatter_extra += '\n+++\n'
 
     image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] +')'
 
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".md", "w")
     f.write(frontmatter)
+    f.write('aliases = ["/images/ifs/by-id/' + image_id_str + '"]\n')
+    f.write(frontmatter_extra)
     f.close()
 
     f = open(ifs_folder_all + "/"  + year + "/" + "IFS-" + image_id_str + ".en.md", "w")
     f.write(frontmatter)
+    f.write('aliases = ["/en/images/ifs/by-id/' + image_id_str + '"]\n')
+    f.write(frontmatter_extra)
     f.close()
 
     total += 1
