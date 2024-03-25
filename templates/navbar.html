@@ -42,6 +42,13 @@
                         </li>
 
                         <li class="nav-item">
+                            <a class="nav-link"  role="button" aria-expanded="false" href='{{ get_url(path="@/calendar.md", lang=lang) }}'>
+                                {% set contact_page_metadata = get_page(path="calendar" ~ lang_stub ~ ".md", metadata_only=true) %}
+                                {{ contact_page_metadata.title }}
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
                             <a class="nav-link"  role="button" aria-expanded="false" href='{{ get_url(path="@/contact.md", lang=lang) }}'>
                                 {% set contact_page_metadata = get_page(path="contact" ~ lang_stub ~ ".md", metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
@@ -49,11 +56,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link"  role="button" aria-expanded="false" href='{{ get_url(path="@/calendar.md", lang=lang) }}'>
-                                {% set contact_page_metadata = get_page(path="calendar" ~ lang_stub ~ ".md", metadata_only=true) %}
-                                {{ contact_page_metadata.title }}
+                            <a class="nav-link"  role="button" aria-expanded="false" href='{{ get_url(path="@/contact.md#" ~ trans(key="arrival", lang=lang) | lower, lang=lang) }}'>
+                                {{ trans(key="arrival", lang=lang) }}
                             </a>
                         </li>
+
                     </ul>
 
                     <ul class="navbar-nav navbar-right">
