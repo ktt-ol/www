@@ -30,9 +30,9 @@
                         {% include "navbar-pagelist.html" %}
 
                         {% if lang == config.default_language %}
-                        {% set blog_section = get_section(path="blog/_index.md") %}
+                        {% set blog_section = get_section(path="blog/_index.md", metadata_only=true) %}
                         {% else %}
-                        {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md") %}
+                        {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md", metadata_only=true) %}
                         {% endif %}
 
                         <li class="nav-item dropdown">
@@ -41,7 +41,7 @@
                             </a>
                             <ul class="dropdown-menu">
                                 {% for subsectionPath in blog_section.subsections | sort | reverse %}
-                                {% set subsection = get_section(path=subsectionPath) %}
+                                {% set subsection = get_section(path=subsectionPath, metadata_only=true) %}
                                 <li>
                                     <a class="dropdown-item" href="{{subsection.path}}">
                                         {{subsection.title}}

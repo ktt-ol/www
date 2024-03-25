@@ -5,18 +5,17 @@
 {% block extra_meta %}
 <meta property="og:type" content="article"/>
 
-{% set all_section = get_section(path="images/ifs/all/_index.md") %}
+{% set all_section = get_section(path="images/ifs/all/_index.md", metadata_only=true) %}
 
 {% set latest_page = all_section.pages | first %}
 {% if latest_page %}
-{% set latest_page_data = get_page(path=latest_page.relative_path) %}
 
 {{
 macros::sd_article(
 title=section.title,
 image_url=config.extra.resource_base ~ "/media/img/mainframe-logo.svg",
 created="2012-01-01T23:42",
-updated=latest_page_data.date,
+updated=latest_page.date,
 author=config.author,
 description=section.description
 )
@@ -27,7 +26,7 @@ macros::og_article(
 author=config.author,
 section="Images From Space",
 created="2012-01-01T23:42",
-updated=latest_page_data.date
+updated=latest_page.date
 )
 }}
 {% endif %}
@@ -35,7 +34,7 @@ updated=latest_page_data.date
 {% endblock extra_meta %}
 
 {% block content %}
-{% set all_section = get_section(path="images/ifs/all/_index.md") %}
+{% set all_section = get_section(path="images/ifs/all/_index.md", metadata_only=true) %}
 
 <h4>
     {{ section.title }}

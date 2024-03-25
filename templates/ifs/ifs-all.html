@@ -26,13 +26,12 @@ updated=paginator.pages[0].date)
 }}
 
 {% for page in paginator.pages %}
-{% set page_data = get_page(path=page.relative_path) %}
 
 {{
 self::sd_image(
-image_url=config.extra.ifs_base_path ~ "/" ~ page_data.extra.image_filename,
+image_url=config.extra.ifs_base_path ~ "/" ~ page.extra.image_filename,
 author=config.author,
-title=page_data.title
+title=page.title
 )
 }}
 
@@ -57,16 +56,15 @@ title=page_data.title
 <div class="image-gallery">
     {% for page in paginator.pages %}
     
-    {% set page_data = get_page(path=page.relative_path) %}
-    {% set scaling = 200 / page_data.extra.height %}
+    {% set scaling = 200 / page.extra.height %}
     {% set height = 200 %}
-    {% set width = page_data.extra.width * scaling %}
+    {% set width = page.extra.width * scaling %}
     
-    <a href="{{page_data.path}}" style="height: {{height}}px; width: {{width}}px;">
+    <a href="{{page.path}}" style="height: {{height}}px; width: {{width}}px;">
         <img alt=""
              loading="lazy"
              decoding="async"
-             src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page_data.extra.image_filename}}"/>
+             src="{{config.extra.ifs_base_path}}/.thumbs/750-{{page.extra.image_filename}}"/>
     </a>
     
     {% endfor %}

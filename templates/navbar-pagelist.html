@@ -18,7 +18,7 @@
         {% endfor %}
 
         {% for subsectionPath in index_section.subsections %}
-        {% set subsection = get_section(path=subsectionPath) %}
+        {% set subsection = get_section(path=subsectionPath, metadata_only=true) %}
         <li>
             <a class="dropdown-item" href="{{subsection.path}}">
                 {{subsection.title}}
