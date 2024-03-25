@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Quo vadis KtT - Wie geht es mit dem KtT weiter?"
 
 [taxonomies]
-Typ = ["Announcement"]
+Typ = ["Ankündigung"]
 
 [extra]
 thumbnail = "/media/blog/2015/treffen-ohne-namen/thumbnail.png"

@@ -40,13 +40,13 @@ selbständig zu lernen.
 ###### Wer kann mitmachen?
 
 Jeder im Alter von 7 bis 17 kann an einem Dojo teilnehmen und Programmieren lernen, eine Webseite erstellen, ein Spiel
-oder eine App programmieren oder einfach neue Technologien kennen lernen. Löten, Vorlagen für Lasercutter und 3D-Drucker
+oder eine App programmieren oder einfach neue Technologien kennenlernen. Löten, Vorlagen für Lasercutter und 3D-Drucker
 erstellen, Textilien veredeln. Beim CoderDojo wird kein Wissen vorausgesetzt!
 
 ###### Was Eltern Wissen sollten?
 
 Die Teilnahme an einem CoderDojo ist kostenlos und mit keinerlei finanziellen Verpflichtungen verbunden. Alle Mentoren
-sind Freiwillige und Ausgaben werden durch Spenden und Sponsoren gedeckt.
+sind Freiwillige und Ausgaben werden durch Spenden und vereinseigene Mittel gedeckt.
 
 ###### Wichtig!
 
@@ -88,9 +88,9 @@ Als erfahrener Coder kannst du unseren jungen wissbegierigen Ninjas etwas von de
 
 Bei Interesse einfach Kontakt aufnehmen.
 
-###### Unterstützen: als Sponsor
+###### Unterstützen
 
-Da die Teilnahme für Ninjas kostenlos sein soll, sind wir auf Sponsoren angewiesen. Mit externer Unterstützung wollen
+Da die Teilnahme für Ninjas kostenlos sein soll, sind wir auf Spenden angewiesen. Mit externer Unterstützung wollen
 wir Technik und Verbrauchsmaterial beschaffen und die Ausstattung der Räume verbessern. Vielleicht bekommen wir sogar
 einen Satz Leih-Notebooks zusammen.
 

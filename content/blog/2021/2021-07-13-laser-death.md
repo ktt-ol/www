@@ -6,7 +6,7 @@ description = "~~RIP~~ Totgesagte leben länger!"
 
 [taxonomies]
 Serie = ["News"]
-Typ = ["Announcement"]
+Typ = ["Ankündigung"]
 
 [extra]
 thumbnail = "/media/blog/2021/laser-death/laser.jpg"

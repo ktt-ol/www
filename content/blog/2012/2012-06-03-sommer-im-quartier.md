@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Abscheidsfeier von unseren ersten vier Wänden, dem quARTier."
 
 [taxonomies]
-Typ = ["announcement"]
+Typ = ["Ankündigung"]
 
 [extra]
 thumbnail = "/media/blog/2012/sommer-im-quartier/thumbnail.jpg"

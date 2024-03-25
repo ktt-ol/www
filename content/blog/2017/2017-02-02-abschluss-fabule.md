@@ -6,7 +6,7 @@ description = "Am 4. und 5. Februar beenden wir das von der Metropolregion Nordw
 
 [taxonomies]
 Serie = ["Sonstiges"]
-Typ = ["Announcement"]
+Typ = ["Ankündigung"]
 
 [extra]
 thumbnail = "/media/img/logo-ktt.png"

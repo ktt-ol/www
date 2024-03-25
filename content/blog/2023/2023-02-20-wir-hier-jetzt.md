@@ -6,7 +6,7 @@ description = "Jetzt für den Mainframe bzw. KtT e.V. abstimmen!"
 
 [taxonomies]
 Serie = ["Wir Hier Jetzt"]
-Typ = ["Announcement"]
+Typ = ["Ankündigung"]
 
 [extra]
 thumbnail = "/media/blog/2023/wir-hier-jetzt/thumbnail.jpg"
