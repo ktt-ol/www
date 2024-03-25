@@ -13,8 +13,8 @@ thumbnail = "/media/blog/2023/praxisforum-digitalisierung/thumbnail.jpg"
 +++
 
 Zugegeben, eine Veranstaltung mit 180+ Anmeldungen durchzuführen, das kommt auch bei uns nicht alltäglich vor. Zwar
-richten wir häufiger Veranstaltungen wie z.B. das [CoderDojo](@/events/calendar.md) oder
-die [Ersti LAN Party](  @/blog/2023/2023-04-16-lan-party-2023-04-review.md) aus, aber diese bewegen sich i.d.R. bei unter
+richten wir häufiger Veranstaltungen wie z.B. das [CoderDojo](@/calendar.md) oder
+die [Ersti LAN Party](@/blog/2023/2023-04-16-lan-party-2023-04-review.md) aus, aber diese bewegen sich i.d.R. bei unter
 50 Personen. Die 3-4 fache Menge war auch für uns eine besondere Herausforderung und bedarf einer gewissen Vorbereitung
 sowie ordentlicher Planung.
 
@@ -28,7 +28,7 @@ Wer schonmal ein Event bzw. Netzwerk dieser Größe geplant hat, dem werden folg
 * Ausreichende Kapazität im WAN, LAN, und WLAN.
 
 Aufmerksame Leser des Blogs werden den letzten Beitrag über
-die [Ersti LAN Party](  @/blog/2023/2023-04-16-lan-party-2023-04-review.md) gelesen haben. Das dort beschriebene Problem
+die [Ersti LAN Party](@/blog/2023/2023-04-16-lan-party-2023-04-review.md) gelesen haben. Das dort beschriebene Problem
 mit unserem ISP bzw. dessen Modem konnte in der Zwischenzeit erfolgreich behoben werden, womit wir auf eine stabile
 Internetverbindung für das Praxisforum Digitalisierung zugreifen konnten.
 
