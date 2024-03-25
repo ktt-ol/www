@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "~~RIP~~ Totgesagte leben länger!"
 
 [taxonomies]
-series = ["News"]
-type = ["Announcement"]
+Serie = ["News"]
+Typ = ["Announcement"]
 
 [extra]
 thumbnail = "/media/blog/2021/laser-death/laser.jpg"

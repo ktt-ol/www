@@ -14,9 +14,9 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "series", feed = true},
-    {name = "type", feed = true},
-    {name = "group", feed = true}
+    {name = "Serie", feed = true, paginate_by = 10 },
+    {name = "Typ", feed = true, paginate_by = 10 },
+    {name = "Gruppe", feed = true, paginate_by = 10 }
 ]
 
 [link_checker]
@@ -52,6 +52,15 @@ images = "Bilder"
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 resource_base = "https://ktt-ol.github.io"
+bs_color_map = [
+    "primary",
+    "secondary",
+    "success",
+    "danger",
+    "warning",
+    "info",
+    "light"
+]
 
 [languages.en]
 title = "Kreativität trifft Technik e.V."
@@ -65,9 +74,9 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "series", feed = true},
-    {name = "type", feed = true},
-    {name = "group", feed = true}
+    {name = "Series", feed = true, paginate_by = 10 },
+    {name = "Type", feed = true, paginate_by = 10 },
+    {name = "Group", feed = true, paginate_by = 10 }
 ]
 
 [languages.en.translations]

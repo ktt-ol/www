@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Der KtT gewinnt Preis auf dem PhotonikCamp der RWTH-Aachen."
 
 [taxonomies]
-type = ["Event"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2012/PhotonikCamp/thumbnail.jpg"

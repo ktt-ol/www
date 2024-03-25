@@ -6,7 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["sre", "lhw"]
 
 [taxonomies]
-type = ["Projekt", "Software"]
+Serie = ["Projekt"]
+Typ = ["Software"]
 
 [extra]
 thumbnail = "/media/blog/2011/shopsystem/shopsystem.jpg"

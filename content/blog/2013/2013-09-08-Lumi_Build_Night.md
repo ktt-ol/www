@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Gestern fand bei uns eine Lumi Build Night statt. Dabei wurden mit Hilfe von UV-sensibler Farbe und auf Folie ausgedruckten Negativ-Bildern Textilien bedruckt."
 
 [taxonomies]
-series = ["Build Night"]
-type = ["Event"]
+Serie = ["Build Night"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2013/Lumi_Build_Night/space-3.jpg"

@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Am Freitag, den 10.05.2023 hat bei uns das Praxisforum Digitaliserung stattgefunden."
 
 [taxonomies]
-series = ["Praxisforum Digitalisierung"]
-type = ["Event"]
+Serie = ["Praxisforum Digitalisierung"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2023/praxisforum-digitalisierung/thumbnail.jpg"

@@ -5,8 +5,8 @@ updated = "2024-03-21T23:42:00"
 description = "In Oldenburg gibt es jetzt ein CoderDojo für Kinder und Jugendliche zwischen 7 und 17 Jahren"
 
 [taxonomies]
-series =  ["CoderDojo"]
-type = ["Event"]
+Serie = ["CoderDojo"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2019/coderdojo/CoderDojoThumb.jpg"

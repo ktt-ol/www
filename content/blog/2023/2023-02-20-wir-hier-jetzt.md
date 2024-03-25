@@ -5,8 +5,8 @@ updated = "2024-03-21T23:42:00"
 description = "Jetzt für den Mainframe bzw. KtT e.V. abstimmen!"
 
 [taxonomies]
-series = ["Wir Hier Jetzt"]
-type = ["Announcement"]
+Serie = ["Wir Hier Jetzt"]
+Typ = ["Announcement"]
 
 [extra]
 thumbnail = "/media/blog/2023/wir-hier-jetzt/thumbnail.jpg"

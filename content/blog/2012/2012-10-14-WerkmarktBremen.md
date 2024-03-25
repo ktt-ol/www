@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Ausstellung des KtT auf dem Werkmarkt Bremen"
 
 [taxonomies]
-type = ["Event"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2012/WerkmarktBremen/thumbnail.jpg"

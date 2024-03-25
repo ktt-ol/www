@@ -6,7 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["olt"]
 
 [taxonomies]
-type = ["Projekt", "Hardware"]
+Serie = ["Projekt"]
+Typ = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2012/terminals/thumbnail.jpg"

@@ -5,8 +5,8 @@ updated = "2023-03-19T23:42:00"
 description = "Am 4. und 5. Februar beenden wir das von der Metropolregion Nordwest geförderte Projekt Fabulé mit einem großen Workshop-Wochenende."
 
 [taxonomies]
-series = ["Sonstiges"]
-type = ["Announcement"]
+Serie = ["Sonstiges"]
+Typ = ["Announcement"]
 
 [extra]
 thumbnail = "/media/img/logo-ktt.png"

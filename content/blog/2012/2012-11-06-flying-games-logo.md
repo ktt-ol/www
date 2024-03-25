@@ -6,7 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["fermate"]
 
 [taxonomies]
-type = ["Projekt", "Hardware"]
+Serie = ["Projekt"]
+Typ = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2012/flying-games-logo/thumbnail.jpg"

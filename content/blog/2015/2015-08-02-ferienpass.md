@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Bau von Binäruhren mit Kindern im Rahmen des Ferienpasses 2015."
 
 [taxonomies]
-series = ["Ferienpass"]
-type = ["Event"]
+Serie = ["Ferienpass"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/img/common/binaer_uhr.jpg"

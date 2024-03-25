@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Am Dienstag, den 27. November, und am Mittwoch, den 28. November, trafen sich jeweils 6 Einwohner der Städte Groningen, Oldenburg und Bremen im next generation lab in der alten Brennerei in Bremen, um fünf 3D-Drucker und fünf 3D-Scanner zusammen zu bauen."
 
 [taxonomies]
-type = ["Event"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2012/WorkshopBremen/thumbnail.jpg"

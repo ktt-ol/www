@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Instructables hat unserem Hackspace Sugru für eine Sugru-Buildnight bereitgestellt."
 
 [taxonomies]
-series = ["Build Night"]
-type = ["Event"]
+Serie = ["Build Night"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2013/Sugru_Build_Night/thumbnail.jpg"

@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Das famila Einkaufsland Wechloy hat uns für den November 2013 zum \"Verein des Monats\" gewählt."
 
 [taxonomies]
-type = ["Announcement"]
+Typ = ["Announcement"]
 
 [extra]
 thumbnail = "/media/blog/2013/Wir_sind_Verein_des_Monats/2013-11-23_16-19-16.jpg"

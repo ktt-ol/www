@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Im Rahmen der Ausstellung 'Autonomy Cube' im Edith-Russ-Haus haben Mitglieder des KtT, bzw. des Chaostreffs Oldenburg, Workshops zum Thema TOR-Netzwerk und PGP-Verschlüsselung durchgeführt."
 
 [taxonomies]
-type = ["Event"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2015/workshops-im-edith-russ-haus/thumbnail.png"

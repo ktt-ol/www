@@ -1,1 +1,15 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+<h4>
+    {{ blog_section.title }} - {{ taxonomy.name }}
+</h4>
+{% for term in terms %}
+<div class="my-2">
+    <a href="{{ term.path }}">
+        {{ term.name }}
+    </a>
+</div>
+{% endfor %}
+{% endblock content %}

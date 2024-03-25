@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Wir sind mit einer kleinen Delegation zum Hamburger Makertreffen im Attraktor gefahren."
 
 [taxonomies]
-series = ["MakerFaire"]
-type = ["Event"]
+Serie = ["MakerFaire"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2012/makertreffen-hamburg/thumbnail.jpg"

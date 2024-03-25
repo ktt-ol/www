@@ -6,7 +6,7 @@ description = "Aufräumaktion bei Watterott eletronic -> Paket für uns"
 authors = ["Vorstand"]
 
 [taxonomies]
-type = ["Announcement"]
+Typ = ["Announcement"]
 
 [extra]
 thumbnail = "/media/blog/2014/danke-watterott/watterott_20141219_205236.jpg"

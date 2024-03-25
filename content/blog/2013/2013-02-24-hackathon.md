@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Erster Hackathon des Mainframe, bei dem ein Wochenende lang an innovativen Projekten rund um unseren Hackspace gearbeitet wurde."
 
 [taxonomies]
-series = ["Hackathon"]
-type = ["Event"]
+Serie = ["Hackathon"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2013/hackathon/thumbnail.jpg"

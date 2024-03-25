@@ -1,1 +1,9 @@
 {% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block content %}
+<h4>
+    {{ blog_section.title }} - {{ taxonomy.name }} - {{ term.name }}
+</h4>
+{{ macros::blog_list(pages=paginator.pages) }}
+{% endblock content %}

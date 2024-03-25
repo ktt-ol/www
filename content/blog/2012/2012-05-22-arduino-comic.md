@@ -6,7 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["thorben"]
 
 [taxonomies]
-type = ["Projekt", "Software"]
+Serie = ["Projekt"]
+Typ = ["Software"]
 
 [extra]
 thumbnail = "/media/blog/2012/arduino-comic/thumbnail.jpg"

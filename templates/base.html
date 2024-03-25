@@ -59,6 +59,12 @@
 <body class="vh-100 m-0 p-0">
 <div class="container d-flex flex-column justify-content-between">
 
+    {% if lang == config.default_language %}
+    {% set blog_section = get_section(path="blog/_index.md", metadata_only=true) %}
+    {% else %}
+    {% set blog_section = get_section(path="blog/_index." ~ lang ~ ".md", metadata_only=true) %}
+    {% endif %}
+
     {% include "navbar.html" %}
 
     {% block main %}

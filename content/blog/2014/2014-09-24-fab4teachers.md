@@ -5,8 +5,8 @@ updated = "2023-03-22T23:42:00"
 description = "Lehrerfortbildung mit 12 Lehrern aus Niedersachsen zum Thema 3D-Drucker"
 
 [taxonomies]
-series = ["Fab4Teachers"]
-type = ["Event"]
+Serie = ["Fab4Teachers"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2014/fab4teachers/DSC_9030.JPG"

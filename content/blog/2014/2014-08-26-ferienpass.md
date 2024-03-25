@@ -5,8 +5,8 @@ updated = "2024-03-22T23:42:00"
 description = "Bau von Binäruhren mit Kindern im Rahmen des Ferienpasses 2014."
 
 [taxonomies]
-series = ["Ferienpass"]
-type = ["Event"]
+Serie = ["Ferienpass"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2014/ferienpass/IMG_2955.JPG"

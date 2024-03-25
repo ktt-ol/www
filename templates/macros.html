@@ -90,12 +90,10 @@ content_type="image/jpeg"
 
 {% macro blog_list(pages) %}
 
-<div class="container-fluid">
+<div class="p-0 container-fluid">
     {% for blog_page in pages %}
 
-    <a style=""
-       href="{{ blog_page.path }}"
-       class="row text-reset text-decoration-none py-2 border-bottom">
+    <div class="row py-2 border-bottom">
         {% if blog_page.authors %}
         {% set page_author = blog_page.authors | join(sep=", ") %}
         {% else %}
@@ -137,16 +135,16 @@ content_type="image/jpeg"
         )
         }}
 
-        <div class="h-100 col-sm-3 text-center">
+        <div class="col-sm-3 d-flex flex-column justify-content-center text-center">
             <img alt="Thumbnail Image for {{ page_title }}"
                  src="{{ thumbnail_url }}"
                  decoding="async"
                  class="rounded rounded-2"
                  loading="lazy"
-                 style="height: 150px; max-height: 150px; max-width: 150px;"
+                 style="height: 150px; max-width: 100%;"
             />
         </div>
-        <div class="h-100 col-sm-9 my-1 d-flex flex-column">
+        <div class="col-sm-9 my-1 d-flex flex-column">
             <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
                 {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
                 {% set time_str = blog_page.date | date(format="%H:%M") %}
@@ -160,11 +158,29 @@ content_type="image/jpeg"
             <h3 class="text-primary mb-1 ps-0 border-bottom-0">
                 {{ page_title }}
             </h3>
-            <p class="m-0">
+            <a href="{{ blog_page.path }}" class="mb-1 text-reset text-decoration-none m-0">
                 {{ page_description }}
+            </a>
+            <p class="text-end p-0 m-0 mt-auto">
+                {% for i in range(end=config.taxonomies | length) %}
+                {% set taxonomy = config.taxonomies[i] %}
+                {% if blog_page.taxonomies[taxonomy.name] %}
+                {% for term in blog_page.taxonomies[taxonomy.name] %}
+                {% if lang == config.default_language %}
+                <a href="/{{taxonomy.slug}}/{{term | slugify}}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
+                    {{ term }}
+                </a>
+                {% else %}
+                <a href="/{{lang}}/{{taxonomy.slug}}/{{term | slugify}}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
+                    {{ term }}
+                </a>
+                {% endif %}
+                {% endfor %}
+                {% endif %}
+                {% endfor %}
             </p>
         </div>
-    </a>
+    </div>
     {% endfor %}
 </div>
 

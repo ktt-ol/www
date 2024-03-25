@@ -6,7 +6,7 @@ updated = "2024-03-24T23:42:00"
 authors = ["Stoffi"]
 
 [taxonomies]
-type = ["Talk"]
+Typ = ["Talk"]
 
 [extra]
 thumbnail = "/media/blog/2012/talk-0001/thumbnail.png"

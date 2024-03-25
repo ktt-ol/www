@@ -5,7 +5,7 @@ updated = "2024-03-22T23:42:00"
 description = "Am 21 und 22 Juni führten zwei Mitglieder in der Uni ein Siebdruckworkshop durch."
 
 [taxonomies]
-type = ["Event"]
+Typ = ["Event"]
 
 [extra]
 thumbnail = "/media/blog/2014/siebdruck/thumb.jpg"
