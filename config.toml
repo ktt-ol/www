@@ -48,6 +48,7 @@ locale_name = "de_DE"
 publish_time = "veröffentlicht am %date% um %time% Uhr von %author%"
 all = "Alle"
 images = "Bilder"
+arrival = "Anreise"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
@@ -87,6 +88,7 @@ locale_name = "en_US"
 publish_time = "published on %date% at %time% by %author%"
 all = "All"
 images = "Images"
+arrival = "Arrival"
 
 status_finished = "Finished"
 status_in_progress = "In Progress"
