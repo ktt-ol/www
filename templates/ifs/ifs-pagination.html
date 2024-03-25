@@ -1,4 +1,6 @@
-{% if paginator.number_pagers > 1 %}
+{% if paginator and paginator.number_pagers > 1 %}
+{% set base_path = paginator.base_url %}
+
 <ul class="pagination pagination-sm justify-content-center my-2 mx-auto">
     <li class="page-item">
         <a class="text-center page-link {% if not paginator.previous %}disabled{% endif %}" href="{{ paginator.previous }}" style="width: 3em;">
