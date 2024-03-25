@@ -165,16 +165,14 @@ content_type="image/jpeg"
                 {% for i in range(end=config.taxonomies | length) %}
                 {% set taxonomy = config.taxonomies[i] %}
                 {% if blog_page.taxonomies[taxonomy.name] %}
+
                 {% for term in blog_page.taxonomies[taxonomy.name] %}
-                {% if lang == config.default_language %}
-                <a href="/{{taxonomy.slug}}/{{term | slugify}}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
+
+                {% set taxonomy_url = get_taxonomy_url(kind=taxonomy.name, name=term, lang=lang) %}
+                <a href="{{ taxonomy_url }}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
                     {{ term }}
                 </a>
-                {% else %}
-                <a href="/{{lang}}/{{taxonomy.slug}}/{{term | slugify}}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
-                    {{ term }}
-                </a>
-                {% endif %}
+
                 {% endfor %}
                 {% endif %}
                 {% endfor %}
