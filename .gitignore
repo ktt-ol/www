@@ -1,5 +1,6 @@
 /public
 /.idea
+/venv
 
 /content/images/ifs/all/*
 !/content/images/ifs/all/_index*
