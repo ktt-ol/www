@@ -1,6 +1,5 @@
 +++
 title = "Kontakt"
-aliases = ["Anreise"]
 weight = 10
 +++
 
