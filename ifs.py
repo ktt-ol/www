@@ -43,7 +43,8 @@ for image in ifs_images:
         frontmatter += 'template = "ifs/ifs-all.html"\n'
         frontmatter += 'paginate_by = 100\n'
         frontmatter += 'weight = ' + year + '\n'
-        frontmatter += 'transparent = true\n'
+        frontmatter += 'in_search_index = true\n'
+        frontmatter += 'transparent = false\n'
         frontmatter += '[extra]\n'
         frontmatter += 'year = ' + year + '\n'
         frontmatter += '+++\n'
@@ -65,6 +66,7 @@ for image in ifs_images:
     frontmatter += 'slug = "' + image_id_str + '"\n'
     frontmatter += 'weight = ' + str(ifs_count - image_id) + '\n'
     frontmatter += 'template = "ifs/ifs-single.html"\n'
+    frontmatter += 'in_search_index = false\n'
     
     if image["exif"]["time"]:
         frontmatter += 'date = "' + datetime_str + '"\n'
