@@ -1,0 +1,90 @@
+{% extends "base.html" %}
+{% import "macros.html" as macros %}
+
+{% block main %}
+<h4>
+    {{ section.title }}
+</h4>
+
+<div class="image-gallery">
+    {% for subsection in section.subsections | reverse %}
+    {% set subsection_data = get_section(path=subsection) %}
+
+    {% if subsection_data.pages | length > 0 %}
+    
+    {% if subsection_data.extra.cover %}
+    {% set image_uri = subsection_data.extra.cover %}
+    {% set height = 200 %}
+    {% set width = 750 %}
+    {% else %}
+    {% set latest_page = subsection_data.pages | first %}
+
+    {% set scaling = 200 / latest_page.extra.height %}
+    {% set height = 200 %}
+    {% set width = latest_page.extra.width * scaling %}
+
+    {% if width > 1150 %}
+    {% set image_uri = latest_page.extra.file_uri %}
+    {% elif width > 700 %}
+    {% set image_uri = latest_page.extra.file_uri_1200 %}
+    {% elif width > 250 %}
+    {% set image_uri = latest_page.extra.file_uri_750 %}
+    {% else %}
+    {% set image_uri = latest_page.extra.file_uri_300 %}
+    {% endif %}
+    {% endif %}
+    
+    {% if subsection_data.extra.image_count %}
+    {% set image_count = subsection_data.extra.image_count %}
+    {% else %}
+    {% set image_count = subsection_data.pages | length %}
+    {% endif %}
+    
+    <a href="{{subsection_data.path}}"
+       class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
+       style="height: {{height}}px; width: {{width}}px;">
+        <img alt=""
+             loading="lazy"
+             class="p-0 m-0"
+             decoding="async"
+             src="{{ image_uri }}"/>
+        <div class="float-start m-0 py-1 px-2 d-inline-flex flex-column position-relative"
+             style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
+            <h3 class="p-0 m-0 text-white border-0"><span class="mx-auto">{{ subsection_data.extra.display_name }}</span></h3>
+            <span class="text-white">{{ subsection_data.pages | length }} {{ trans(key="images", lang=lang) }}</span>
+        </div>
+    </a>
+    {% else %}
+    <p>HIER MÜSSTE EIN LEERES ALBUM SEIN. <i>TODO</i></p>
+    {% endif %}
+    {% endfor %}
+    
+
+    {% for page in section.pages %}
+
+    {% set scaling = 200 / page.extra.height %}
+    {% set height = 200 %}
+    {% set width = page.extra.width * scaling %}
+    
+    {% if width > 1150 %}
+    {% set image_uri = page.extra.file_uri %}
+    {% elif width > 700 %}
+    {% set image_uri = page.extra.file_uri_1200 %}
+    {% elif width > 250 %}
+    {% set image_uri = page.extra.file_uri_750 %}
+    {% else %}
+    {% set image_uri = page.extra.file_uri_300 %}
+    {% endif %}
+
+    <a href="{{ page.path }}" style="height: {{height}}px; width: {{width}}px;">
+        <img alt=""
+             loading="lazy"
+             class="p-0"
+             decoding="async"
+             src="{{ image_uri }}"/>
+    </a>
+
+    {% endfor %}
+</div>
+
+{% endblock content %}

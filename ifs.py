@@ -4,13 +4,10 @@ import os
 import requests
 from datetime import datetime
 
-ifs_folder = os.environ["IFS_FOLDER"]
-ifs_path = os.environ["IFS_PATH"]
+ifs_folder = "content/images/ifs"
+ifs_url = "https://mainframe.io/media/ifs-images"
 
-ifs_meta_path = ifs_path + "/meta.json"
-ifs_image_path = ifs_path
-
-ifs_folder_all = ifs_folder + "/all"
+ifs_meta_path = ifs_url + "/meta.json"
 
 ifs_data = json.loads(requests.get(ifs_meta_path).text)
 
@@ -35,7 +32,7 @@ for image in ifs_images:
 
         year = date.strftime("%Y")
 
-        ifs_year_folder = ifs_folder_all + "/" + year
+        ifs_year_folder = ifs_folder + "/" + year
 
         if not os.path.exists(ifs_year_folder):
             os.mkdir(ifs_year_folder)
@@ -43,13 +40,11 @@ for image in ifs_images:
         frontmatter = '+++\n'
         frontmatter += 'title = "Images From Space ' + year + '"\n'
         frontmatter += 'sort_by = "weight"\n'
-        frontmatter += 'template = "ifs/ifs-all.html"\n'
-        frontmatter += 'paginate_by = 100\n'
+        frontmatter += 'template = "album/album-list.html"\n'
         frontmatter += 'weight = ' + year + '\n'
-        frontmatter += 'in_search_index = true\n'
-        frontmatter += 'transparent = false\n'
+        frontmatter += 'in_search_index = false\n'
         frontmatter += '[extra]\n'
-        frontmatter += 'year = ' + year + '\n'
+        frontmatter += 'display_name = ' + year + '\n'
         frontmatter += '+++\n'
 
         f = open(ifs_year_folder + "/_index.md", "w")
@@ -68,31 +63,35 @@ for image in ifs_images:
     frontmatter += 'title = "' + title + '"\n'
     frontmatter += 'slug = "' + image_id_str + '"\n'
     frontmatter += 'weight = ' + str(ifs_count - image_id) + '\n'
-    frontmatter += 'template = "ifs/ifs-single.html"\n'
+    frontmatter += 'template = "album/album-single.html"\n'
     frontmatter += 'in_search_index = false\n'
 
     if image["exif"]["time"]:
         frontmatter += 'date = "' + datetime_str + '"\n'
 
     frontmatter_extra = '[extra]\n'
-    frontmatter_extra += 'image_filename = "' + image["filename"] + '"'
-    frontmatter_extra += "\nwidth = " + str(image["width"])
-    frontmatter_extra += "\nheight = " + str(image["height"])
+    frontmatter_extra += 'height = ' + str(image["height"]) + "\n"
+    frontmatter_extra += 'width = ' + str(image["width"]) + "\n"
+    frontmatter_extra += 'file_uri = "' + ifs_url + "/" + image["filename"] + '"\n'
+    frontmatter_extra += 'file_uri_300 = "' + ifs_url + "/.thumbs/300-" + image["filename"] + '"\n'
+    frontmatter_extra += 'file_uri_750 = "' + ifs_url + "/.thumbs/750-" + image["filename"] + '"\n'
+    frontmatter_extra += 'file_uri_1200 = "' + ifs_url + "/.thumbs/1200-" + image["filename"] + '"\n'
+
     frontmatter_extra += "\nimage_id = " + image_id_str
     frontmatter_extra += "\nimage_year = " + year
     frontmatter_extra += '\nog_title = "' + title + '"'
     frontmatter_extra += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
     frontmatter_extra += '\n+++\n'
 
-    image_elem = '![' + title + '](' + ifs_image_path + '/.thumbs/750-' + image["filename"] + ')'
+    image_elem = '![' + title + '](' + ifs_url + '/.thumbs/750-' + image["filename"] + ')'
 
-    f = open(ifs_folder_all + "/" + year + "/" + "IFS-" + image_id_str + ".md", "w")
+    f = open(ifs_folder + "/" + year + "/" + "IFS-" + image_id_str + ".md", "w")
     f.write(frontmatter)
     f.write('aliases = ["/images/ifs/by-id/' + image_id_str + '"]\n')
     f.write(frontmatter_extra)
     f.close()
 
-    f = open(ifs_folder_all + "/" + year + "/" + "IFS-" + image_id_str + ".en.md", "w")
+    f = open(ifs_folder + "/" + year + "/" + "IFS-" + image_id_str + ".en.md", "w")
     f.write(frontmatter)
     f.write('aliases = ["/en/images/ifs/by-id/' + image_id_str + '"]\n')
     f.write(frontmatter_extra)

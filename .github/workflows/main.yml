@@ -15,10 +15,8 @@ jobs:
           python-version: '3.11'
           cache: 'pip'
       - run: pip install -r requirements.txt
+      - run: python albums.py
       - run: python ifs.py
-        env:
-          IFS_FOLDER: 'content/images/ifs'
-          IFS_PATH: ${{ secrets.IFS_PATH }}
       - name: 'build and deploy'
         uses: shalzz/zola-deploy-action@v0.18.0
         env:

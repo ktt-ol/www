@@ -2,7 +2,9 @@
 /.idea
 /venv
 
-/content/images/ifs/all/*
-!/content/images/ifs/all/_index*
+/content/images/albums
+
+/content/images/ifs/*
+!/content/images/ifs/_index*
 
 /static/processed_images
