@@ -7,15 +7,20 @@
     </h4>
 
     <div class="image-gallery">
-        {% for subsection in section.subsections | reverse %}
+        {% for subsection in section.subsections %}
             {% set subsection_data = get_section(path=subsection) %}
 
             {% if subsection_data.pages | length > 0 %}
 
                 {% if subsection_data.extra.cover %}
-                    {% set image_uri = subsection_data.extra.cover %}
+                    {% set image_metadata = get_image_metadata(path=subsection_data.extra.cover) %}
+
+                    {% set scaling = 200 / image_metadata.height %}
                     {% set height = 200 %}
-                    {% set width = 750 %}
+                    {% set width = image_metadata.width * scaling %}
+
+                    {% set resized_image = resize_image(path=subsection_data.extra.cover, height=200, op="fit_height") %}
+                    {% set image_uri = resized_image.url %}
                 {% else %}
                     {% set latest_page = subsection_data.pages | first %}
 
@@ -34,29 +39,35 @@
                     {% endif %}
                 {% endif %}
 
-                {% if subsection_data.extra.image_count %}
-                    {% set image_count = subsection_data.extra.image_count %}
-                {% else %}
-                    {% set image_count = subsection_data.pages | length %}
-                {% endif %}
-
                 <a href="{{ subsection_data.path }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
                    style="height: {{ height }}px; width: {{ width }}px;">
                     <img alt=""
-                         loading="lazy"
                          class="p-0 m-0"
-                         decoding="async"
+                         decoding="sync"
                          src="{{ image_uri }}"/>
+                    <div class="float-start m-0 py-1 px-2 d-inline-flex flex-column position-relative"
+                         style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
+                        <h5 class="p-0 m-0 text-white border-0"><span
+                                class="mx-auto">{{ subsection_data.extra.display_name }}</span></h5>
+                        <span class="text-white text-center">{{ subsection_data.extra.image_count }} {{ trans(key="images", lang=lang) }}</span>
+                    </div>
+                </a>
+            {% else %}
+                <a href="{{ subsection_data.path }}"
+                   class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
+                   style="height: {{ 200 }}px; width: {{ 200 }}px;">
+                    <div style="background-color: dimgrey"
+                         class="w-100 fs-1 fw-bolder h-100 justify-content-center align-items-center d-inline-flex">
+                        ?
+                    </div>
                     <div class="float-start m-0 py-1 px-2 d-inline-flex flex-column position-relative"
                          style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
                         <h3 class="p-0 m-0 text-white border-0"><span
                                 class="mx-auto">{{ subsection_data.extra.display_name }}</span></h3>
-                        <span class="text-white">{{ subsection_data.pages | length }} {{ trans(key="images", lang=lang) }}</span>
+                        <span class="text-white">{{ subsection_data.extra.image_count }} {{ trans(key="images", lang=lang) }}</span>
                     </div>
                 </a>
-            {% else %}
-                <p>HIER MÜSSTE EIN LEERES ALBUM SEIN. <i>TODO</i></p>
             {% endif %}
         {% endfor %}
 

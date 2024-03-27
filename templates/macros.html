@@ -65,16 +65,15 @@
     <meta name="article:published_time" content="{{ created }}"/>
 {% endmacro %}
 
-{% macro ifs_metadata(image_filename, width, height, title, preview_size=750) %}
+{% macro album_metadata(image_uri, width, height, title, preview_size=750) %}
 
     {% set scaling = preview_size / height %}
     {% set scaled_height = preview_size | round(precision=2) %}
     {% set scaled_width = (width * scaling) | round(precision=2) %}
-    {% set image_url = config.extra.ifs_base_path ~ "/.thumbs/" ~ preview_size ~ "-" ~ image_filename %}
 
     <meta property="og:type" content="article"/>
     {{ self::og_image(
-            image_url=image_url,
+            image_url=image_uri,
             width=scaled_width,
             height=scaled_height,
             author=config.author,
@@ -83,7 +82,7 @@
             )
             }}
 
-    {{ self::sd_image(image_url=image_url, title=title, author=config.author) }}
+    {{ self::sd_image(image_url=image_uri, title=title, author=config.author) }}
 
 {% endmacro %}
 

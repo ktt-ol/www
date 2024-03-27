@@ -4,7 +4,7 @@
 {% block extra_meta %}
 
     <meta property="og:type" content="article"/>
-    {{ self::ifs_metadata(image_filename=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
+    {{ self::album_metadata(image_uri=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
 
 {% endblock extra_meta %}
 
