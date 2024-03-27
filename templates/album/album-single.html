@@ -3,53 +3,57 @@
 
 {% block extra_meta %}
 
-<meta property="og:type" content="article"/>
-{{ macros::ifs_metadata(image_filename=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
+    <meta property="og:type" content="article"/>
+    {{ self::ifs_metadata(image_filename=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
 
 {% endblock extra_meta %}
 
 {% block content %}
 
-<h4 class="d-flex justify-content-between">
-    {{ page.title }}
-    <a class="btn btn-secondary btn-sm" href="{{ page.path }}..">
+    <h4 class="d-flex justify-content-between">
         {{ page.title }}
-        <!--{# TODO: BETTER BUTTON PLACEMENT #}-->
-        <!--{# TODO: TOTAL AMOUNT #}-->
-    </a>
-</h4>
+        <a class="btn btn-secondary btn-sm" href="{{ page.path }}..">
+            {{ page.title }}
+            <!--{# TODO: BETTER BUTTON PLACEMENT #}-->
+            <!--{# TODO: TOTAL AMOUNT #}-->
+        </a>
+    </h4>
 
-<div class="d-flex justify-content-around">
+    <div class="d-flex justify-content-around">
 
-    {% if page.lower %}
-    <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.lower.path }}">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
-        </svg>
-    </a>
-    {% endif %}
+        {% if page.lower %}
+            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.lower.path }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"></path>
+                </svg>
+            </a>
+        {% endif %}
 
-    <a target="_blank"
-       href="{{ page.extra.file_uri }}">
-        <img alt=""
-             class="mx-auto"
-             style="width: 750px;"
-             loading="lazy"
-             decoding="async"
-             src="{{ page.extra.file_uri_1200 }}"
-        />
-    </a>
+        <a target="_blank"
+           href="{{ page.extra.file_uri }}">
+            <img alt=""
+                 class="mx-auto"
+                 style="width: 750px;"
+                 loading="lazy"
+                 decoding="async"
+                 src="{{ page.extra.file_uri_1200 }}"
+            />
+        </a>
 
-    {% if page.higher %}
-    <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.higher.path }}">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"/>
-        </svg>
-    </a>
-    {% endif %}
+        {% if page.higher %}
+            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.higher.path }}">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"></path>
+                </svg>
+            </a>
+        {% endif %}
 
-</div>
+    </div>
 
-{{ page.content | safe }}
+    {{ page.content | safe }}
 
 {% endblock content %}

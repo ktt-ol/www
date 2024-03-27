@@ -1,9 +1,9 @@
 {% macro sd_image(image_url, title, author) %}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "ImageObject",
-        "contentUrl": "{{ image_url | safe }}",
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "ImageObject",
+            "contentUrl": "{{ image_url | safe }}",
         "license": "https://creativecommons.org/licenses/by-sa/4.0/",
         "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
         "creditText": "{{ title }}",
@@ -14,15 +14,15 @@
         },
         "copyrightNotice": "{{ author }}"
     }
-</script>
+    </script>
 {% endmacro %}
 
 {% macro sd_article(title, image_url, created, updated, author, description) %}
-<script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "NewsArticle",
-        "headline": "{{ title }}",
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": "{{ title }}",
         "image": [
             "{{ image_url | safe }}"
         ],
@@ -37,151 +37,150 @@
         ],
         "description": "{{ description }}"
     }
-</script>
+    </script>
 {% endmacro %}
 
 {% macro og_image(image_url, width, height, title, author, content_type, card="summary_large_image") %}
 
-<meta property="og:image" content="{{ image_url | safe }}"/>
-<meta property="og:image:secure_url" content="{{ image_url | safe }}"/>
-<meta property="og:image:type" content="{{ content_type }}"/>
-<meta property="og:image:width" content="{{ width }}"/>
-<meta property="og:image:height" content="{{ height }}"/>
-<meta property="og:image:alt" content="{{ title }}"/>
-<meta property="twitter:card" content="summary_large_image"/>
-<meta property="twitter:site" content="{{ author }}"/>
-<meta property="twitter:creator" content="{{ author }}"/>
-<meta property="twitter:image" content="{{ image_url | safe }}"/>
-<meta property="twitter:title" content="{{ title }}"/>
-<meta property="twitter:image:width" content="{{ width }}"/>
-<meta property="twitter:image:type" content="{{ content_type }}"/>
-<meta property="twitter:image:height" content="{{ height }}"/>
+    <meta property="og:image" content="{{ image_url | safe }}"/>
+    <meta property="og:image:secure_url" content="{{ image_url | safe }}"/>
+    <meta property="og:image:type" content="{{ content_type }}"/>
+    <meta property="og:image:width" content="{{ width }}"/>
+    <meta property="og:image:height" content="{{ height }}"/>
+    <meta property="og:image:alt" content="{{ title }}"/>
+    <meta property="twitter:card" content="summary_large_image"/>
+    <meta property="twitter:site" content="{{ author }}"/>
+    <meta property="twitter:creator" content="{{ author }}"/>
+    <meta property="twitter:image" content="{{ image_url | safe }}"/>
+    <meta property="twitter:title" content="{{ title }}"/>
+    <meta property="twitter:image:width" content="{{ width }}"/>
+    <meta property="twitter:image:type" content="{{ content_type }}"/>
+    <meta property="twitter:image:height" content="{{ height }}"/>
 {% endmacro %}
 
 {% macro og_article(author, section, created, updated) %}
-<meta name="article:author" content="{{ author }}">
-<meta name="article:section" content="{{ section }}">
-<meta name="article:modified_time" content="{{ updated }}"/>
-<meta name="article:published_time" content="{{ created }}"/>
+    <meta name="article:author" content="{{ author }}">
+    <meta name="article:section" content="{{ section }}">
+    <meta name="article:modified_time" content="{{ updated }}"/>
+    <meta name="article:published_time" content="{{ created }}"/>
 {% endmacro %}
 
 {% macro ifs_metadata(image_filename, width, height, title, preview_size=750) %}
 
-{% set scaling = preview_size / height %}
-{% set scaled_height = preview_size | round(precision=2) %}
-{% set scaled_width = (width * scaling) | round(precision=2) %}
-{% set image_url = config.extra.ifs_base_path ~ "/.thumbs/" ~ preview_size ~ "-" ~ image_filename %}
+    {% set scaling = preview_size / height %}
+    {% set scaled_height = preview_size | round(precision=2) %}
+    {% set scaled_width = (width * scaling) | round(precision=2) %}
+    {% set image_url = config.extra.ifs_base_path ~ "/.thumbs/" ~ preview_size ~ "-" ~ image_filename %}
 
-<meta property="og:type" content="article"/>
-{{
-self::og_image(
-image_url=image_url,
-width=scaled_width,
-height=scaled_height,
-author=config.author,
-title=title,
-content_type="image/jpeg"
-)
-}}
+    <meta property="og:type" content="article"/>
+    {{ self::og_image(
+            image_url=image_url,
+            width=scaled_width,
+            height=scaled_height,
+            author=config.author,
+            title=title,
+            content_type="image/jpeg"
+            )
+            }}
 
-{{ self::sd_image(image_url=image_url, title=title, author=config.author) }}
+    {{ self::sd_image(image_url=image_url, title=title, author=config.author) }}
 
 {% endmacro %}
 
 {% macro blog_list(pages) %}
 
-<div class="p-0 container-fluid">
-    {% for blog_page in pages %}
+    <div class="p-0 container-fluid">
+        {% for blog_page in pages %}
 
-    <div class="row py-2 border-bottom">
-        {% if blog_page.authors %}
-        {% set page_author = blog_page.authors | join(sep=", ") %}
-        {% else %}
-        {% set page_author = config.author %}
-        {% endif %}
-
-        {% set page_title = blog_page.title | default(value="") %}
-        {% set page_description = blog_page.description | default(value="") %}
-
-        {% if blog_page.extra.thumbnail %}
-        {% set thumbnail_path = blog_page.extra.thumbnail %}
-        {% set thumbnail_url = config.extra.resource_base ~ thumbnail_path %}
-        {% else %}
-        {% set thumbnail_path = "/media/img/logo-ktt.png" %}
-        {% set thumbnail_url = thumbnail_path %}
-        {% endif %}
-
-        {% if thumbnail_url is not ending_with(".svg") %}
-        {% set resized_image = resize_image(path=thumbnail_path, format="auto", op="fit_height", width=150, height=150) %}
-        {% set thumbnail_url = resized_image.url %}
-        {% endif %}
-
-        {{
-        self::sd_image(
-        image_url=thumbnail_url,
-        author=page_author,
-        title=page_title
-        )
-        }}
-
-        {{
-        macros::sd_article(
-        title=page_title,
-        image_url=thumbnail_url,
-        created=blog_page.date,
-        updated=blog_page.updated,
-        author=page_author,
-        description=page_description
-        )
-        }}
-
-        <div class="col-sm-3 d-flex flex-column justify-content-center text-center">
-            <img alt="Thumbnail Image for {{ page_title }}"
-                 src="{{ thumbnail_url }}"
-                 decoding="async"
-                 class="rounded rounded-2"
-                 loading="lazy"
-                 style="height: 150px; max-width: 100%;"
-            />
-        </div>
-        <div class="col-sm-9 my-1 d-flex flex-column">
-            <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
-                {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
-                {% set time_str = blog_page.date | date(format="%H:%M") %}
-
-                {% set lang_str = trans(key="publish_time", lang=lang) %}
-                {% set lang_str = lang_str | replace(from="%date%", to=date_str) %}
-                {% set lang_str = lang_str | replace(from="%time%", to=time_str) %}
-                {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
-                {{ lang_str }}
-            </p>
-            <h3 class="text-primary mb-1 ps-0 border-bottom-0">
-                <a href="{{ get_url(path=blog_page.path, lang=lang) }}" class="text-reset text-decoration-none">
-                {{ page_title }}
-                </a>
-            </h3>
-            <a href="{{ get_url(path=blog_page.path, lang=lang) }}" class="mb-1 text-reset text-decoration-none m-0">
-                {{ page_description }}
-            </a>
-            <p class="text-end p-0 m-0 mt-auto">
-                {% for i in range(end=config.taxonomies | length) %}
-                {% set taxonomy = config.taxonomies[i] %}
-                {% if blog_page.taxonomies[taxonomy.name] %}
-
-                {% for term in blog_page.taxonomies[taxonomy.name] %}
-
-                {% set taxonomy_url = get_taxonomy_url(kind=taxonomy.name, name=term, lang=lang) %}
-                <a href="{{ taxonomy_url }}" class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
-                    {{ term }}
-                </a>
-
-                {% endfor %}
+            <div class="row py-2 border-bottom">
+                {% if blog_page.authors %}
+                    {% set page_author = blog_page.authors | join(sep=", ") %}
+                {% else %}
+                    {% set page_author = config.author %}
                 {% endif %}
-                {% endfor %}
-            </p>
-        </div>
+
+                {% set page_title = blog_page.title | default(value="") %}
+                {% set page_description = blog_page.description | default(value="") %}
+
+                {% if blog_page.extra.thumbnail %}
+                    {% set thumbnail_path = blog_page.extra.thumbnail %}
+                    {% set thumbnail_url = config.extra.resource_base ~ thumbnail_path %}
+                {% else %}
+                    {% set thumbnail_path = "/media/img/logo-ktt.png" %}
+                    {% set thumbnail_url = thumbnail_path %}
+                {% endif %}
+
+                {% if thumbnail_url is not ending_with(".svg") %}
+                    {% set resized_image = resize_image(path=thumbnail_path, format="auto", op="fit_height", width=150, height=150) %}
+                    {% set thumbnail_url = resized_image.url %}
+                {% endif %}
+
+                {{ self::sd_image(
+                        image_url=thumbnail_url,
+                        author=page_author,
+                        title=page_title
+                        )
+                        }}
+
+                {{ self::sd_article(
+                        title=page_title,
+                        image_url=thumbnail_url,
+                        created=blog_page.date,
+                        updated=blog_page.updated,
+                        author=page_author,
+                        description=page_description
+                        )
+                        }}
+
+                <div class="col-sm-3 d-flex flex-column justify-content-center text-center">
+                    <img alt="Thumbnail Image for {{ page_title }}"
+                         src="{{ thumbnail_url }}"
+                         decoding="async"
+                         class="rounded rounded-2"
+                         loading="lazy"
+                         style="height: 150px; max-width: 100%;"
+                    />
+                </div>
+                <div class="col-sm-9 my-1 d-flex flex-column">
+                    <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
+                        {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
+                        {% set time_str = blog_page.date | date(format="%H:%M") %}
+
+                        {% set lang_str = trans(key="publish_time", lang=lang) %}
+                        {% set lang_str = lang_str | replace(from="%date%", to=date_str) %}
+                        {% set lang_str = lang_str | replace(from="%time%", to=time_str) %}
+                        {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
+                        {{ lang_str }}
+                    </p>
+                    <h3 class="text-primary mb-1 ps-0 border-bottom-0">
+                        <a href="{{ get_url(path=blog_page.path, lang=lang) }}" class="text-reset text-decoration-none">
+                            {{ page_title }}
+                        </a>
+                    </h3>
+                    <a href="{{ get_url(path=blog_page.path, lang=lang) }}"
+                       class="mb-1 text-reset text-decoration-none m-0">
+                        {{ page_description }}
+                    </a>
+                    <p class="text-end p-0 m-0 mt-auto">
+                        {% for i in range(end=config.taxonomies | length) %}
+                            {% set taxonomy = config.taxonomies[i] %}
+                            {% if blog_page.taxonomies[taxonomy.name] %}
+
+                                {% for term in blog_page.taxonomies[taxonomy.name] %}
+
+                                    {% set taxonomy_url = get_taxonomy_url(kind=taxonomy.name, name=term, lang=lang) %}
+                                    <a href="{{ taxonomy_url }}"
+                                       class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
+                                        {{ term }}
+                                    </a>
+
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </p>
+                </div>
+            </div>
+        {% endfor %}
     </div>
-    {% endfor %}
-</div>
 
 {% endmacro %}

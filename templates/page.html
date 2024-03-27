@@ -2,82 +2,79 @@
 {% import "macros.html" as macros %}
 
 {% block extra_meta %}
-<meta property="og:type" content='article'/>
+    <meta property="og:type" content='article'/>
 
-{% if page.extra.thumbnail %}
+    {% if page.extra.thumbnail %}
 
-{% set thumbnail_url = config.extra.resource_base ~ page.extra.thumbnail %}
-{% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
-{% set thumbnail_author = page_author %}
-{% set thumbnail_title = page.title | default(value=config.title) %}
+        {% set thumbnail_url = config.extra.resource_base ~ page.extra.thumbnail %}
+        {% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
+        {% set thumbnail_author = page_author %}
+        {% set thumbnail_title = page.title | default(value=config.title) %}
 
-{{
-self::sd_image(
-image_url=thumbnail_url,
-author=thumbnail_author,
-title=thumbnail_title
-)
-}}
+        {{ self::sd_image(
+                image_url=thumbnail_url,
+                author=thumbnail_author,
+                title=thumbnail_title
+                )
+                }}
 
-{{
-self::og_image(
-image_url=thumbnail_url,
-width=thumbnail_metadata.width,
-height=thumbnail_metadata.height,
-author=thumbnail_author,
-title=thumbnail_title,
-content_type="image/" ~ thumbnail_metadata.format,
-card="summary"
-)
-}}
+        {{ self::og_image(
+                image_url=thumbnail_url,
+                width=thumbnail_metadata.width,
+                height=thumbnail_metadata.height,
+                author=thumbnail_author,
+                title=thumbnail_title,
+                content_type="image/" ~ thumbnail_metadata.format,
+                card="summary"
+                )
+                }}
 
-{% else %}
-{% set thumbnail_url = "" %}
-{% endif %}
+    {% else %}
+        {% set thumbnail_url = "" %}
+    {% endif %}
 
-{% if page.taxonomies.topics %}
-{% for topic in page.taxonomies.topics %}
-<meta name="article:tag" content="{{ topic }}">
-{% endfor %}
-{% endif %}
+    {% if page.taxonomies.topics %}
+        {% for topic in page.taxonomies.topics %}
+            <meta name="article:tag" content="{{ topic }}">
+        {% endfor %}
+    {% endif %}
 
-{% if page.date and page.updated %}
+    {% if page.date and page.updated %}
 
-{{
-macros::og_article(
-author=page_author,
-section=page.components[1],
-created=page.date,
-updated=page.updated
-)
-}}
+        {{ self::og_article(
+                author=page_author,
+                section=page.components[1],
+                created=page.date,
+                updated=page.updated
+                )
+                }}
 
 
-{{
-macros::sd_article(
-title=page.title | default(value=config.title),
-image_url=thumbnail_url | default(value=""),
-created=page.date,
-updated=page.updated,
-author=page_author,
-description=page.description | default(value=config.description)
-)
-}}
+        {{ self::sd_article(
+                title=page.title | default(value=config.title),
+                image_url=thumbnail_url | default(value=""),
+                created=page.date,
+                updated=page.updated,
+                author=page_author,
+                description=page.description | default(value=config.description)
+                )
+                }}
 
-{% endif %}
+    {% endif %}
 
 {% endblock extra_meta %}
 
 {% block content %}
-<h4 class="d-flex justify-content-between">
-    {{page.title}}
+    <h4 class="d-flex justify-content-between">
+        {{ page.title }}
 
-    <span class="text-end">
+        <span class="text-end">
         {% if page.extra.repository %}
-        <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light" href="{{ page.extra.repository }}">Repository</a>
+            <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light"
+               href="{{ page.extra.repository }}">Repository</a>
         {% endif %}
     </span>
-</h4>
-{{ page.content | safe }}
+    </h4>
+    {{ page.content | safe }}
 
 {% endblock content %}

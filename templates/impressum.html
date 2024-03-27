@@ -2,76 +2,76 @@
 
 {% block content %}
 
-<div class="container">
-    <div class="row mb-2">
-        <div class="col">
-            <h4 class="mb-3">Postfach</h4>
-            <p>
-                Kreativität trifft Technik e.V.<br>
-                Postfach 5532<br>
-                26045 Oldenburg<br>
-                <br>
-                Kontakt:<br>
-                <a href="mailto:vorstand@kreativitaet-trifft-technik.de">vorstand@kreativitaet-trifft-technik.de</a>
-            </p>
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <h4 class="mb-3">Postfach</h4>
+                <p>
+                    Kreativität trifft Technik e.V.<br>
+                    Postfach 5532<br>
+                    26045 Oldenburg<br>
+                    <br>
+                    Kontakt:<br>
+                    <a href="mailto:vorstand@kreativitaet-trifft-technik.de">vorstand@kreativitaet-trifft-technik.de</a>
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="mb-3">Vereinsanschrift</h4>
+                <p class="mb-3">
+                    Kreativität trifft Technik e.V.<br>
+                    Bahnhofsplatz 10<br>
+                    26122 Oldenburg<br>
+                    <br>
+                    Kontakt:<br>
+                    <a href="mailto:vorstand@kreativitaet-trifft-technik.de">vorstand@kreativitaet-trifft-technik.de</a>
+                </p>
+            </div>
         </div>
-        <div class="col">
-            <h4 class="mb-3">Vereinsanschrift</h4>
-            <p class="mb-3">
-                Kreativität trifft Technik e.V.<br>
-                Bahnhofsplatz 10<br>
-                26122 Oldenburg<br>
-                <br>
-                Kontakt:<br>
-                <a href="mailto:vorstand@kreativitaet-trifft-technik.de">vorstand@kreativitaet-trifft-technik.de</a>
-            </p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <h4 class="mb-3">Vorstand</h4>
-            <ul>
-                {% for bgb in page.extra.bgb_vorstand %}
-                <li>{{bgb}}</li>
-                {% endfor %}
-            </ul>
-            <p class="ps-2">
-                (jeweils über den Verein zu laden)
-            </p>
+        <div class="row">
+            <div class="col">
+                <h4 class="mb-3">Vorstand</h4>
+                <ul>
+                    {% for bgb in page.extra.bgb_vorstand %}
+                        <li>{{ bgb }}</li>
+                    {% endfor %}
+                </ul>
+                <p class="ps-2">
+                    (jeweils über den Verein zu laden)
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="mb-3">BGB-Beisitzer</h4>
+                <ul>
+                    {% for bgb in page.extra.bgb_erweitert %}
+                        <li>{{ bgb }}</li>
+                    {% endfor %}
+                </ul>
+                <p class="ps-2">
+                    (jeweils über den Verein zu laden)
+                </p>
+            </div>
         </div>
-        <div class="col">
-            <h4 class="mb-3">BGB-Beisitzer</h4>
-            <ul>
-                {% for bgb in page.extra.bgb_erweitert %}
-                <li>{{bgb}}</li>
-                {% endfor %}
-            </ul>
-            <p class="ps-2">
-                (jeweils über den Verein zu laden)
-            </p>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col">
-            <h4 class="mb-3">Finanzamt</h4>
-            <p>
-                Der Verein ist vom Finanzamt Oldenburg als
-                gemeinnützig anerkannt und im Registergericht im AG
-                Oldenburg unter der Registernummer <b>VR 201044</b>
-                eingetragen.
-            </p>
-        </div>
-        <div class="col">
-            <h4 class="mb-3">Verantwortung nach § 55 Abs. 2 RStV</h4>
-            <p>
-                {{ page.extra.bgb_vorstand[0] }}<br>
-                Kreativität trifft Technik e.V.<br>
-                Bahnhofsplatz 10<br>
-                26122 Oldenburg
-            </p>
+        <div class="row">
+            <div class="col">
+                <h4 class="mb-3">Finanzamt</h4>
+                <p>
+                    Der Verein ist vom Finanzamt Oldenburg als
+                    gemeinnützig anerkannt und im Registergericht im AG
+                    Oldenburg unter der Registernummer <b>VR 201044</b>
+                    eingetragen.
+                </p>
+            </div>
+            <div class="col">
+                <h4 class="mb-3">Verantwortung nach § 55 Abs. 2 RStV</h4>
+                <p>
+                    {{ page.extra.bgb_vorstand[0] }}<br>
+                    Kreativität trifft Technik e.V.<br>
+                    Bahnhofsplatz 10<br>
+                    26122 Oldenburg
+                </p>
+            </div>
         </div>
     </div>
-</div>
 {% endblock content %}

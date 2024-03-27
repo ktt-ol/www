@@ -1,11 +1,11 @@
 {% if lang == config.default_language %}
-{% set lang_stub = "" %}
+    {% set lang_stub = "" %}
 {% else %}
-{% set lang_stub = "." ~ lang %}
+    {% set lang_stub = "." ~ lang %}
 {% endif %}
 
 <!DOCTYPE html>
-<html lang="{{lang}}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
+<html lang="{{ lang }}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -13,37 +13,37 @@
     <meta property="og:site_name" content="{{ config.title }}"/>
     <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}'/>
     <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="de") }}'/>
-    <meta property="og:locale:alternate" content='{{trans(key="locale_name", lang="en") }}'/>
+    <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="en") }}'/>
     {% if current_path %}
-    <meta property="og:url" content="https://mainframe.io{{ current_path }}"/>
+        <meta property="og:url" content="https://mainframe.io{{ current_path }}"/>
     {% endif %}
 
     {% if page.authors %}
-    {% set page_author = page.authors | join(sep=", ") %}
+        {% set page_author = page.authors | join(sep=", ") %}
     {% else %}
-    {% set page_author = config.author %}
+        {% set page_author = config.author %}
     {% endif %}
 
     <meta name="author" content="{{ page_author }}">
 
     {% block extra_meta %}
-    <meta property="og:type" content="website"/>
+        <meta property="og:type" content="website"/>
     {% endblock extra_meta %}
 
     {% if section.title %}
 
-    {% set title = section.extra.og_title | default(value=section.title ~ " | " ~ config.title) %}
-    {% set description = section.extra.og_description | default(value=config.description) %}
+        {% set title = section.extra.og_title | default(value=section.title ~ " | " ~ config.title) %}
+        {% set description = section.extra.og_description | default(value=config.description) %}
 
     {% elif page.title %}
 
-    {% set title = page.extra.og_title | default(value=page.title ~ " | " ~ config.title) %}
-    {% set description = page.extra.og_description | default(value=config.description) %}
+        {% set title = page.extra.og_title | default(value=page.title ~ " | " ~ config.title) %}
+        {% set description = page.extra.og_description | default(value=config.description) %}
 
     {% else %}
 
-    {% set title = config.title %}
-    {% set description = config.description %}
+        {% set title = config.title %}
+        {% set description = config.description %}
 
     {% endif %}
 
@@ -73,22 +73,22 @@
     {% include "navbar.html" %}
 
     {% block main %}
-    <main id="content" class="row">
-        <div class="col-md-9 main-content">
-            {% block content %}
-            {% if page.content %}
-            {{ page.content | safe }}
-            {% elif section.content %}
-            {{ section.content | safe }}
-            {% endif %}
-            {% endblock content %}
-        </div>
-        <div class="col-md-3">
-            {% block sidebar %}
-            {% include "sidebar.html" %}
-            {% endblock sidebar %}
-        </div>
-    </main>
+        <main id="content" class="row">
+            <div class="col-md-9 main-content">
+                {% block content %}
+                    {% if page.content %}
+                        {{ page.content | safe }}
+                    {% elif section.content %}
+                        {{ section.content | safe }}
+                    {% endif %}
+                {% endblock content %}
+            </div>
+            <div class="col-md-3">
+                {% block sidebar %}
+                    {% include "sidebar.html" %}
+                {% endblock sidebar %}
+            </div>
+        </main>
     {% endblock main %}
 
     <footer id="footer" class="border-top pt-2 mt-5 row">
