@@ -18,6 +18,8 @@ total = 0
 
 date = None
 ifs_year_folder = None
+last_year = ""
+year_count = 0
 
 for image in ifs_images:
     # check if time exists and is after IFS introduction year (2012)
@@ -32,28 +34,35 @@ for image in ifs_images:
 
         year = date.strftime("%Y")
 
+        if last_year != year:
+            last_year = year
+            year_count = 0
+
         ifs_year_folder = ifs_folder + "/" + year
 
         if not os.path.exists(ifs_year_folder):
             os.mkdir(ifs_year_folder)
 
-        frontmatter = '+++\n'
-        frontmatter += 'title = "Images From Space ' + year + '"\n'
-        frontmatter += 'sort_by = "weight"\n'
-        frontmatter += 'template = "album/album-list.html"\n'
-        frontmatter += 'weight = ' + year + '\n'
-        frontmatter += 'in_search_index = false\n'
-        frontmatter += '[extra]\n'
-        frontmatter += 'display_name = ' + year + '\n'
-        frontmatter += '+++\n'
+    year_count += 1
 
-        f = open(ifs_year_folder + "/_index.md", "w")
-        f.write(frontmatter)
-        f.close()
+    frontmatter = '+++\n'
+    frontmatter += 'title = "Images From Space ' + year + '"\n'
+    frontmatter += 'sort_by = "weight"\n'
+    frontmatter += 'template = "album/album-list.html"\n'
+    frontmatter += 'weight = ' + year + '\n'
+    frontmatter += 'in_search_index = false\n'
+    frontmatter += '[extra]\n'
+    frontmatter += 'display_name = ' + year + '\n'
+    frontmatter += 'image_count = ' + str(year_count) + '\n'
+    frontmatter += '+++\n'
 
-        f = open(ifs_year_folder + "/_index.en.md", "w")
-        f.write(frontmatter)
-        f.close()
+    f = open(ifs_year_folder + "/_index.md", "w")
+    f.write(frontmatter)
+    f.close()
+
+    f = open(ifs_year_folder + "/_index.en.md", "w")
+    f.write(frontmatter)
+    f.close()
 
     image_id = int(image["filename"].split(".")[0])
     image_id_str = str(image_id)

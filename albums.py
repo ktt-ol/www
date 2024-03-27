@@ -3,6 +3,7 @@ import json
 import os
 import requests
 import tempfile
+import hashlib
 from os.path import join as join_path
 from slugify import slugify
 from datetime import datetime
@@ -36,22 +37,22 @@ def get_url_metadata(path_components: list[str]) -> dict:
 def get_cover_image(path_components: list[str], tmp_folder_covers: str, image_filename: str) -> str:
     url = albums_url + "/" + join_web_path(path_components) + "/" + image_filename
 
-    joined_components = join_folder_path(path_components)
-    img_folder_path = join_path(tmp_folder_covers, joined_components)
-    img_file_path = join_path(img_folder_path, image_filename)
+    img_data = requests.get(url).content
 
-    if not os.path.exists(img_folder_path):
-        os.makedirs(img_folder_path)
+    filename, file_extension = os.path.splitext(image_filename)
+    file_hash = hashlib.sha256(img_data).hexdigest()
+    filename = slugify(filename) + "_" + file_hash + file_extension
+
+    img_file_path = join_path(tmp_folder_covers, filename)
 
     if os.path.exists(img_file_path) and os.path.isfile(img_file_path):
-        return join_path(joined_components, image_filename)
+        return filename
 
-    img_data = requests.get(url).content
     img_file = open(img_file_path, "wb")
     img_file.write(img_data)
     img_file.close()
 
-    return join_path(joined_components, image_filename)
+    return filename
 
 
 def create_index_md(path_components: list[str], tmp_folder_albums: str, tmp_folder_covers: str, metadata: dict,
