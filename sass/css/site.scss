@@ -90,6 +90,20 @@ a {
   flex: 1 1 auto;
   cursor: pointer;
   position: relative;
+  border-radius: 5px;
+  border: 1px solid rgba(var(--bs-primary-rgb), 0);
+}
+
+.image-gallery > a:hover {
+  border: 1px solid rgba(var(--bs-primary-rgb), 1);
+}
+
+.image-gallery > a .album-hover-info {
+  display: none !important;
+}
+
+.image-gallery > a:hover .album-hover-info {
+  display: flex !important;
 }
 
 .image-gallery a img {
@@ -99,8 +113,7 @@ a {
   border: 1px solid rgba(var(--bs-secondary-rgb), 0.25);
   border-radius: 5px;
   vertical-align: middle;
-  background: url("/media/img/img-loader.gif") no-repeat;
-  background-position: center;
+  background: url("/media/img/img-loader.gif") no-repeat center;
 }
 
 .image-gallery::after {

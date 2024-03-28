@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import os
+import time
 import requests
 import tempfile
 import hashlib
@@ -29,7 +30,6 @@ def join_web_path(path_components: list[str]) -> str:
 
 def get_url_metadata(path_components: list[str]) -> dict:
     url = albums_url + "/" + join_web_path(path_components) + "/meta.json"
-    print("Fetching meta from: " + url)
     folder_data = json.loads(requests.get(url).text)
     return folder_data
 
@@ -56,12 +56,7 @@ def get_cover_image(path_components: list[str], tmp_folder_covers: str, image_fi
 
 
 def create_index_md(path_components: list[str], tmp_folder_albums: str, tmp_folder_covers: str, metadata: dict,
-                    lang: str) -> None:
-    if 'time' in metadata and metadata['time'] is not None:
-        date = datetime.fromtimestamp(int(metadata["time"]) / 1000)
-    else:
-        date = None
-
+                    created_at: datetime, lang: str) -> None:
     title = metadata["title"]
     title = title.replace('"', '\"')
 
@@ -72,49 +67,57 @@ def create_index_md(path_components: list[str], tmp_folder_albums: str, tmp_fold
     f.write("+++\n")
     f.write('title = "' + title + '"\n')
     f.write('template = "album/album-list.html"\n')
-
-    if date is not None:
-        f.write('date = "' + date.strftime("%Y-%m-%dT%H:%M:%S") + '"\n')
+    f.write('sort_by = "date"\n')
+    f.write('weight = ' + str(int(time.mktime(created_at.timetuple()))) + '\n')
 
     f.write('[extra]\n')
     f.write('display_name = "' + title + '"\n')
     f.write('image_count = ' + str(metadata["imageCount"]) + '\n')
 
-    if "cover" in metadata and metadata["cover"] is not None:
-        f.write('cover = "' + join_path(cover_path, get_cover_image(path_components, tmp_folder_covers, metadata["cover"]) + '"\n'))
+    if metadata["cover"] is not None:
+        cover_image_path = join_path(cover_path, get_cover_image(path_components, tmp_folder_covers, metadata["cover"]))
+        cover_image_path = cover_image_path.replace("\\", "\\\\")
+        f.write('cover = "' + cover_image_path + '"\n')
 
     f.write("+++\n")
     f.close()
 
 
-def create_image_md(path_components: list[str], tmp_folder_albums: str, metadata: dict, lang: str) -> None:
-    filename = metadata["filename"]
-    filename = filename.replace('"', '\"')
-
+def create_image_md(path_components: list[str], tmp_folder_albums: str, metadata: dict, created_at: datetime,
+                    lang: str) -> None:
     if lang != "":
         lang = "." + lang
 
-    slug_name = slugify(filename)
-
     base_uri = join_web_path(path_components)
 
-    image_file_path = join_path(tmp_folder_albums, join_folder_path(path_components), slug_name + lang + ".md")
+    date_str = created_at.strftime("%Y-%m-%d")
+    time_str = created_at.strftime("%H:%M:%S")
+
+    page_filename = date_str + "-" + slugify(metadata["filename"]) + lang + ".md"
+    image_file_path = join_path(tmp_folder_albums, join_folder_path(path_components), page_filename)
+
+    if os.path.exists(image_file_path):
+        raise FileExistsError(image_file_path)
+
     image_file = open(image_file_path, "w")
 
     image_file.write("+++\n")
-    image_file.write('title = "' + filename + '"\n')
+    image_file.write('title = "' + metadata["filename"] + '"\n')
     image_file.write('template = "album/album-single.html"\n')
     image_file.write('sort_by = "title"\n')
+    image_file.write('date = ' + date_str + "T" + time_str + '\n')
 
     image_file.write('[extra]\n')
+    image_file.write('filename = "' + metadata["filename"] + '"\n')
     image_file.write('height = ' + str(metadata["height"]) + "\n")
     image_file.write('width = ' + str(metadata["width"]) + "\n")
-    image_file.write('file_uri = "' + albums_url + "/" + base_uri + "/" + filename + '"\n')
-    image_file.write('file_uri_300 = "' + albums_url + "/" + base_uri + "/.thumbs/300-" + filename + '"\n')
+    image_file.write('file_uri = "' + albums_url + "/" + base_uri + "/" + metadata["filename"] + '"\n')
+    image_file.write('file_uri_300 = "' + albums_url + "/" + base_uri + "/.thumbs/300-" + metadata["filename"] + '"\n')
 
     # Albums do not have 750 pixel thumbnail, use 1200 instead
-    image_file.write('file_uri_750 = "' + albums_url + "/" + base_uri + "/.thumbs/1200-" + filename + '"\n')
-    image_file.write('file_uri_1200 = "' + albums_url + "/" + base_uri + "/.thumbs/1200-" + filename + '"\n')
+    image_file.write('file_uri_750 = "' + albums_url + "/" + base_uri + "/.thumbs/1200-" + metadata["filename"] + '"\n')
+    image_file.write(
+        'file_uri_1200 = "' + albums_url + "/" + base_uri + "/.thumbs/1200-" + metadata["filename"] + '"\n')
     image_file.write("+++\n")
     image_file.close()
 
@@ -123,18 +126,30 @@ def create_album_folder(path_components: list[str], tmp_folder_albums: str, tmp_
                         metadata: dict) -> None:
     path_components = path_components.copy()
     path_components.append(metadata["foldername"])
+
+    if metadata['time'] is not None:
+        album_created_at = datetime.fromtimestamp(int(metadata["time"]) / 1000)
+    else:
+        print("Album has no creation date: ", path_components)
+        album_created_at = datetime.fromtimestamp(0)
+
     joined_path = join_folder_path(path_components)
 
     album_folder = join_path(tmp_folder_albums, joined_path)
     os.makedirs(album_folder)
 
-    create_index_md(path_components, tmp_folder_albums, tmp_folder_covers, metadata, "")
-    create_index_md(path_components, tmp_folder_albums, tmp_folder_covers, metadata, "en")
+    create_index_md(path_components, tmp_folder_albums, tmp_folder_covers, metadata, album_created_at, "")
+    create_index_md(path_components, tmp_folder_albums, tmp_folder_covers, metadata, album_created_at, "en")
 
     current_metadata = get_url_metadata(path_components)
     for image_metadata in current_metadata["images"]:
-        create_image_md(path_components, tmp_folder_albums, image_metadata, "")
-        create_image_md(path_components, tmp_folder_albums, image_metadata, "en")
+        if image_metadata['exif']['time'] is not None:
+            image_created_at = datetime.fromtimestamp(int(image_metadata['exif']['time']) / 1000)
+        else:
+            image_created_at = datetime.fromtimestamp(0)
+
+        create_image_md(path_components, tmp_folder_albums, image_metadata, image_created_at, "")
+        create_image_md(path_components, tmp_folder_albums, image_metadata, image_created_at, "en")
 
     sub_threads = []
 
@@ -168,6 +183,7 @@ index_file = open(join_path(tmp_ktt_ol_albums, "_index.md"), "w")
 index_file.write("+++\n")
 index_file.write("title = 'Fotoalben'\n")
 index_file.write("template = 'album/album-list.html'\n")
+index_file.write('sort_by = "date"\n')
 index_file.write("+++\n")
 index_file.close()
 
@@ -175,6 +191,7 @@ index_file = open(join_path(tmp_ktt_ol_albums, "_index.en.md"), "w")
 index_file.write("+++\n")
 index_file.write("title = 'Albums'\n")
 index_file.write("template = 'album/album-list.html'\n")
+index_file.write('sort_by = "date"\n')
 index_file.write("+++\n")
 index_file.close()
 
