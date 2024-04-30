@@ -3,7 +3,6 @@ title = "Kontakt"
 weight = 10
 +++
 
-##### Kontakt
 {{ contact_info() }}
 
 ##### Anreise

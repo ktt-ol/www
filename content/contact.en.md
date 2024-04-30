@@ -3,7 +3,6 @@ title = "Contact"
 weight = 10
 +++
 
-##### Contact
 {{ contact_info_en() }}
 
 ##### Arrival
