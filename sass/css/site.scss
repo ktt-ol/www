@@ -8,14 +8,6 @@ body {
   margin: 0;
 }
 
-.bg-dark-hover:hover {
-  background-color: rgba(var(--bs-danger-rgb), 0.9) !important;
-}
-
-.bg-dark-hover {
-  background-color: rgba(var(--bs-danger-rgb), 1) !important;
-}
-
 @for $i from 1 through 6 {
   h#{$i} {
     color: var(--bs-primary);

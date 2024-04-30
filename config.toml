@@ -14,9 +14,9 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "Serie", feed = true, paginate_by = 10 },
-    {name = "Typ", feed = true, paginate_by = 10 },
-    {name = "Gruppe", feed = true, paginate_by = 10 }
+    { name = "Serie", feed = true, paginate_by = 10 },
+    { name = "Typ", feed = true, paginate_by = 10 },
+    { name = "Gruppe", feed = true, paginate_by = 10 }
 ]
 
 [link_checker]
@@ -50,6 +50,10 @@ all = "Alle"
 images = "Bilder"
 arrival = "Anreise"
 
+closed = "Geschlossen"
+closing = "Schließt bald"
+open = "Geöffnet"
+
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 resource_base = "https://ktt-ol.github.io"
@@ -61,6 +65,13 @@ bs_color_map = [
     "warning",
     "info",
     "light"
+]
+
+rooms = [
+    { name = "space", title = { de = "Hackspace", en = "Hackspace" } },
+    { name = "machining", title = { de = "Zerspanungstechnik", en = "Machining" } },
+    { name = "lab3d", title = { de = "3D Lab", en = "3D Lab" } },
+    { name = "radstelle", title = { de = "Radstelle", en = "Cycling" } },
 ]
 
 [languages.en]
@@ -75,9 +86,9 @@ generate_feed = true
 feed_filename = "rss.xml"
 
 taxonomies = [
-    {name = "Series", feed = true, paginate_by = 10 },
-    {name = "Type", feed = true, paginate_by = 10 },
-    {name = "Group", feed = true, paginate_by = 10 }
+    { name = "Series", feed = true, paginate_by = 10 },
+    { name = "Type", feed = true, paginate_by = 10 },
+    { name = "Group", feed = true, paginate_by = 10 }
 ]
 
 [languages.en.translations]
@@ -90,5 +101,6 @@ all = "All"
 images = "Images"
 arrival = "Arrival"
 
-status_finished = "Finished"
-status_in_progress = "In Progress"
+closed = "Closed"
+closing = "Closing soon"
+open = "Open"
