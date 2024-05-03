@@ -5,6 +5,7 @@
 - [ ] transfer remaining blog entries
   - [ ] projects
   - [ ] press releases
+- [ ] Panorama spacewalk
 - [ ] event calendar
   - [ ] upcoming events for sidebar
   - [ ] calendar page
