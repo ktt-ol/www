@@ -103,7 +103,7 @@
 
                 {% if blog_page.extra.thumbnail %}
                     {% set thumbnail_path = blog_page.extra.thumbnail %}
-                    {% set thumbnail_url = config.extra.resource_base ~ thumbnail_path %}
+                    {% set thumbnail_url = get_url(path=thumbnail_path) %}
                 {% else %}
                     {% set thumbnail_path = "/media/img/logo-ktt.png" %}
                     {% set thumbnail_url = thumbnail_path %}

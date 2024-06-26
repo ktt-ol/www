@@ -1,8 +1,4 @@
-{% if lang == config.default_language %}
-    {% set index_section = get_section(path=section_name ~ "/_index.md") %}
-{% else %}
-    {% set index_section = get_section(path=section_name ~ "/_index." ~ lang ~ ".md") %}
-{% endif %}
+{% set index_section = get_section(path=section_name ~ "/_index.md", lang=lang) %}
 
 <li class="nav-item dropdown">
     <div class="nav-link dropdown-toggle" role="button" aria-expanded="false">

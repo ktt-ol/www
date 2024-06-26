@@ -2,17 +2,17 @@
     <div class="col">
         <nav class="navbar navbar-expand-md bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand" href='{{ get_url(path="", lang=lang) }}'
+                <a class="navbar-brand" href='{{ get_url(path="/", lang=lang) }}'
                    style="padding-top: 10px; padding-bottom: 10px;">
                     <img style="height: 28px;"
                          loading="lazy"
                          decoding="async"
                          id="img-logo-mainframe"
-                         src="/media/img/logo-mainframe.svg"
+                         src="{{ get_url(path="/media/img/logo-mainframe.svg") }}"
                          alt="Mainframe Logo">
                     <img style="height: 50px;"
                          id="img-logo-ktt"
-                         src="/media/img/logo-ktt.png"
+                         src="{{ get_url(path="/media/img/logo-ktt.png") }}"
                          loading="lazy"
                          decoding="async"
                          alt="Kreativität trifft Technik e.V. Logo">
@@ -37,7 +37,7 @@
                         <li class="nav-item">
                             <a class="nav-link" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/blog/_index.md", lang=lang) }}'>
-                                {% set blog_section_metadata = get_section(path="blog/_index" ~ lang_stub ~ ".md", metadata_only=true) %}
+                                {% set blog_section_metadata = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
                                 {{ blog_section_metadata.title }}
                             </a>
                         </li>
@@ -45,7 +45,7 @@
                         <li class="nav-item">
                             <a class="nav-link" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/calendar.md", lang=lang) }}'>
-                                {% set contact_page_metadata = get_page(path="calendar" ~ lang_stub ~ ".md", metadata_only=true) %}
+                                {% set contact_page_metadata = get_page(path="calendar.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
                             </a>
                         </li>
@@ -53,7 +53,7 @@
                         <li class="nav-item">
                             <a class="nav-link" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/contact.md", lang=lang) }}'>
-                                {% set contact_page_metadata = get_page(path="contact" ~ lang_stub ~ ".md", metadata_only=true) %}
+                                {% set contact_page_metadata = get_page(path="contact.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
                             </a>
                         </li>
@@ -93,13 +93,13 @@
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="/{{ raw_path }}">
-                                        <img src="/media/img/lang/de.png" class="me-1">
+                                        <img src="{{ get_url(path="/media/img/lang/de.png") }}" class="me-1">
                                         Deutsch
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="/en/{{ raw_path }}">
-                                        <img src="/media/img/lang/en.png" class="me-1">
+                                        <img src="{{ get_url(path="/media/img/lang/en.png") }}" class="me-1">
                                         Englisch
                                     </a>
                                 </li>

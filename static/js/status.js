@@ -15,13 +15,19 @@ const StateOpen = {
     color: "btn-success"
 };
 
+const StateUnknown = {
+    name: "unknown",
+    color: "btn-white"
+};
+
 const States = {
     text_id_prefix: "status-text-",
     button_id_prefix: "status-",
     all_states: [
         StateClosed,
         StateClosing,
-        StateOpen
+        StateOpen,
+        StateUnknown
     ],
     state_map: {
         "none": StateClosed,

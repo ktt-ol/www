@@ -1,9 +1,3 @@
-{% if lang == config.default_language %}
-    {% set lang_stub = "" %}
-{% else %}
-    {% set lang_stub = "." ~ lang %}
-{% endif %}
-
 <!DOCTYPE html>
 <html lang="{{ lang }}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
 <head>
@@ -15,7 +9,7 @@
     <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="de") }}'/>
     <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="en") }}'/>
     {% if current_path %}
-        <meta property="og:url" content="https://mainframe.io{{ current_path }}"/>
+        <meta property="og:url" content="{{ get_url(path=current_path) }}"/>
     {% endif %}
 
     {% if page.authors %}
@@ -49,7 +43,6 @@
 
     {% include "structured-data.html" %}
 
-
     <title>{{ title }}</title>
     <meta name="description" content='{{ description }}'>
     <meta property="og:description" content='{{ description }}'/>
@@ -57,14 +50,17 @@
 
     <link integrity='sha384-{{ get_hash(path="css/bootstrap.min.css", sha_type=384, base64=true) | safe }}'
           rel="stylesheet"
-          href="/css/bootstrap.min.css">
+          href="{{ get_url(path="/css/bootstrap.min.css") }}">
 
     <link integrity='sha384-{{ get_hash(path="css/site.css", sha_type=384, base64=true) | safe }}'
           rel="stylesheet"
-          href="/css/site.css">
+          href="{{ get_url(path="/css/site.css") }}">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
-          href='{{ get_url(path="rss.xml", trailing_slash=false) }}'>
+          href='{{ get_url(path="/rss.xml", trailing_slash=false) }}'>
+
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href='{{ get_url(path="/atom.xml", trailing_slash=false) }}'>
 </head>
 
 <body class="vh-100 m-0 p-0">
@@ -102,7 +98,7 @@
     </footer>
 </div>
 
-<script src="/js/site.js"
+<script src="{{ get_url(path="/js/site.js") }}"
         integrity='sha384-{{ get_hash(path="js/site.js", sha_type=384, base64=true) | safe }}'>
 </script>
 

@@ -2,10 +2,14 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
-    {% set blog_section = get_section(path="blog/_index" ~ lang_stub ~ ".md") %}
+    {% set blog_section = get_section(path="blog/_index.md", lang=lang) %}
 
     <h4>
         {{ blog_section.title }} - {{ taxonomy.name }} - {{ term.name }}
+
+        <span>
+            <a href="{{ get_url(path=current_path ~ "atom.xml", lang=lang) }}">ATOM</a>
+        </span>
     </h4>
     {{ self::blog_list(pages=paginator.pages) }}
 {% endblock content %}
