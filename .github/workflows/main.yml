@@ -18,7 +18,7 @@ jobs:
       - run: python albums.py
       - run: python ifs.py
       - name: 'build and deploy'
-        uses: shalzz/zola-deploy-action@v0.18.0
+        uses: lordiii/zola-deploy-action@v0.19.1
         env:
           PAGES_BRANCH: master
           BUILD_DIR: .
