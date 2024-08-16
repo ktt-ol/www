@@ -114,23 +114,6 @@
                     {% set thumbnail_url = resized_image.url %}
                 {% endif %}
 
-                {{ self::sd_image(
-                        image_url=thumbnail_url,
-                        author=page_author,
-                        title=page_title
-                        )
-                        }}
-
-                {{ self::sd_article(
-                        title=page_title,
-                        image_url=thumbnail_url,
-                        created=blog_page.date,
-                        updated=blog_page.updated,
-                        author=page_author,
-                        description=page_description
-                        )
-                        }}
-
                 <div class="col-sm-3 d-flex flex-column justify-content-center text-center">
                     <img alt="Thumbnail Image for {{ page_title }}"
                          src="{{ thumbnail_url }}"
@@ -152,11 +135,11 @@
                         {{ lang_str }}
                     </p>
                     <h3 class="text-primary mb-1 ps-0 border-bottom-0">
-                        <a href="{{ get_url(path=blog_page.path, lang=lang) }}" class="text-reset text-decoration-none">
+                        <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}" class="text-reset text-decoration-none">
                             {{ page_title }}
                         </a>
                     </h3>
-                    <a href="{{ get_url(path=blog_page.path, lang=lang) }}"
+                    <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
                        class="mb-1 text-reset text-decoration-none m-0">
                         {{ page_description }}
                     </a>

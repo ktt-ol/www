@@ -1,23 +1,9 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
-
-{% block extra_meta %}
+{% block content %}
     {% set ifs_data = load_data(url=config.extra.ifs_base_path ~ "/meta.json", format="json") %}
     {% set ifs_count = ifs_data.images | length %}
-    {% for i in range(end=5) %}
-
-        {{ self::sd_image(
-                image_url=config.extra.ifs_base_path ~ "/" ~ ifs_data.images[i].filename,
-                author=config.author,
-                title="IFS"
-                )
-                }}
-
-    {% endfor %}
-{% endblock extra_meta %}
-
-{% block content %}
 
     <div class="container-fluid p-0">
         <div class="row">
