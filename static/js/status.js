@@ -17,7 +17,7 @@ const StateOpen = {
 
 const StateUnknown = {
     name: "unknown",
-    color: "btn-white"
+    color: "btn-info"
 };
 
 const States = {
@@ -34,6 +34,7 @@ const States = {
         "closing": StateClosing,
         "open": StateOpen,
         "open+": StateOpen,
+        "unknown": StateUnknown
     },
 };
 
@@ -68,6 +69,7 @@ function set_room_status(room_name, state_name) {
             throw new Error(`Unknown room supplied: ${room_name}`)
         }
     } else {
+        set_room_status(room_name, "unknown");
         throw new Error(`Unknown status option supplied: ${state_name}`)
     }
 }
@@ -77,7 +79,11 @@ async function fetch_current_status() {
     console.info("Processing current status information", currentStatus);
 
     for (let room_name in currentStatus) {
-        set_room_status(room_name, currentStatus[room_name].state);
+        try {
+            set_room_status(room_name, currentStatus[room_name].state);
+        } catch (error) {
+            console.error("An error occurred:", error)
+        }
     }
 }
 
