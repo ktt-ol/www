@@ -13,6 +13,9 @@ body {
     color: var(--bs-primary);
     padding: 0 0 0 1px;
     margin: 0.5em 0 0.5em 0;
+    height: 2.5rem - (0.167rem * $i);
+    max-height: 2rem;
+    min-height: 2rem;
     display: flex;
     justify-content: space-between;
     align-items: end;

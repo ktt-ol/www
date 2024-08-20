@@ -2,12 +2,47 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
+    <div class="d-flex justify-content-end">
+        {% if section.subsections | length > 0 %}
+            <div class="d-flex flex-wrap justify-content-center">
+                {% for sub_path in section.subsections | sort | reverse %}
+                    {% set subsection = get_section(path=sub_path) %}
+                    <a class="btn btn-sm btn-outline-primary my-1 ms-1" href="{{ subsection.path }}">
+                        {{ subsection.title }}
+                    </a>
+                {% endfor %}
+            </div>
+        {% else %}
+            {% set ancestor = get_section(path=section.ancestors | last) %}
+            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.path }}">
+                <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
+                <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
+                    <path fill-rule="evenodd"
+                          d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
+                </svg>
+
+                <!-- Credit: https://icons.getbootstrap.com/icons/newspaper/ -->
+                <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     viewBox="0 0 16 16">
+                    <path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"></path>
+                    <path d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"></path>
+                </svg>
+
+                <span class="ms-1 align-self-center">{{ ancestor.title }}</span>
+            </a>
+        {% endif %}
+    </div>
+    <hr/>
+
     {% if paginator.current_index > 1 %}
         <a class="btn btn-outline-primary w-100" href="{{ paginator.previous }}">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                  class="bi bi-arrow-bar-up" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
-                      d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"/>
+                      d="M8 10a.5.5 0 0 0 .5-.5V3.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 3.707V9.5a.5.5 0 0 0 .5.5m-7 2.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5"></path>
             </svg>
         </a>
     {% endif %}
@@ -18,7 +53,7 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                  class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
-                      d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
+                      d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"></path>
             </svg>
         </a>
     {% endif %}

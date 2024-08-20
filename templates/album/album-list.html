@@ -2,8 +2,31 @@
 {% import "macros.html" as macros %}
 
 {% block main %}
-    <h3>
+    <h3 class="d-flex justify-content-between">
         {{ section.title }}
+
+        {% if section.ancestors | length > 2 %}
+            {% set ancestor = get_section(path=section.ancestors | last) %}
+            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.path }}">
+                <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
+                <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                     fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                          d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
+                    <path fill-rule="evenodd"
+                          d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
+                </svg>
+
+                <!-- Credit: https://icons.getbootstrap.com/icons/images/ -->
+                <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     viewBox="0 0 16 16">
+                    <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                    <path d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z"></path>
+                </svg>
+
+                <span class="ms-1 align-self-center">{{ ancestor.title }}</span>
+            </a>
+        {% endif %}
     </h3>
 
     <div class="image-gallery">
@@ -88,7 +111,8 @@
                 {% set image_uri = page.extra.file_uri_300 %}
             {% endif %}
 
-            <a class="text-decoration-none" href="{{ page.path }}" style="height: {{ height }}px; width: {{ width }}px;">
+            <a class="text-decoration-none" href="{{ page.path }}"
+               style="height: {{ height }}px; width: {{ width }}px;">
                 <img alt=""
                      loading="lazy"
                      class="p-0"
@@ -96,20 +120,20 @@
                      src="{{ image_uri }}"/>
                 {% set font_size = 12 %}
                 <div class="font-monospace position-absolute w-100 px-1 text-light justify-content-between text-truncate album-hover-info"
-                     style="background-color: rgba(var(--bs-primary-rgb), 30%); transform: translateY(-100%); font-size: {{font_size}}px; min-height: 3em">
-                    
+                     style="background-color: rgba(var(--bs-primary-rgb), 30%); transform: translateY(-100%); font-size: {{ font_size }}px; min-height: 3em">
+
                     <span class="text-start my-auto">{{ page.extra.filename }}</span>
-                    
+
                     {% if page.date | date(format="%Y") | int > 2000 %}
-                    {% set date_str = page.date | date(format="%d.%m.%Y") %}
-                    {% set date_size = date_str | length * (font_size * 0.6) %}
-                    {% set title_size = page.extra.filename | length * (font_size * 0.6) %}
-                    <pre class="d-none">{{date_str}}-{{date_size}}</pre>
-                    <pre class="d-none">{{title_size}}</pre>
-                    
-                    {% if date_size + title_size + font_size < width %}
-                    <span class="text-end my-auto">{{ page.date | date(format="%d.%m.%Y") }}<br>{{ page.date | date(format="%H:%M") }}</span>
-                    {% endif %}
+                        {% set date_str = page.date | date(format="%d.%m.%Y") %}
+                        {% set date_size = date_str | length * (font_size * 0.6) %}
+                        {% set title_size = page.extra.filename | length * (font_size * 0.6) %}
+                        <pre class="d-none">{{ date_str }}-{{ date_size }}</pre>
+                        <pre class="d-none">{{ title_size }}</pre>
+
+                        {% if date_size + title_size + font_size < width %}
+                            <span class="text-end my-auto">{{ page.date | date(format="%d.%m.%Y") }}<br>{{ page.date | date(format="%H:%M") }}</span>
+                        {% endif %}
                     {% endif %}
                 </div>
             </a>
