@@ -23,7 +23,7 @@ sich jetzt endgültig ändern. In der nächsten Zeit wird es an dieser Stelle
 immer wieder Berichte über die Projekte geben, die bei uns im Beta-Space
 entstanden sind oder gerade im Entstehen sind. Den Anfang macht:
 
-##### Projekt: “Terminals”
+# Projekt: “Terminals”
 
 Im Beta-Space standen schon seit kurz nach der Eröffnung drei serielle
 Terminals, die vor Jahren von unserem ersten Vorsitzenden Patrick vor der

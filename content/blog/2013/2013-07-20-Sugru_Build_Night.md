@@ -37,7 +37,7 @@ Los geht's um 16:00 Uhr mit einer kleinen Einführung in die Sugru-Bearbeitung, 
 Anmeldung und Ideensammlung in diesem
 Pad: [https://pad.kreativitaet-trifft-technik.de/p/BuildNight_Sugru](https://pad.kreativitaet-trifft-technik.de/p/BuildNight_Sugru)
 
-### Ergebnisse
+# Ergebnisse
 
 ![Griff für Lockpicking Tool](/media/blog/2013/Sugru_Build_Night/img1.jpg)
 ![Fix/Deko für Fahrradlampe](/media/blog/2013/Sugru_Build_Night/img2.jpg)

@@ -1,18 +1,16 @@
 <div class="mb-auto d-flex flex-column">
     <div class="d-flex flex-column">
-        <h5 class="border-secondary border-bottom">
-            <a class="ms-2 text-decoration-none text-primary" href="//status.kreativitaet-trifft-technik.de">
+        <h3>
+            <a class="ms-2" href="//status.kreativitaet-trifft-technik.de">
                 Status
             </a>
-        </h5>
+        </h3>
 
         <script>
             const Rooms = {{ config.extra.rooms | json_encode | safe }};
         </script>
 
-        <script src="{{ get_url(path="/js/status.js") }}"
-                integrity="sha384-{{ get_hash(path="/js/status.js", sha_type=384, base64=true) | safe }}"
-                defer="defer" async="async">
+        <script src="{{ get_url(path="/js/status.js") }}" defer="defer" async="async">
         </script>
 
         <div class="px-2" style="font-size: 0.9em">
@@ -42,11 +40,11 @@
     </div>
 
     <div class="d-flex mt-2 flex-column">
-        <h5 class="border-secondary border-bottom">
-            <a class="ms-2 text-decoration-none text-primary" href="//status.kreativitaet-trifft-technik.de">
+        <h3>
+            <a class="ms-2" href="//status.kreativitaet-trifft-technik.de">
                 Termine
             </a>
-        </h5>
+        </h3>
         <div class="px-2" style="font-size: 0.9em">
             <!-- TODO: Calender -->
         </div>

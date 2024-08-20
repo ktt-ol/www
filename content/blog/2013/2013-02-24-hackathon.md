@@ -12,7 +12,7 @@ Typ = ["Event"]
 thumbnail = "/media/blog/2013/hackathon/thumbnail.jpg"
 +++
 
-##### Was ist ein Hackathon?
+# Was ist ein Hackathon?
 
 A hackathon (also known as a hack day, hackfest or codefest) is an event in
 which computer programmers and others in the field of software development […]
@@ -27,7 +27,7 @@ restriction on the type of software being created.
 
 -- [Wikipedia: Hackathon](://en.wikipedia.org/wiki/Hackathon)
 
-##### Was passiert beim Hackathon?
+# Was passiert beim Hackathon?
 
 Es wird in kleinen Gruppen (2-3 Leute) an neuen, kleinen, innovativen Projekten gearbeitet. Mit den Projekten soll erst
 zum Hackathon angefangen werden und es gibt eine Deadline an der die Gruppen etwas "vorzeigbares" vorstellen müssen.
@@ -48,13 +48,13 @@ von [Watterott electronic](http://www.watterott.com/) kommen einige Elektronik-B
 3-Achsen-Magnetometer) und [getDigital.de](http://www.getdigital.de/) hat uns ein Da Vinci Katapult Bausatz und Retro
 Post-its zur Verfügung gestellt.
 
-##### Wann?
+# Wann?
 
 Die Veranstaltung beginnt am Samstag, dem 23. Februar 2013, 10:00 Uhr mit einem gemütlichen Frühstück und geht bis
 Sonntagabend (ca. 17/18:00 Uhr). Für Samstagabend wird Essen und ein Film geplant. Sonntag beginnt wieder mit einem
 Frühstück.
 
-##### Bericht
+# Bericht
 
 Der Hackathon begann am Samstag mit einem ausgiebigen Frühstück, bei dem die ersten Ideen besprochen wurden.
 Anschliessend begannen die Arbeiten in den Projekten, die sich bis in die Nachtstunden zogen. Zwischendurch gab es
@@ -99,6 +99,6 @@ haben.
 
 Der erste Hackathon kam bei allen Teilnehmern sehr gut an und es wird sicher bei Gelegenheit einen zweiten geben.
 
-##### Images
+# Images
 
 [//]: # (TODO: ADD GALLERY)

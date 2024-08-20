@@ -5,21 +5,21 @@ weight = 10
 
 {{ contact_info_en() }}
 
-##### Arrival
+# Arrival
 
 ![Building](/media/img/building.jpg)
 
-###### Arrival by public transport
+# Arrival by public transport
 
 The space is located directly at Oldenburg main station (south exit) or the bus stop "Hauptbahnhof Süd". From the
 station forecourt you can already see the former post office building.
 
-###### Arriving by bike
+# Arriving by bike
 
 Bicycles should be parked and locked at the bottom of the building (behind the barriers) [P int.] In front of the building [P Bf.]
 less safe.
 
-###### Arriving by car and parking
+# Arriving by car and parking
 
 Vehicles can be parked on the street, in the station parking lot and in parking spaces in the building behind the barrier system.
 be parked.

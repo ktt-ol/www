@@ -19,17 +19,17 @@ modernen Welt immer wichtiger wird. Jeden Tag gibt es neue Entwicklungen und Tec
 Bereiche unseres Alltags. Wer weiß schon wie die Welt in 10 Jahren aussieht, aber eines ist klar: sie wird mit Code
 laufen.
 
-##### Unsere Mission
+# Unsere Mission
 
 CoderDojo ist eine globale Bewegung basierend auf einer Gemeinschaft aus Freiwilligen, die Programmierclubs für Kinder
 und Jugendliche organisiert. Mehr Informationen über die globale Bewegung unter [CoderDojo.com](https://coderdojo.com/).
 
-##### Unsere Vision
+# Unsere Vision
 
 Kinder und Jugendliche sollen bei den Veranstaltungen die Möglichkeit bekommen, Programmieren auszuprobieren, zu lernen
 und ihre Fähigkeiten in einer ungezwungenen Atmosphäre auszutesten.
 
-###### Was ist ein CoderDojo?
+# Was ist ein CoderDojo?
 
 Dojo ist ein Begriff, der ursprünglich einen Trainingsraum für japanische Kampfkunst umschreibt. In einem CoderDojo geht
 es allerdings um das Trainieren von Programmierfähigkeiten. Der Fokus eines Dojos ist, dass Kinder und Jugendliche
@@ -37,28 +37,28 @@ voneinander und gemeinsam lernen und auf fundiertes Wissen von Mentoren zurückg
 Kurs und folgt demnach keinem Lehrplan. Kinder und Jugendliche sollen ermutigt werden eigene Projekte zu starten und
 selbständig zu lernen.
 
-###### Wer kann mitmachen?
+# Wer kann mitmachen?
 
 Jeder im Alter von 7 bis 17 kann an einem Dojo teilnehmen und Programmieren lernen, eine Webseite erstellen, ein Spiel
 oder eine App programmieren oder einfach neue Technologien kennenlernen. Löten, Vorlagen für Lasercutter und 3D-Drucker
 erstellen, Textilien veredeln. Beim CoderDojo wird kein Wissen vorausgesetzt!
 
-###### Was Eltern Wissen sollten?
+# Was Eltern Wissen sollten?
 
 Die Teilnahme an einem CoderDojo ist kostenlos und mit keinerlei finanziellen Verpflichtungen verbunden. Alle Mentoren
 sind Freiwillige und Ausgaben werden durch Spenden und vereinseigene Mittel gedeckt.
 
-###### Wichtig!
+# Wichtig!
 
 Kinder unter 14 müssen für das CoderDojo einen Elternteil oder eine Aufsichtsperson mitnehmen! Für Jugendliche über 14
 reicht eine schriftliche Bestätigung, dass sie teilnehmen dürfen.
 
-###### Mitnehmen
+# Mitnehmen
 
 Pro Teilnehmer sollte ein Laptop (Betriebssystem egal) oder notfalls ein Tablet mitgebracht werden, um an einem Dojo
 teilzunehmen. Wer möchte, darf auch gerne zusätzlich seinen Mikrocontroller mitbringen.
 
-###### Anmelden
+# Anmelden
 
 Zur Teilnahme an einem Dojo ist eine Anmeldung zum jeweiligen Event erforderlich. Wir nutzen hierfür die Technik auf
 [CoderDojo.com](https://coderdojo.com/), die leider noch nicht vollständig übersetzt ist - bitte nicht wundern ;) Falls
@@ -67,7 +67,7 @@ bei uns melden!
 
 [Anmeldung auf CoderDojo.com](https://zen.coderdojo.com/dojos/de/oldenburg/oldenburg-ktt)
 
-###### Termine & Location
+# Termine & Location
 
 Der Kreativität trifft Technik e.V. organisiert in seinen Räumlichkeiten etwa alle zwei Wochen jeweils Freitags und
 samstags im Wechsel ein CoderDojo. Die genauen Termine veröffentlichen wir auf der CoderDojo-Website, sowie auch im
@@ -79,7 +79,7 @@ Packstation, im 2. OG. Das CoderDojo beginnt jeweils um 17:30 Uhr. Bitte meldet 
 planen. Das CoderDojo versteht sich als Programmierclub, nicht als Kurs, daher könnt ihr auch später jederzeit
 einsteigen.
 
-###### Unterstützen: als Mentor
+# Unterstützen: als Mentor
 
 Man muss kein Coder sein, um Mentor zu werden! Beim Mentoring geht es vor allem um Unterstützung, Hilfestellung und Mut
 machen :) auch Freiwillige, die uns bei der Registrierung, Social Media, Werbung etc. unterstützen sind gern gesehen!
@@ -88,13 +88,13 @@ Als erfahrener Coder kannst du unseren jungen wissbegierigen Ninjas etwas von de
 
 Bei Interesse einfach Kontakt aufnehmen.
 
-###### Unterstützen
+# Unterstützen
 
 Da die Teilnahme für Ninjas kostenlos sein soll, sind wir auf Spenden angewiesen. Mit externer Unterstützung wollen
 wir Technik und Verbrauchsmaterial beschaffen und die Ausstattung der Räume verbessern. Vielleicht bekommen wir sogar
 einen Satz Leih-Notebooks zusammen.
 
-###### Kontakt
+# Kontakt
 
 * Anmeldungen bitte [hier](https://zen.coderdojo.com/dojos/de/oldenburg/oldenburg-ktt)
 * E-Mail: [oldenburg_ktt.de@coderdojo.com](mailto:oldenburg_ktt.de@coderdojo.com)

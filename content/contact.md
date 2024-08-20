@@ -5,21 +5,21 @@ weight = 10
 
 {{ contact_info() }}
 
-##### Anreise
+# Anreise
 
 ![Building](/media/img/building.jpg)
 
-###### Anreise mit den Öffentlichen
+# Anreise mit den Öffentlichen
 
 Der Space ist direkt am Oldenburger Hauptbahnhof (Süd-Ausgang) bzw. der Bushaltestelle "Hauptbahnhof Süd". Vom
 Bahnhofsvorplatz sieht man schon das ehemalige Postgebäude.
 
-###### Anreise mit dem Rad
+# Anreise mit dem Rad
 
 Fahrräder lieber unten im Haus (hinter den Schranken) [P int.] abstellen und anschließen. Vor dem Haus [P Bf.] ist es
 weniger sicher.
 
-###### Anreise mit dem PKW und Parken
+# Anreise mit dem PKW und Parken
 
 Fahrzeuge können an der Straße, auf dem Bahnhofsparkplatz und auf Parkflächen im Haus hinter der Schrankenanlage geparkt
 werden.

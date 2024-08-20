@@ -88,10 +88,10 @@
 
 {% macro blog_list(pages) %}
 
-    <div class="p-0 container-fluid">
+    <div class="container-fluid">
         {% for blog_page in pages %}
 
-            <div class="row py-2 border-bottom">
+            <div class="row py-1 border-bottom">
                 {% if blog_page.authors %}
                     {% set page_author = blog_page.authors | join(sep=", ") %}
                 {% else %}
@@ -123,7 +123,7 @@
                          style="height: 150px; max-width: 100%;"
                     />
                 </div>
-                <div class="col-sm-9 my-1 d-flex flex-column">
+                <div class="col-sm-9 d-flex flex-column">
                     <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
                         {% set date_str = blog_page.date | date(format="%d.%m.%Y") %}
                         {% set time_str = blog_page.date | date(format="%H:%M") %}
@@ -134,11 +134,11 @@
                         {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
                         {{ lang_str }}
                     </p>
-                    <h3 class="text-primary mb-1 ps-0 border-bottom-0">
+                    <h4 class="text-primary mb-1 ps-0 border-bottom-0">
                         <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}" class="text-reset text-decoration-none">
                             {{ page_title }}
                         </a>
-                    </h3>
+                    </h4>
                     <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
                        class="mb-1 text-reset text-decoration-none m-0">
                         {{ page_description }}

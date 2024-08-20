@@ -14,7 +14,7 @@ thumbnail = "/media/blog/2012/talk-0001/thumbnail.png"
 
 [![](/media/blog/2012/talk-0001/cover.png)](https://youtube.com/watch?v=bS7OyGMewHU)
 
-##### [Slides](/media/blog/2012/talk-0001/Fourier-Analyse bis Arduino Slides.pdf)
+# [Slides](/media/blog/2012/talk-0001/Fourier-Analyse bis Arduino Slides.pdf)
 
 Dieser Vortrag soll zunächst eine kurze Erinnerung an die komplexen Zahlen
 liefern. Dann soll die (mathematische) Theorie anhand der Fourierreihe und

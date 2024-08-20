@@ -1,6 +1,6 @@
 # Website of the Hackspace Oldenburg / Mainframe / Kreavitität trifft Technik e.V.
 
-## Todo
+# Todo
 - [ ] fix image carousel on front page
 - [ ] transfer remaining blog entries
   - [ ] projects

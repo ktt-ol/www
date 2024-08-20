@@ -16,7 +16,7 @@ thumbnail = "/media/blog/2012/styroschneider/0000.jpg"
 Als erstes Projekt, an dem wir im Space arbeiten, soll heute der Styroschneider
 vorgestellt werden.
 
-##### Die Motivation
+# Die Motivation
 
 Die Idee einen Stryoschneider zu entwickeln hat sich aus einem anderen Projekt
 ergeben, dem Return-to-Launch-Wetterballon. Um für den Wetterballon ein
@@ -25,7 +25,7 @@ druckänderungsunempfindlicher und falls möglich auch kostengünstiger Werkstof
 benötigt. Nach einiger Überlegung und der Entdeckung dieses Projekts fiel die
 Wahl auf Styropor und den Nachbau des CNC-Hotwires.
 
-##### Die Idee
+# Die Idee
 
 Die Idee hinter dem Styroschneider ist relativ simpel. Man verwendet durch
 Schrittmotoren gesteuerte Aufhängungen, auf zwei Seiten eines Styropor-Blocks,
@@ -37,7 +37,7 @@ funktionieren. Um leichter transportabel zu sein, wir werden mit dem Beta-Space
 ja noch mindestens einmal umziehen müssen, soll unserer Variante allerdings
 unter einen Tisch montiert werden.
 
-##### Stand vom 12.02.2012
+# Stand vom 12.02.2012
 
 Mittlerweile sind die ersten Arbeiten an unserem Styroschneider abgeschlossen.
 Die Grundplatte auf der die Elektronik und die benötigten Motoren angebracht

@@ -14,7 +14,7 @@ thumbnail = "/media/blog/2012/talk-0002/thumbnail.png"
 
 [![](/media/blog/2012/talk-0002/cover.png)](https://youtube.com/watch?v=go-i1ZhocUQ)
 
-##### [Slides](/media/blog/2012/talk-0002/GCode.pdf)
+# [Slides](/media/blog/2012/talk-0002/GCode.pdf)
 
 GCode ist die Sprache mit der viele CNC-Maschinen angesteuert werden. Auch wenn
 es als Programmiersprache den Charme der 70er versprüht und darauf optimiert

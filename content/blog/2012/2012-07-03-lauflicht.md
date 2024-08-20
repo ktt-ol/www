@@ -26,7 +26,7 @@ sich bei uns jemand finden würde, der Lust auf diese Herausforderung hat.
 Hardware die nicht funktioniert oder von der niemand weiß wie sie funktioniert
 und dann auch noch mit blinkenden LEDs.
 
-##### CHALLENGE ACCEPTED!
+# CHALLENGE ACCEPTED!
 
 Diesmal wurden unsere Spezialexperten für alte Hardware schwer gefordert. Es
 gab keine Handbücher und auch das vorhandene Typenschild verriet uns nur, dass

@@ -48,11 +48,11 @@
     <meta property="og:description" content='{{ description }}'/>
     <meta property="og:title" content='{{ title }}'/>
 
-    <link integrity='sha384-{{ get_hash(path="css/bootstrap.min.css", sha_type=384, base64=true) | safe }}'
+    <link
           rel="stylesheet"
           href="{{ get_url(path="/css/bootstrap.min.css") }}">
 
-    <link integrity='sha384-{{ get_hash(path="css/site.css", sha_type=384, base64=true) | safe }}'
+    <link
           rel="stylesheet"
           href="{{ get_url(path="/css/site.css") }}">
 
@@ -64,22 +64,17 @@
 </head>
 
 <body class="vh-100 m-0 p-0">
-<div class="container d-flex flex-column justify-content-between">
+<div class="container-lg px-lg-0 px-4 d-flex flex-column justify-content-between">
 
     {% include "navbar.html" %}
 
     {% block main %}
         <main id="content" class="row">
-            <div class="col-md-9 main-content">
+            <div class="col-lg-9">
                 {% block content %}
-                    {% if page.content %}
-                        {{ page.content | safe }}
-                    {% elif section.content %}
-                        {{ section.content | safe }}
-                    {% endif %}
                 {% endblock content %}
             </div>
-            <div class="col-md-3">
+            <div class="col-lg-3">
                 {% block sidebar %}
                     {% include "sidebar.html" %}
                 {% endblock sidebar %}
@@ -98,8 +93,7 @@
     </footer>
 </div>
 
-<script src="{{ get_url(path="/js/site.js") }}"
-        integrity='sha384-{{ get_hash(path="js/site.js", sha_type=384, base64=true) | safe }}'>
+<script src="{{ get_url(path="/js/site.js") }}">
 </script>
 
 </body>
