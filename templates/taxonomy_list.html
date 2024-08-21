@@ -4,14 +4,25 @@
 {% block content %}
     {% set blog_section = get_section(path="blog/_index.md", lang=lang) %}
 
-    <h4>
-        {{ blog_section.title }} - {{ taxonomy.name }}
-    </h4>
-    {% for term in terms %}
-        <div class="my-2">
-            <a href="{{ get_url(path=term.path, lang=lang) }}">
+    <h3>
+        <span>
+            <a class="text-decoration-none text-primary d-inline"
+               href="{{ blog_section.path }}">
+                {{ blog_section.title }}
+            </a>
+            >
+            <a class="text-decoration-none text-primary d-inline"
+               href="{{ get_url(path=taxonomy.slug, lang=lang) }}">
+                {{ taxonomy.name }}
+            </a>
+        </span>
+    </h3>
+
+    <div class="flex-wrap d-flex justify-content-center">
+        {% for term in terms %}
+            <a class="text-decoration-none m-1 badge text-bg-primary" href="{{ get_url(path=term.path, lang=lang) }}">
                 {{ term.name }}
             </a>
-        </div>
-    {% endfor %}
+        {% endfor %}
+    </div>
 {% endblock content %}
