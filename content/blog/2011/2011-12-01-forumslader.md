@@ -5,7 +5,6 @@ date = "2011-12-01T10:00:00"
 updated = "2024-03-24T23:42:00"
 
 [taxonomies]
-Gruppe = ["Fahrrad"]
 Serie = ["Projekt"]
 Typ = ["Hardware"]
 

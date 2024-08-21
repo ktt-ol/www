@@ -15,8 +15,7 @@ feed_filenames = ["rss.xml", "atom.xml"]
 
 taxonomies = [
     { name = "Serie", feed = true, paginate_by = 10 },
-    { name = "Typ", feed = true, paginate_by = 10 },
-    { name = "Gruppe", feed = true, paginate_by = 10 }
+    { name = "Typ", feed = true, paginate_by = 10 }
 ]
 
 [link_checker]
@@ -85,8 +84,7 @@ feed_filenames = ["rss.xml", "atom.xml"]
 
 taxonomies = [
     { name = "Series", feed = true, paginate_by = 10 },
-    { name = "Type", feed = true, paginate_by = 10 },
-    { name = "Group", feed = true, paginate_by = 10 }
+    { name = "Type", feed = true, paginate_by = 10 }
 ]
 
 [languages.en.translations]
