@@ -10,9 +10,6 @@
             const Rooms = {{ config.extra.rooms | json_encode | safe }};
         </script>
 
-        <script src="{{ get_url(path="/js/status.js") }}" defer="defer" async="async">
-        </script>
-
         <div class="px-2" style="font-size: 0.9em">
             {% for room in config.extra.rooms %}
                 <a role="button" id="status-{{ room.name }}"
