@@ -1,14 +1,10 @@
 # Website of the Hackspace Oldenburg / Mainframe / Kreavitität trifft Technik e.V.
 
 # Todo
-- [ ] fix image carousel on front page
-- [ ] transfer remaining blog entries
-  - [ ] projects
-  - [ ] press releases
-- [ ] Panorama spacewalk
-- [ ] event calendar
-  - [ ] upcoming events for sidebar
-  - [ ] calendar page
-- [ ] status sidebar
-  - [ ] dynamic room generation
-  - [ ] websocket connection
+
+- Add Image Carousel On Front Page
+- Verify that all blog entries have been transferred
+- Implement 360° Panorama
+- Add Event Calendar
+    - Upcoming Events on the sidebar
+    - Dedicated Calendar page
