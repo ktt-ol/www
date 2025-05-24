@@ -68,7 +68,7 @@ bs_color_map = [
 rooms = [
     { name = "space", title = { de = "Hackspace", en = "Hackspace" } },
     { name = "machining", title = { de = "Zerspanungstechnik", en = "Machining" } },
-    { name = "woodworking", title = { de = "Holzwerstatt", en = "Woodworking" } },
+    { name = "woodworking", title = { de = "Holzwerkstatt", en = "Woodworking" } },
     { name = "radstelle", title = { de = "Radstelle", en = "Cycling" } },
 ]
 
