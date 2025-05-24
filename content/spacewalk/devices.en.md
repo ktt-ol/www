@@ -1,4 +1,4 @@
 +++
 title = "Devices"
-weight = 10
+weight = 20
 +++

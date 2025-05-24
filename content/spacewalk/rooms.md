@@ -1,4 +1,4 @@
 +++
 title = "Räume"
-weight = 20
+weight = 30
 +++
