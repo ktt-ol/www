@@ -10,7 +10,7 @@
             const Rooms = {{ config.extra.rooms | json_encode | safe }};
         </script>
 
-        <div class="px-2" style="font-size: 0.9em">
+        <div id="space-status" class="px-2" style="font-size: 0.9em">
             {% for room in config.extra.rooms %}
                 <a role="button" id="status-{{ room.name }}"
                    class="px-1 d-flex flex-column text-decoration-none btn btn-white rounded-0 text-dark"
