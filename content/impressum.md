@@ -8,7 +8,6 @@ bgb_vorstand = [
     "Lars Hüsemann",
     "André Schäfer",
     "Christian Beyer",
-    "Kristiane Grensemann",
 ]
 bgb_erweitert = [
     "Michael Olsen (Radstelle)",
