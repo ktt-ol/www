@@ -55,7 +55,6 @@ open = "Geöffnet"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
-resource_base = "https://ktt-ol.github.io"
 bs_color_map = [
     "primary",
     "secondary",

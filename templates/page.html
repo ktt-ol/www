@@ -6,7 +6,7 @@
 
     {% if page.extra.thumbnail %}
 
-        {% set thumbnail_url = config.extra.resource_base ~ page.extra.thumbnail %}
+        {% set thumbnail_url = config.base_url ~ page.extra.thumbnail %}
         {% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
         {% set thumbnail_author = page_author %}
         {% set thumbnail_title = page.title | default(value=config.title) %}

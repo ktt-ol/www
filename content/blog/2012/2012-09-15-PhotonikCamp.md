@@ -57,7 +57,7 @@ Das ist klasse!
 
 Außer diesem tollen „Nebeneffekt“ lag der eigentliche Wert dieses Treffen aus meiner Sicht aber vor allem darin, dass
 man viele Mitstreiter aus anderen FabLabs, Hackspaces und Unis kennengelernt hat und einen guten Einblick in die
-Aktivitäten dort bekommen konnte. Ich hoffe, nach dem <a href="http://fab-education-bremen.blogspot.de">FabEducation</a>
-Symposium in Bremen, das unter anderem von <a href="http://www.facebook.com/karsten.joost">Karsten Joost</a> im Juni
+Aktivitäten dort bekommen konnte. Ich hoffe, nach dem [FabEducation](http://fab-education-bremen.blogspot.de)
+Symposium in Bremen, das unter anderem von [Karsten Joost](http://www.facebook.com/karsten.joost) im Juni
 2012 organisiert wurde, und dem PhotonikCamp in Aachen gibt es in etwa einem halben bis einem Jahr wieder ein Event
 dieser Art, bei dem sich diese junge Szene erneut treffen kann.

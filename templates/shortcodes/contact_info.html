@@ -17,14 +17,16 @@
     <div class="col-sm-2 fw-bolder text-decoration-underline">Kontakt</div>
     <div class="col-sm-10">
         <p class="mb-0">
-            Wenn du mit Leuten aus dem <a href="/about/about">Hackspace</a> in Kontakt treten möchtest, dann sind
-            die <a href="https://mailman.ktt-ol.de/postorius/lists/">Mailinglisten</a> der beste Weg.
+            Wenn du mit Leuten aus dem <a href="{{ get_url(path="@/about/about.md", lang=lang) }}">Hackspace</a> in
+            Kontakt treten möchtest, dann ist die <a href="https://mailman.ktt-ol.de/postorius/lists/">Mailinglisten</a>
+            der beste Weg.
             <br>
-            Weitere Informationen sind auch unter der Seite <a href="/about/communication">Kommunikation</a> zu finden.
+            Weitere Informationen sind auch unter der Seite <a
+                href="{{ get_url(path="@/about/communication.md", lang=lang) }}">Kommunikation</a> zu finden.
         </p>
         <p class="mt-2">
-            Solltest du nur mit dem <a href="/impressum">Vereinsvorstand</a>, in Kontakt treten wollen, dann schreibe
-            eine Mail an
+            Solltest du nur mit dem <a href="{{ get_url(path="@/impressum.md", lang=lang) }}">Vereinsvorstand</a>, in
+            Kontakt treten wollen, dann schreibe eine Mail an
             <a href="mailto:vorstand@kreativitaet-trifft-technik.de">vorstand@kreativitaet-trifft-technik.de</a>.
         </p>
     </div>
@@ -35,7 +37,7 @@
     <div class="col-sm-10">
         <p class="mb-0">
             <a href="tel:+49441-559 700 32">0441-559 700 32</a> (klingelt im gesamten <a
-                href="/about/about">Hackspace</a>)
+                href={{ get_url(path="@/about/about.md", lang=lang) }}>Hackspace</a>)
         </p>
         <p class="mt-2">
             <a href="tel:+4944121213322">0441-21 21 33 22</a> (klingelt <i>nur</i> beim Vorstand)

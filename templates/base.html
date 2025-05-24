@@ -49,12 +49,12 @@
     <meta property="og:title" content='{{ title }}'/>
 
     <link
-          rel="stylesheet"
-          href="{{ get_url(path="/css/bootstrap.min.css") }}">
+            rel="stylesheet"
+            href="{{ get_url(path="/css/bootstrap.min.css") }}">
 
     <link
-          rel="stylesheet"
-          href="{{ get_url(path="/css/site.css") }}">
+            rel="stylesheet"
+            href="{{ get_url(path="/css/site.css") }}">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
           href='{{ get_url(path="/rss.xml", trailing_slash=false) }}'>
@@ -85,9 +85,9 @@
     <footer id="footer" class="border-top pt-2 mt-5 row">
         <div class="col">
             <p style="text-align: center;">
-                © 2024 <a href="https://ktt-ol.de">Kreativität trifft Technik</a> | License: <a
+                © 2025 <a href="{{ config.base_url }}">Kreativität trifft Technik</a> | License: <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
-                    href="/impressum">Impressum</a>
+                    href="{{ get_url(path="@/impressum.md", lang=lang) }}">Impressum</a>
             </p>
         </div>
     </footer>
