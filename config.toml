@@ -52,6 +52,8 @@ arrival = "Anreise"
 closed = "Geschlossen"
 closing = "Schließt bald"
 open = "Geöffnet"
+member = "Geschlossen (Member Only)"
+keyholder = "Geschlossen (Keyholder Only)"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
@@ -66,10 +68,11 @@ bs_color_map = [
 ]
 
 rooms = [
-    { name = "space", title = { de = "Hackspace", en = "Hackspace" } },
+    { name = "spaceOpen", title = { de = "Hackspace", en = "Hackspace" } },
     { name = "machining", title = { de = "Zerspanungstechnik", en = "Machining" } },
     { name = "woodworking", title = { de = "Holzwerkstatt", en = "Woodworking" } },
-    { name = "radstelle", title = { de = "Radstelle", en = "Cycling" } },
+    { name = "lab3dOpen", title = { de = "3D Lab", en = "3D Lab" } },
+    { name = "radstelleOpen", title = { de = "Radstelle", en = "Cycling" } },
 ]
 
 [languages.en]
@@ -99,3 +102,5 @@ arrival = "Arrival"
 closed = "Closed"
 closing = "Closing soon"
 open = "Open"
+member = "Closed (Member Only)"
+keyholder = "Closed (Keyholder Only)"

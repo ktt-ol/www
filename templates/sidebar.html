@@ -7,32 +7,36 @@
         </h3>
 
         <script>
-            const Rooms = {{ config.extra.rooms | json_encode | safe }};
+            const ROOMS = {{ config.extra.rooms | json_encode | safe }};
         </script>
 
         <div id="space-status" class="px-2" style="font-size: 0.9em">
-            {% for room in config.extra.rooms %}
-                <a role="button" id="status-{{ room.name }}"
-                   class="px-1 d-flex flex-column text-decoration-none btn btn-white rounded-0 text-dark"
-                   style="margin-bottom: 1px; padding: 1px;"
-                   href="//status.kreativitaet-trifft-technik.de">
-                    <div class="text-start fw-bold lh-sm">
-                        {{ room.title[lang] }}:
-                    </div>
-                    <div class="text-end lh-sm" id="status-text-unknown-{{ room.name }}">
-                        ???
-                    </div>
-                    <div class="text-end lh-sm d-none" id="status-text-closed-{{ room.name }}">
-                        {{ trans(key="closed", lang=lang) }}
-                    </div>
-                    <div class="text-end lh-sm d-none" id="status-text-closing-{{ room.name }}">
-                        {{ trans(key="closing", lang=lang) }}
-                    </div>
-                    <div class="text-end lh-sm d-none" id="status-text-open-{{ room.name }}">
-                        {{ trans(key="open", lang=lang) }}
-                    </div>
-                </a>
-            {% endfor %}
+            <a role="button" id="status-template"
+               class="px-1 d-flex flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none"
+               style="margin-bottom: 1px; padding: 1px;"
+               href="//status.kreativitaet-trifft-technik.de">
+                <div class="text-start fw-bold lh-sm" id="status-name-template">
+                    Template:
+                </div>
+                <div class="text-end lh-sm" id="status-text-unknown-template">
+                    ???
+                </div>
+                <div class="text-end lh-sm d-none" id="status-text-closed-template">
+                    {{ trans(key="closed", lang=lang) }}
+                </div>
+                <div class="text-end lh-sm d-none" id="status-text-closing-template">
+                    {{ trans(key="closing", lang=lang) }}
+                </div>
+                <div class="text-end lh-sm d-none" id="status-text-open-template">
+                    {{ trans(key="open", lang=lang) }}
+                </div>
+                <div class="text-end lh-sm d-none" id="status-text-member-template">
+                    {{ trans(key="member", lang=lang) }}
+                </div>
+                <div class="text-end lh-sm d-none" id="status-text-keyholder-template">
+                    {{ trans(key="keyholder", lang=lang) }}
+                </div>
+            </a>
         </div>
     </div>
 
