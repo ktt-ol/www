@@ -20,9 +20,9 @@
 
     <meta name="author" content="{{ page_author }}">
 
-    {% block extra_meta %}
+    {% block extra_head %}
         <meta property="og:type" content="website"/>
-    {% endblock extra_meta %}
+    {% endblock extra_head %}
 
     {% if section.title %}
 
@@ -57,6 +57,9 @@
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
           href='{{ get_url(path="/atom.xml", trailing_slash=false) }}'>
+
+    {% block extra_css %}
+    {% endblock extra_css %}
 </head>
 
 <body class="vh-100 m-0 p-0">

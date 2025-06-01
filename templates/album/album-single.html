@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 {% import "macros.html" as macros %}
 
-{% block extra_meta %}
+{% block extra_head %}
 
     <meta property="og:type" content="article"/>
     {{ self::album_metadata(image_uri=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
 
-{% endblock extra_meta %}
+{% endblock extra_head %}
 
 {% block content %}
 
