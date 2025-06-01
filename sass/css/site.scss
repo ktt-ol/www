@@ -42,10 +42,6 @@ body {
   }
 }
 
-.main-content * img {
-
-}
-
 .main-content img {
   object-fit: contain;
   padding: 8px;
@@ -71,14 +67,6 @@ body {
 
 a {
   color: var(--bs-green);
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-}
-
-.dropdown:focus .dropdown-menu {
-  display: block;
 }
 
 .image-gallery {

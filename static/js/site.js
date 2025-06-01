@@ -10,7 +10,6 @@ if (isDarkModeEnabled()) {
     document.getElementsByTagName("html")[0].dataset["bsTheme"] = "dark";
     document.getElementById("img-icon-lang").src = "/media/img/lang/icon.dark.svg";
 } else {
-
     document.getElementsByTagName("html")[0].dataset["bsTheme"] = "light";
     document.getElementById("img-icon-lang").src = "/media/img/lang/icon.light.svg";
 }

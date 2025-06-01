@@ -44,17 +44,13 @@
     {% include "structured-data.html" %}
 
     <title>{{ title }}</title>
+
     <meta name="description" content='{{ description }}'>
     <meta property="og:description" content='{{ description }}'/>
     <meta property="og:title" content='{{ title }}'/>
 
-    <link
-            rel="stylesheet"
-            href="{{ get_url(path="/css/bootstrap.min.css") }}">
-
-    <link
-            rel="stylesheet"
-            href="{{ get_url(path="/css/site.css") }}">
+    <link rel="stylesheet" href="{{ get_url(path="/css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ get_url(path="/css/site.css") }}">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
           href='{{ get_url(path="/rss.xml", trailing_slash=false) }}'>
@@ -94,6 +90,9 @@
 </div>
 
 <script src="{{ get_url(path="/js/site.js") }}">
+</script>
+
+<script src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}">
 </script>
 
 </body>

@@ -1,9 +1,9 @@
 {% set index_section = get_section(path=section_name ~ "/_index.md", lang=lang) %}
 
 <li class="nav-item dropdown">
-    <div class="nav-link dropdown-toggle" role="button" aria-expanded="false">
+    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">
         {{ index_section.title }}
-    </div>
+    </a>
     <ul class="dropdown-menu">
         {% for page in index_section.pages %}
             <li>

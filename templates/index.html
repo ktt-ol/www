@@ -15,10 +15,10 @@
         </div>
         <div class="row">
             <div class="col">
-                <div id="ifs-carousel" class="carousel slide mh-500" data-bs-ride="carousel">
-                    {% for i in range(end=5) %}
-                        <div class="carousel-inner p-2">
-                            <div class="carousel-item text-center {% if i == 0 %} active {% endif %}">
+                <div id="ifs-carousel">
+                    {% for i in range(end=1) %}
+                        <div class="p-2">
+                            <div class="text-center {% if i == 0 %} active {% endif %}">
                                 {% set id_str = (ifs_count - i) | as_str %}
 
                                 <a target="_blank" class="text-decoration-none"
