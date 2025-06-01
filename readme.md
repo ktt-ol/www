@@ -7,4 +7,3 @@
 - Add Event Calendar
     - Upcoming Events on the sidebar
     - Dedicated Calendar page
-- Taxonomy pagination
