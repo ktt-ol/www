@@ -1,6 +1,5 @@
 +++
 title = "Arduino Comic"
-description = "USB-Ladegerät fürs Fahrrad"
 date = "2012-05-22T18:00:00"
 updated = "2024-03-24T23:42:00"
 authors = ["thorben"]
