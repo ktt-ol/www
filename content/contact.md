@@ -7,29 +7,42 @@ weight = 10
 
 # Anreise
 
+Der Mainframe liegt direkt am Oldenburger Hauptbahnhof im alten Postgebäude.
+
+![OpenStreetMap](/media/img/openstreetmap.png)
+<!-- TODO: openstreetmap karte -->
+
+Am besten erreichst du uns mit den öffentlichen Verkehrsmitteln, dem Fahrrad
+oder zu Fuß.
+
+Links neben dem Briefkasten befindet sich eine Klingel. Du kannst gerne einfach
+klingeln oder am Space-Telefon anrufen, dann machen wir dir auf.
+
 ![Building](/media/img/building.jpg)
 
-# Anreise mit den Öffentlichen
+## Anreise mit den Öffentlichen
 
-Der Space ist direkt am Oldenburger Hauptbahnhof (Süd-Ausgang) bzw. der Bushaltestelle "Hauptbahnhof Süd". Vom
-Bahnhofsvorplatz sieht man schon das ehemalige Postgebäude.
+Die nächstgelegene Bushaltestelle ist Hauptbahnhof Süd. Von dort sieht man schon
+das ehemalige Postgebäude und es sind es nur wenige Schritte bis zum Mainframe.
+Alternativ kannst du auch an der Haltestelle ZOB aussteigen und durch den
+Hauptbahnhof zu uns gelangen.
 
-# Anreise mit dem Rad
+## Anreise mit dem Rad
 
-Fahrräder lieber unten im Haus (hinter den Schranken) [P int.] abstellen und anschließen. Vor dem Haus [P Bf.] ist es
-weniger sicher.
+Fahrradstellplätze findet man rund um den Hauptbahnhof. Allerdings ist es
+sicherer, die Räder unten im Haus hinter den Schranken [P int.] abzustellen als
+auf dem Bahnhofsplatz vor dem Haus [P Bf.].
 
-# Anreise mit dem PKW und Parken
+## Anreise mit dem PKW
 
-Fahrzeuge können an der Straße, auf dem Bahnhofsparkplatz und auf Parkflächen im Haus hinter der Schrankenanlage geparkt
-werden.
+Fahrzeuge können an der Straße, im Parkhaus des Gebäudes und auf dem
+Bahnhofsparkplatz abgestellt werden.
 
-Die Parkplätze an der Straße [P Str.] sind Mo-Sa ab 19:00 Uhr und Sonntags ganztägig kostenlos, sonst 60 Cent je 30
-Minuten.
+Die Parkplätze an der Straße [P Str.] sind von Mo-Sa bis 19:00 Uhr
+kostenpflichtig.
 
-**Achtung!** Der Bahnhofsparkplatz [P Bf.] ist Mo-So 07:00 bis 24:00 kostenpflichtig und wird teilweise auch spät noch
-kontrolliert! 15 Minuten kostenlos ("Brötchentaste"), 60 Cent je 30 Minuten, Höchstparkdauer 2 Stunden.
+Die Parkflächen im Postgebäude haben eine Schrankenanlage, die mit Bankkarte
+(EC-Karte) abgerechnet wird [P EC].
 
-Das Haus hat eine Schrankenanlage, die mit Bankkarte ("EC") abgerechnet wird [P EC]. 30 Minuten kostenlos, dann 50 Cent
-je halber Stunde, max. 5 Euro pro Kalendertag. Es ist derzeit nicht klar, auf welchen Flächen EC-Parker stehen sollen,
-da praktisch alle Stellplätze mit Kennzeichen, "Vermietet" oder "Mitarbeiter Postbank" markiert sind! 
+Der Bahnhofsparkplatz [P Bf.] ist nicht empfehlenswert, weil er von Mo-So 07:00
+bis 24:00 kostenpflichtig ist und auch spät abends noch kontrolliert wird.
