@@ -1,6 +1,6 @@
 +++
 title = "Flying Games Logo"
-description = "USB-Ladegerät fürs Fahrrad"
+description = ""
 date = "2012-11-06T23:42:00"
 updated = "2024-03-24T23:42:00"
 authors = ["fermate"]

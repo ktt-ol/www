@@ -10,3 +10,5 @@
 !/content/images/ifs/_index*
 
 /static/processed_images
+.direnv/
+.envrc
