@@ -15,7 +15,7 @@ You'll need [zola](https://www.getzola.org/) for generating the static site and
 Python for generating the photo albums. You may install the tools locally or use
 the provided `nix` devshell.
 
-Run `zola surf` to build the site and run a local server:
+Run `zola serve` to build the site and run a local server:
 
 ```sh
 $ zola serve
