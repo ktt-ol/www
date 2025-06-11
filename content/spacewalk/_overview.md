@@ -3,15 +3,15 @@ title = "Übersicht"
 weight = 10
 +++
 
-Hier im Spacewalk findest du einen Rundgang durch den ganzen Mainframe und die
-darin enthaltenen Räume und Werkstätten.
+Hier findest du einen Rundgang durch den ganzen Mainframe und die
+darin enthaltenen Räume beziehungsweise Werkstätten.
 
 ![Logo](/media/spacewalk/logo.jpg)
 
-## Panorama-Rundgang und Karte
+## 3D-Rundgang und Karte
 
 Du kannst wahlweise den Mainframe mithilfe eines
-[Panorama-Rundgangs](/bilder/panorama) oder mit einer
+[3D-Rundgangs](/bilder/panorama) oder mit einer
 [interaktiven Karte](https://map.kreativitaet-trifft-technik.de/) erkunden.
 
 Dort sieht man den großen Teil unserer Räume. Die Radstelle, sowie die Holz- und
