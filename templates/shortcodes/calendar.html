@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+{% block extra_head %}
+<!-- Unset these two properties so that the entries become visible  -->
+<style>
+    :root {
+        --fc-page-bg-color:
+            unset;
+        --fc-list-event-hover-bg-color:
+            unset;
+    }
+</style>
+{% endblock extra_head %}
+
+<head>
+    <meta charset='utf-8' />
+    <script src='/js/fullcalendar-6.1.18/index.global.min.js'></script>
+    <script src="/js/fullcalendar-6.1.18/google-calendar/index.global.min.js"></script>
+    <script>
+
+        var calendar_config = {
+            googleCalendarApiKey: '{{ config.extra.google_api_key }}',
+            locale: 'de',
+            initialView: 'listMonth',
+            events: {
+                googleCalendarId: '{{ config.extra.google_cal_id }}',
+            },
+        };
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, calendar_config);
+            calendar.render();
+        });
+    </script>
+</head>
+
+<body>
+    <div id='calendar'></div>
+    <br>
+</body>
+
+</html>

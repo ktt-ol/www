@@ -78,6 +78,9 @@ rooms = [
     { name = "radstelleOpen", title = { de = "Radstelle", en = "Cycling" } },
 ]
 
+google_cal_id = "markusframer@gmail.com"
+google_api_key = "AIzaSyB9pTX1ewZeRPc-rmq-Xp32wuuTW1P4U1U"
+
 [languages.en]
 title = "Kreativität trifft Technik e.V."
 description = "Website of Kreativität trifft Technik e.V."

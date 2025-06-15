@@ -4,14 +4,12 @@
 
 - Add Event Calendar
     - Upcoming Events on the sidebar
-    - Dedicated Calendar page
 - Make taxonomy listings more easily accessible
 
 # Potential Improvements
 
 - Rename spacewalk to rooms
 - Move space status to top on mobile
-- Allow line breaks in calendar (after calendar is implemented)
 
 # Development
 
@@ -43,5 +41,3 @@ To generate the IFS pages and albums, run the following Python scripts:
 python3 ifs.py
 python3 albums.py
 ```
-
-
