@@ -2,7 +2,6 @@
 
 # Todo
 
-- Add Image Carousel On Front Page
 - Add Event Calendar
     - Upcoming Events on the sidebar
     - Dedicated Calendar page
@@ -10,6 +9,7 @@
 - Improve Color contrasts
     - Background to main content contrast
     - blue on black
+    - update landing page draft contrast
 
 # Potential Improvements
 

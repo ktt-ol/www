@@ -15,33 +15,34 @@
         </div>
         <div class="row">
             <div class="col">
-                <div id="ifs-carousel">
-                    {% for i in range(end=1) %}
-                        <div class="p-2">
-                            <div class="text-center {% if i == 0 %} active {% endif %}">
+                <div id="ifs-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        {% for i in range(end=5) %}
+                            <div class="carousel-item text-center {% if i == 0 %} active {% endif %}">
                                 {% set id_str = (ifs_count - i) | as_str %}
 
                                 <a target="_blank" class="text-decoration-none"
                                    href="{{ get_url(path='images/ifs/by-id/' ~ id_str, lang=lang) }}">
                                     <img class="object-fit-contain"
                                          alt=""
-                                         loading="lazy"
                                          decoding="async"
                                          style="max-height: 100%; max-width: 500px;"
                                          src="{{ config.extra.ifs_base_path }}/.thumbs/750-{{ ifs_data.images[i].filename }}"
                                     />
                                 </a>
                             </div>
-                        </div>
-                        <!--<button class="carousel-control-prev" type="button" data-bs-target="#ifs-carousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#ifs-carousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>-->
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
+                    <button id="btn-image-previous" class="carousel-control-prev" type="button"
+                            data-bs-target="#ifs-carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button id="btn-image-next" class="carousel-control-next" type="button"
+                            data-bs-target="#ifs-carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon text-danger" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </div>
