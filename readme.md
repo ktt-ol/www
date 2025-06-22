@@ -7,7 +7,6 @@
     - Upcoming Events on the sidebar
     - Dedicated Calendar page
 - Make taxonomy listings more easily accessible
-- Add arrow-key navigation to IFS
 - Improve Color contrasts
     - Background to main content contrast
     - blue on black

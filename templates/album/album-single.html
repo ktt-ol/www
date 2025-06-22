@@ -41,7 +41,7 @@
     <div class="d-flex justify-content-around">
 
         {% if page.extra.previous %}
-            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
+            <a class="btn btn-sm my-auto btn-secondary h-100" id="btn-image-previous" href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -55,14 +55,12 @@
             <img alt=""
                  class="mx-auto"
                  style="width: 750px;"
-                 loading="lazy"
-                 decoding="async"
                  src="{{ page.extra.file_uri_1200 }}"
             />
         </a>
 
         {% if page.extra.next %}
-            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
+            <a class="btn btn-sm my-auto btn-secondary h-100" id="btn-image-next" href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"

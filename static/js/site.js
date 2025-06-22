@@ -173,3 +173,26 @@ function init_status() {
 }
 
 init_status();
+
+
+window.addEventListener("keydown", e => {
+    let btn;
+
+    console.log(e.key);
+    switch (e.key) {
+        case "ArrowLeft":
+            btn = document.getElementById("btn-image-previous");
+            break;
+        case "ArrowRight":
+            btn = document.getElementById("btn-image-next");
+            break;
+        default:
+            break;
+    }
+
+    if (btn) {
+        btn.click();
+    }
+
+    return true;
+});
