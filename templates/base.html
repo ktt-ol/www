@@ -57,13 +57,30 @@
             return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
         }
 
-        if (isDarkModeEnabled()) {
-            document.getElementsByTagName("html")[0].dataset["bsTheme"] = "dark";
-            document.getElementById("img-icon-lang").src = "/media/img/lang/icon.dark.svg";
-        } else {
-            document.getElementsByTagName("html")[0].dataset["bsTheme"] = "light";
-            document.getElementById("img-icon-lang").src = "/media/img/lang/icon.light.svg";
+        function refreshDarkMode() {
+            let elem = document.getElementById("img-icon-lang");
+
+            if (!elem) {
+                setTimeout(() => {
+                    elem = document.getElementById("img-icon-lang");
+                    if (elem) {
+                        refreshDarkMode();
+                    }
+                }, 5)
+            }
+
+            if (isDarkModeEnabled()) {
+                document.getElementsByTagName("html")[0].dataset["bsTheme"] = "dark";
+                if (elem) elem.src = "{{ get_url(path="/media/img/lang/icon.dark.svg") }}";
+            } else {
+                document.getElementsByTagName("html")[0].dataset["bsTheme"] = "light";
+                if (elem) elem.src = "{{ get_url(path="/media/img/lang/icon.light.svg") }}";
+            }
         }
+
+        refreshDarkMode();
+
+        const ROOMS = {{ config.extra.rooms | json_encode | safe }};
     </script>
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
@@ -107,10 +124,12 @@
     </footer>
 </div>
 
-<script src="{{ get_url(path="/js/site.js") }}">
+<script src="{{ get_url(path="/js/site.js") }}"
+        integrity="sha384-{{ get_hash(path="static/js/site.js", sha_type=384, base64=true) | safe }}">
 </script>
 
-<script src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}">
+<script src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}"
+        integrity="sha384-{{ get_hash(path="static/js/bootstrap.bundle.min.js", sha_type=384, base64=true) | safe }}">
 </script>
 
 </body>
