@@ -10,7 +10,6 @@
 - Improve Color contrasts
     - Background to main content contrast
     - blue on black
-- Remove sidebar in panorama
 
 # Potential Improvements
 
