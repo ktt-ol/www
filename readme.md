@@ -1,13 +1,24 @@
-# Website of the Hackspace Oldenburg / Mainframe / Kreavitität trifft Technik e.V.
+# Website of the Hackspace Oldenburg / Mainframe / Kreativität trifft Technik e.V.
 
 # Todo
 
 - Add Image Carousel On Front Page
-- Verify that all blog entries have been transferred
 - Add Event Calendar
     - Upcoming Events on the sidebar
     - Dedicated Calendar page
+- Make taxonomy listings more easily accessible
+- first IFS of the year needs to link to last ifs of previous year
+- Add arrow-key navigation to IFS
+- Improve Color contrasts
+    - Background to main content contrast
+    - blue on black
+- Remove sidebar in panorama
 
+# Potential Improvements
+
+- Rename spacewalk to rooms
+- Move space status to top on mobile
+- Allow line breaks in calendar (after calendar is implemented)
 
 # Development
 
