@@ -52,6 +52,20 @@
     <link rel="stylesheet" href="{{ get_url(path="/css/bootstrap.min.css") }}">
     <link rel="stylesheet" href="{{ get_url(path="/css/site.css") }}">
 
+    <script>
+        function isDarkModeEnabled() {
+            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        }
+
+        if (isDarkModeEnabled()) {
+            document.getElementsByTagName("html")[0].dataset["bsTheme"] = "dark";
+            document.getElementById("img-icon-lang").src = "/media/img/lang/icon.dark.svg";
+        } else {
+            document.getElementsByTagName("html")[0].dataset["bsTheme"] = "light";
+            document.getElementById("img-icon-lang").src = "/media/img/lang/icon.light.svg";
+        }
+    </script>
+
     <link rel="alternate" type="application/rss+xml" title="RSS"
           href='{{ get_url(path="/rss.xml", trailing_slash=false) }}'>
 
@@ -60,6 +74,7 @@
 
     {% block extra_css %}
     {% endblock extra_css %}
+
 </head>
 
 <body class="vh-100 m-0 p-0">
