@@ -40,8 +40,8 @@
 
     <div class="d-flex justify-content-around">
 
-        {% if page.lower %}
-            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.lower.path }}">
+        {% if page.extra.previous %}
+            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
@@ -61,8 +61,8 @@
             />
         </a>
 
-        {% if page.higher %}
-            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ page.higher.path }}">
+        {% if page.extra.next %}
+            <a class="btn btn-sm my-auto btn-secondary h-100" href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                      class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"

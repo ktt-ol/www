@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 import json
 import os
-import requests
 from datetime import datetime
+
+import requests
 
 ifs_folder = "content/images/ifs"
 ifs_url = "https://mainframe.io/media/ifs-images"
@@ -22,7 +23,35 @@ last_year = 0
 year_count = 0
 year = 0
 
+year_counts = {}
 for image in ifs_images:
+    if image["exif"]["time"] is not None and image["exif"]["time"] > 1325416332000:
+        new_date = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000)
+
+        if date is None or new_date > date:
+            date = new_date
+
+        year = date.year
+
+        if year > last_year:
+            year_counts[str(last_year)] = year_count
+            last_year = year
+            year_count = 0
+
+    year_count += 1
+
+year_counts[str(year)] = year_count
+
+date = None
+last_year = 0
+year_count = 0
+year = 0
+
+print(year_counts)
+
+for image in ifs_images:
+    total += 1
+
     # check if time exists and is after IFS introduction year (2012)
     if image["exif"]["time"] is not None and image["exif"]["time"] > 1325416332000:
         new_date = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000)
@@ -79,37 +108,50 @@ for image in ifs_images:
     frontmatter += 'in_search_index = false\n'
     frontmatter += 'date = ' + datetime_str + '\n'
 
-    frontmatter_extra = '[extra]\n'
+    frontmatter_extra = '\n[extra]\n'
     frontmatter_extra += 'filename = "' + image["filename"] + '"\n'
+    frontmatter_extra += '\n'
+
     frontmatter_extra += 'height = ' + str(image["height"]) + "\n"
     frontmatter_extra += 'width = ' + str(image["width"]) + "\n"
+
+    frontmatter_extra += '\n'
+
     frontmatter_extra += 'file_uri = "' + ifs_url + "/" + image["filename"] + '"\n'
     frontmatter_extra += 'file_uri_300 = "' + ifs_url + "/.thumbs/300-" + image["filename"] + '"\n'
     frontmatter_extra += 'file_uri_750 = "' + ifs_url + "/.thumbs/750-" + image["filename"] + '"\n'
     frontmatter_extra += 'file_uri_1200 = "' + ifs_url + "/.thumbs/1200-" + image["filename"] + '"\n'
 
-    frontmatter_extra += "\nimage_id = " + image_id_str
-    frontmatter_extra += "\nimage_year = " + str(year)
-    frontmatter_extra += '\nog_title = "' + title + '"'
-    frontmatter_extra += '\nog_description = "Random Image From Space of the hackspace oldenburg"'
-    frontmatter_extra += '\n+++\n'
+    frontmatter_extra += '\nog_title = "' + title + '"\n'
 
-    image_elem = '![' + title + '](' + ifs_url + '/.thumbs/750-' + image["filename"] + ')'
+    frontmatter_extra += '\n'
 
-    f = open(ifs_folder + "/" + str(year) + "/" + "IFS-" + image_id_str + ".md", "w")
+    if total > 1:
+        previous_id = int(ifs_images[total - 2]["filename"].split(".")[0])
+        frontmatter_extra += ('previous = \"/images/ifs/{0}/IFS-{1}.md\"\n'
+                              .format(str(year if year_count > 1 else (year - 1)), str(previous_id)))
+
+    if total < len(ifs_images):
+        next_id = int(ifs_images[total]["filename"].split(".")[0])
+
+        frontmatter_extra += ('next = \"/images/ifs/{0}/IFS-{1}.md\"\n'
+                              .format(str(year if year_count < year_counts[str(year)] else (year + 1)),
+                                      str(next_id)))
+
+    f = open("{0}/{1}/IFS-{2}.md".format(ifs_folder, str(year), image_id_str), "w")
     f.write(frontmatter)
-    f.write('aliases = ["/images/ifs/by-id/' + image_id_str + '"]\n')
+    f.write('aliases = [\"/images/ifs/by-id/{0}\"]\n'.format(image_id_str))
     f.write(frontmatter_extra)
+    f.write('+++\n')
     f.close()
 
-    f = open(ifs_folder + "/" + str(year) + "/" + "IFS-" + image_id_str + ".en.md", "w")
+    f = open("{0}/{1}/IFS-{2}.en.md".format(ifs_folder, str(year), image_id_str), "w")
     f.write(frontmatter)
-    f.write('aliases = ["/en/images/ifs/by-id/' + image_id_str + '"]\n')
+    f.write('aliases = [\"/en/images/ifs/by-id/{0}\"]\n'.format(image_id_str))
     f.write(frontmatter_extra)
+    f.write('+++\n')
     f.close()
 
-    total += 1
+    print("IFS markdown page for IFS {0} ({1} in year {2}) created".format(image_id_str, str(year_count), str(year)))
 
-    print("IFS markdown page for IFS " + image_id_str + " created")
-
-print("Created a total of " + str(total) + " IFS markdown pages")
+print("Created a total of {0} IFS markdown pages out of {1} entries".format(str(total), str(len(ifs_images))))
