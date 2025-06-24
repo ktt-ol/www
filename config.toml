@@ -55,6 +55,9 @@ open = "Geöffnet"
 member = "Geschlossen (Member Only)"
 keyholder = "Geschlossen (Keyholder Only)"
 
+ifs_newest = "Neuste Images From Space"
+ifs_more = "Viele weitere Fotos findest du auf der %PLACEHOLDER% Seite"
+
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
 bs_color_map = [
@@ -104,3 +107,6 @@ closing = "Closing soon"
 open = "Open"
 member = "Closed (Member Only)"
 keyholder = "Closed (Keyholder Only)"
+
+ifs_newest = "Newest Images From Space"
+ifs_more = "You can find more images under the %PLACEHOLDER% site"
