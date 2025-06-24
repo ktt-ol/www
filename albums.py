@@ -72,7 +72,6 @@ def create_index_md(path_components: list[str], tmp_folder_albums: str, tmp_fold
 
     f.write('[extra]\n')
     f.write('display_name = "' + title + '"\n')
-    f.write('image_count = ' + str(metadata["imageCount"]) + '\n')
 
     if metadata["cover"] is not None:
         cover_image_path = join_path(cover_path, get_cover_image(path_components, tmp_folder_covers, metadata["cover"]))
@@ -195,5 +194,7 @@ index_file.write('sort_by = "date"\n')
 index_file.write("+++\n")
 index_file.close()
 
+print(tmp_ktt_ol_albums)
+print(tmp_ktt_ol_cover)
 os.rename(tmp_ktt_ol_albums, albums_path)
 os.rename(tmp_ktt_ol_cover, cover_path)

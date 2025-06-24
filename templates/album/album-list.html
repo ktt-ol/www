@@ -73,7 +73,7 @@
                          style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
                         <h5 class="p-0 m-0 text-white border-0"><span
                                 class="mx-auto">{{ subsection_data.extra.display_name }}</span></h5>
-                        <span class="text-white text-center">{{ subsection_data.extra.image_count }} {{ trans(key="images", lang=lang) }}</span>
+                        <span class="text-white text-center">{{ self::page_count_recursive(section=subsection_data) | trim }} {{ trans(key="images", lang=lang) }}</span>
                     </div>
                 </a>
             {% else %}
@@ -88,7 +88,7 @@
                          style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
                         <h3 class="p-0 m-0 text-white border-0"><span
                                 class="mx-auto">{{ subsection_data.extra.display_name }}</span></h3>
-                        <span class="text-white">{{ subsection_data.extra.image_count }} {{ trans(key="images", lang=lang) }}</span>
+                        <span class="text-white">{{ self::page_count_recursive(section=subsection_data) | trim }} {{ trans(key="images", lang=lang) }}</span>
                     </div>
                 </a>
             {% endif %}

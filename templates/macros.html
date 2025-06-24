@@ -86,6 +86,16 @@
 
 {% endmacro %}
 
+{% macro page_count_recursive(section) %}
+    {% set count = section.pages | length %}
+    {% for subsection_path in section.subsections %}
+        {% set subsection = get_section(path=subsection_path) %}
+        {% set page_count = self::page_count_recursive(section=subsection) | int %}
+        {% set_global count = page_count + count %}
+    {% endfor %}
+    {{ count }}
+{% endmacro %}
+
 {% macro blog_list(pages) %}
 
     <div class="container-fluid">
@@ -135,7 +145,8 @@
                         {{ lang_str }}
                     </p>
                     <h4 class="text-primary mb-1 ps-0 border-bottom-0">
-                        <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}" class="text-reset text-decoration-none">
+                        <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
+                           class="text-reset text-decoration-none">
                             {{ page_title }}
                         </a>
                     </h4>

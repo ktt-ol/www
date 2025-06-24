@@ -41,7 +41,6 @@ weight = {0}
 in_search_index = false
 [extra]
 display_name = "{0}"
-image_count = {1}
 +++
 """
 
@@ -117,7 +116,7 @@ def create_year_sections(path: str, images):
         year_counts[year] = year_counts.get(year, 0) + 1
 
     for year in year_counts:
-        frontmatter = frontmatter_template_index.format(year, year_counts[year])
+        frontmatter = frontmatter_template_index.format(year)
 
         ifs_year_folder = path + "/" + str(year)
 
