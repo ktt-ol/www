@@ -1,44 +1,8 @@
 /*
-    mainframe / ktt-ol theme switch
- */
-
-switch (location.hostname) {
-    case "mainframe.io":
-        document.getElementById("img-logo-mainframe").style.display = "inline";
-        document.getElementById("img-logo-ktt").style.display = "none";
-        break;
-    default:
-        document.getElementById("img-logo-mainframe").style.display = "none";
-        document.getElementById("img-logo-ktt").style.display = "inline";
-        break;
-}
-
-
-/*
    status handling
 */
 
 const StatusApiUrl = "https://status.kreativitaet-trifft-technik.de/api/statusStream?spaceOpen=1&radstelleOpen=1&machining=1&woodworking=1&lab3dOpen=1";
-
-const StateClosed = {
-    name: "closed",
-    color: "btn-danger"
-};
-
-const StateClosing = {
-    name: "closing",
-    color: "btn-warning"
-};
-
-const StateOpen = {
-    name: "open",
-    color: "btn-success"
-};
-
-const StateUnknown = {
-    name: "unknown",
-    color: "btn-info"
-};
 
 function set_status(room, state) {
     console.info("Updating room state", room, state);
@@ -46,7 +10,10 @@ function set_status(room, state) {
     let element = document.getElementById("status-" + room);
 
     if (!element) {
-        let newElement = document.getElementById("status-template").cloneNode(true);
+        let newElement = document.getElementById("status-template")?.cloneNode(true);
+        if (!newElement) {
+            return;
+        }
 
         newElement.id = newElement.id.replace("template", room);
         newElement.classList.remove("d-none");
@@ -184,3 +151,22 @@ window.addEventListener("keydown", e => {
 
     return true;
 });
+
+function isDarkModeEnabled() {
+    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
+function refreshDarkMode() {
+    let elem = document.getElementById("img-icon-lang");
+
+    if (!elem) {
+        setTimeout(() => {
+            elem = document.getElementById("img-icon-lang");
+            if (elem) {
+                refreshDarkMode();
+            }
+        }, 5)
+    }
+}
+
+refreshDarkMode();

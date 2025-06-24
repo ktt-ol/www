@@ -1,21 +1,13 @@
-<header id="navbar" style="padding-top: 10px;" class="row mb-3">
+<header id="navbar" class="row my-2">
     <div class="col">
-        <nav class="navbar navbar-expand-md bg-body-tertiary">
+        <nav class="navbar navbar-expand-md bg-body-secondary rounded">
             <div class="container-fluid">
                 <a class="navbar-brand" href='{{ get_url(path="@/_index.md", lang=lang) }}'
                    style="padding-top: 10px; padding-bottom: 10px;">
                     <img style="height: 28px;"
-                         loading="lazy"
-                         decoding="async"
                          id="img-logo-mainframe"
                          src="{{ get_url(path="/media/img/logo-mainframe.svg") }}"
                          alt="Mainframe Logo">
-                    <img style="height: 50px;"
-                         id="img-logo-ktt"
-                         src="{{ get_url(path="/media/img/logo-ktt.png") }}"
-                         loading="lazy"
-                         decoding="async"
-                         alt="Kreativität trifft Technik e.V. Logo">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -36,7 +28,7 @@
                         {% include "navbar-pagelist.html" %}
 
                         <li class="nav-item">
-                            <a class="nav-link" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/blog/_index.md", lang=lang) }}'>
                                 {% set blog_section_metadata = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
                                 {{ blog_section_metadata.title }}
@@ -44,7 +36,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/calendar.md", lang=lang) }}'>
                                 {% set contact_page_metadata = get_page(path="calendar.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
@@ -52,7 +44,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/contact.md", lang=lang) }}'>
                                 {% set contact_page_metadata = get_page(path="contact.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
@@ -60,12 +52,11 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
                                href='{{ get_url(path="@/contact.md#" ~ trans(key="arrival", lang=lang) | lower, lang=lang) }}'>
                                 {{ trans(key="arrival", lang=lang) }}
                             </a>
                         </li>
-
                     </ul>
 
                     <ul class="navbar-nav navbar-right">
@@ -84,23 +75,28 @@
                         {% endif %}
 
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                aria-expanded="false">
-                                <img id="img-icon-lang"
-                                     src=""
-                                     style="height: 28px;"
-                                     alt="{{ trans(key="language",lang=lang) }}">
+
+                                <!-- Credit: https://icons.getbootstrap.com/icons/translate/ -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-translate" viewBox="0 0 16 16">
+                                    <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286zm1.634-.736L5.5 3.956h-.049l-.679 2.022z"></path>
+                                    <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zm7.138 9.995q.289.451.63.846c-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6 6 0 0 1-.415-.492 2 2 0 0 1-.94.31"></path>
+                                </svg>
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
                                     <a class="dropdown-item" href="/{{ raw_path }}">
-                                        <img src="{{ get_url(path="/media/img/lang/de.png") }}" class="me-1">
+                                        <img src="{{ get_url(path="/media/img/lang/de.png") }}" class="me-1"
+                                             alt="german flag">
                                         Deutsch
                                     </a>
                                 </li>
                                 <li>
                                     <a class="dropdown-item" href="/en/{{ raw_path }}">
-                                        <img src="{{ get_url(path="/media/img/lang/en.png") }}" class="me-1">
+                                        <img src="{{ get_url(path="/media/img/lang/en.png") }}" class="me-1"
+                                             alt="english flag">
                                         Englisch
                                     </a>
                                 </li>

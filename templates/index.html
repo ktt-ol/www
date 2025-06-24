@@ -15,12 +15,12 @@
         </div>
         <div class="row">
             <div class="col">
-                <div id="ifs-carousel" class="overflow-hidden bg-light-subtle carousel slide rounded" data-bs-ride="carousel">
+                <div id="ifs-carousel" class="overflow-hidden bg-body-tertiary carousel slide rounded" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         {% for i in range(end=5) %}
                             <div style="height: 500px;"
                                  class="carousel-item text-center {% if i == 0 %} active {% endif %}"
-                                 data-bs-interval="2500">
+                                 data-bs-interval="5000">
                                 {% set id_str = (ifs_count - i) | as_str %}
 
                                 <a target="_blank" class="text-decoration-none"
@@ -33,11 +33,15 @@
                                 </a>
                             </div>
                         {% endfor %}
-                        <div style="height: 500px;" class="carousel-item text-center" data-bs-interval="1000">
+                        <div style="height: 500px;" class="carousel-item text-center" data-bs-interval="2500">
                             {% set ifs_page = get_section(path="images/ifs/_index.md", lang=lang, metadata_only=true) %}
 
                             <div class="h-100 align-content-center">
-                                {{ trans(key="ifs_more", lang=lang) | replace(from="%PLACEHOLDER%", to='<a class="text-decoration-none" target="_blank" href="{{ get_url(path="@/images/ifs/_index.md", lang=lang) }}">'~ ifs_page.title ~'</a>') | safe }}
+                                {{ trans(key="ifs_more", lang=lang) }}
+                                <a class="text-decoration-none" target="_blank"
+                                   href="{{ get_url(path="@/images/ifs/_index.md", lang=lang) }}">
+                                    {{ ifs_page.title }}
+                                </a>
                             </div>
                         </div>
                     </div>

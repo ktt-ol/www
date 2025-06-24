@@ -2,15 +2,7 @@
 {% import "macros.html" as macros %}
 
 {% block extra_head %}
-    <link rel="stylesheet" href="{{ get_url(path="/css/pannellum.css") }}"/>
-
     <style>
-        #panorama {
-            width: 100%;
-            height: calc(100vh - 100px);
-            margin: 0;
-        }
-
         .big-arrow {
             height: 50px;
             width: 50px;
@@ -27,18 +19,16 @@
             background-color: rgb(208, 209, 249);
         }
     </style>
-
 {% endblock extra_head %}
-
 
 {% block main %}
 
-    <div id="panorama">
+    <div id="panorama" class="w-100 m-0" style="height: calc(100vh - 100px)">
     </div>
 
-    <script type="text/javascript" src="{{ get_url(path="/js/pannellum.js") }}"
+    <script defer type="text/javascript" src="{{ get_url(path="/js/pannellum.js") }}"
             integrity="sha384-{{ get_hash(path="static/js/pannellum.js", sha_type=384, base64=true) | safe }}"></script>
-    <script type=" text/javascript" src="{{ get_url(path="/js/panorama.js") }}"
+    <script defer type=" text/javascript" src="{{ get_url(path="/js/panorama.js") }}"
             integrity="sha384-{{ get_hash(path="static/js/panorama.js", sha_type=384, base64=true) | safe }}"></script>
 
 {% endblock main %}

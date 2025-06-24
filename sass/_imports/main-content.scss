@@ -1,0 +1,35 @@
+@for $i from 1 through 6 {
+  .main-content h#{$i} {
+    display: block;
+    align-items: start;
+    font-size: 1.3em - (0.1em * ($i - 1));
+  }
+
+  .main-content h#{$i} > a {
+    color: var(--bs-primary);
+    text-decoration: none;
+  }
+}
+
+.main-content img {
+  object-fit: contain;
+  padding: 8px;
+  max-width: 750px;
+}
+
+.main-content p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-content p {
+  padding: 0 0.25rem;
+  margin: 0 0 0.25rem;
+  width: 100%;
+  text-align: left;
+}
+
+.main-content table {
+  justify-content: space-around;
+}

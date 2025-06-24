@@ -91,7 +91,7 @@
     <div class="container-fluid">
         {% for blog_page in pages %}
 
-            <div class="row py-1 border-bottom">
+            <div class="row py-2 border-bottom">
                 {% if blog_page.authors %}
                     {% set page_author = blog_page.authors | join(sep=", ") %}
                 {% else %}
@@ -114,11 +114,11 @@
                     {% set thumbnail_url = resized_image.url %}
                 {% endif %}
 
-                <div class="col-sm-3 d-flex flex-column justify-content-center text-center">
+                <div class="col-sm-3 d-flex flex-column bg-body-tertiary rounded rounded-2 justify-content-center text-center">
                     <img alt="Thumbnail Image for {{ page_title }}"
                          src="{{ thumbnail_url }}"
                          decoding="async"
-                         class="rounded rounded-2"
+                         class="object-fit-contain"
                          loading="lazy"
                          style="height: 150px; max-width: 100%;"
                     />

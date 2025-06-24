@@ -1,6 +1,9 @@
-:root {
-  --bs-green: #0ce3ac;
-}
+@use "../_imports/pannellum.css";
+
+$primary: #42BAFF;
+$green: #0ce3ac;
+
+@import "../_imports/bootstrap-5.3.7/scss/bootstrap";
 
 body {
   font-size: 16px;
@@ -29,89 +32,8 @@ body {
   }
 }
 
-@for $i from 1 through 6 {
-  .main-content h#{$i} {
-    display: block;
-    align-items: start;
-    font-size: 1.3em - (0.1em * ($i - 1));
-  }
-
-  .main-content h#{$i} > a {
-    color: var(--bs-primary);
-    text-decoration: none;
-  }
-}
-
-.main-content img {
-  object-fit: contain;
-  padding: 8px;
-  max-width: 750px;
-}
-
-.main-content p img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.main-content p {
-  padding: 0 0.25rem;
-  margin: 0 0 0.25rem;
-  width: 100%;
-  text-align: left;
-}
-
-.main-content table {
-  justify-content: space-around;
-}
-
 a {
   color: var(--bs-green);
 }
 
-.image-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.image-gallery > a {
-  flex: 1 1 auto;
-  cursor: pointer;
-  position: relative;
-  border-radius: 5px;
-  border: 1px solid rgba(var(--bs-primary-rgb), 0);
-}
-
-.image-gallery > a:hover {
-  border: 1px solid rgba(var(--bs-primary-rgb), 1);
-}
-
-.image-gallery > a .album-hover-info {
-  display: none !important;
-}
-
-.image-gallery > a:hover .album-hover-info {
-  display: flex !important;
-}
-
-.image-gallery a img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border: 1px solid rgba(var(--bs-secondary-rgb), 0.25);
-  border-radius: 5px;
-  vertical-align: middle;
-  background: url("/media/img/img-loader.gif") no-repeat center;
-}
-
-.image-gallery::after {
-  content: "";
-  flex-grow: 999;
-}
-
-img {
-  max-width: 100% !important;
-  max-height: 100% !important;
-  object-fit: contain;
-}
+@import "../_imports/gallery";

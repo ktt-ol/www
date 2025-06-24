@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ lang }}" prefix="og: https://ogp.me/ns#" data-bs-theme="light">
+<html lang="{{ lang }}" prefix="og: https://ogp.me/ns#" data-bs-theme="dark">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -8,6 +8,7 @@
     <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}'/>
     <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="de") }}'/>
     <meta property="og:locale:alternate" content='{{ trans(key="locale_name", lang="en") }}'/>
+
     {% if current_path %}
         <meta property="og:url" content="{{ get_url(path=current_path) }}"/>
     {% endif %}
@@ -41,53 +42,47 @@
 
     {% endif %}
 
-    {% include "structured-data.html" %}
-
     <title>{{ title }}</title>
-
-    <meta name="description" content='{{ description }}'>
-    <meta property="og:description" content='{{ description }}'/>
     <meta property="og:title" content='{{ title }}'/>
+    <meta property="og:description" content='{{ description }}'/>
+    <meta name="description" content='{{ description }}'>
 
-    <link rel="stylesheet" href="{{ get_url(path="/css/bootstrap.min.css") }}">
-    <link rel="stylesheet" href="{{ get_url(path="/css/site.css") }}">
-
-    <script>
-        function isDarkModeEnabled() {
-            return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "image": "https://www.ktt-ol.de/media/img/logo-ktt.png",
+            "url": "https://www.ktt-ol.de",
+            "sameAs": [
+                "https://mainframe.io",
+                "https://kreativitaet-trifft-technik.de",
+                "https://kreativität-trifft-technik.de"
+            ],
+            "logo": "https://www.ktt-ol.de/media/img/logo-ktt.png",
+            "name": "Kreativität trifft Technik e.V.",
+            "description": "Kreativität trifft Technik e.V. - Hackspace Oldenburg",
+            "email": "vorstand@ktt-ol.de",
+            "telephone": "+49441-559 700 32",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bahnhofsplatz 10",
+                "addressLocality": "Oldenburg",
+                "addressCountry": "DE",
+                "addressRegion": "Innenstadt",
+                "postalCode": "26122"
+            },
+            "vatID": "",
+            "iso6523Code": ""
         }
-
-        function refreshDarkMode() {
-            let elem = document.getElementById("img-icon-lang");
-
-            if (!elem) {
-                setTimeout(() => {
-                    elem = document.getElementById("img-icon-lang");
-                    if (elem) {
-                        refreshDarkMode();
-                    }
-                }, 5)
-            }
-
-            if (isDarkModeEnabled()) {
-                document.getElementsByTagName("html")[0].dataset["bsTheme"] = "dark";
-                if (elem) elem.src = "{{ get_url(path="/media/img/lang/icon.dark.svg") }}";
-            } else {
-                document.getElementsByTagName("html")[0].dataset["bsTheme"] = "light";
-                if (elem) elem.src = "{{ get_url(path="/media/img/lang/icon.light.svg") }}";
-            }
-        }
-
-        refreshDarkMode();
-
-        const ROOMS = {{ config.extra.rooms | json_encode | safe }};
     </script>
 
-    <link rel="alternate" type="application/rss+xml" title="RSS"
-          href='{{ get_url(path="/rss.xml", trailing_slash=false) }}'>
+    <link rel="stylesheet" href="{{ get_url(path="/css/site.css") }}">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
-          href='{{ get_url(path="/atom.xml", trailing_slash=false) }}'>
+          href='{{ get_url(path="/rss.xml") }}'>
+
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href='{{ get_url(path="/atom.xml") }}'>
 
     {% block extra_css %}
     {% endblock extra_css %}
@@ -95,7 +90,7 @@
 </head>
 
 <body class="vh-100 m-0 p-0">
-<div class="container-lg px-lg-0 px-4 d-flex flex-column justify-content-between">
+<div class="container-lg h-100 px-lg-0 px-4 d-flex flex-column">
 
     {% include "navbar.html" %}
 
@@ -124,12 +119,16 @@
     </footer>
 </div>
 
-<script src="{{ get_url(path="/js/site.js") }}"
+<script type="module" async src="{{ get_url(path="/js/site.js") }}"
         integrity="sha384-{{ get_hash(path="static/js/site.js", sha_type=384, base64=true) | safe }}">
 </script>
 
-<script src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}"
+<script type="module" async src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}"
         integrity="sha384-{{ get_hash(path="static/js/bootstrap.bundle.min.js", sha_type=384, base64=true) | safe }}">
+</script>
+
+<script>
+    const ROOMS = {{ config.extra.rooms | json_encode | safe }};
 </script>
 
 </body>

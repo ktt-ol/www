@@ -56,7 +56,7 @@ member = "Geschlossen (Member Only)"
 keyholder = "Geschlossen (Keyholder Only)"
 
 ifs_newest = "Neuste Images From Space"
-ifs_more = "Viele weitere Fotos findest du auf der %PLACEHOLDER% Seite"
+ifs_more = "Viele weitere Fotos findest du hier:"
 
 [extra]
 ifs_base_path = "https://www.mainframe.io/media/ifs-images"
@@ -72,7 +72,7 @@ bs_color_map = [
 
 rooms = [
     { name = "spaceOpen", title = { de = "Hackspace", en = "Hackspace" } },
-    { name = "machining", title = { de = "Zerspanungstechnik", en = "Machining" } },
+    { name = "machining", title = { de = "Zerspanung", en = "Machining" } },
     { name = "woodworking", title = { de = "Holzwerkstatt", en = "Woodworking" } },
     { name = "lab3dOpen", title = { de = "3D Lab", en = "3D Lab" } },
     { name = "radstelleOpen", title = { de = "Radstelle", en = "Cycling" } },
@@ -109,4 +109,4 @@ member = "Closed (Member Only)"
 keyholder = "Closed (Keyholder Only)"
 
 ifs_newest = "Newest Images From Space"
-ifs_more = "You can find more images under the %PLACEHOLDER% site"
+ifs_more = "You can find more images here:"

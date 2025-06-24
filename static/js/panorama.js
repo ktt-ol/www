@@ -536,6 +536,7 @@ const p = pannellum.viewer('panorama', {
     },
     "scenes": scenes
 });
+
 p.on("load", function (e) {
     history.pushState({}, "", "#" + p.getScene());
 });
