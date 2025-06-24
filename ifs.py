@@ -1,157 +1,155 @@
 #!/usr/bin/env python3
 import json
+from typing import Optional
+import requests
 import os
 from datetime import datetime
 
-import requests
+languages = ["de", "en"]
 
-ifs_folder = "content/images/ifs"
-ifs_url = "https://mainframe.io/media/ifs-images"
+ifs_url = "https://mainframe.io/media/ifs-images/meta.json"
+ifs_image_path = "content/images/ifs"
 
-ifs_meta_path = ifs_url + "/meta.json"
+frontmatter_template_ifs = """+++
+title = "IFS {0}"
+slug = "{0}"
+weight = {0}
+template = "album/album-single.html"
+in_search_index = false
+date = {5}
+aliases = ["/{4}images/ifs/by-id/{0}"]
 
-ifs_data = json.loads(requests.get(ifs_meta_path).text)
+[extra]
+filename = "{1}"
 
-ifs_images = ifs_data["images"][::-1]
-ifs_count = len(ifs_images)
+height = {2}
+width = {3}
 
-total = 0
+file_uri = "https://mainframe.io/media/ifs-images/{1}"
+file_uri_300 = "https://mainframe.io/media/ifs-images/.thumbs/300-{1}"
+file_uri_750 = "https://mainframe.io/media/ifs-images/.thumbs/750-{1}"
+file_uri_1200 = "https://mainframe.io/media/ifs-images/.thumbs/1200-{1}"
 
-date = None
-ifs_year_folder = None
-last_year = 0
-year_count = 0
-year = 0
+og_title = "IFS {0}"
+"""
 
-year_counts = {}
-for image in ifs_images:
-    if image["exif"]["time"] is not None and image["exif"]["time"] > 1325416332000:
-        new_date = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000)
+frontmatter_template_index = """+++
+title = "Images From Space {0}"
+sort_by = "weight"
+template = "album/album-list.html"
+weight = {0}
+in_search_index = false
+[extra]
+display_name = "{0}"
+image_count = {1}
++++
+"""
 
-        if date is None or new_date > date:
-            date = new_date
 
-        year = date.year
+class IfsImage:
+    def __init__(self, image: dict, date: datetime):
+        self.ifs_id = int(image["filename"].split(".")[0])
+        self.filename = image["filename"]
+        self.height = image["height"]
+        self.width = image["width"]
+        self.date = date
 
-        if year > last_year:
-            year_counts[str(last_year)] = year_count
-            last_year = year
-            year_count = 0
 
-    year_count += 1
+def generate_frontmatter(lang: str, current: IfsImage, previous: Optional[IfsImage], next: Optional[IfsImage]) -> str:
+    frontmatter = frontmatter_template_ifs.format(
+        current.ifs_id,
+        current.filename,
+        current.height,
+        current.width,
+        lang + "/",
+        current.date.strftime("%Y-%m-%dT%H:%M:%S"),
+        current.date.strftime("%Y")
+    )
 
-year_counts[str(year)] = year_count
+    if previous is not None:
+        frontmatter += '\nprevious = "/images/ifs/{0}/IFS-{1}.md"'.format(previous.date.year, previous.ifs_id)
 
-date = None
-last_year = 0
-year_count = 0
-year = 0
+    if next is not None:
+        frontmatter += '\nnext = "/images/ifs/{0}/IFS-{1}.md"'.format(next.date.year, next.ifs_id)
 
-print(year_counts)
+    frontmatter += "\n+++\n"
 
-for image in ifs_images:
-    total += 1
+    return frontmatter
 
-    # check if time exists and is after IFS introduction year (2012)
-    if image["exif"]["time"] is not None and image["exif"]["time"] > 1325416332000:
-        new_date = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000)
 
-        if date is None or new_date > date:
-            date = new_date
+def generate_ifs_document(path: str, lang: str, current: IfsImage, previous: IfsImage, next: IfsImage):
+    frontmatter = generate_frontmatter(lang, current, previous, next)
 
-        year = date.year
+    if lang == "de":
+        filepath = "{0}/{1}/IFS-{2}.md".format(path, current.date.strftime("%Y"), current.ifs_id)
+    else:
+        filepath = "{0}/{1}/IFS-{2}.{3}.md".format(path, current.date.strftime("%Y"), current.ifs_id, lang)
 
-        if year > last_year:
-            last_year = year
-            year_count = 0
+    with open(filepath, "w") as f:
+        f.write(frontmatter)
 
-        ifs_year_folder = ifs_folder + "/" + str(year)
+
+def fetch_ifs_data(url: str) -> list:
+    ifs_data = json.loads(requests.get(url).text)
+    ifs_data = ifs_data["images"][::-1]
+
+    current_date = None
+
+    entries = []
+
+    for image in ifs_data:
+        if image["exif"]["time"] is not None and image["exif"]["time"] > 1325416332000:
+            new_date = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000)
+
+            if current_date is None or new_date > current_date:
+                current_date = new_date
+
+        entries.append(IfsImage(image, current_date))
+
+    return entries
+
+
+def create_year_sections(path: str, images):
+    year_counts = {}
+
+    for image in images:
+        year = str(image.date.year)
+        year_counts[year] = year_counts.get(year, 0) + 1
+
+    for year in year_counts:
+        frontmatter = frontmatter_template_index.format(year, year_counts[year])
+
+        ifs_year_folder = path + "/" + str(year)
 
         if not os.path.exists(ifs_year_folder):
             os.mkdir(ifs_year_folder)
 
-    if image["exif"]["time"] is not None:
-        datetime_str = datetime.fromtimestamp(int(image["exif"]["time"]) / 1000).strftime("%Y-%m-%dT%H:%M:%S")
-    else:
-        datetime_str = "1970-01-01T01:00:00"
+        for lang in languages:
+            if lang == "de":
+                filepath = os.path.join(ifs_year_folder, "_index.md")
+            else:
+                filepath = os.path.join(ifs_year_folder, "_index.{0}.md".format(lang))
 
-    year_count += 1
+            with open(filepath, "w") as f:
+                f.write(frontmatter)
 
-    frontmatter = '+++\n'
-    frontmatter += 'title = "Images From Space ' + str(year) + '"\n'
-    frontmatter += 'sort_by = "weight"\n'
-    frontmatter += 'template = "album/album-list.html"\n'
-    frontmatter += 'weight = ' + str(year) + '\n'
-    frontmatter += 'in_search_index = false\n'
-    frontmatter += '[extra]\n'
-    frontmatter += 'display_name = "' + str(year) + '"\n'
-    frontmatter += 'image_count = ' + str(year_count) + '\n'
-    frontmatter += '+++\n'
 
-    f = open(ifs_year_folder + "/_index.md", "w")
-    f.write(frontmatter)
-    f.close()
+def create_ifs_markdown_pages(path: str, images: list):
+    for i in range(0, len(images)):
+        for lang in languages:
+            generate_ifs_document(
+                path,
+                lang,
+                images[i],
+                images[(i - 1) % len(images)],
+                images[(i + 1) % len(images)]
+            )
 
-    f = open(ifs_year_folder + "/_index.en.md", "w")
-    f.write(frontmatter)
-    f.close()
 
-    image_id = int(image["filename"].split(".")[0])
-    image_id_str = str(image_id)
-    title = 'IFS ' + image_id_str
+ifs_images = fetch_ifs_data(ifs_url)
 
-    frontmatter = '+++\n'
-    frontmatter += 'title = "' + title + '"\n'
-    frontmatter += 'slug = "' + image_id_str + '"\n'
-    frontmatter += 'weight = ' + image_id_str + '\n'
-    frontmatter += 'template = "album/album-single.html"\n'
-    frontmatter += 'in_search_index = false\n'
-    frontmatter += 'date = ' + datetime_str + '\n'
+create_year_sections(ifs_image_path, ifs_images)
 
-    frontmatter_extra = '\n[extra]\n'
-    frontmatter_extra += 'filename = "' + image["filename"] + '"\n'
-    frontmatter_extra += '\n'
+create_ifs_markdown_pages(ifs_image_path, ifs_images)
 
-    frontmatter_extra += 'height = ' + str(image["height"]) + "\n"
-    frontmatter_extra += 'width = ' + str(image["width"]) + "\n"
-
-    frontmatter_extra += '\n'
-
-    frontmatter_extra += 'file_uri = "' + ifs_url + "/" + image["filename"] + '"\n'
-    frontmatter_extra += 'file_uri_300 = "' + ifs_url + "/.thumbs/300-" + image["filename"] + '"\n'
-    frontmatter_extra += 'file_uri_750 = "' + ifs_url + "/.thumbs/750-" + image["filename"] + '"\n'
-    frontmatter_extra += 'file_uri_1200 = "' + ifs_url + "/.thumbs/1200-" + image["filename"] + '"\n'
-
-    frontmatter_extra += '\nog_title = "' + title + '"\n'
-
-    frontmatter_extra += '\n'
-
-    if total > 1:
-        previous_id = int(ifs_images[total - 2]["filename"].split(".")[0])
-        frontmatter_extra += ('previous = \"/images/ifs/{0}/IFS-{1}.md\"\n'
-                              .format(str(year if year_count > 1 else (year - 1)), str(previous_id)))
-
-    if total < len(ifs_images):
-        next_id = int(ifs_images[total]["filename"].split(".")[0])
-
-        frontmatter_extra += ('next = \"/images/ifs/{0}/IFS-{1}.md\"\n'
-                              .format(str(year if year_count < year_counts[str(year)] else (year + 1)),
-                                      str(next_id)))
-
-    f = open("{0}/{1}/IFS-{2}.md".format(ifs_folder, str(year), image_id_str), "w")
-    f.write(frontmatter)
-    f.write('aliases = [\"/images/ifs/by-id/{0}\"]\n'.format(image_id_str))
-    f.write(frontmatter_extra)
-    f.write('+++\n')
-    f.close()
-
-    f = open("{0}/{1}/IFS-{2}.en.md".format(ifs_folder, str(year), image_id_str), "w")
-    f.write(frontmatter)
-    f.write('aliases = [\"/en/images/ifs/by-id/{0}\"]\n'.format(image_id_str))
-    f.write(frontmatter_extra)
-    f.write('+++\n')
-    f.close()
-
-    print("IFS markdown page for IFS {0} ({1} in year {2}) created".format(image_id_str, str(year_count), str(year)))
-
-print("Created a total of {0} IFS markdown pages out of {1} entries".format(str(total), str(len(ifs_images))))
+print("Created a total of {0} IFS markdown pages ".format(len(ifs_images)))
