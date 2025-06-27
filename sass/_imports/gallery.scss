@@ -1,10 +1,10 @@
-.image-gallery {
+.album-list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
 }
 
-.image-gallery > a {
+.album-list > a {
   flex: 1 1 auto;
   cursor: pointer;
   position: relative;
@@ -12,19 +12,19 @@
   border: 1px solid rgba(var(--bs-primary-rgb), 0);
 }
 
-.image-gallery > a:hover {
+.album-list > a:hover {
   border: 1px solid rgba(var(--bs-primary-rgb), 1);
 }
 
-.image-gallery > a .album-hover-info {
+.album-list > a .album-hover-info {
   display: none !important;
 }
 
-.image-gallery > a:hover .album-hover-info {
+.album-list > a:hover .album-hover-info {
   display: flex !important;
 }
 
-.image-gallery a img {
+.album-list a img {
   object-fit: cover;
   width: 100%;
   height: 100%;
@@ -34,7 +34,31 @@
   background: url("/media/img/img-loader.gif") no-repeat center;
 }
 
-.image-gallery::after {
+.album-list::after {
   content: "";
   flex-grow: 999;
+}
+
+#album-image-previous {
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 5px 5px;
+  background: linear-gradient(-90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+#album-image-next {
+  color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 5px 5px;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+ #album-image-previous:hover {
+  color: var(--bs-dark);
+  border-radius: 5px 5px 5px 5px;
+  background: linear-gradient(-90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
+}
+
+#album-image-next:hover {
+  color: var(--bs-dark);
+  border-radius: 5px 5px 5px 5px;
+  background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5) 100%);
 }

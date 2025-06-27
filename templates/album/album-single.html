@@ -38,39 +38,43 @@
             {% endif %}
         </h3>
 
-        <div class="d-flex justify-content-around">
-
-            {% if page.extra.previous %}
-                <a class="btn btn-sm my-auto btn-secondary h-100" id="btn-image-previous"
-                   href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"></path>
-                    </svg>
+        <div class="album-image position-relative m-1">
+            <img alt="{{ page.title }}"
+                 class="w-100 img-fluid"
+                 style="max-width: 100%;"
+                 src="{{ page.extra.file_uri_1200 }}"
+            />
+            <div class="album-image-controls">
+                {% if page.extra.previous %}
+                    <a class="position-absolute w-25 h-100 top-0" style="left: 0; right: auto"
+                       id="album-image-previous"
+                       href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
+                        <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
+                        <svg class="position-absolute" style="top: 50%; bottom: 50%; left: 10%; right: auto"
+                             xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                             fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"></path>
+                        </svg>
+                    </a>
+                {% endif %}
+                <a target="_blank" class="position-absolute w-50 h-100 top-0" style="left: 25%; right: 25%"
+                   id="album-image-view"
+                   href="{{ page.extra.file_uri }}">
                 </a>
-            {% endif %}
-
-            <a target="_blank"
-               href="{{ page.extra.file_uri }}">
-                <img alt=""
-                     class="mx-auto"
-                     style="width: 750px;"
-                     src="{{ page.extra.file_uri_1200 }}"
-                />
-            </a>
-
-            {% if page.extra.next %}
-                <a class="btn btn-sm my-auto btn-secondary h-100" id="btn-image-next"
-                   href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-arrow-bar-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd"
-                              d="M6 8a.5.5 0 0 0 .5.5h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L12.293 7.5H6.5A.5.5 0 0 0 6 8m-2.5 7a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5"></path>
-                    </svg>
-                </a>
-            {% endif %}
-
+                {% if page.extra.next %}
+                    <a class="position-absolute w-25 h-100 top-0" style="left: auto; right: 0" id="album-image-next"
+                       href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
+                        <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
+                        <svg class="position-absolute" style="top: 50%; bottom: 50%; left: auto; right: 10%"
+                             xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                             fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"></path>
+                        </svg>
+                    </a>
+                {% endif %}
+            </div>
         </div>
 
         {{ page.content | safe }}

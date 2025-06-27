@@ -60,7 +60,7 @@ def generate_frontmatter(lang: str, current: IfsImage, previous: Optional[IfsIma
         current.filename,
         current.height,
         current.width,
-        lang + "/",
+        lang + "/" if lang != "de" else "",
         current.date.strftime("%Y-%m-%dT%H:%M:%S"),
         current.date.strftime("%Y")
     )

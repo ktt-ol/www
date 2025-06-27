@@ -136,10 +136,13 @@ window.addEventListener("keydown", e => {
     console.log(e.key);
     switch (e.key) {
         case "ArrowLeft":
-            btn = document.getElementById("btn-image-previous");
+            btn = document.getElementById("album-image-previous");
             break;
         case "ArrowRight":
-            btn = document.getElementById("btn-image-next");
+            btn = document.getElementById("album-image-next");
+            break;
+        case " ":
+            btn = document.getElementById("img-controls-view");
             break;
         default:
             break;
