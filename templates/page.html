@@ -65,7 +65,7 @@
 {% endblock extra_head %}
 
 {% block content %}
-    <h3 class="d-flex justify-content-between">
+    <h1 class="d-flex justify-content-between">
         {{ page.title }}
 
         {% if page.extra.repository %}
@@ -76,7 +76,7 @@
                 </a>
             </span>
         {% endif %}
-    </h3>
+    </h1>
     <div class="main-content">
         {{ page.content | safe }}
     </div>
