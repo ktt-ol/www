@@ -11,7 +11,7 @@
 {% block main %}
     <div class="mb-auto">
         <h3 class="d-flex justify-content-between">
-            {{ page.title }}
+            <span class="text-truncate">{{ page.title }}</span>
 
             {% if page.ancestors | length > 2 %}
                 {% set ancestor = get_section(path=page.ancestors | last) %}
