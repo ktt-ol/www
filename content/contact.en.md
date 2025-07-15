@@ -1,6 +1,6 @@
 +++
 title = "Contact"
-weight = 10
+weight = 20
 +++
 
 {{ contact_info_en() }}
