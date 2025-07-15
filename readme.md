@@ -2,8 +2,6 @@
 
 # Todo
 
-- Add Event Calendar
-    - Upcoming Events on the sidebar
 - Make taxonomy listings more easily accessible
 
 # Potential Improvements

@@ -8,8 +8,8 @@
 
         <div id="space-status" class="px-2" style="font-size: 0.9em">
             <a role="button" id="status-template"
-               class="d-flex p-0 flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none border-bottom border-black"
-               href="//status.mainframe.io">
+                class="d-flex p-0 flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none border-bottom border-black"
+                href="//status.mainframe.io">
                 <div class="text-start ps-1 fw-bold lh-sm" id="status-name-template">
                     Template:
                 </div>
@@ -38,11 +38,61 @@
     <div class="d-flex mt-2 flex-column">
         <h3>
             <a class="ms-2" href="{{ get_url(path="@/calendar.md", lang=lang) }}">
-                Termine
+                Nächste Termine
             </a>
         </h3>
         <div class="px-2" style="font-size: 0.9em">
-            <!-- TODO: Calender -->
+            <div class="list-group-numbered" id="event-list">
+            </div>
         </div>
     </div>
 </div>
+
+<script>
+
+    const calendarId = '{{ config.extra.google_cal_id }}';
+    const apiKey = '{{ config.extra.google_api_key }}';
+
+    const now = new Date().toISOString();
+    const url = `https://www.kreativitaet-trifft-technik.de/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
+
+    fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            const list = document.getElementById('event-list');
+            if (!data.items || data.items.length === 0) {
+                list.innerHTML = '<li>Keine Termine</li>';
+                return;
+            }
+
+            data.items.forEach(event => {
+                const li = document.createElement('li');
+                const start = event.start.dateTime || event.start.date;
+                const end = event.end.dateTime || event.end.date;
+                const startDate = new Date(start);
+                const startTimeStr = startDate.toLocaleString('de', {
+                    weekday: 'short',
+                    month: 'short',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit',
+                });
+                const endDate = new Date(end);
+                const endTimeStr = endDate.toLocaleString('de', {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                });
+                const dateRangeStr = `${startTimeStr} - ${endTimeStr}`;
+
+                li.innerHTML = `
+                <div>${dateRangeStr}</div>
+                <div class="mb-3"><b><a href=${event.htmlLink}>${event.summary || 'No Title'}</a></b></div>
+                `;
+                list.appendChild(li);
+            });
+        })
+        .catch(err => {
+            console.error('Error fetching Google Calendar events:', err);
+            document.getElementById('event-list').innerHTML = '<li>Could not load events.</li>';
+        });
+</script>
