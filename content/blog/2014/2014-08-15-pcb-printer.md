@@ -4,8 +4,8 @@ date = "2014-08-15T17:00:00"
 authors = ["Hauke"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Hardware"]
+Typ = ["Projekt"]
+Serie = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2014/pcb-printer/thumbnail.jpg"

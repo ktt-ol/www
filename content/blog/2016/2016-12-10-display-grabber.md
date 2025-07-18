@@ -5,8 +5,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["sre"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Hardware"]
+Typ = ["Projekt"]
+Serie = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2016/abus-cfa1000-display-grabber/thumbnail.png"

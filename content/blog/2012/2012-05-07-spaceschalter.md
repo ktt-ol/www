@@ -6,8 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["Thorben"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Infrastructure"]
+Typ = ["Projekt"]
+Serie = ["Infrastructure"]
 
 [extra]
 thumbnail = "/media/blog/2012/spaceschalter/spaceschalter.jpg"

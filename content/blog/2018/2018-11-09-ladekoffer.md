@@ -4,8 +4,8 @@ date = "2018-11-09T12:15:00"
 authors = ["asc"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Hardware"]
+Typ = ["Projekt"]
+Serie = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2018/ladekoffer/thumb_IMG_20181109_193018.jpg_2k.jpg"
