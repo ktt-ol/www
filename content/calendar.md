@@ -3,15 +3,14 @@ title = "Termine"
 weight = 10
 +++
 
-In unserem Online-Terminkalender findest du einen aktuellen Überblick über Veranstaltungen im Space -- sowohl regelmäßige Formate als auch einmalige Aktionen. Die meisten Termine enthalten kurze Beschreibungen mit weiteren Informationen.
+In unserem Terminkalender findest du einen aktuellen Überblick über Veranstaltungen im Space -- sowohl regelmäßige Formate als auch einmalige Aktionen. Die meisten Termine enthalten kurze Beschreibungen mit weiteren Informationen.
+
+{{ calendar() }}
 
 Der Terminkalender ist ein Google-Kalender, der sich
 [in den eigenen Kalender abonnieren](https://www.google.com/calendar/ical/markusframer%40gmail.com/public/basic.ics)
 lässt (auch wenn man keinen Google-Account hat). So musst du nicht immer auf der
 Website nachschauen.
-
-<!-- TODO: Hier kommt dann der Kalender hin -->
-![Kalender-Placeholder](/media/img/calendar-placeholder.png)
 
 ## 🔁 Regelmäßige Veranstaltungen
 

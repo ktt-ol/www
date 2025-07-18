@@ -1,19 +1,16 @@
 # Website of the Hackspace Oldenburg / Mainframe / Kreativität trifft Technik e.V.
 
-# Todo
+## TODO
 
-- Add Event Calendar
-    - Upcoming Events on the sidebar
-    - Dedicated Calendar page
 - Make taxonomy listings more easily accessible
+- Fix image sizes when using markdown to include image
+- Fix display of long headings in mobile view
 
-# Potential Improvements
+## Potential Improvements
 
-- Rename spacewalk to rooms
 - Move space status to top on mobile
-- Allow line breaks in calendar (after calendar is implemented)
 
-# Development
+## Development
 
 You'll need [zola](https://www.getzola.org/) for generating the static site and
 Python for generating the photo albums. You may install the tools locally or use
@@ -43,5 +40,3 @@ To generate the IFS pages and albums, run the following Python scripts:
 python3 ifs.py
 python3 albums.py
 ```
-
-
