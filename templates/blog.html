@@ -2,6 +2,13 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>
+                {{ trans(key="blog", lang=lang) }}
+            </h1>
+        </div>
+    </div>
     <div class="d-flex justify-content-end">
         {% if section.subsections | length > 0 %}
             <div class="d-flex flex-wrap justify-content-center">
