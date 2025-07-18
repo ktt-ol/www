@@ -5,7 +5,6 @@
 - Add Event Calendar
     - Upcoming Events on the sidebar
     - Dedicated Calendar page
-- Make taxonomy listings more easily accessible
 
 # Potential Improvements
 
