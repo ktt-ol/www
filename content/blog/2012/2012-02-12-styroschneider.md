@@ -6,8 +6,8 @@ updated = "2024-03-24T23:42:00"
 authors = ["0xFF", "SebSetz"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Hardware"]
+Typ = ["Projekt"]
+Serie = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2012/styroschneider/0000.jpg"

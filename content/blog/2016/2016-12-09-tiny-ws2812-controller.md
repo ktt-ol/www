@@ -4,8 +4,8 @@ date = "2016-12-09T00:00:00"
 authors = ["sre"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Hardware"]
+Typ = ["Projekt"]
+Serie = ["Hardware"]
 
 [extra]
 thumbnail = "/media/blog/2016/tiny-ws2812-controller/thumbnail.jpg"

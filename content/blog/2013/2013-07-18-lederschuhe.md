@@ -4,8 +4,8 @@ date = "2013-07-18T10:00:00"
 authors = ["Fermate"]
 
 [taxonomies]
-Serie = ["Projekt"]
-Typ = ["Software"]
+Typ = ["Projekt"]
+Serie = ["Software"]
 
 [extra]
 thumbnail = "/media/blog/2013/lederschuhe/thumbnail.jpg"

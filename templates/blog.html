@@ -2,6 +2,24 @@
 {% import "macros.html" as macros %}
 
 {% block content %}
+    <div class="row">
+        <div class="col">
+            <h1>
+                {{ trans(key="blog", lang=lang) }}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <p>Willkommen in unserem Blog!</p>
+
+            <p>
+            Hier findest du Ankündigungen, Berichte zu Events, Einblicke in laufende Projekte und Talks.
+            Beiträge lassen sich nach <a href=/typ>Typ</a> und <a href=/serie>Serie</a> filtern, damit du schnell findest, was dich interessiert.
+            Der Blog lebt vom Mitmachen – deshalb bist du herzlich eingeladen, eigene Beiträge einzureichen.
+            </p>
+        </div>
+    </div>
     <div class="d-flex justify-content-end">
         {% if section.subsections | length > 0 %}
             <div class="d-flex flex-wrap justify-content-center">
