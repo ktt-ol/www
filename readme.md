@@ -1,15 +1,16 @@
 # Website of the Hackspace Oldenburg / Mainframe / Kreativität trifft Technik e.V.
 
-# Todo
+## TODO
 
 - Make taxonomy listings more easily accessible
+- Fix image sizes when using markdown to include image
+- Fix display of long headings in mobile view
 
-# Potential Improvements
+## Potential Improvements
 
-- Rename spacewalk to rooms
 - Move space status to top on mobile
 
-# Development
+## Development
 
 You'll need [zola](https://www.getzola.org/) for generating the static site and
 Python for generating the photo albums. You may install the tools locally or use
