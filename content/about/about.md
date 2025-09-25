@@ -5,18 +5,21 @@ weight = 10
 
 ## Willkommen im Mainframe
 
-Der Mainframe ist ein **Hackspace** in Oldenburg.
-
-Hier kann man kreativ sein, tüfteln, basteln, experimentieren und
-gemeinsam lernen.
+Der Mainframe ist ein offener Raum direkt am Oldenburger Hauptbahnhof, in
+dem man sich selbstorganisiert **kreativ mit Technik** beschäftigen kann.
+Hier kannst du gestalten, werkeln, experimentieren und gemeinsam mit Anderen lernen.
 
 Egal ob du ein Ersatzteil 3D-drucken willst, hübsche Namensschilder mit einem
 Lasercutter ausschneiden möchtest, eine Platine löten willst, oder
 neugierig bist, wie eine Strickmaschine funktioniert -- hier bist du richtig.
 
-Der Mainframe ist an den meisten Tagen **ab spätestens 19:00 Uhr geöffnet** (häufig sogar bereits früher!)
-und Interessierte, egal mit welchem Hintergrund, sind jederzeit
-willkommen.  Wenn du vorbei kommen willst, schau einfach mal in die
+Der Mainframe versteht sich als ein Hackspace, aber auch als Makerspace, FabLab,
+und offene Werkstatt (eine Erklärung zu den Begriffen findest du unten). Die
+meisten sagen aber einfach **Space**.
+
+Wir haben in der Regel Montag bis Sonntag **ab spätestens 19:00 Uhr geöffnet**
+(häufig sogar deutlich früher) und Interessierte, egal mit welchem Hintergrund,
+sind jederzeit willkommen. Wenn du vorbei kommen willst, schau einfach mal in die
 [Öffnungszeiten](@/about/opening_times.md) rein -- eine Anmeldung brauchst du nicht.
 
 ![Rainbow keyboard](../../media/img/keyboard.png)
@@ -29,12 +32,16 @@ kannst.
 
 Die Übergänge von einem Hackspace zu einem **Fablab** beziehungsweise einem
 **Makerspace** oder einer offenen **Selbsthilfe-Werkstatt** sind fließend --
-alle diese Begriffe passen zu uns. Oft sagen wir einfach nur "**Space**".
+alle diese Begriffe passen zu uns.
 
 Dabei ist der Mainframe mehr als nur eine Werkstatt: wir sind eine Community, in
 der sich alle gegenseitig helfen und neben den tollen Maschinen haben wir hier
 auch Raum für viele andere Formate, wie zum Beispiel Programmierclubs,
 Spieleabende, Finanzvorträge, oder sogar Theatergruppen.
+
+Ein Space ist kein fertiges Produkt, sondern ein laufendes Projekt. Es wird hier
+ständig ausprobiert, verbessert und neu gedacht. Auch du kannst mithelfen, den
+Mainframe weiter zu bauen und zu einem noch besseren Ort zu machen!
 
 ## Welche Ausstattung hat der Mainframe?
 
@@ -65,12 +72,18 @@ Komm einfach vorbei!
 
 Nein.
 
-Der Mainframe finanziert sich mithilfe seines gemeinnützigen
-Trägervereins, dem [**Kreativität trifft Technik e.V.**](@/about/verein.md) --
-allerdings musst du hier **nicht** Mitglied werden, um den Space zu nutzen.
+Der Mainframe finanziert sich größtenteils mithilfe der Mitgliedsbeiträge seines
+gemeinnützigen Trägervereins, dem [**Kreativität trifft Technik e.V. (KtT)**](@/about/verein.md) --
+wir haben uns aber ganz bewusst dazu entschieden, die Nutzung unabhängig von
+einer Mitgliedschaft zu machen. Auch wer nach Jahren im Space nicht Mitglied im
+Verein ist, wird deswegen nicht schief angeguckt. Viele Nicht-Mitglieder tragen
+durch Einbringen ihrer Freizeit (zum Beispiel zum Weiterbau des Space oder zur
+Mithilfe bei Veranstaltungen) so viel bei, das wollen wir nicht missen.
 
-Natürlich freuen wir uns trotzdem über Spenden, die uns dabei helfen,
-den Space weiter zu betreiben.
+Auch wenn sich das bei unserer Größe und Breite kaum jemand vorstellen kann,
+sind wir keine städtische Einrichtung und bekommen auch keine institutionelle
+Förderung. Daher freuen wir uns sehr über Spenden, die uns dabei helfen, den
+Space weiter zu betreiben.
 
 ## Gibt es so etwas auch woanders?
 
