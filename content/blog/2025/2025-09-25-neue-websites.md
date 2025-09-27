@@ -1,6 +1,6 @@
 +++
-title = "Die neue Website ist online!"
-date = "2025-09-25T21:55:00"
+title = "Die neuen Websites sind online!"
+date = "2025-03-29T21:55:00"
 description = "Wir haben die mainframe.io-Seite technisch und inhaltlich überarbeitet – und noch eine ganz neue Seite für den KtT gebaut."
 
 [taxonomies]
@@ -11,13 +11,14 @@ Typ = ["Ankündigung"]
 thumbnail = "/media/img/website-switch.svg"
 +++
 
-Nach einiger Zeit in Planung und Arbeit ist es endlich soweit: Die neue Website
+Nach einiger Zeit in Planung und viel Arbeit ist es endlich soweit: Die neue Website
 für den Mainframe wurde komplett überarbeitet und ist jetzt online. 🎉
 
 Bisher gab es eine gemeinsame Website für **Mainframe** und den Verein
 **Kreativität trifft Technik e.V. (KtT)** -- nur einmal im dark mode und einmal
-im light mode. Das hat immer mal wieder zu Verwirrung geführt, was eigentlich
-die Unterschiede zwischen Space und Verein sind. Deshalb gibt es nun eine **Trennung**:
+im light mode. Allerdings sprechen Mainframe und Verein **unterschiedliche Zielgruppen** an
+und bisher konnten wir keiner davon wirklich gerecht werden. Deshalb gibt es
+nun eine **Trennung**:
 
 **Der KtT hat ab sofort eine eigene, unabhängige Website:**
 
