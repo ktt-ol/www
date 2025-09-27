@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://ktt-ol.github.io"
+base_url = "https://mainframe.io"
 default_language = "de"
 
 title = "Mainframe"
