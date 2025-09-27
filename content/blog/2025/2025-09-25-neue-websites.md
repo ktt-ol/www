@@ -1,6 +1,6 @@
 +++
 title = "Die neue Website ist online!"
-date = "2025-03-29T21:55:00"
+date = "2025-09-25T21:55:00"
 description = "Wir haben die mainframe.io-Seite technisch und inhaltlich überarbeitet – und noch eine ganz neue Seite für den KtT gebaut."
 
 [taxonomies]
@@ -17,7 +17,7 @@ für den Mainframe wurde komplett überarbeitet und ist jetzt online. 🎉
 Bisher gab es eine gemeinsame Website für **Mainframe** und den Verein
 **Kreativität trifft Technik e.V. (KtT)** -- nur einmal im dark mode und einmal
 im light mode. Das hat immer mal wieder zu Verwirrung geführt, was eigentlich
-die Unterschiede zwischen Space und Verein sind. Deshalb gibt ein nun eine **Trennung**:
+die Unterschiede zwischen Space und Verein sind. Deshalb gibt es nun eine **Trennung**:
 
 **Der KtT hat ab sofort eine eigene, unabhängige Website:**
 
