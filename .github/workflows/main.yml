@@ -5,9 +5,8 @@ on:
       - main
 name: Build and Deploy
 jobs:
-  build_and_deploy:
+  build:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: 'checkout'
         uses: actions/checkout@v4
@@ -18,22 +17,53 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python albums.py
       - run: python ifs.py
+      - name: Set base-url (main)
+        shell: bash
+        if: github.ref == 'refs/heads/main'
+        run: echo "TARGET_URL='https://mainframe.io/'" >> $GITHUB_ENV
+      - name: Set base-url (PR)
+        shell: bash
+        if: github.ref != 'refs/heads/main'
+        run: echo "TARGET_URL=https://mainframe.io/www/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_ENV
       - name: 'build'
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
           BUILD_ONLY: true
           BUILD_DIR: .
+          BUILD_FLAGS: "--base-url ${{ env.TARGET_URL }}"
           TOKEN: ${{ secrets.TOKEN }}
-          REPOSITORY: ${{ secrets.GHP_USER }}/${{ secrets.GHP_USER }}.github.io
-      - name: Set current date as env variable
-        run: echo "NOW=$(date +'%Y-%m-%dT%H%M%S')" >> $GITHUB_ENV
-      - name: Extract branch name
-        shell: bash
-        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-        id: extract_branch
-      - uses: actions/upload-artifact@v4
+      - name: 'upload artifact'
+        uses: actions/upload-artifact@v4
         with:
           path: 'public/'
           if-no-files-found: error
-          retention-days: 14
-          name: ${{ steps.extract_branch.outputs.branch }}-${{ env.NOW }}
+          retention-days: 7
+          name: website
+
+  deployment:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: 'checkout'
+        uses: actions/download-artifact@v5
+        with:
+          name: website
+          path: public/
+      - name: 'Extract branch name'
+        shell: bash
+        run: echo "BRANCH=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_ENV
+        id: extract_branch
+      - name: 'deploy (Staging)'
+        if: github.ref != 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          destination_dir: ${{ env.BRANCH }}
+      - name: 'deploy (prod)'
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.TOKEN }}
+          destination_dir: /
+          external_repository: ktt-ol/ktt-ol.github.io
+          publish_branch: main
