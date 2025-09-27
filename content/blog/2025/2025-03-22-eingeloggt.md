@@ -55,7 +55,7 @@ bitten wir um Anmeldung per E-Mail an [pg@ktt-ol.de](mailto://pg@ktt-ol.de), da 
   Individuelle Holzboxen mit dem Lasercutter bauen
 
 Unser Hackspace Mainframe ist auch weiterhin immer für Besucher geöffnet, wenn
-auf [https://status.ktt-ol.de/](https://status.ktt-ol.de/) als Status "AUF" oder "AUF+" steht. Dies ist meistens montags
+auf [status.mainframe.io](https://status.mainframe.io) als Status "AUF" oder "AUF+" steht. Dies ist meistens montags
 bis sonntags ab 19 Uhr bis Mitternacht der Fall, häufig auch früher und länger. Wir freuen uns auf Euren Besuch im
 Postgebäude direkt am Oldenburger Hauptbahnhof, Eingang gegenüber Europcar.
 

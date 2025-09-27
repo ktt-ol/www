@@ -42,7 +42,6 @@ Grenzen des Informatikunterrichts hinaus) zu unterstützen.
 
 ![](../../../media/blog/2014/fab4teachers/DSC_9030.JPG)
 
-Mehr Fotos findet ihr <a href="//www.kreativitaet-trifft-technik.de/album.html#/a/0/2014-09_Fab4Teachers">hier in
-unserem Album</a>.
+Mehr Fotos findet ihr hier in unserem Album.
 
 [//]: # (TODO: link to album)
