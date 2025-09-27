@@ -37,8 +37,7 @@ Dabei war unter anderem
 - der große LED-Cube
 - und viel Kleinkram
 
-Vieles davon könnt ihr
-im [dazugehörigen Fotoalbum sehen](https://www.kreativitaet-trifft-technik.de/album.html#/a/0/2013-11_Verein_des_Monats).
+Vieles davon könnt ihr im dazugehörigen Fotoalbum sehen.
 
 [//]: # ()
 

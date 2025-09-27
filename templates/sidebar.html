@@ -8,8 +8,8 @@
 
         <div id="space-status" class="px-2" style="font-size: 0.9em">
             <a role="button" id="status-template"
-                class="d-flex p-0 flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none border-bottom border-black"
-                href="//status.mainframe.io">
+               class="d-flex p-0 flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none border-bottom border-black"
+               href="//status.mainframe.io">
                 <div class="text-end pe-1 lh-sm" id="status-text-unknown-template">
                     ???
                 </div>
@@ -51,7 +51,7 @@
     const apiKey = '{{ config.extra.google_api_key }}';
 
     const now = new Date().toISOString();
-    const url = `https://www.kreativitaet-trifft-technik.de/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
+    const url = `https://mainframe.io/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
 
     fetch(url)
         .then(res => res.json())
