@@ -66,4 +66,4 @@ jobs:
           personal_token: ${{ secrets.TOKEN }}
           destination_dir: ./
           external_repository: ktt-ol/ktt-ol.github.io
-          publish_branch: main
+          publish_branch: master
