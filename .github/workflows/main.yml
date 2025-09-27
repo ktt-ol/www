@@ -20,11 +20,11 @@ jobs:
       - name: Set base-url (main)
         shell: bash
         if: github.ref == 'refs/heads/main'
-        run: echo "TARGET_URL=https://mainframe.io/" >> $GITHUB_ENV
+        run: echo "TARGET_URL=https://www.mainframe.io/" >> $GITHUB_ENV
       - name: Set base-url (PR)
         shell: bash
         if: github.ref != 'refs/heads/main'
-        run: echo "TARGET_URL=https://mainframe.io/www/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_ENV
+        run: echo "TARGET_URL=https://www.mainframe.io/www/${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_ENV
       - name: 'build'
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
