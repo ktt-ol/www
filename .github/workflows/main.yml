@@ -18,10 +18,22 @@ jobs:
       - run: pip install -r requirements.txt
       - run: python albums.py
       - run: python ifs.py
-      - name: 'build and deploy'
+      - name: 'build'
         uses: shalzz/zola-deploy-action@v0.21.0
         env:
-          PAGES_BRANCH: master
+          BUILD_ONLY: true
           BUILD_DIR: .
           TOKEN: ${{ secrets.TOKEN }}
           REPOSITORY: ${{ secrets.GHP_USER }}/${{ secrets.GHP_USER }}.github.io
+      - name: Set current date as env variable
+        run: echo "NOW=$(date +'%Y-%m-%dT%H%M%S')" >> $GITHUB_ENV
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+        id: extract_branch
+      - uses: actions/upload-artifact@v4
+        with:
+          path: 'public/'
+          if-no-files-found: error
+          retention-days: 14
+          name: ${{ steps.extract_branch.outputs.branch }}-${{ env.NOW }}
