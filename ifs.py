@@ -30,8 +30,6 @@ file_uri = "https://mainframe.io/media/ifs-images/{1}"
 file_uri_300 = "https://mainframe.io/media/ifs-images/.thumbs/300-{1}"
 file_uri_750 = "https://mainframe.io/media/ifs-images/.thumbs/750-{1}"
 file_uri_1200 = "https://mainframe.io/media/ifs-images/.thumbs/1200-{1}"
-
-og_title = "IFS {0}"
 """
 
 frontmatter_template_index = """+++

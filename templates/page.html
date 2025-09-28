@@ -4,33 +4,16 @@
 {% block extra_head %}
     <meta property="og:type" content='article'/>
 
-    {% if page.extra.thumbnail %}
+    {% set thumbnail_file = page.extra.thumbnail | default(value="/media/img/logo-ktt.png") %}
 
-        {% set thumbnail_url = config.base_url ~ page.extra.thumbnail %}
-        {% set thumbnail_metadata = get_image_metadata(path=page.extra.thumbnail) %}
-        {% set thumbnail_author = page_author %}
-        {% set thumbnail_title = page.title | default(value=config.title) %}
+    {% if thumbnail_file is not ending_with(".svg") %}
+        {% set og_image = resize_image(path=thumbnail_file, width=1200, op="fit_width") %}
+        {% set og_metadata = get_image_metadata(path=og_image.static_path, allow_missing=true) %}
 
-        {{ self::sd_image(
-                image_url=thumbnail_url,
-                author=thumbnail_author,
-                title=thumbnail_title
-                )
-                }}
+        {% set title = page.extra.og_title | default(value=page.title ~ " | " ~ config.title) %}
 
-        {{ self::og_image(
-                image_url=thumbnail_url,
-                width=thumbnail_metadata.width,
-                height=thumbnail_metadata.height,
-                author=thumbnail_author,
-                title=thumbnail_title,
-                content_type="image/" ~ thumbnail_metadata.format,
-                card="summary"
-                )
-                }}
-
-    {% else %}
-        {% set thumbnail_url = "" %}
+        {{ self::sd_image(image_url=og_image.url, author=page.author | default(value=''), title=title) }}
+        {{ self::og_image(image_url=og_image.url, width=og_image.width, height=og_image.height, author=page.author | default(value=''), title=title, content_type=og_metadata.mime | default(value="image/jpeg")) }}
     {% endif %}
 
     {% if page.taxonomies.topics %}

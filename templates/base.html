@@ -7,9 +7,12 @@
     <meta property="og:site_name" content="{{ config.title }}"/>
     <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}'/>
 
-    {% if current_path %}
-        <meta property="og:url" content="{{ get_url(path=current_path) }}"/>
+    {% if current_url %}
+        <meta property="og:url" content="{{ current_url }}"/>
+        <meta name="twitter:url" content="{{ current_url }}"/>
+        <meta name="twitter:domain" content="{{ config.base_url | regex_replace(pattern=`^(?:https?://)?(?:[^@/\n]+@)?(?:www\.)?([^:/\n]+)`, rep=`$1`) }}"/>
     {% endif %}
+
 
     {% if page.authors %}
         {% set page_author = page.authors | join(sep=", ") %}
@@ -26,12 +29,12 @@
     {% if section.title %}
 
         {% set title = section.extra.og_title | default(value=section.title ~ " | " ~ config.title) %}
-        {% set description = section.extra.og_description | default(value=config.description) %}
+        {% set description = section.extra.og_description | default(value=section.description) | default(value=config.description) %}
 
     {% elif page.title %}
 
         {% set title = page.extra.og_title | default(value=page.title ~ " | " ~ config.title) %}
-        {% set description = page.extra.og_description | default(value=config.description) %}
+        {% set description = page.extra.og_description | default(value=page.description) | default(value=config.description) %}
 
     {% else %}
 
@@ -43,15 +46,17 @@
     <title>{{ title }}</title>
     <meta property="og:title" content='{{ title }}'/>
     <meta property="og:description" content='{{ description }}'/>
+    <meta name="twitter:title" content="{{ title }}"/>
+    <meta name="twitter:description" content='{{ description }}'/>
     <meta name="description" content='{{ description }}'>
 
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "image": "https://mainframe.io/media/img/logo-ktt.png",
-            "url": "https://mainframe.io",
-            "logo": "https://mainframe.io/media/img/logo-mainframe.svg",
+            "image": "https://www.mainframe.io/media/img/logo-ktt.png",
+            "url": "https://www.mainframe.io",
+            "logo": "https://www.mainframe.io/media/img/logo-mainframe.svg",
             "name": "Mainframe",
             "description": "Hackspace Oldenburg",
             "email": "vorstand@ktt-ol.de",

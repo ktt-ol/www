@@ -4,7 +4,19 @@
 {% block extra_head %}
 
     <meta property="og:type" content="article"/>
-    {{ self::album_metadata(image_uri=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
+
+    {% set resized_height = (1200 / page.extra.width) * page.extra.height %}
+
+    {% if page.extra.width > page.extra.height %}
+        {% set width = 1200 %}
+        {% set height = (width / page.extra.width) * page.extra.height | round(method="floor") %}
+    {% else %}
+        {% set height = 1200 %}
+        {% set width = (height / page.extra.height) * page.extra.width | round(method="floor") %}
+    {% endif %}
+
+    {{ self::og_image(image_url=page.extra.file_uri_1200, width=width, height=height, author="Hackspace Mainframe", title=page.title, content_type="image/jpeg") }}
+    {{ self::sd_image(image_url=page.extra.file_uri_1200, title=page.title, author="Hackspace Mainframe") }}
 
 {% endblock extra_head %}
 
