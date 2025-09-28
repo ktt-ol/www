@@ -149,7 +149,7 @@
                             {% set lang_str = lang_str | replace(from="%author%", to='') %}
                         {% endif %}
 
-                        {{ lang_str }} {{ blog_page.word_count }}
+                        {{ lang_str }}
                     </p>
                     <h4 class="text-primary mb-1 ps-0 border-bottom-0">
                         <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"

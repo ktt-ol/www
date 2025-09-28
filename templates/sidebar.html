@@ -43,6 +43,36 @@
             </div>
         </div>
     </div>
+
+    {% if page and page.toc %}
+        <div class="d-flex mt-2 flex-column">
+            <h3>
+                <a class="ms-2" href="{{ get_url(path="@/calendar.md", lang=lang) }}">
+                    {{ trans(key="content", lang=lang) }}
+                </a>
+            </h3>
+            <div class="px-2" style="font-size: 0.9em">
+                {% if page.toc %}
+                    <ul>
+                        {% for h1 in page.toc %}
+                            <li>
+                                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                                {% if h1.children %}
+                                    <ul>
+                                        {% for h2 in h1.children %}
+                                            <li>
+                                                <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
 </div>
 
 <script>
