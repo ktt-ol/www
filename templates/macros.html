@@ -105,11 +105,12 @@
     <div class="container-fluid text-white">
         {% for blog_page in pages -%}
 
+
             <div class="row py-2 border-bottom">
                 {% if blog_page.authors %}
                     {% set page_author = blog_page.authors | join(sep=", ") %}
                 {% else %}
-                    {% set page_author = config.author %}
+                    {% set page_author = '' %}
                 {% endif %}
 
                 {% set page_title = blog_page.title | default(value="") %}
@@ -145,8 +146,14 @@
                         {% set lang_str = trans(key="publish_time", lang=lang) %}
                         {% set lang_str = lang_str | replace(from="%date%", to=date_str) %}
                         {% set lang_str = lang_str | replace(from="%time%", to=time_str) %}
-                        {% set lang_str = lang_str | replace(from="%author%", to=page_author) %}
-                        {{ lang_str }}
+
+                        {% if page_author %}
+                            {% set lang_str = lang_str | replace(from="%author%", to=' von ' ~ page_author) %}
+                        {% else %}
+                            {% set lang_str = lang_str | replace(from="%author%", to='') %}
+                        {% endif %}
+
+                        {{ lang_str }} {{ blog_page.word_count }}
                     </p>
                     <h4 class="text-primary mb-1 ps-0 border-bottom-0">
                         <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
