@@ -4,7 +4,9 @@
 {% block extra_head %}
 
     <meta property="og:type" content="article"/>
-    {{ self::album_metadata(image_uri=page.extra.file_uri, width=page.extra.width, title=page.title, height=page.extra.height) }}
+
+    {{ self::og_image(image_url=page.extra.file_uri, width=page.extra.width, height=page.extra.height, author="Hackspace Mainframe", title=page.title, content_type="image/jpeg") }}
+    {{ self::sd_image(image_url=page.extra.file_uri, title=page.title, author="Hackspace Mainframe") }}
 
 {% endblock extra_head %}
 
