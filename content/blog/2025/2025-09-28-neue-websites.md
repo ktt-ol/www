@@ -1,6 +1,6 @@
 +++
 title = "Die neuen Websites sind online!"
-date = "2025-03-29T21:55:00"
+date = "2025-09-28T21:55:00"
 description = "Wir haben die mainframe.io-Seite technisch und inhaltlich überarbeitet – und noch eine ganz neue Seite für den KtT gebaut."
 
 [taxonomies]
@@ -8,7 +8,7 @@ Serie = ["News"]
 Typ = ["Ankündigung"]
 
 [extra]
-thumbnail = "/media/img/website-switch.svg"
+thumbnail = "/media/img/logos-ktt-mainframe.png"
 +++
 
 Nach einiger Zeit in Planung und viel Arbeit ist es endlich soweit: Die neue Website
