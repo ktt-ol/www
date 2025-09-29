@@ -8,9 +8,9 @@
         <span>
             <a class="text-decoration-none text-primary d-inline" href="{{ blog_section.permalink }}">{{ blog_section.title }}</a>
             >
-            <a class="text-decoration-none text-primary d-inline" href="{{ get_url(path=taxonomy.slug, lang=lang) }}">{{ taxonomy.name }}</a>
+            <a class="text-decoration-none text-primary d-inline" href="{{ get_url(path=taxonomy.slug, lang=lang) }}/">{{ taxonomy.name }}</a>
             >
-            <a class="text-decoration-none text-primary d-inline" href="{{ get_url(path=term.path, lang=lang) }}">{{ term.name }}</a>
+            <a class="text-decoration-none text-primary d-inline" href="{{ get_url(path=term.path, lang=lang) }}/">{{ term.name }}</a>
         </span>
 
         <a class="text-warning" href="{{ get_url(path=term.path ~ "atom.xml", lang=lang) }}">
