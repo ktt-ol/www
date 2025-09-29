@@ -1,95 +1,72 @@
-<div class="mb-auto d-flex flex-column">
-    <div class="d-flex flex-column">
-        <h3>
-            <a class="ms-2" href="//status.mainframe.io">
-                Space-Status
-            </a>
+<aside class="d-flex flex-column gap-3 mb-auto">
+
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="//status.mainframe.io">Space-Status</a>
         </h3>
 
-        <div id="space-status" class="px-2" style="font-size: 0.9em">
-            <a role="button" id="status-template"
-               class="d-flex p-0 flex-column text-decoration-none btn btn-white rounded-0 text-dark d-none border-bottom border-black"
-               href="//status.mainframe.io">
-                <div class="text-end pe-1 lh-sm" id="status-text-unknown-template">
-                    ???
-                </div>
-                <div class="pe-1 d-none" id="status-text-closed-template">
-                    {{ trans(key="closed", lang=lang) }}
-                </div>
-                <div class="pe-1 d-none" id="status-text-closing-template">
-                    {{ trans(key="closing", lang=lang) }}
-                </div>
-                <div class="pe-1 d-none" id="status-text-open-template">
-                    {{ trans(key="open", lang=lang) }}
-                </div>
-                <div class="pe-1 d-none" id="status-text-member-template">
-                    {{ trans(key="member", lang=lang) }}
-                </div>
-                <div class="pe-1 d-none" id="status-text-keyholder-template">
-                    {{ trans(key="keyholder", lang=lang) }}
-                </div>
-            </a>
+        <div id="space-status" class="px-2 small list-group">
+            <template id="status-item-template">
+                <a class="list-group-item border rounded-3" href="//status.mainframe.io">
+                    <div class="status-text d-none fw-semibold" data-state="unknown">???</div>
+                    <div class="status-text d-none fw-semibold"
+                         data-state="closed">{{ trans(key="closed",   lang=lang) }}</div>
+                    <div class="status-text d-none fw-semibold"
+                         data-state="closing">{{ trans(key="closing",  lang=lang) }}</div>
+                    <div class="status-text d-none fw-semibold"
+                         data-state="open">{{ trans(key="open",     lang=lang) }}</div>
+                    <div class="status-text d-none fw-semibold"
+                         data-state="member">{{ trans(key="member",   lang=lang) }}</div>
+                    <div class="status-text d-none fw-semibold"
+                         data-state="keyholder">{{ trans(key="keyholder",lang=lang) }}</div>
+                </a>
+            </template>
         </div>
-    </div>
+    </section>
 
-    <div class="d-flex mt-2 flex-column">
-        <h3>
-            <a class="ms-2" href="{{ get_url(path="@/calendar.md", lang=lang) }}">
-                Nächste Termine
-            </a>
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="{{ get_url(path='@/calendar.md', lang=lang) }}">Nächste Termine</a>
         </h3>
-        <div class="px-2" style="font-size: 0.9em">
-            <div class="list-group-numbered" id="event-list">
-            </div>
+
+        <div class="px-2 small">
+            <ul
+                    class="list-group"
+                    id="event-list"
+                    data-calendar-id="{{ config.extra.google_cal_id }}"
+                    data-api-key="{{ config.extra.google_api_key }}"
+                    data-max="5"
+            ></ul>
+
+            <template id="event-item-template">
+                <li class="list-group-item">
+                    <div class="row g-3 align-items-start">
+                        <div class="col-5 col-md-4 col-lg-5">
+                            <div class="d-flex flex-column text-nowrap">
+                                <time class="event-date text-secondary small"></time>
+                                <time class="event-time text-secondary small"></time>
+                            </div>
+                        </div>
+                        <div class="col position-relative">
+                            <b>
+                                <a
+                                        class="event-link stretched-link text-reset text-decoration-none focus-ring"
+                                        target="_blank"
+                                        rel="noopener"
+                                ></a>
+                            </b>
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <template id="event-empty-template">
+                <li class="list-group-item">Keine Termine</li>
+            </template>
+
+            <template id="event-error-template">
+                <li class="list-group-item">Could not load events.</li>
+            </template>
         </div>
-    </div>
-</div>
-
-<script>
-
-    const calendarId = '{{ config.extra.google_cal_id }}';
-    const apiKey = '{{ config.extra.google_api_key }}';
-
-    const now = new Date().toISOString();
-    const url = `https://www.mainframe.io/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
-
-    fetch(url)
-        .then(res => res.json())
-        .then(data => {
-            const list = document.getElementById('event-list');
-            if (!data.items || data.items.length === 0) {
-                list.innerHTML = '<li>Keine Termine</li>';
-                return;
-            }
-
-            data.items.forEach(event => {
-                const li = document.createElement('li');
-                const start = event.start.dateTime || event.start.date;
-                const end = event.end.dateTime || event.end.date;
-                const startDate = new Date(start);
-                const startTimeStr = startDate.toLocaleString('de', {
-                    weekday: 'short',
-                    month: 'short',
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                });
-                const endDate = new Date(end);
-                const endTimeStr = endDate.toLocaleString('de', {
-                    hour: '2-digit',
-                    minute: '2-digit',
-                });
-                const dateRangeStr = `${startTimeStr} - ${endTimeStr}`;
-
-                li.innerHTML = `
-                <div>${dateRangeStr}</div>
-                <div class="mb-3"><b><a href=${event.htmlLink}>${event.summary || 'No Title'}</a></b></div>
-                `;
-                list.appendChild(li);
-            });
-        })
-        .catch(err => {
-            console.error('Error fetching Google Calendar events:', err);
-            document.getElementById('event-list').innerHTML = '<li>Could not load events.</li>';
-        });
-</script>
+    </section>
+</aside>
