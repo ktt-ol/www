@@ -8,9 +8,9 @@
     <meta property="og:locale" content='{{ trans(key="locale_name", lang=lang) }}'/>
 
     {% if current_url %}
-        <meta property="og:url" content="{{ current_url }}"/>
-        <meta name="twitter:url" content="{{ current_url }}"/>
-        <meta name="twitter:domain" content="{{ config.base_url | regex_replace(pattern=`^(?:https?://)?(?:[^@/\n]+@)?(?:www\.)?([^:/\n]+)`, rep=`$1`) }}"/>
+        <meta property="og:url" content="{{ current_url | safe }}"/>
+        <meta name="twitter:url" content="{{ current_url | safe }}"/>
+        <meta name="twitter:domain" content="{{ config.base_url | regex_replace(pattern=`^(?:https?://)?(?:[^@/\n]+@)?(?:www\.)?([^:/\n]+)`, rep=`$1`) | safe }}"/>
     {% endif %}
 
 
@@ -54,12 +54,12 @@
         {
             "@context": "https://schema.org",
             "@type": "Organization",
-            "image": "https://www.mainframe.io/media/img/logo-ktt.png",
-            "url": "https://www.mainframe.io",
-            "logo": "https://www.mainframe.io/media/img/logo-mainframe.svg",
+            "image": "{{ config.base_url | safe }}/media/img/logo-ktt.png",
+            "url": "{{ config.base_url | safe }}",
+            "logo": "{{ config.base_url | safe }}/media/img/logo-mainframe.svg",
             "name": "Mainframe",
             "description": "Hackspace Oldenburg",
-            "email": "vorstand@ktt-ol.de",
+            "email": "{{ config.extra.ktt_board_mail | safe }}",
             "telephone": "+49441-559 700 32",
             "address": {
                 "@type": "PostalAddress",
@@ -109,7 +109,7 @@
     <footer id="footer" class="border-top pt-2 mt-5 row">
         <div class="col">
             <p style="text-align: center;">
-                © 2025 <a href="{{ config.base_url }}">Kreativität trifft Technik</a> | License: <a
+                © 2025 <a href="{{ config.base_url | safe }}">Kreativität trifft Technik</a> | License: <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
                     href="{{ get_url(path="@/impressum.md", lang=lang) }}">Impressum</a>
             </p>

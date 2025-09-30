@@ -27,7 +27,7 @@
 
             {% if page.ancestors | length > 2 %}
                 {% set ancestor = get_section(path=page.ancestors | last) %}
-                <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink }}">
+                <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink | safe }}">
                     <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                     <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                          fill="currentColor" viewBox="0 0 16 16">
@@ -54,7 +54,7 @@
             <img alt="{{ page.title }}"
                  class="w-100 img-fluid"
                  style="max-width: 100%;"
-                 src="{{ page.extra.file_uri_1200 }}"
+                 src="{{ page.extra.file_uri_1200 | safe }}"
             />
             <div class="album-image-controls">
                 {% if page.extra.previous %}
@@ -72,7 +72,7 @@
                 {% endif %}
                 <a target="_blank" class="position-absolute w-50 h-100 top-0" style="left: 25%; right: 25%"
                    id="album-image-view"
-                   href="{{ page.extra.file_uri }}">
+                   href="{{ page.extra.file_uri | safe }}">
                 </a>
                 {% if page.extra.next %}
                     <a class="position-absolute w-25 h-100 top-0" style="left: auto; right: 0" id="album-image-next"

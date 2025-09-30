@@ -10,7 +10,7 @@
         "creator": {
             "@type": "Person",
             "name": "{{ author }}",
-            "url": "https://mainframe.io"
+            "url": "{{ config.base_url | safe }}"
         },
         "copyrightNotice": "{{ author }}"
     }
@@ -42,14 +42,14 @@
 
 {% macro og_image(image_url, width, height, title, author, content_type) %}
 
-    <meta property="og:image" content="{{ image_url }}"/>
-    <meta property="og:image:type" content="{{ content_type }}"/>
+    <meta property="og:image" content="{{ image_url | safe }}"/>
+    <meta property="og:image:type" content="{{ content_type | safe }}"/>
     <meta property="og:image:width" content="{{ width }}"/>
     <meta property="og:image:height" content="{{ height }}"/>
     <meta property="og:image:alt" content="{{ title }}"/>
 
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:image" content="{{ image_url }}"/>
+    <meta name="twitter:image" content="{{ image_url | safe }}"/>
 {% endmacro %}
 
 {% macro og_article(author, section, created, updated) %}
@@ -99,7 +99,7 @@
 
                 <div class="col-sm-3 d-flex flex-column bg-body-tertiary rounded rounded-2 justify-content-center text-center">
                     <img alt="Thumbnail Image for {{ page_title }}"
-                         src="{{ thumbnail_url }}"
+                         src="{{ thumbnail_url | safe }}"
                          decoding="async"
                          class="object-fit-contain"
                          loading="lazy"
@@ -135,7 +135,7 @@
                                 {% for term in blog_page.taxonomies[taxonomy.name] %}
 
                                     {% set taxonomy_url = get_taxonomy_url(kind=taxonomy.name, name=term, lang=lang) %}
-                                    <a href="{{ taxonomy_url }}"
+                                    <a href="{{ taxonomy_url | safe }}"
                                        class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
                                         {{ term }}
                                     </a>

@@ -33,7 +33,7 @@ auch unproblematisch möglich, sogar erwünscht.
 ![](../../../media/blog/2012/arduino-comic/img1.jpg)
 
 Die deutsche Übersetzung des Comics kann sich nun jeder
-unter [http://arduinocomic.kreativitaet-trifft-technik.de/](http://arduinocomic.kreativitaet-trifft-technik.de/)
+unter [https://arduinocomic.mainframe.io](https://arduinocomic.mainframe.io)
 ansehen und herunterladen. Überzeugen Sie sich selbst wie einfach es ist in die Mikrocontrollerprogrammierung mit
 Arduino einzusteigen.
 

@@ -54,7 +54,7 @@
         {% if page.extra.repository %}
             <span class="text-end">
                 <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light"
-                   href="{{ page.extra.repository }}">
+                   href="{{ page.extra.repository | safe }}">
                     Repository
                 </a>
             </span>

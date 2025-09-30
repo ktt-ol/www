@@ -17,7 +17,7 @@ repository = "https://github.com/ktt-ol/spaceschalter/"
 Ob unsere Räume gerade geöffnet sind kann schon seit März 2012 auf unserer
 Webseite neben unseren üblichen Öffnungszeiten live eingesehen werden.
 
-Wer es genauer wissen will sieht unter [status.ktt-ol.de](http://status.ktt-ol.de) sogar, wie lange der
+Wer es genauer wissen will sieht unter [status.mainframe.ioz](https://status.mainframe.io) sogar, wie lange der
 Space schon offen ist, wieviele Leute aktuell über unseren Freifunk-Knoten im
 Internet surfen und welches Wetter wir drinnen und draußen haben. Wer dann auf
 der Statusseite verbleibt, der wird sogar zu der sich ebenfalls live
