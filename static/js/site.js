@@ -2,7 +2,7 @@
    STATUS HANDLING
    ========================= */
 
-const StatusApiUrl = "https://status.kreativitaet-trifft-technik.de/api/statusStream?spaceOpen=1";
+const StatusApiUrl = "https://status.mainframe.io/api/statusStream?spaceOpen=1";
 let statusSource = null;
 
 /**

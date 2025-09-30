@@ -22,11 +22,11 @@ nun eine **Trennung**:
 
 **Der KtT hat ab sofort eine eigene, unabhängige Website:**
 
-[https://www.kreativitaet-trifft-technik.de/](https://www.kreativitaet-trifft-technik.de)
+[https://www.kreativitaet-trifft-technik.de](https://www.kreativitaet-trifft-technik.de)
 
 **Die Space-Seite ist unter `mainframe.io` zu finden:**
 
-[https://www.mainframe.io/](https://www.mainframe.io)
+[https://mainframe.io](@/_index.md)
 
 Auf der **KtT-Seite** finden sich Infos, die sich eher an die Allgemeinheit,
 sowie öffentliche Stellen und potenzielle Förderpartner richten. Zusätzlich
@@ -42,7 +42,7 @@ Aber das ist natürlich noch nicht alles! Wir haben Inhalte grundlegend
 
 ## Was ist neu auf der Mainframe-Seite?
 
-Die Space Seite, [mainframe.io](https://mainframe.io) gibt es weiterhin. Sie
+Die Space Seite, [mainframe.io](@/_index.md) gibt es weiterhin. Sie
 behält bewusst das grundsätzliche Design der alten Seite bei. Bei den Inhalten
 und bei der Technik hat sich allerdings eine Menge getan:
 
@@ -82,5 +82,5 @@ sprich uns gerne direkt im Space an und wir helfen dir weiter.
 
 Also -- schau dich direkt mal um:
 
-* [mainframe.io](https://mainframe.io)
-* [kreativitaet-trifft-technik.de/](https://www.kreativitaet-trifft-technik.de)
+* [https://mainframe.io ](@/_index.md)
+* [https://www.kreativitaet-trifft-technik.de](https://www.kreativitaet-trifft-technik.de)

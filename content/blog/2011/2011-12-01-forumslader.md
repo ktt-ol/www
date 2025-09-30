@@ -26,5 +26,5 @@ oder benutzen möchte. Auf dem Bild z.B. wurde der USB Ladeanschluss in den Lenk
 um eine 12V Anschlussmöglichkeit oder einen schönen Rundstecker für die Stromabnahme des Nabendynamos erweitert.
 
 Eine komplette Übersicht von Schaltplänen, Prototypen und vorgenommenen Anpassungen, gibt
-es [im Wiki](https://wiki.kreativitaet-trifft-technik.de/public/Projekte/Fahrradelektronik/Forumslader).
+es [im Wiki](https://wiki.mainframe.io/public/Projekte/Fahrradelektronik/Forumslader).
 

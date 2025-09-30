@@ -25,4 +25,4 @@ Trotzdem hat es einige Vorteile, Mitglied im Verein zu werden:
 Wenn du mehr über den Verein erfahren möchtest, schau gerne auf der eigenen
 Seite vorbei:
 
-[Kreativität trifft Technik e.V.](https://www.kreativitaet-trifft-technik.de/)
+[Kreativität trifft Technik e.V.](https://www.kreativitaet-trifft-technik.de)

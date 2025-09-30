@@ -1,13 +1,14 @@
 {% set index_section = get_section(path=section_name ~ "/_index.md", lang=lang) %}
 
 <li class="nav-item dropdown">
-    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" role="button">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
         {{ index_section.title }}
     </a>
     <ul class="dropdown-menu">
         {% for page in index_section.pages %}
             <li>
-                <a class="dropdown-item" href="{{ page.permalink }}">
+                <a class="dropdown-item" href="{{ page.permalink | safe }}">
                     {{ page.title }}
                 </a>
             </li>
@@ -16,7 +17,7 @@
         {% for subsectionPath in index_section.subsections %}
             {% set subsection = get_section(path=subsectionPath, metadata_only=true) %}
             <li>
-                <a class="dropdown-item" href="{{ subsection.permalink }}">
+                <a class="dropdown-item" href="{{ subsection.permalink | safe }}">
                     {{ subsection.title }}
                 </a>
             </li>

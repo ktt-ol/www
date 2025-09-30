@@ -32,7 +32,7 @@ einen [RepRap-Mendel](http://geeksbase.com/shop/product_info.php?cPath=1&product
 mit seinen unzähligen Schrauben, Muttern und Kugellagern in 2 Tagen fertigzustellen. Die Drucker werden jetzt wie
 geplant im [FabLab Groningen](http://www.fablabgroningen.nl/), im [next generation lab](http://brennerei-lab.de/),
 im [Bremer Hackspace](http://www.hackerspace-bremen.de/), im [Bremer FabLab](http://www.fablabbremen.de/) und
-im [FabLab in Oldenburg](https://mainframe.io) zu Ende gebaut und betrieben.
+im [FabLab in Oldenburg](@/_index.md) zu Ende gebaut und betrieben.
 
 Die [FabScan](http://hci.rwth-aachen.de/fabscan) 3d-Scanner wurden mit viel Kreativität zusammengebaut und getestet. Bis
 Ende des Jahres soll eine Windows-Variante der Software zur Verfügung gestellt werden, sodass die Weiterentwicklung des
