@@ -32,7 +32,7 @@ function mapState(state) {
         case "open+":
             return {display: "open", context: "success"};
         case "keyholder":
-            return {display: "keyholder", context: "warning"};
+            return {display: "keyholder", context: "danger"};
         case "member":
             return {display: "member", context: "warning"};
         case "closing":
