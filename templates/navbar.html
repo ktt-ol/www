@@ -28,7 +28,8 @@
                         {% include "navbar-pagelist.html" %}
 
                         <li class="nav-item">
-                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
                                href='{{ get_url(path="@/blog/_index.md", lang=lang) }}'>
                                 {% set blog_section_metadata = get_section(path="blog/_index.md", lang=lang, metadata_only=true) %}
                                 {{ blog_section_metadata.title }}
@@ -36,7 +37,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
                                href='{{ get_url(path="@/calendar.md", lang=lang) }}'>
                                 {% set contact_page_metadata = get_page(path="calendar.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
@@ -44,7 +46,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
                                href='{{ get_url(path="@/contact.md", lang=lang) }}'>
                                 {% set contact_page_metadata = get_page(path="contact.md", lang=lang, metadata_only=true) %}
                                 {{ contact_page_metadata.title }}
@@ -52,7 +55,8 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button" aria-expanded="false"
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
                                href='{{ get_url(path="@/contact.md#" ~ trans(key="arrival", lang=lang) | lower, lang=lang) }}'>
                                 {{ trans(key="arrival", lang=lang) }}
                             </a>
@@ -62,8 +66,8 @@
                     <ul class="navbar-nav navbar-right">
                         <li class="nav-item">
                             <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
-                               aria-expanded="false" href="https://www.kreativitaet-trifft-technik.de/" >
-                               Zum Verein 🔗
+                               aria-expanded="false" href="https://www.kreativitaet-trifft-technik.de">
+                                Zum Verein 🔗
                             </a>
                         </li>
                     </ul>

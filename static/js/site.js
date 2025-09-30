@@ -2,7 +2,7 @@
    status handling
 */
 
-const StatusApiUrl = "https://status.kreativitaet-trifft-technik.de/api/statusStream?spaceOpen=1";
+const StatusApiUrl = "https://status.mainframe.io/api/statusStream?spaceOpen=1";
 
 function set_status(room, state) {
     console.info("Updating room state", room, state);

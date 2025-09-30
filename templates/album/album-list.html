@@ -7,7 +7,7 @@
 
         {% if section.ancestors | length > 2 %}
             {% set ancestor = get_section(path=section.ancestors | last) %}
-            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink }}">
+            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink | safe }}">
                 <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                 <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                      fill="currentColor" viewBox="0 0 16 16">
@@ -70,13 +70,13 @@
                     {% endif %}
                 {% endif %}
 
-                <a href="{{ subsection_data.permalink }}"
+                <a href="{{ subsection_data.permalink | safe }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
                    style="height: {{ height }}px; width: {{ width }}px;">
                     <img alt=""
                          class="p-0 m-0"
                          decoding="sync"
-                         src="{{ image_uri }}"/>
+                         src="{{ image_uri | safe }}"/>
                     <div class="m-0 py-1 px-2 d-inline-flex flex-column position-relative"
                          style="background-color: rgba(var(--bs-secondary-bg-rgb), 0.75); top: -50%; left: 50%; z-index: 100; transform: translateX(-50%) translateY(-50%);">
                         <h5 class="p-0 m-0 text-white border-0"><span
@@ -85,7 +85,7 @@
                     </div>
                 </a>
             {% else %}
-                <a href="{{ subsection_data.permalink }}"
+                <a href="{{ subsection_data.permalink | safe }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
                    style="height: 200px; width: 200px;">
                     <div style="background-color: dimgrey"
@@ -119,13 +119,13 @@
                 {% set image_uri = page.extra.file_uri_300 %}
             {% endif %}
 
-            <a class="text-decoration-none" href="{{ page.permalink }}"
+            <a class="text-decoration-none" href="{{ page.permalink | safe }}"
                style="height: {{ height }}px; width: {{ width }}px;">
                 <img alt=""
                      loading="lazy"
                      class="p-0"
                      decoding="async"
-                     src="{{ image_uri }}"/>
+                     src="{{ image_uri | safe }}"/>
                 {% set font_size = 12 %}
                 <div class="font-monospace position-absolute w-100 px-1 text-light justify-content-between text-truncate album-hover-info"
                      style="background-color: rgba(var(--bs-primary-rgb), 30%); transform: translateY(-100%); font-size: {{ font_size }}px; min-height: 3em">

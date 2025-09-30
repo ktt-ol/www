@@ -51,7 +51,7 @@
     const apiKey = '{{ config.extra.google_api_key }}';
 
     const now = new Date().toISOString();
-    const url = `https://www.mainframe.io/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
+    const url = `{{ config.base_url | safe }}/calendar/v3/calendars/${encodeURIComponent(calendarId)}/events?key=${apiKey}&timeMin=${now}&singleEvents=true&orderBy=startTime&maxResults=5`;
 
     fetch(url)
         .then(res => res.json())

@@ -28,7 +28,7 @@
                                     <img class="h-100 d-inline-block align-middle"
                                          alt=""
                                          decoding="async"
-                                         src="{{ config.extra.ifs_base_path }}/.thumbs/1200-{{ ifs_data.images[i].filename }}"
+                                         src="{{ config.extra.ifs_base_path | safe }}/.thumbs/1200-{{ ifs_data.images[i].filename | safe }}"
                                     />
                                 </a>
                             </div>
