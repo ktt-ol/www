@@ -1,11 +1,11 @@
-<aside class="d-flex flex-column gap-3 mb-auto">
+<aside class="d-flex flex-column gap-1 mb-auto">
 
     <section>
         <h3 class="mb-2">
             <a class="ms-2" href="https://status.mainframe.io">Space-Status</a>
         </h3>
 
-        <div id="space-status" class="px-2 small list-group">
+        <div id="space-status" class="px-2 pt-1 small list-group">
             <template id="status-item-template">
                 <a class="list-group-item border rounded-3" href="https://status.mainframe.io">
                     <div class="status-text d-none fw-semibold" data-state="unknown">
@@ -36,7 +36,7 @@
             <a class="ms-2" href="{{ get_url(path='@/calendar.md', lang=lang) }}">Nächste Termine</a>
         </h3>
 
-        <div class="px-2 small">
+        <div class="px-2 pt-1 small">
             <ul class="list-group" id="event-list" data-calendar-id="{{ config.extra.google_cal_id }}"
                 data-api-key="{{ config.extra.google_api_key }}" data-max="5"></ul>
 
