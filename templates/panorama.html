@@ -8,7 +8,7 @@
             width: 50px;
 
             /* https://www.reshot.com/free-svg-icons/item/arrow-up-circle-87NLXADMCK/ */
-            background: white url({{ macros::rel_url(path="/media/pannellum/arrow-up-circle.svg") }});
+            background: white url({{ get_url(path="/media/pannellum/arrow-up-circle.svg") }});
 
             background-size: contain;
             border-radius: 24px;
@@ -26,9 +26,9 @@
     <div id="panorama" class="w-100 m-0" style="height: calc(100vh - 100px)">
     </div>
 
-    <script defer type="text/javascript" src="{{ macros::rel_url(path="/js/pannellum.js") }}"
+    <script defer type="text/javascript" src="{{ get_url(path="/js/pannellum.js") }}"
             integrity="sha384-{{ get_hash(path="static/js/pannellum.js", sha_type=384, base64=true) | safe }}"></script>
-    <script defer type=" text/javascript" src="{{ macros::rel_url(path="/js/panorama.js") }}"
+    <script defer type=" text/javascript" src="{{ get_url(path="/js/panorama.js") }}"
             integrity="sha384-{{ get_hash(path="static/js/panorama.js", sha_type=384, base64=true) | safe }}"></script>
 
 {% endblock main %}

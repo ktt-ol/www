@@ -11,7 +11,7 @@ darin enthaltenen Räume beziehungsweise Werkstätten.
 ## 3D-Rundgang und Karte
 
 Du kannst wahlweise den Mainframe mithilfe eines
-[virtuellen 3D-Rundgangs](@/images/panorama.md) oder mit einer
+[virtuellen 3D-Rundgangs](../../images/panorama) oder mit einer
 [interaktiven Karte](https://map.mainframe.io/) erkunden.
 
 Dort sieht man den großen Teil unserer Räume. Die Radstelle, sowie die Holz- und

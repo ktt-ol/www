@@ -1,16 +1,14 @@
 #!/usr/bin/env python3
-import hashlib
 import json
 import os
-import shutil
-import tempfile
 import time
-from datetime import datetime
-from os.path import join as join_path
-from threading import Thread
-
 import requests
+import tempfile
+import hashlib
+from os.path import join as join_path
 from slugify import slugify
+from datetime import datetime
+from threading import Thread
 
 albums_path = "content/images/albums"
 cover_path = "album_covers"
@@ -181,12 +179,13 @@ for thread in threads:
 index_file = open(join_path(tmp_ktt_ol_albums, "_index.md"), "w")
 index_file.write("+++\n")
 index_file.write("title = 'Fotoalben'\n")
-index_file.write(
-    "description = 'Hier findest du nach Themen sortierte Fotoalben, zum Beispiel zu bestimmten Events oder Dingen im Space.'\n")
+index_file.write("description = 'Hier findest du nach Themen sortierte Fotoalben, zum Beispiel zu bestimmten Events oder Dingen im Space.'\n")
 index_file.write("template = 'album/album-list.html'\n")
 index_file.write('sort_by = "date"\n')
 index_file.write("+++\n")
 index_file.close()
 
-shutil.copytree(tmp_ktt_ol_albums, albums_path)
-shutil.copytree(tmp_ktt_ol_cover, cover_path)
+print(tmp_ktt_ol_albums)
+print(tmp_ktt_ol_cover)
+os.rename(tmp_ktt_ol_albums, albums_path)
+os.rename(tmp_ktt_ol_cover, cover_path)

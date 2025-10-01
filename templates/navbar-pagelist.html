@@ -1,4 +1,3 @@
-{% import "macros.html" as macros %}
 {% set index_section = get_section(path=section_name ~ "/_index.md", lang=lang) %}
 
 <li class="nav-item dropdown">
@@ -9,7 +8,7 @@
     <ul class="dropdown-menu">
         {% for page in index_section.pages %}
             <li>
-                <a class="dropdown-item" href="{{ macros::rel_url(path=page.path, lang=lang) }}">
+                <a class="dropdown-item" href="{{ page.permalink | safe }}">
                     {{ page.title }}
                 </a>
             </li>
@@ -18,7 +17,7 @@
         {% for subsectionPath in index_section.subsections %}
             {% set subsection = get_section(path=subsectionPath, metadata_only=true) %}
             <li>
-                <a class="dropdown-item" href="{{ macros::rel_url(path=subsection.path, lang=lang) }}">
+                <a class="dropdown-item" href="{{ subsection.permalink | safe }}">
                     {{ subsection.title }}
                 </a>
             </li>

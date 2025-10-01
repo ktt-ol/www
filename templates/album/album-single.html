@@ -27,7 +27,7 @@
 
             {% if page.ancestors | length > 2 %}
                 {% set ancestor = get_section(path=page.ancestors | last) %}
-                <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ macros::rel_url(path=ancestor.path, lang=lang) }}">
+                <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink | safe }}">
                     <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                     <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                          fill="currentColor" viewBox="0 0 16 16">
@@ -60,7 +60,7 @@
                 {% if page.extra.previous %}
                     <a class="position-absolute w-25 h-100 top-0" style="left: 0; right: auto"
                        id="album-image-previous"
-                       href="{{ macros::rel_url(path="@" ~ page.extra.previous, lang=lang) }}">
+                       href="{{ get_url(path="@" ~ page.extra.previous, lang=lang) }}">
                         <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                         <svg class="position-absolute" style="top: 50%; bottom: 50%; left: 10%; right: auto"
                              xmlns="http://www.w3.org/2000/svg" width="40" height="40"
@@ -76,7 +76,7 @@
                 </a>
                 {% if page.extra.next %}
                     <a class="position-absolute w-25 h-100 top-0" style="left: auto; right: 0" id="album-image-next"
-                       href="{{ macros::rel_url(path="@" ~ page.extra.next, lang=lang) }}">
+                       href="{{ get_url(path="@" ~ page.extra.next, lang=lang) }}">
                         <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                         <svg class="position-absolute" style="top: 50%; bottom: 50%; left: auto; right: 10%"
                              xmlns="http://www.w3.org/2000/svg" width="40" height="40"

@@ -1,4 +1,2 @@
-{% import "macros.html" as macros %}
-
 {% set image = resize_image(path=path, width=width, height=height, op=op) %}
-<img src="{{ self::rel_url(path=image.url) }}"/>
+<img src="{{ image.url | safe }}"/>
