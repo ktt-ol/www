@@ -1,3 +1,5 @@
+{% import "macros.html" as macros %}
+
 <!DOCTYPE html>
 <html lang="{{ lang }}" prefix="og: https://ogp.me/ns#" data-bs-theme="dark">
 <head>
@@ -74,13 +76,13 @@
         }
     </script>
 
-    <link rel="stylesheet" href="{{ get_url(path="/css/site.css") }}">
+    <link rel="stylesheet" href="{{ macros::rel_url(path="/css/site.css") }}">
 
     <link rel="alternate" type="application/rss+xml" title="RSS"
-          href='{{ get_url(path="/rss.xml") }}'>
+          href='{{ macros::rel_url(path="/rss.xml") }}'>
 
-    <link rel="alternate" type="application/rss+xml" title="RSS"
-          href='{{ get_url(path="/atom.xml") }}'>
+    <link rel="alternate" type="application/rss+xml" title="ATOM"
+          href='{{ macros::rel_url(path="/atom.xml") }}'>
 
     {% block extra_css %}
     {% endblock extra_css %}
@@ -111,17 +113,17 @@
             <p style="text-align: center;">
                 © 2025 <a href="{{ config.base_url | safe }}">Kreativität trifft Technik</a> | License: <a
                     href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
-                    href="{{ get_url(path="@/impressum.md", lang=lang) }}">Impressum</a>
+                    href="{{ macros::rel_url(path="@/impressum.md", lang=lang) }}">Impressum</a>
             </p>
         </div>
     </footer>
 </div>
 
-<script type="module" async src="{{ get_url(path="/js/site.js") }}"
+<script type="module" async src="{{ macros::rel_url(path="/js/site.js") }}"
         integrity="sha384-{{ get_hash(path="static/js/site.js", sha_type=384, base64=true) | safe }}">
 </script>
 
-<script type="module" async src="{{ get_url(path="/js/bootstrap.bundle.min.js") }}"
+<script type="module" async src="{{ macros::rel_url(path="/js/bootstrap.bundle.min.js") }}"
         integrity="sha384-{{ get_hash(path="static/js/bootstrap.bundle.min.js", sha_type=384, base64=true) | safe }}">
 </script>
 

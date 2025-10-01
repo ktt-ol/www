@@ -2,12 +2,12 @@
 
     <section>
         <h3 class="mb-2">
-            <a class="ms-2" href="https://status.mainframe.io">Space-Status</a>
+            <a class="ms-2" href="{{ config.extra.status_domain | safe }}">Space-Status</a>
         </h3>
 
         <div id="space-status" class="px-2 pt-1 small list-group">
             <template id="status-item-template">
-                <a class="list-group-item border rounded-3" href="https://status.mainframe.io">
+                <a class="list-group-item border rounded-3" href="{{ config.extra.status_domain | safe }}">
                     <div class="status-text d-none fw-semibold" data-state="unknown">
                         ???
                     </div>
@@ -33,7 +33,7 @@
 
     <section>
         <h3 class="mb-2">
-            <a class="ms-2" href="{{ get_url(path='@/calendar.md', lang=lang) }}">Nächste Termine</a>
+            <a class="ms-2" href="{{ macros::rel_url(path='@/calendar.md', lang=lang) }}">Nächste Termine</a>
         </h3>
 
         <div class="px-2 pt-1 small">

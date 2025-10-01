@@ -17,7 +17,7 @@
 
 ## Development
 
-You'll need [zola](https://www.getzola.org/) for generating the static site and
+You'll need {% rel_url(path='https://www.getzola.org/') %}zola{% end %} for generating the static site and
 Python for generating the photo albums. You may install the tools locally or use
 the provided `nix` devshell.
 
