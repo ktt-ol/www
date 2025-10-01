@@ -20,7 +20,7 @@ jobs:
       - name: Set base-url (main)
         shell: bash
         if: github.ref == 'refs/heads/main'
-        run: echo "TARGET_URL=https://www.mainframe.io/" >> $GITHUB_ENV
+        run: echo "TARGET_URL=https://www.mainframe.io" >> $GITHUB_ENV
       - name: Set base-url (PR)
         shell: bash
         if: github.ref != 'refs/heads/main'

@@ -17,31 +17,63 @@
     </script>
 {% endmacro %}
 
+{% macro rel_url(path, lang="") %}
+    {%- if not current_path -%}
+        {%- if page -%}
+            {%- set current_path = page.path -%}
+        {%- elif section -%}
+            {%- set current_path = section.path -%}
+        {%- else -%}
+            {%- set current_path = "/" -%}
+        {%- endif -%}
+    {%- endif -%}
+    {%- set cnt = current_path | split(pat="/") | length - 2 -%}
+    {%- if current_path == "/" -%}
+        {%- set prefix = "./" -%}
+    {%- else -%}
+        {%- set prefix = "" -%}
+        {%- if cnt > 0 -%}
+            {% for i in range(end=cnt) %}
+                {%- set_global prefix = prefix ~ "../" -%}
+            {% endfor %}
+        {%- endif -%}
+    {%- endif -%}
+    {%- set url = get_url(path=path, lang=lang | default(value=config.default_language)) | replace(from=config.base_url ~ '/', to="") | trim_end_matches(pat="/") -%}
+    {%- set ending = url | split(pat="/") | last -%}
+    {%- if ending is matching("\..{1,3}$") -%}
+        {{- prefix ~ url -}}
+    {%- else -%}
+        {%- if url -%}
+            {%- set url = url ~ '/' -%}
+        {%- endif -%}
+        {{- prefix ~ url -}}
+    {%- endif -%}
+{% endmacro rel_url %}
+
 {% macro sd_article(title, image_url, created, updated, author, description) %}
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
             "@type": "NewsArticle",
             "headline": "{{ title }}",
-        "image": [
-            "{{ image_url | safe }}"
-        ],
-        "datePublished": "{{ created }}",
-        "dateModified": "{{ updated }}",
-        "author": [
-            {
-                "@type": "Person",
-                "name": "{{ author }}",
-                "url": "{{ config.base_url | safe }}"
-            }
-        ],
-        "description": "{{ description }}"
-    }
+            "image": [
+                "{{ image_url | safe }}"
+            ],
+            "datePublished": "{{ created }}",
+            "dateModified": "{{ updated }}",
+            "author": [
+                {
+                    "@type": "Person",
+                    "name": "{{ author }}",
+                    "url": "{{ config.base_url | safe }}"
+                }
+            ],
+            "description": "{{ description }}"
+        }
     </script>
 {% endmacro %}
 
 {% macro og_image(image_url, width, height, title, author, content_type) %}
-
     <meta property="og:image" content="{{ image_url | safe }}"/>
     <meta property="og:image:type" content="{{ content_type | safe }}"/>
     <meta property="og:image:width" content="{{ width }}"/>
@@ -60,19 +92,18 @@
 {% endmacro %}
 
 {% macro page_count_recursive(section) %}
-    {% set count = section.pages | length %}
-    {% for subsection_path in section.subsections %}
-        {% set subsection = get_section(path=subsection_path) %}
-        {% set page_count = self::page_count_recursive(section=subsection) | int %}
-        {% set_global count = page_count + count %}
-    {% endfor %}
-    {{ count }}
+    {%- set count = section.pages | length -%}
+    {%- for subsection_path in section.subsections -%}
+        {%- set subsection = get_section(path=subsection_path) -%}
+        {%- set page_count = self::page_count_recursive(section=subsection) | int -%}
+        {%- set_global count = page_count + count -%}
+    {%- endfor -%}
+    {{- count -}}
 {% endmacro %}
 
 {% macro blog_list(pages) %}
-
     <div class="container-fluid text-white">
-        {% for blog_page in pages %}
+        {% for blog_page in pages -%}
 
             <div class="row py-2 border-bottom">
                 {% if blog_page.authors %}
@@ -86,20 +117,20 @@
 
                 {% if blog_page.extra.thumbnail %}
                     {% set thumbnail_path = blog_page.extra.thumbnail %}
-                    {% set thumbnail_url = get_url(path=thumbnail_path) %}
                 {% else %}
                     {% set thumbnail_path = "/media/img/logo-ktt.png" %}
-                    {% set thumbnail_url = thumbnail_path %}
                 {% endif %}
 
-                {% if thumbnail_url is not ending_with(".svg") %}
+                {% if thumbnail_path is not ending_with(".svg") %}
                     {% set resized_image = resize_image(path=thumbnail_path, format="auto", op="fit_height", width=150, height=150) %}
                     {% set thumbnail_url = resized_image.url %}
+                {% else %}
+                    {% set thumbnail_url = thumbnail_path %}
                 {% endif %}
 
                 <div class="col-sm-3 d-flex flex-column bg-body-tertiary rounded rounded-2 justify-content-center text-center">
                     <img alt="Thumbnail Image for {{ page_title }}"
-                         src="{{ thumbnail_url | safe }}"
+                         src="{{ self::rel_url(path=thumbnail_url) }}"
                          decoding="async"
                          class="object-fit-contain"
                          loading="lazy"
@@ -118,12 +149,12 @@
                         {{ lang_str }}
                     </p>
                     <h4 class="text-primary mb-1 ps-0 border-bottom-0">
-                        <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
+                        <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
                            class="text-reset text-decoration-none">
                             {{ page_title }}
                         </a>
                     </h4>
-                    <a href="{{ get_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
+                    <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
                        class="mb-1 text-reset text-decoration-none m-0">
                         {{ page_description }}
                     </a>
@@ -135,7 +166,7 @@
                                 {% for term in blog_page.taxonomies[taxonomy.name] %}
 
                                     {% set taxonomy_url = get_taxonomy_url(kind=taxonomy.name, name=term, lang=lang) %}
-                                    <a href="{{ taxonomy_url | safe }}"
+                                    <a href="{{ self::rel_url(path=taxonomy_url) }}"
                                        class="text-decoration-none ms-1 badge text-bg-{{ config.extra.bs_color_map[i] }}">
                                         {{ term }}
                                     </a>

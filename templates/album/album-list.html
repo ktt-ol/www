@@ -7,7 +7,7 @@
 
         {% if section.ancestors | length > 2 %}
             {% set ancestor = get_section(path=section.ancestors | last) %}
-            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink | safe }}">
+            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ macros::rel_url(path=ancestor.path, lang=lang) }}">
                 <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                 <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                      fill="currentColor" viewBox="0 0 16 16">
@@ -70,7 +70,7 @@
                     {% endif %}
                 {% endif %}
 
-                <a href="{{ subsection_data.permalink | safe }}"
+                <a href="{{ macros::rel_url(path=subsection_data.path, lang=lang) }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
                    style="height: {{ height }}px; width: {{ width }}px;">
                     <img alt=""
@@ -85,7 +85,7 @@
                     </div>
                 </a>
             {% else %}
-                <a href="{{ subsection_data.permalink | safe }}"
+                <a href="{{ macros::rel_url(path=subsection_data.path, lang=lang) }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
                    style="height: 200px; width: 200px;">
                     <div style="background-color: dimgrey"
@@ -119,7 +119,7 @@
                 {% set image_uri = page.extra.file_uri_300 %}
             {% endif %}
 
-            <a class="text-decoration-none" href="{{ page.permalink | safe }}"
+            <a class="text-decoration-none" href="{{ macros::rel_url(path=page.path, lang=lang) }}"
                style="height: {{ height }}px; width: {{ width }}px;">
                 <img alt=""
                      loading="lazy"
