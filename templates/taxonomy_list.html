@@ -7,12 +7,12 @@
     <h3>
         <span>
             <a class="text-decoration-none text-primary d-inline"
-               href="{{ macros::rel_url(path=blog_section.path, lang=lang) }}">
+               href="{{ blog_section.permalink | safe }}">
                 {{ blog_section.title }}
             </a>
             >
             <a class="text-decoration-none text-primary d-inline"
-               href="{{ macros::rel_url(path=taxonomy.slug, lang=lang) }}">
+               href="{{ get_url(path=taxonomy.slug, lang=lang) }}/">
                 {{ taxonomy.name }}
             </a>
         </span>
@@ -20,7 +20,7 @@
 
     <div class="flex-wrap d-flex justify-content-center">
         {% for term in terms %}
-            <a class="text-decoration-none m-1 badge text-bg-primary" href="{{ macros::rel_url(path=term.path, lang=lang) }}">
+            <a class="text-decoration-none m-1 badge text-bg-primary" href="{{ get_url(path=term.path, lang=lang) }}/">
                 {{ term.name }}
             </a>
         {% endfor %}

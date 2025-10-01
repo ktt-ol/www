@@ -1,5 +1,3 @@
-{% import "macros.html" as macros %}
-
 <div class="row">
     <div class="col-sm-2 fw-bolder text-decoration-underline">Anschrift</div>
     <div class="col-sm-4">
@@ -21,11 +19,11 @@
         <p class="mb-0">
             Wenn du ohne einen Besuch mit Leuten aus dem Mainframe in
             Kontakt treten möchtest, dann schau mal unter
-            <a href="{{ macros::rel_url(path="@/about/communication.md", lang=lang) }}">Kommunikation</a>
+            <a href="{{ get_url(path="@/about/communication.md", lang=lang) }}">Kommunikation</a>
             vorbei.
         </p>
         <p class="mt-2">
-            Solltest du nur mit dem <a href="{{ macros::rel_url(path="@/impressum.md", lang=lang) }}">Vereinsvorstand</a> in
+            Solltest du nur mit dem <a href="{{ get_url(path="@/impressum.md", lang=lang) }}">Vereinsvorstand</a> in
             Kontakt treten wollen, dann schreibe eine Mail an
             <a href="mailto:{{ config.extra.ktt_board_mail | safe }}">{{ config.extra.ktt_board_mail | safe }}</a>.
         </p>

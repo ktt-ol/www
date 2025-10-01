@@ -12,11 +12,10 @@
     <div class="row">
         <div class="col">
             <p>Willkommen in unserem Blog!</p>
-            {%- set taxonomy_type = get_taxonomy(kind="Typ") -%}
-            {%- set taxonomy_series = get_taxonomy(kind="Serie") -%}
+
             <p>
             Hier findest du Ankündigungen, Berichte zu Events, Einblicke in laufende Projekte und Talks.
-            Beiträge lassen sich nach <a href={{ macros::rel_url(path=taxonomy_type.permalink) }}>Typ</a> und <a href="{{ macros::rel_url(path=taxonomy_series.permalink) }}">Serie</a> filtern, damit du schnell findest, was dich interessiert.
+            Beiträge lassen sich nach <a href={{ get_url(path="/typ") }}>Typ</a> und <a href="{{ get_url(path="/serie") }}">Serie</a> filtern, damit du schnell findest, was dich interessiert.
             Der Blog lebt vom Mitmachen – deshalb bist du herzlich eingeladen, eigene Beiträge einzureichen.
             </p>
         </div>
@@ -26,14 +25,14 @@
             <div class="d-flex flex-wrap justify-content-center">
                 {% for sub_path in section.subsections | sort | reverse %}
                     {% set subsection = get_section(path=sub_path) %}
-                    <a class="btn btn-sm btn-outline-primary my-1 ms-1" href="{{ macros::rel_url(path=subsection.path, lang=lang) }}">
+                    <a class="btn btn-sm btn-outline-primary my-1 ms-1" href="{{ subsection.permalink | safe }}">
                         {{ subsection.title }}
                     </a>
                 {% endfor %}
             </div>
         {% else %}
             {% set ancestor = get_section(path=section.ancestors | last) %}
-            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ macros::rel_url(path=ancestor.path, lang=lang) }}">
+            <a class="btn btn-outline-primary btn-sm mb-1 d-flex" href="{{ ancestor.permalink | safe }}">
                 <!-- Credit: https://icons.getbootstrap.com/icons/chevron-double-left/ -->
                 <svg class="align-self-center" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                      fill="currentColor" viewBox="0 0 16 16">

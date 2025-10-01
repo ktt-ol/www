@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col">
                 <h3>
-                    <a href="{{ macros::rel_url(path="@/images/ifs/_index.md", lang=lang) }}">{{ trans(key="ifs_newest", lang=lang) }}</a>
+                    <a href="{{ get_url(path="@/images/ifs/_index.md", lang=lang) }}">{{ trans(key="ifs_newest", lang=lang) }}</a>
                 </h3>
             </div>
         </div>
@@ -24,11 +24,11 @@
                                 {% set id_str = (ifs_count - i) | as_str %}
 
                                 <a target="_blank" class="text-decoration-none"
-                                   href="{{ macros::rel_url(path='images/ifs/by-id/' ~ id_str, lang=lang) }}">
+                                   href="{{ get_url(path='images/ifs/by-id/' ~ id_str, lang=lang) }}">
                                     <img class="h-100 d-inline-block align-middle"
                                          alt=""
                                          decoding="async"
-                                         src="{{ config.extra.ifs_base_path ~ "/.thumbs/1200-" ~ ifs_data.images[i].filename | safe }}"
+                                         src="{{ config.extra.ifs_base_path | safe }}/.thumbs/1200-{{ ifs_data.images[i].filename | safe }}"
                                     />
                                 </a>
                             </div>
@@ -39,7 +39,7 @@
                             <div class="h-100 align-content-center">
                                 {{ trans(key="ifs_more", lang=lang) }}
                                 <a class="text-decoration-none" target="_blank"
-                                   href="{{ macros::rel_url(path="@/images/ifs/_index.md", lang=lang) }}">
+                                   href="{{ get_url(path="@/images/ifs/_index.md", lang=lang) }}">
                                     {{ ifs_page.title }}
                                 </a>
                             </div>
@@ -62,7 +62,7 @@
         <div class="row">
             <div class="col">
                 <h3 class="mb-0">
-                    <a href="{{ macros::rel_url(path="@/blog/_index.md", lang=lang) }}">Blog</a>
+                    <a href="{{ get_url(path="@/blog/_index.md", lang=lang) }}">Blog</a>
                 </h3>
             </div>
         </div>
