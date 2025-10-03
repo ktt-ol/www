@@ -184,6 +184,7 @@ index_file.write("title = 'Fotoalben'\n")
 index_file.write(
     "description = 'Hier findest du nach Themen sortierte Fotoalben, zum Beispiel zu bestimmten Events oder Dingen im Space.'\n")
 index_file.write("template = 'album/album-list.html'\n")
+index_file.write("weight = 30\n")
 index_file.write('sort_by = "date"\n')
 index_file.write("+++\n")
 index_file.close()
