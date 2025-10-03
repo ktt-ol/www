@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Sonstiges</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/sonstiges/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Thu, 21 Mar 2024 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Was war, was wird...</title>
+          <pubDate>Tue, 01 Jan 2019 22:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/">&lt;p&gt;Das hier ist eigentlich kein Event. Wir wurden aber darauf hingewiesen, dass es auf unserer Homepage auf den ersten
+Blick danach aussieht, als würde hier nichts passieren. Das Gegenteil ist der Fall und da wir es in absehbarer Zeit wohl
+nicht auf die Reihe bekommen werden, mehr Events anzulegen, gibt es jetzt diesen Dummy.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Space war 2018 an 363 Tagen geöffnet. Die verbliebenen zwei Tage konnten wir leider nicht öffnen, weil die
+Gebäude-Tür defekt war. Im Schnitt waren pro Tag 10,92 Stunden geöffnet, unsere “mindestens 19 Uhr bis Mitternacht”
+haben wir also deutlich überschritten ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Auch 2019 werden wieder jeden Tag Dinge im Space passieren, also einfach vorbeikommen, wenn
+der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;status.mainframe.io&#x2F;&quot;&gt;Status-Seite&lt;&#x2F;a&gt; auf “open” steht. Geplante Treffen der Unter-Gruppen
+stehen im &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;calendar&#x2F;&quot;&gt;Kalender&lt;&#x2F;a&gt;“ und werden auf der &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;about&#x2F;communication&#x2F;&quot;&gt;Mailingliste&lt;&#x2F;a&gt; angekündigt.
+Einen guten Eindruck der Aktivitäten geben auch unsere &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;images&#x2F;ifs&#x2F;&quot;&gt;Images from Space&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;tl-dr&quot;&gt;tl;dr;&lt;&#x2F;h1&gt;
+&lt;p&gt;Bitte nicht von geringer Event-Eintrags-Aktivität auf der Homepage verunsichern lassen ;)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Workshop-Wochenende zum Abschluss von Fabulé</title>
+          <pubDate>Thu, 02 Feb 2017 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/">&lt;p&gt;Am 4. und 5. Februar beenden wir das von der Metropolregion Nordwest
+geförderte Projekt Fabulé mit einem großen Workshop-Wochenende.&lt;&#x2F;p&gt;
+&lt;p&gt;In praktisch allen Bereichen vom Lasercutter über den 3D-Druck und die
+Elektronik-Werkstatt bis zur Schnittstelle finden Workshops statt und werden
+gemeinsam mit den Teilnehmenden (wie bei einem BarCamp) auf die verfügbaren
+Zeitslots verteilt.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bau und Nutzung von 3D-Druckern&lt;&#x2F;li&gt;
+&lt;li&gt;Bau und Nutzung den Desktop-Fräsen&lt;&#x2F;li&gt;
+&lt;li&gt;3D-Konstruktion und Design für 3D-Drucker&lt;&#x2F;li&gt;
+&lt;li&gt;Textilveredelung mit Siebdruck&lt;&#x2F;li&gt;
+&lt;li&gt;Textilveredelung mit Folienplotter&lt;&#x2F;li&gt;
+&lt;li&gt;Mit dem neuen Calliope mini die digitale Welt mitgestalten&lt;&#x2F;li&gt;
+&lt;li&gt;ESP8266 – Low-Cost Mikrocontroller für Hausautomatisierung und das ‚Internet der Dinge‘&lt;&#x2F;li&gt;
+&lt;li&gt;Löten Lernen für junge und nicht mehr ganz so junge Menschen (ca. 11-99 Jahre, gern in Kombination alt+jung ;) ggf. nur in Block A [Sa 10:30-12:00 Uhr]&lt;&#x2F;li&gt;
+&lt;li&gt;weitere Themen willkommen!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+    </channel>
+</rss>

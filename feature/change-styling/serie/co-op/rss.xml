@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - co-op</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/co-op/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 19 Mar 2023 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>co-op3: Dein Projekt für den Kongress</title>
+          <pubDate>Thu, 08 Dec 2016 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op3/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op3/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op3/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op3&#x2F;co-op3-logo.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Hackathon co-op3 fand am Wochenende des 05. + 06. November 2016 in den Räumen des Mainframe statt. Das Motto lautete: Dein Projekt für den &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;events.ccc.de&#x2F;congress&#x2F;2016&#x2F;wiki&#x2F;Main_Page&quot;&gt;Kongress - 33C3&lt;&#x2F;a&gt;Es ging dabei um Projekte, die mit auf den 33C3 gebracht werden können.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op3&#x2F;co-op3-hacking.jpg&quot; alt=&quot;Elektronik auf einem Tisch&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nach dem Start um 16 Uhr am Samstag traten die Teilnehmer mit ihren Projektideen an. Wie auch bei dem vorherigen Hackathon &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2016&#x2F;co-op1&#x2F;&quot;&gt;co-op2&lt;&#x2F;a&gt;&#x2F;&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2016&#x2F;co-op2&#x2F;&quot;&gt;coop2&lt;&#x2F;a&gt; wurde mit einem Soft-Opening begonnen. Die Aktivitäten erstreckten sich über die gesamten Räume des Spaces. Nach einer ersten Vorstellungsrunde wurde sich immer wieder in regelmäßigen Abständen in der Lounge getroffen um sich über den Fortschritt und auch die auftretenden Probleme auf dem Weg auszutauschen - sogenannte “Syncs”. Insgesamt nahmen 10 Leute teil und es gab auch spontane Teilnehmer, die das Event zum Anlass nahmen sich intensiv mit ihren sonstigen Projekten auseinander zu setzen.&lt;&#x2F;p&gt;
+&lt;p&gt;Bei soviel nachdenken und tüfteln durfte Essen natürlich auch nicht fehlen und so gab es am Samstagabend Hot-Dogs zu essen (auch vegetarische, Danke!).&lt;&#x2F;p&gt;
+&lt;p&gt;Gearbeitet wurde unter anderem an den folgenden Projekten:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auslesen von Smartphone-Senoren und Visualisierung mittels ESP8266 und WS2812 LEDs&lt;&#x2F;li&gt;
+&lt;li&gt;Schaltung zur Erkennung der Klingelspannung eines Feldtelefons mit ESP8266 und Weiterleitung an den MQTT Server&lt;&#x2F;li&gt;
+&lt;li&gt;Transportsicherung für das LED-Panel, Verbesserung des Snake Spiels&lt;&#x2F;li&gt;
+&lt;li&gt;Lautstärkepegelanzeige mit Teensy 3.1, Audioshield und WS2812&lt;&#x2F;li&gt;
+&lt;li&gt;Lötdampfabsaugung und blinkender Tannenbaum&lt;&#x2F;li&gt;
+&lt;li&gt;Fading und Blink-Support für I2C Support des Schließsystems&lt;&#x2F;li&gt;
+&lt;li&gt;Visuelle Alarmierung über Wallwasher mit Busprotokoll&lt;&#x2F;li&gt;
+&lt;li&gt;Badge für den Space und Pong mit dem Roboterarm&lt;&#x2F;li&gt;
+&lt;li&gt;Interaktive LED Laufschrift mit WS2812 und ESP8266&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Es wurde bis früh in den Morgen an den Projekten gearbeitet. Mehr oder weniger ausgeschlafen ging es am Sonntag um 14 Uhr nach einem gemeinsamen Frühstück weiter. Bis zur letzten Minute arbeiteten die Teilnehmer akribisch an ihren Projekten. Zwischendrin gab es immer mehr zu sehen - alles nahm allmählig Gestalt an. Bei einem Abschlusstreffen wurden dann die erzielten Ergebnisse vorgestellt und es kam zur anschließend zu einer Preisverleihung.&lt;&#x2F;p&gt;
+&lt;p&gt;Dazu haben uns wieder die Sponsoren &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.oreilly.de&#x2F;&quot;&gt;O’Reilly&lt;&#x2F;a&gt;, der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.dpunkt.de&#x2F;&quot;&gt;dpunkt-Verlag&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.watterott.com&#x2F;&quot;&gt;watterott&lt;&#x2F;a&gt;und &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getdigital.de&#x2F;&quot;&gt;getdigital&lt;&#x2F;a&gt; mit Büchern und Elektronik unterstützt. Vielen Dank dafür! Unter den Preisen gab es neben Büchern auch Elektronikbausätze.&lt;&#x2F;p&gt;
+&lt;p&gt;Dies war ein guter Ausklang für ein wirklich gelungenes Hackathon-Wochenende. Vielen Dank an dieser Stelle auch an die Organisatoren Jan Janssen, Oliver Tonhofer, Michael Pensler!&lt;&#x2F;p&gt;
+&lt;p&gt;Wir freuen uns auf den nächsten Hackathon!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op3&#x2F;co-op3-winners.jpg&quot; alt=&quot;Co-Op3 Gewinner&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>co-op2: Spacebus mit MQTT</title>
+          <pubDate>Wed, 18 May 2016 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op2/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op2/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op2/">&lt;p&gt;Datum: 14.+15.05.2016
+Beginn: Samstag um 16 Uhr
+Abschluss mit Preisvergabe: Sonntag um 20 Uhr&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op2&#x2F;co-op2-logo-web.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Am 14.&#x2F;15. Mai fand unser anstehender Hackathon, die co-op2, im Hackspace statt. Diesmal hat sich alles um den Spacebus
+gedreht, der via &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mqtt.org&quot;&gt;MQTT&lt;&#x2F;a&gt; Events versendet. Schon vorher wurde dieser Bus bei
+uns für das Sammeln von Temperatur- und Stromzählerwerten genutzt, jedoch gab es noch größeres Potenzial bei der Nutzung
+durch Sensoren und Aktoren. Ziel der Veranstaltung war es, gemeinsam den Umgang mit MQTT zu erlernen und coole Projekte
+daraus zu bauen, die im Idealfall auch dem Space auch eine Funktionserweiterung bieten.&lt;&#x2F;p&gt;
+&lt;p&gt;Von der &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2016&#x2F;co-op1&#x2F;&quot;&gt;co-op1&lt;&#x2F;a&gt; haben wir gelernt, dass die Teilnehmer samstags zu sehr
+unterschiedlichen Uhrzeiten erscheinen können, und haben deswegen mit einem Soft-Opening begonnen. Zwischen 10 und 20
+Personen waren über das Wochenende im Space zugange und haben an nützlichen und eindrucksvollen Projekten getüftelt.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Projekte waren diesmal eher der Softwaresparte einzuordnen, jedoch wurde hier und dort auch ein ESP als Aktor oder
+Sensor verbaut, um die Busfunktionen zu erweitern. Unter den Projekten befand sich z.B. eine Gruppe, die die Events des
+MQTT-Busses persistiert und mit &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;grafana.org&quot;&gt;Grafana&lt;&#x2F;a&gt; visuell aufbereitet hat. Dort kann man nun z.B. den
+aktuellen Stromverbrauch und die Anzahl der Spacebesucher sehen, sowie den Verlauf der vergangenen Wochen. Das
+Ablesen des Stromverbrauchs ist im Rahmen dessen auch repariert, bzw. verbessert worden.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op2&#x2F;co-op2-hacking.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Eine weitere Gruppe baute einen Space-Schalter für unsere Fahrradwerkstatt, die sog. Radstelle. Mit diesem kann in
+baldiger Zukunft der Status der räumlich getrennten Werkstatt signalisiert und über die Homepage als Status abgerufen
+werden. Das Verlegen der dafür nötigen Netzwerk- und Stromanbindung wurde unterdessen von einem weiteren Teilnehmer
+vorbereitet und geplant.&lt;&#x2F;p&gt;
+&lt;p&gt;Ebenfalls eindrucksvoll war die Erweiterung unserer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;map.mainframe.io&#x2F;&quot;&gt;Space Map&lt;&#x2F;a&gt;, in der nun unser
+Stromverbrauch und der Öffnungsstatus live in ein SVG gerendert und angezeigt werden können. Die Grundlage für das
+Einbinden weiterer Sensoren ist damit gelegt.&lt;&#x2F;p&gt;
+&lt;p&gt;Unsere aus Hamburg angereisten—und teilweise sehr jungen—Gäste haben mir nichts, dir nichts unseren
+Mainframe in Minecraft nachgebaut, und dabei eine unglaubliche Detailtreue
+bewiesen. Über diverse Plugins und Kniffe ließ sich der MQTT-Bus dann in das Spiel umleiten, und man konnte z.B. den
+Öffnungsstatus des Mainframes live im Spiel mitverfolgen. Sogar die Live-Anzeige der Visualisierungsgruppe wurde auf
+einer virtuellen Leinwand eingespielt.&lt;&#x2F;p&gt;
+&lt;p&gt;Andere Teilnehmer haben auch schlicht den Code ihrer bestehenden MQTT-Projekte erweitert und verbessert, allgemein mit
+ihrer Erfahrung und ihren Kenntnissen andere Teilnehmer unterstützt, oder mal etwas am Laserschneider gefertigt.&lt;&#x2F;p&gt;
+&lt;p&gt;Alles in allem herrschte eine sehr angenehme und konstruktive Stimmung im Space, die mit Suppe am Samstagabend oder
+Ganztagsfrühstück am Sonntag auch richtig gesellig wurde.&lt;&#x2F;p&gt;
+&lt;p&gt;Ein weiteres Ergebnis des Hackathons
+ist &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;ktt-ol&#x2F;esp-mqtt-nodes&quot;&gt;eine Sammlung an Codesnippets für den ESP8266 mit MQTT-Anbindung&lt;&#x2F;a&gt;, die es
+anderen Mitgliedern erleichtert, eigene Sensoren an den Spacebus anzubinden.&lt;&#x2F;p&gt;
+&lt;p&gt;Zum Finale gab es natürlich wieder eine Bewertung der einzelnen Projekte, die anschließend mit tollen Sachpreisen
+prämiert wurden. Dazu haben uns wieder die Sponsoren &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.oreilly.de&#x2F;&quot;&gt;O’Reilly&lt;&#x2F;a&gt;,
+der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.dpunkt.de&#x2F;&quot;&gt;dpunkt-Verlag&lt;&#x2F;a&gt;, &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.watterott.com&#x2F;&quot;&gt;watterott&lt;&#x2F;a&gt;
+und &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getdigital.de&#x2F;&quot;&gt;getdigital&lt;&#x2F;a&gt; mit Büchern und Papercraft-Modellen unterstützt. Vielen Dank
+dafür an dieser Stelle!&lt;&#x2F;p&gt;
+&lt;p&gt;Vielen Dank auch allen, die bei der Organisation der Veranstaltung unterstützt und mit angepackt haben. Wir freuen uns
+schon aufs nächste Mal!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op2&#x2F;co-op2-winners.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>co-op1: Wartelisten-Projekte</title>
+          <pubDate>Mon, 08 Feb 2016 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op1/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op1/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/co-op1/">&lt;p&gt;Datum: &lt;strong&gt;06.+07.02.2016&lt;&#x2F;strong&gt;
+Beginn: &lt;strong&gt;Samstag um 16 Uhr&lt;&#x2F;strong&gt;
+Abschluss mit Preisvergabe: &lt;strong&gt;Sonntag um 20 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Am 6. und 7. Februar fand im KtT der erste Hackathon im Space 3.0, die sog. co-op, statt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op1&#x2F;co-op-token.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Das Thema der co-op1 war “Wartelisten-Projekte”. Jeder kennt es, das eine Projekt, das einen seit Ewigkeiten reizt, für
+das man sich aber nie die nötige Zeit nimmt. Diese Auftaktveranstaltung war dazu da, eben diese Projekte in Angriff zu
+nehmen. Für Teilnehmer ohne ein solches Projekt gab
+es &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;Spaceprojekte&quot;&gt;eine Liste von Space-Projekten&lt;&#x2F;a&gt;, die auf der
+Space-eigenen Warteliste gesammelt wurden.&lt;&#x2F;p&gt;
+&lt;p&gt;Ungefähr 15 Teilnehmer versammelten sich zusätzlich zum regulären Space-Betrieb im Mainframe und stellten zunächst in
+der Lounge ihre Projektideen vor. Anschließend fanden sich die Projektgruppen zusammen, die sich zum Teil auch schon
+vorher verabredet hatten. Da viele ESP8266-Projekte auf den Wartelisten der Teilnehmer standen, das nötige Know-How
+jedoch nicht bei allen ausreichend vorhanden war, erklärte sich ein ESP-erfahrener Teilnehmer bereit, einen kurzen
+Crashkurs in die Hardware zu geben.&lt;&#x2F;p&gt;
+&lt;p&gt;Fortan wurde im Space verteilt fleißig an den Projekten gearbeitet. Da die Teilnehmer hauptsächlich Elektronik-Projekte
+bearbeitet haben, waren die von &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.watterott.com&quot;&gt;Watterott&lt;&#x2F;a&gt; gespendeten Ersa-Lötstationen sehr hilfreich, um
+ein gleichzeitiges Arbeiten aller Teilnehmer zu ermöglichen. In regelmäßigen Abständen wurde sich wieder in der Lounge
+versammelt, um über Projektfortschritte und Probleme zu berichten. So wurden z.B. auch Laser-Operatoren an Projekte
+vermittelt, die noch ein Gehäuse für ihre Platine benötigten.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op1&#x2F;co-op-eating.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Um 20:00 gab es dann ein gemeinsames Abendessen und anschließend wurde bis spät in die Nacht gewerkelt. Das führte unter
+anderem dazu, dass es sich Sonntag erst gegen Nachmittag gefüllt hat, und wir den geplanten Abschluss der Veranstaltung
+um zwei Stunden auf 20:00 verschoben haben. Sonntag gab es den ganzen Tag über Frühstück zum Selbst-belegen. Der KtT
+stellte außerdem für beide Tage ein paar Freigetränke.&lt;&#x2F;p&gt;
+&lt;p&gt;Am Abschluss der Veranstaltung wurden dann alle Projekte noch einmal vorgestellt, auch wenn einzelne davon an dem Abend
+nicht ganz fertig geworden sind. So hatten wir z.B. neue Ambient-Beleuchtung für unsere Freifläche bekommen, die über
+WLAN steuerbar sind. Weitere Space-Projekte umfassten Arbeiten an einem neuen Schließsystem, der umfassenden Erfassung
+von Space-Temperatur und -Luftfeuchtigkeit, einem Prototyp für eine Handy-Ladestation, sowie dem Wiederbeleben einer
+stillgelegten Tochter-Bahnhofsuhr und einer Space-Status-Anzeige für den Conference-Raum. Andere Teilnehmer haben neue
+Technologien, namentlich MQTT und Perl6, erforscht und kleine Software-Experimente damit umgesetzt. Auch ein
+Audio-Multiplexer mit je 8 Ein- und Ausgängen war unter den Wartelisten-Projekten.&lt;&#x2F;p&gt;
+&lt;p&gt;Jeder Teilnehmer hatte nun die Möglichkeit, seinen drei Lieblingsprojekten jeweils ein Stimmen in Form eines gelaserten
+Abstimmtokens zu geben. Die Anzahl der erhaltenen Tokens pro Projekt bestimmte dann die Reihenfolge, in der die
+Teilnehmer sich ihren Preis aussuchen konnten. Diese Sachpreise wurden uns dankenswerterweise von weiteren Sponsoren zur
+Verfügung gestellt. &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.oreilly.de&#x2F;&quot;&gt;O’Reilly&lt;&#x2F;a&gt; und der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.dpunkt.de&#x2F;&quot;&gt;dpunkt Verlag&lt;&#x2F;a&gt; haben uns dazu
+ein gemeinsames Bücherpaket zugeschickt und &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.getdigital.de&#x2F;&quot;&gt;getdigital&lt;&#x2F;a&gt; steuerte einen Bausatz für ein
+Da-Vinci-Katapult bei.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;co-op1&#x2F;co-op-winners.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

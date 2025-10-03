@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Ankündigung</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/typ/ankundigung/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 28 Sep 2025 21:55:00 +0000</lastBuildDate>
+      <item>
+          <title>Die neuen Websites sind online!</title>
+          <pubDate>Sun, 28 Sep 2025 21:55:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2025/neue-websites/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2025/neue-websites/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2025/neue-websites/">&lt;p&gt;Nach einiger Zeit in Planung und viel Arbeit ist es endlich soweit: Die neue Website
+für den Mainframe wurde komplett überarbeitet und ist jetzt online. 🎉&lt;&#x2F;p&gt;
+&lt;p&gt;Bisher gab es eine gemeinsame Website für &lt;strong&gt;Mainframe&lt;&#x2F;strong&gt; und den Verein
+&lt;strong&gt;Kreativität trifft Technik e.V. (KtT)&lt;&#x2F;strong&gt; – nur einmal im dark mode und einmal
+im light mode. Allerdings sprechen Mainframe und Verein &lt;strong&gt;unterschiedliche Zielgruppen&lt;&#x2F;strong&gt; an
+und bisher konnten wir keiner davon wirklich gerecht werden. Deshalb gibt es
+nun eine &lt;strong&gt;Trennung&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Der KtT hat ab sofort eine eigene, unabhängige Website:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&quot;&gt;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Die Space-Seite ist unter &lt;code&gt;mainframe.io&lt;&#x2F;code&gt; zu finden:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;&quot;&gt;https:&#x2F;&#x2F;mainframe.io&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Auf der &lt;strong&gt;KtT-Seite&lt;&#x2F;strong&gt; finden sich Infos, die sich eher an die Allgemeinheit,
+sowie öffentliche Stellen und potenzielle Förderpartner richten. Zusätzlich
+liegen dort die Vereinssatzung und Informationen zu Mitgliedschaft im Verein
+sowie Spendenmöglichkeiten.&lt;&#x2F;p&gt;
+&lt;p&gt;Die &lt;strong&gt;Mainframe-Seite&lt;&#x2F;strong&gt; ist Anlaufstelle für alles, was im Space Tag für Tag passiert. Hier
+finden sich auch das IFS, Blogbeiträge aus Projekten im Space sowie der
+Terminkalender.&lt;&#x2F;p&gt;
+&lt;p&gt;Aber das ist natürlich noch nicht alles! Wir haben Inhalte grundlegend
+überarbeitet, neue Seiten hinzugefügt und Menüstrukturen verbessert.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;was-ist-neu-auf-der-mainframe-seite&quot;&gt;Was ist neu auf der Mainframe-Seite?&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Space Seite, &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;&quot;&gt;mainframe.io&lt;&#x2F;a&gt; gibt es weiterhin. Sie
+behält bewusst das grundsätzliche Design der alten Seite bei. Bei den Inhalten
+und bei der Technik hat sich allerdings eine Menge getan:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neue Menüführung und About-Seiten:&lt;&#x2F;strong&gt;
+Die Navigation haben wir vereinfacht, sodass der Terminkalender und die
+Blogposts schneller zu finden sind. Außerdem gibt es mehrere neue Seiten unter
+“Über uns”, die erklären, was der Space ist und wie man zu uns findet.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Neue Bereichs-Seiten:&lt;&#x2F;strong&gt;
+Die einzelnen Bereiche im Space sowie die Maschinen und Werkzeuge dort sind
+neu beschrieben. Dafür haben wir neue Fotos gemacht und Inhalte neu gruppiert.
+Einige Seiten können noch mehr im Detail beschrieben werden – das holen wir
+in den kommenden Wochen nach. Gerne mit deiner Hilfe!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;KtT-Inhalte verschoben:&lt;&#x2F;strong&gt;
+Die Inhalte zum Verein, wie Mitgliedschaft, Satzung und Sponsoren sind jetzt
+auf der neuen KtT-Seite zu finden.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Schnellere Ladezeiten&lt;&#x2F;strong&gt;:
+Bilder und Seiten – insbesondere das IFS – laden jetzt schneller, auch auf
+der mobilen Seite. Den Lade-Pacman wirst du hoffentlich nur noch selten sehen.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Technisches Fundament erneuert:&lt;&#x2F;strong&gt;
+Wir setzen jetzt einen moderneren Static-Site-Generator ein, der schneller und
+einfacher zu handhaben ist als der alte. Der neue Generator verwendet nun
+Markdown als Template-Sprache. Dafür mussten wir zwar alle Inhalte einzeln
+migrieren, aber das hat sich gelohnt: In Zukunft ist es deutlich einfacher,
+eigene Beiträge oder Änderungen beizusteuern.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgeräumt:&lt;&#x2F;strong&gt;
+Einige alte Funktionen, zum Beispiel aus dem alten Kalender, haben wir
+komplett entfernt.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wie-geht-s-weiter&quot;&gt;Wie geht’s weiter?&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Website lebt von den Inhalten dort! Egal ob du über ein Projekt berichten
+möchtest, oder einfach ein IFS-Bild teilen willst: Wir freuen uns auf deine
+Beiträge!&lt;&#x2F;p&gt;
+&lt;p&gt;Falls du dich mit GitHub oder dem IFS-Workflow (noch) nicht so wohl fühlst,
+sprich uns gerne direkt im Space an und wir helfen dir weiter.&lt;&#x2F;p&gt;
+&lt;p&gt;Also – schau dich direkt mal um:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;&quot;&gt;https:&#x2F;&#x2F;mainframe.io &lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&quot;&gt;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Ersti LAN 2023 ist vorbei</title>
+          <pubDate>Sun, 15 Oct 2023 19:53:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-10-review/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-10-review/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-10-review/">&lt;p&gt;Die Rückbauten sind noch im vollen Gange. Aber schon jetzt können wir sagen, es hat wieder eine Riesenfreude gemacht.
+Mit knapp 60 Teilnehmern der Uni Oldenburg flogen die Bits &amp;amp; Bytes durch die Datenkabel als gäbe es kein Morgen mehr.&lt;&#x2F;p&gt;
+&lt;p&gt;Das grundlegende Setup hat sich dabei zum &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;&quot;&gt;letzten Mal&lt;&#x2F;a&gt; nicht stark
+geändert. Weiterhin hilft der LAN-Cache Anfragen ins Internet teilweise lokal zu cachen und somit Internetbandbreite zu
+sparen.&lt;&#x2F;p&gt;
+&lt;p&gt;Neu dazugekommen in der diesmaligen Ausführung sind selbst gehostete Gamingserver für Minecraft und Factorio, ein eigenes
+Grafana Dashboard speziell für die LAN-Party und eine nochmals erhöhte Anzahl von Switchen um Netzwerkanbindung wirklich
+an jeder Ecke bereitstellen zu können.&lt;&#x2F;p&gt;
+&lt;p&gt;Hier ein kleiner Teaser an Impressionen. Weitere Bilder werden zeitnah im Album oder auf &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;images&#x2F;ifs&#x2F;&quot;&gt;IFS&lt;&#x2F;a&gt;
+zu sehen sein.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir hoffen, es hat gefallen!&lt;&#x2F;p&gt;
+&lt;p&gt;Die Planungen für die nächste LAN-Party des Sommersemester 2024 haben bereits begonnen.&lt;&#x2F;p&gt;
+&lt;p&gt;Alle “Käufer” des 0 € Planungstickets werden in den kommenden Tagen eine E-Mail zwecks einsammeln von Feedback erhalten. Wir
+bitten darum, sich kurz Zeit zu nehmen uns an dieser Stelle mit Rückmeldung zu unterstützen, damit wir in Zukunft noch
+besser werden können.&lt;&#x2F;p&gt;
+&lt;p&gt;Unser besonderer Dank gilt allen Helfern, sei es in noch so kleiner Funktion, die es möglich machten dieses Event auf
+die Beine zu stellen!&lt;&#x2F;p&gt;
+&lt;p&gt;Vielen Dank!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>LAN Party Infrastructure Review</title>
+          <pubDate>Sun, 16 Apr 2023 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-04-review/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-04-review/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2023/lan-party-2023-04-review/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;01-freiflaeche-overview.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Moin Moin,&lt;&#x2F;p&gt;
+&lt;p&gt;über das vergangene Wochenende gab es bei uns in Kooperation mit der Informatik Fachschaft der Uni Oldenburg wieder eine
+LAN Party für die Erstsemester.&lt;&#x2F;p&gt;
+&lt;p&gt;Spoiler vorweg; es gab zwischen 18:00 Uhr und 21:00 am Freitag Probleme mit unserem ISP (natürlich zum Beginn der LAN
+Party, Murphy lässt grüßen). Deswegen gibt es dort eine Lücke in der Auswertung. Ab 21:00 war das Problem gefixt und wir
+haben brauchbare Daten.&lt;&#x2F;p&gt;
+&lt;p&gt;Die grundlegende Infrastruktur sieht dabei wie folgt aus.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;02-intermapper-map.webm&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Wir betreiben einen Steam LAN Cache im Netzwerk um Downloadanfragen nach Spielen&#x2F;Updates oder dergleichen nicht nur
+effizient mit Wirespeed bedienen zu können, sondern entsprechend auch die begrenzte Internetkapazität freizuhalten für
+Anfragen welche nicht zwischengespeichert werden können.&lt;&#x2F;p&gt;
+&lt;p&gt;Alle Access Switche sind mit 10G am Core angebunden. Der LAN-Cache ist mit 40G am Core angebunden.&lt;&#x2F;p&gt;
+&lt;p&gt;Bei der Betrachtung des LAN-Cache würde man ein asymmetrisches Trafficverhalten erwarten. Die Idee des Caches ist es
+Content vorzuhalten und bei erneuter Anfrage direkt ausliefern zu können. Also ist hier in Relation zueinander mehr“Out“
+-going als “In”-coming wünschenswert.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;03-steamcache.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Das ist auch genau so eingetreten. Die Ausnahme am Samstagnachmittag war der händisch getriggerte Steam Prefill
+unsererseits.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Trafficprofile der Switche auf der Freifläche lesen sich wie folgt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;04-event-ff1.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;05-event-ff2.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Die Gesamtauslastung Internet sieht wie folgt aus.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;06-opnsense-wan.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nüchtern und ehrlich betrachtet haben wir weder den LAN-Cache noch die 10G Anbindung an den Access Switchen gebraucht.
+Aber das hat uns noch nie davon abgehalten coolen Krams mit Technik zu machen! ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Für WLAN Enthuasiasten dürften folgende Statistiken interessant sein.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;07-lounge-clients-5G.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;08-lounge-airtime-5G.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;09-lounge-clients-2G.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;10-lounge-airtime-2G.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Access Point in der Lounge hat sichtbar mit Beginn der LAN Party immer mehr Clients aufgenommen. Es freut uns, dass
+hier primär das 5 GHz aktiv ist und nur wenig bis keine Geräte sich in das legacy 2.4 GHz Band verbinden.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Die Sache mit dem ISP Problem&lt;&#x2F;h1&gt;
+&lt;p&gt;Wie bereits erwähnt hatten wir zu Beginn der LAN Party um ca. 18:00 Uhr Probleme mit der Internetleitung. Wir sind
+jetzt (Sonntagabend) mit der Diagnostik etwas weiter und glauben das Problem identifiziert, wenn auch noch nicht gelöst,
+zu haben.&lt;&#x2F;p&gt;
+&lt;p&gt;Während der LAN Party hatten wir plötzlich mit starken Paketverlusten ins Internet zu kämpfen. Da wir kurzzeitig einen
+alternativen ISP Uplink organisieren konnten, war ab 21:00 Uhr das Problem erst einmal umgangen. Ab dann konnten wir uns
+auf die Suche nach dem eigentlichen Problem begeben.&lt;&#x2F;p&gt;
+&lt;p&gt;Nach bisheriger Diagnostik macht das Modem vom Provider schlapp, sobald es mit viel Internettraffic umgehen muss und hat
+mit stark erhöhten Latenzen zu kämpfen.&lt;&#x2F;p&gt;
+&lt;p&gt;Unser Test sah vor, künstlich erzeugten Traffic durch Steam Prefill des LAN-Cache zu erzeugen. Während unser eigenes ISP
+Modem dies nicht gut verkraftete, deutliche Latenzen verzeichnete und sogar im Downloadspeed über Zeit merklich nach
+lies, war die Alternativleitung davon total unbeeindruckt und lieferte 500 Mbit über den gesamten Testzeitraum ohne
+erhöhte Latenzen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;11-switch-an-fritzbox.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;12-smokeping-fritzbox.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;13-switch-an-vodafone-station.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;14-smokeping-an-vodafone-station.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Jetzt heisst es, das defekte Modem auszutauschen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir bedanken uns bei allen Gästen, Teilnehmern, Helfern, insbesondere der Person die kurzzeitig für alternativen
+Internetuplink gesorgt hat. Wir hoffen, ihr hattet alle Spaß. Wir hatten ihn. Und haben mal wieder eine Menge gelernt.
+Außerdem freuen wir uns auf das nächste Event im Oktober.&lt;&#x2F;p&gt;
+&lt;p&gt;Nerdige Grüße,
+Mainframe Oldenburg&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-1&quot;&gt;Benutzte Tools&lt;&#x2F;h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Intermapper&lt;&#x2F;li&gt;
+&lt;li&gt;LibreNMS&lt;&#x2F;li&gt;
+&lt;li&gt;SmokePing&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</description>
+      </item>
+      <item>
+          <title>Wir Hier Jetzt</title>
+          <pubDate>Mon, 20 Feb 2023 23:23:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2023/wir-hier-jetzt/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2023/wir-hier-jetzt/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2023/wir-hier-jetzt/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;wir-hier-jetzt&#x2F;img.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Jetzt für den Mainframe bzw. KtT e.V. abstimmen!&lt;&#x2F;p&gt;
+&lt;p&gt;Wir haben uns bei der Aktion „Wir. Hier. Jetzt. Gemeinsam Energie sparen!“ der EWE beworben, um den Konferenzraum und
+die Elektronikwerkstatt vor allem für unser CoderDojo energieeffizienter nutzen zu können.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Jury hat uns unter die ersten 10 von über 80 Projekten gewählt und jetzt geht es per Online-Abstimmung weiter: Wir
+brauchen bis Ende Februar genug Stimmen, um mindestens unter die ersten 5 Projekte zu kommen - und idealerweise
+natürlich noch weiter nach oben ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Bitte stimmt
+auf &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20230215000000*&#x2F;https:&#x2F;&#x2F;wir-hier-jetzt.com&#x2F;kreativitat-trifft-technik-e-v&#x2F;&quot;&gt;https:&#x2F;&#x2F;wir-hier-jetzt.com&#x2F;kreativitat-trifft-technik-e-v&#x2F;&lt;&#x2F;a&gt;
+für uns ab!&lt;&#x2F;p&gt;
+&lt;p&gt;Gewinnen und Energie sparen kann bei der Aktion nicht nur der Verein bzw. Space! Wer abstimmt, kann Preise wie smarte
+Heizkörperthermostate und LED-Lampen gewinnen und zu Hause Energie sparen!&lt;&#x2F;p&gt;
+&lt;p&gt;Abstimmen und Weitersagen! DANKE!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Mitgliederversammlung 30.12.2022</title>
+          <pubDate>Sun, 01 Jan 2023 12:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/">&lt;p&gt;Das Ende von 2022 näherte sich und wir haben noch schnell eine Mitgliederversammlung gemacht. OK, so schnell war es dann
+doch nicht, wie sonst auch haben wir ca. 2 Stunden gebraucht. Trotzdem waren alle entspannt und fröhlich und am Ende
+wurde die Fritteuse angeworfen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;media&#x2F;ifs-images&#x2F;1243.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Vorstand wurde wieder gewählt, im Detail:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patrick Günther&lt;&#x2F;li&gt;
+&lt;li&gt;Lars Hüsemann&lt;&#x2F;li&gt;
+&lt;li&gt;André Schäfer&lt;&#x2F;li&gt;
+&lt;li&gt;Lars Hoffmann&lt;&#x2F;li&gt;
+&lt;li&gt;Christian Beyer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;mit den Beisitzern:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Michael Olsen (Radstelle)&lt;&#x2F;li&gt;
+&lt;li&gt;Janik Wilder (Lasercutter)&lt;&#x2F;li&gt;
+&lt;li&gt;Nils Wollenteit (Schließfachmanager)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Die genauen Details könnt ihr in Protokoll nachlesen (sobald es da ist).&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Lasercutter lebt wieder</title>
+          <pubDate>Tue, 13 Jul 2021 20:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2021/laser-death/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2021/laser-death/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2021/laser-death/">&lt;p&gt;&lt;strong&gt;Update:&lt;&#x2F;strong&gt; Es wurde eine neue Röhre beschafft und der Laser ist
+wieder funktionstüchtig!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Moin,&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;heute ist leider die Röhre unseres Lasercutters gestorben. Ursache war wohl eine Verstopfung im Kühlsystem, welche in
+Verbindung mit einem größeren Laserjob der Röhre den Rest gegeben hat. Bis auf Weiteres kann jedenfalls nicht mehr im
+Space gelasert werden.&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Gruß,
+das Lasercutterteam&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Corona Update 13.06.2021</title>
+          <pubDate>Sun, 13 Jun 2021 15:42:00 +0000</pubDate>
+          <author>Vorstand</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2021/covid19-4/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2021/covid19-4/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2021/covid19-4/">&lt;p&gt;Liebe Mitglieder und andere Spaceler,&lt;&#x2F;p&gt;
+&lt;p&gt;es freut uns extrem, den Space nach 222 Tagen nun endlich wieder regulär öffnen
+zu können. Wir haben dafür ein für uns passendes Hygienekonzept entwickelt:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dump.ktt-ol.de&#x2F;Corona-Lockerung.html&quot;&gt;https:&#x2F;&#x2F;coronaregeln.ktt-ol.de&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Space kann, darf und soll damit wieder täglich öffnen. Damit das so bleibt,
+hier die wichtigsten Regeln in Kürze:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Beim Betreten des Space den QR-Code der Coronawarnapp scannen oder
+notfalls einen Kontaktverfolgungszettel ausfüllen&lt;&#x2F;li&gt;
+&lt;li&gt;Medizinische Maske tragen, solange kein Sitzplatz eingenommen ist&lt;&#x2F;li&gt;
+&lt;li&gt;1,5 m Abstand zu anderen Personen halten&lt;&#x2F;li&gt;
+&lt;li&gt;Beim Betreten des Space den QR-Code scannen! :)&lt;&#x2F;li&gt;
+&lt;li&gt;Beim Verlassen in der App auschecken bzw. den vollständig ausgefüllten Zettel in den dafür bereithängenden Kasten
+stecken.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Lasst uns den Space wieder hübsch machen und mit Leben füllen!&lt;&#x2F;p&gt;
+&lt;p&gt;Gruß,&lt;&#x2F;p&gt;
+&lt;p&gt;Vorstand KtT e.V.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Corona Update 02.11.2020</title>
+          <pubDate>Mon, 02 Nov 2020 20:42:00 +0000</pubDate>
+          <author>Vorstand</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-3/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-3/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-3/">&lt;p&gt;Die Liebe Nutzerinnen und Nutzer des Mainframe bzw. der Räumlichkeiten des KtT e.V.,&lt;&#x2F;p&gt;
+&lt;p&gt;die Räumlichkeiten des KtT bleiben ab dem 02.11.2020 bis auf Weiteres für die reguläre Nutzung geschlossen.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Abholung von Eigentum incl. Dauerleihgaben ist in Absprache mit dem Vorstand und nach etwas Vorlauf möglich, die
+Ausleihe von Werkzeugen und Maschinen in Absprache mit den jeweiligen Arbeitsgruppen &#x2F; Mitnutzenden und dem Vorstand
+ebenfalls.&lt;&#x2F;p&gt;
+&lt;p&gt;Für die Nutzung von nicht so einfach ausleihbaren Maschinen (wie z.B. des Lasercutters) finden wir eine Lösung, sprecht
+uns bitte an.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir halten euch weiterhin unter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dump.ktt-ol.de&#x2F;Corona-Lockerung.html&quot;&gt;Corona Infos&lt;&#x2F;a&gt; und über unsere
+Mailingliste auf dem Laufenden.&lt;&#x2F;p&gt;
+&lt;p&gt;Bleibt gesund!&lt;&#x2F;p&gt;
+&lt;p&gt;Euer Vorstand&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Corona Update 13.07.2020</title>
+          <pubDate>Mon, 13 Jul 2020 20:42:00 +0000</pubDate>
+          <author>Vorstand</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-2/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-2/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-2/">&lt;p&gt;Die Liebe Nutzerinnen und Nutzer des Mainframe bzw. der Räumlichkeiten des KtT e.V.,&lt;&#x2F;p&gt;
+&lt;p&gt;es freut uns extremst, dass wir den Space ab dem kommenden Mittwoch (wenn auch mit Einschränkungen) wieder öffnen
+können!&lt;&#x2F;p&gt;
+&lt;p&gt;Details: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;dump.ktt-ol.de&#x2F;Corona-Lockerung.html&quot;&gt;Corona Regelungen&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Wir können derzeit noch nicht absehen, wie schnell sich die ja durch Keyholder-Anwesenheit begrenzten Zeiten wieder in
+unseren gewohnten Bahnen eingependelt haben, also behaltet anfangs besser besonders den Space-Status im Auge.&lt;&#x2F;p&gt;
+&lt;p&gt;Gruß,
+der Vorstand&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Covid-19 Info</title>
+          <pubDate>Fri, 13 Mar 2020 20:42:00 +0000</pubDate>
+          <author>Vorstand</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-1/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-1/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2020/covid19-1/">&lt;h1 id=&quot;update-2020-03-19-13-00-42&quot;&gt;UPDATE (2020-03-19 13:00:42):&lt;&#x2F;h1&gt;
+&lt;p&gt;Die Liebe Nutzerinnen und Nutzer des Mainframe bzw. der Räumlichkeiten des KtT e.V.,&lt;&#x2F;p&gt;
+&lt;p&gt;die Stadt Oldenburg hat eine Allgemeinverfügung zur Eindämmung der Corona-Epidemie erlassen. Darin werden u.a.
+„Zusammenkünfte in Vereinen“ verboten, was bedeutet, &lt;em&gt;&lt;strong&gt;dass der Space geschlossen bleiben muss&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;. Dies gilt
+&lt;em&gt;&lt;strong&gt;bis einschließlich 18. April 2020&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir werden weiterhin &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;md.mainframe.io&#x2F;CoronaInfo&quot;&gt;das Pad&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Gruß,
+der Vorstand&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;stand-2020-03-13-20-42-00&quot;&gt;Stand (2020-03-13 20:42:00):&lt;&#x2F;h1&gt;
+&lt;p&gt;Hallo zusammen!&lt;&#x2F;p&gt;
+&lt;p&gt;Niemandem wird entgangen sein, dass die Ausbreitung der Corona-Pandemie verlangsamt werden sollte und daher bundesweit
+alle möglichen Veranstaltungen abgesagt werden. Ab Montag bleiben alle Schulen und Kindertagesstätten geschlossen, das
+EasterHegg ist abgesagt.&lt;&#x2F;p&gt;
+&lt;p&gt;Auch „kleinere“ Stätten müssen sich überlegen, wie sie reagieren. Das Computermuseum schließt ab sofort bis mindestens
+zum 19.04. und viele andere schränken ihre Aktivitäten auch ein.&lt;&#x2F;p&gt;
+&lt;p&gt;Für den Space haben wir Folgendes beschlossen (bei Änderungen aktualisierte Details siehe unten im „md“):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Der Space bleibt geöffnet, Risiko-Kandidaten bleiben bitte zu Hause&lt;&#x2F;li&gt;
+&lt;li&gt;Große Veranstaltungen (CoderDojo, SmartHome-Treffen) fallen aus&lt;&#x2F;li&gt;
+&lt;li&gt;Plenen finden statt&lt;&#x2F;li&gt;
+&lt;li&gt;kleinere Gruppen entscheiden selbst&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Den letzten Stand fassen wir auf der folgenden Seite zusammen und
+aktualisieren bei Bedarf, dort können sich auch die kleineren Gruppen
+selbst eintragen (nach Account-Erstellung):&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;md.mainframe.io&#x2F;CoronaInfo&quot;&gt;Corona Info&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Was war, was wird...</title>
+          <pubDate>Tue, 01 Jan 2019 22:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2019/was-war/">&lt;p&gt;Das hier ist eigentlich kein Event. Wir wurden aber darauf hingewiesen, dass es auf unserer Homepage auf den ersten
+Blick danach aussieht, als würde hier nichts passieren. Das Gegenteil ist der Fall und da wir es in absehbarer Zeit wohl
+nicht auf die Reihe bekommen werden, mehr Events anzulegen, gibt es jetzt diesen Dummy.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Space war 2018 an 363 Tagen geöffnet. Die verbliebenen zwei Tage konnten wir leider nicht öffnen, weil die
+Gebäude-Tür defekt war. Im Schnitt waren pro Tag 10,92 Stunden geöffnet, unsere “mindestens 19 Uhr bis Mitternacht”
+haben wir also deutlich überschritten ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Auch 2019 werden wieder jeden Tag Dinge im Space passieren, also einfach vorbeikommen, wenn
+der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;status.mainframe.io&#x2F;&quot;&gt;Status-Seite&lt;&#x2F;a&gt; auf “open” steht. Geplante Treffen der Unter-Gruppen
+stehen im &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;calendar&#x2F;&quot;&gt;Kalender&lt;&#x2F;a&gt;“ und werden auf der &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;about&#x2F;communication&#x2F;&quot;&gt;Mailingliste&lt;&#x2F;a&gt; angekündigt.
+Einen guten Eindruck der Aktivitäten geben auch unsere &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;images&#x2F;ifs&#x2F;&quot;&gt;Images from Space&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;tl-dr&quot;&gt;tl;dr;&lt;&#x2F;h1&gt;
+&lt;p&gt;Bitte nicht von geringer Event-Eintrags-Aktivität auf der Homepage verunsichern lassen ;)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Workshop-Wochenende zum Abschluss von Fabulé</title>
+          <pubDate>Thu, 02 Feb 2017 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2017/abschluss-fabule/">&lt;p&gt;Am 4. und 5. Februar beenden wir das von der Metropolregion Nordwest
+geförderte Projekt Fabulé mit einem großen Workshop-Wochenende.&lt;&#x2F;p&gt;
+&lt;p&gt;In praktisch allen Bereichen vom Lasercutter über den 3D-Druck und die
+Elektronik-Werkstatt bis zur Schnittstelle finden Workshops statt und werden
+gemeinsam mit den Teilnehmenden (wie bei einem BarCamp) auf die verfügbaren
+Zeitslots verteilt.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Bau und Nutzung von 3D-Druckern&lt;&#x2F;li&gt;
+&lt;li&gt;Bau und Nutzung den Desktop-Fräsen&lt;&#x2F;li&gt;
+&lt;li&gt;3D-Konstruktion und Design für 3D-Drucker&lt;&#x2F;li&gt;
+&lt;li&gt;Textilveredelung mit Siebdruck&lt;&#x2F;li&gt;
+&lt;li&gt;Textilveredelung mit Folienplotter&lt;&#x2F;li&gt;
+&lt;li&gt;Mit dem neuen Calliope mini die digitale Welt mitgestalten&lt;&#x2F;li&gt;
+&lt;li&gt;ESP8266 – Low-Cost Mikrocontroller für Hausautomatisierung und das ‚Internet der Dinge‘&lt;&#x2F;li&gt;
+&lt;li&gt;Löten Lernen für junge und nicht mehr ganz so junge Menschen (ca. 11-99 Jahre, gern in Kombination alt+jung ;) ggf. nur in Block A [Sa 10:30-12:00 Uhr]&lt;&#x2F;li&gt;
+&lt;li&gt;weitere Themen willkommen!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Treffen ohne Namen</title>
+          <pubDate>Sun, 06 Dec 2015 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2015/treffen-ohne-namen-2015-12/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2015/treffen-ohne-namen-2015-12/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2015/treffen-ohne-namen-2015-12/">&lt;h1 id=&quot;mietvertrag&quot;&gt;Mietvertrag&lt;&#x2F;h1&gt;
+&lt;p&gt;Nach einigen intensiven Vertragsverhandlungen in den letzten Wochen haben
+Patrick (MarvinGS) und Thomas (tmp) es geschafft direkt vor dem Treffen, ohne
+Namen den Mietvertrag vom Vermieter in Bremen abzuholen und so zunächst die
+freudige Kunde auf dem Treffen zu überbringen:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;treffen-ohne-namen&#x2F;kttmietvertraglarge.gif&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Vielen, vielen, vielen (!) Dank vom BGB-Vorstand an alle Beteiligten. Wer nicht dabei war, kann sich nicht vorstellen, wie viel Zeit von uns und anderen da rein geflossen ist.&lt;&#x2F;p&gt;
+&lt;p&gt;Besonders hervorheben möchten wir unseren Experten Thomas alias tmp, der über einen langen Zeitraum Unmengen an Zeit in BGB-Vorstands-Beratung, Recherchen, Formulierungen und immer wieder neue Varianten und deren verständliche Darreichung investiert hat. Außerdem war er zum entscheidenden Termin mit Patrick beim Vermieter in Bremen, um all unsere Punkte und Wünsche zu erklären und zu verhandeln.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Großbaustellen-Pause&lt;&#x2F;h1&gt;
+&lt;p&gt;Mit großer Mehrheit hat die Gruppe von Treffen ohne Namen für eine Pause bei der Durchführung von größeren Projekten abgestimmt. Ziel ist die Weihnachtszeit und die darauf folgenden Monate etwas entspannter anzugehen und diverse kleine Projekte voranzutreiben. Ausdrücklich nicht gestoppt werden die Planungen für unsere Großbaustellen, sowie das Entfernen der Küche aus der E-Werkstatt.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-1&quot;&gt;Not-Küche vs. E-Werkstatt&lt;&#x2F;h1&gt;
+&lt;p&gt;Wie bereits erwähnt soll als Nächstes die E-Werkstatt von der temporären Küche befreit werden. Hierzu soll an der Position der neuen Küche zunächst ein weiteres Provisorium geschaffen werden, da der Aufbau der Zielküche noch weitere Abhängigkeiten hat.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-2&quot;&gt;Alpha(s), Vorträge &amp;amp; Hackathons&lt;&#x2F;h1&gt;
+&lt;p&gt;Ein weiteres Ergebnis des Treffens sind verschiedene, früher bereits durchgeführte Aktionen, die wiederbelebt werden sollen. Betroffen sind hiervon drei Dinge:&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-3&quot;&gt;Alpha&lt;&#x2F;h1&gt;
+&lt;p&gt;Um olt herum findet sich eine Gruppe, welche eine weitere Alpha durchführen möchte. Wer sich beteiligen möchte, meldet sich am besten bei olt.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-4&quot;&gt;Hackathon&lt;&#x2F;h1&gt;
+&lt;p&gt;Eine weitere Gruppe um mgr würde im Januar gerne einen Hackathon im Space veranstalten. Pläne zum Hackathon gibt es im &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;Hackathon&quot;&gt;Hackathon Pad&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-5&quot;&gt;Vortragsprogramm&lt;&#x2F;h1&gt;
+&lt;p&gt;sre hat vorgeschlagen unser Vortragsprogramm wiederzubeleben. Details hierzu
+sind noch in Arbeit, anvisiert ist jedoch im Januar zu starten (vermutlich
+mit dem ersten Vortrag während der Alpha&#x2F;des Hackathons).&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Geschenke von Watterott</title>
+          <pubDate>Sat, 20 Dec 2014 20:23:00 +0000</pubDate>
+          <author>Vorstand</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2014/danke-watterott/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2014/danke-watterott/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2014/danke-watterott/">&lt;p&gt;Wir bedanken uns für das Paket von &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;watterott.com&quot;&gt;Watterott electronic&lt;&#x2F;a&gt;:
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;danke-watterott&#x2F;watterott_20141219_205236.jpg&quot; alt=&quot;Paket für uns&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Im Rahmen der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.facebook.com&#x2F;watterott.electronic&#x2F;posts&#x2F;938553056176369&quot;&gt;jährlichen Aufräumaktion&lt;&#x2F;a&gt; konnten
+sich Hackspaces&#x2F;Fablabs dafür bewerben. Wir haben das getan und bekamen Post.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Wir sind Verein des Monats!</title>
+          <pubDate>Mon, 09 Dec 2013 20:37:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2013/wir-sind-verein-des-monats/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2013/wir-sind-verein-des-monats/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2013/wir-sind-verein-des-monats/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Wir_sind_Verein_des_Monats&#x2F;2013-11-23_16-19-16.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Daher haben wir am 23. November 2013 auf den Weg in das Einkaufszentrum gemacht, um den Preis entgegenzunehmen und uns
+einen ganzen Tag lang den Besuchern zu präsentieren. Ein großer Messestand, Tische und Stühle wurden uns gestellt und
+wir durften alles mit Leben füllen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir haben dabei den halben Space mitgenommen und neben vielen Beispielen auch 3D-Drucker, Styroschneider und die
+CNC-Fräse eingepackt, um live ein wenig vom Treiben im Space zu zeigen. Viele begeisterte Helfer vom Verein haben in
+bester Lage direkt am Springbrunnen den Mainframe präsentiert und mit den kleinen Besuchern Klackerlaken gebastelt.
+Andere hörten interessiert zu, wie einzelne Mitglieder den Druck von dreidimensionalen Objekten oder die Idee hinter dem
+Freifunk Projekt erklärten.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Wir_sind_Verein_des_Monats&#x2F;2013-11-23_15-48-09.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Wir_sind_Verein_des_Monats&#x2F;2013-11-23_16-21-25.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dabei war unter anderem&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;der Lasercutter&lt;&#x2F;li&gt;
+&lt;li&gt;die Fräse&lt;&#x2F;li&gt;
+&lt;li&gt;der Styro-Schneider&lt;&#x2F;li&gt;
+&lt;li&gt;der 3D-Drucker&lt;&#x2F;li&gt;
+&lt;li&gt;eine Lötecke&lt;&#x2F;li&gt;
+&lt;li&gt;der große LED-Cube&lt;&#x2F;li&gt;
+&lt;li&gt;und viel Kleinkram&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Vieles davon könnt ihr im dazugehörigen Fotoalbum sehen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir hatten im Vorfeld weniger damit gerechnet, dass wir viele Neumitglieder direkt erreichen. Viel mehr war das Ziel,
+unsere Bekanntheit bei der Allgemeinheit zu erhöhen und dass so Leute im Bekannten- und Kollegenkreis über uns
+informiert werden - und genau das ist passiert. Gleich am Dienstag nach der Aktion kam der erste Hobbytüftler vorbei,
+der nicht selbst bei uns am Stand war, sondern von einem Famila-Besucher eine Kopie (!) unseres Flyers bekommen hatte ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Darüber hinaus gab es über den ganzen Tag und besonders zum Abend hin viele Gespräche mit Menschen, die wir bestimmt
+bald im Space begrüßen können, weil sie sich für eins unserer Lieblingsthemen interessieren und gar nicht wussten, dass
+es eine Gemeinschaft wie uns gibt, die Raum, Werkzeug, Maschinen und Wissen teilt.&lt;&#x2F;p&gt;
+&lt;p&gt;Am Abend waren wir alle mehr als platt, aber glücklich. Und ab sofort drücken wir immer mindestens drei Flyer in die
+Hand, damit niemand Kopien machen muss ;)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Sommer im Quartier</title>
+          <pubDate>Sun, 03 Jun 2012 12:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/sommer-im-quartier/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/sommer-im-quartier/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/sommer-im-quartier/">&lt;p&gt;Am 2. und 3. Juni fand rund um das quARTier die erste von zwei Abschiedsfeiern statt, der „Sommer im Quartier“. Leider
+wird das Gebäude, das bislang auch den Beta-Space beherbergte, bald abgerissen. Somit war dies die letzte Chance, alle
+Projekte die im und um das quARTier herum entstanden sind, noch einmal der Öffentlichkeit zu präsentieren. Auch wir
+waren natürlich dabei.&lt;&#x2F;p&gt;
+&lt;p&gt;Nach einigen Wochen der Vorbereitung konnten wir in unserer Werkstatt eine museumsreife Ausstellung mit
+Beschreibungstexten und allem, was dazu gehört, präsentieren. Alle Projekte, die in der letzten Zeit im Space entstanden
+sind, konnten einer breiten Öffentlichkeit präsentiert werden. Dabei galt: Anfassen erlaubt. Einer unserer 3D-Drucker
+hat live gedruckt, am Styropor-Schneider konnten sich Wunschfiguren ausgeschnitten werden und an über 30 Jahren alten
+Terminals konnte Snake gespielt werden. Daneben war auch unser grüner Daumen zu bewundern: Unsere Windowfarm stieß auf
+breites Interesse. Gleiches gilt für die inzwischen diversen LED-Spielereien, die in den letzten Wochen zusammengelötet
+worden sind. Und natürlich auch unser größtes „Spielzeug“, unsere selbstgebaute CNC-Fräse fand nicht selten bewundernde
+Blicke.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;sommer-im-quartier&#x2F;img1.jpg&quot; alt=&quot;Kinder an unseren Terminals&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Trotz Regen fanden an den vier Tagen gut 500 Interessierte über eine steile Treppe den Weg in den Beta-Space. Viele
+dieser Besucher waren eher künstlerisch als technisch interessiert, waren aber dennoch schnell von unseren Exponaten und
+von unserer Arbeit begeistert. Denn Styroporschneider, CNC-Fräse und 3D-Drucker sowie vor allem die auf diesen Maschinen
+live entstandenen „Ponies“, „Hello Kitty“-Figuren und die dazu passenden Prinzessinnenschlösser konnten schließlich auch
+künstlerisch überzeugen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;sommer-im-quartier&#x2F;img2.jpg&quot; alt=&quot;Kinder beim Klackerlaken bauen&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der größte Publikumsmagnet war aber sicher die Klackerlaken-Aktion am Samstag. Wir hatten gemeinsam mit der Kulturetage
+Kinder eingeladen, mit uns kleine Plagegeister aus Club-Mate-Deckeln, Knopfzellen und Vibrationsmotoren zu bauen und
+diese in einem Rennen gegeneinander antreten zu lassen. Dass wir dabei mit einem solch großen Andrang von Kindern und
+Eltern konfrontiert werden würden, hätten wir uns nie träumen lassen. Sogar die Großeltern wollten Klackerlaken bauen.
+Nach vier Stunden waren fast alle Vibrationsmotoren, die wir freundlicherweise von ENDRICH geschenkt bekommen haben, und
+alle Batterien verbaut, unser Betreuerteam völlig geschafft und viele sehr interessante Klackerlaken entstanden.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;sommer-im-quartier&#x2F;img3.jpg&quot; alt=&quot;einige fertige Klackerlaken&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Bei allem positiven Zuspruch müssen wir uns jetzt trotzdem damit arrangieren, dass der Beta-Space nicht mehr lange
+Bestand haben wird. Wir werden zeitnah eine neue Bleibe finden müssen. Denn der Abrisstermin für das quARTier rückt Tag
+für Tag näher. Aber die Klackerlaken-Aktion und der große Erfolg der Ausstellung haben uns für diese Herausforderung
+neue Kraft gegeben. Vor allem, da es bereits während der Veranstaltung die ersten Gespräche über Optionen für einen
+neuen Hackspace gab.&lt;&#x2F;p&gt;
+&lt;p&gt;Last but not least möchten wir uns natürlich bei der Kulturetage und vor allem bei Susann Mertineit für die tolle
+Veranstaltung trotz Regens bedanken. Wie gewohnt konnten wir uns während der ganzen vier Tage stets ihrer
+unbürokratischen und freundlichen Unterstützung sicher sein. Genau mit dieser Haltung hat sie uns die gesamte Zeit, in
+der wir im quARTier unterkommen durften, stets begleitet. Wir sagen an dieser Stelle auch dafür laut „Danke!“. Wir
+hoffen unser nächster „Vermieter“ wird genauso entspannt und begeisterungsfähig sein.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=CtIyikYPLdU&quot;&gt;Video&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Vortrag: Der Arabische Frühling … und was bei uns angekommen ist</title>
+          <pubDate>Thu, 16 Feb 2012 19:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-01/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-01/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-01/">&lt;h1 id=&quot;vortrag-der-arabische-fruhling-und-was-bei-uns-angekommen-ist&quot;&gt;Vortrag: Der Arabische Frühling … und was bei uns angekommen ist&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Oldenburger Verein organisiert Veranstaltungsreihe zum Leben in der vernetzten Gesellschaft&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Vortrag am 29.02.2012 um 19:00 Uhr im Oldenburgischen Landtag mit dem Titel „Arabischer Frühling… und was bei uns
+angekommen ist.“ – Referent: Stephan Urbach&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unter der Überschrift „Universal. Sozial. Digital! – Veranstaltungsreihe zum Leben in der vernetzten Gesellschaft” lädt
+der Oldenburger Verein Kreativität trifft Technik e.V. hochkarätige Experten aus den Bereichen Technologie, Politik und
+Kultur nach Oldenburg ein, um über Chancen, Möglichkeiten und Gefahren der Nutzung moderner Technik zu sprechen.&lt;&#x2F;p&gt;
+&lt;p&gt;„Arabischer Frühling … und was bei uns angekommen ist.“&lt;&#x2F;p&gt;
+&lt;p&gt;Nach dem großen Erfolg der Auftaktveranstaltung im vergangenen November. Konnten wir für den zweiten Vortrag Herrn
+Stephan Urbach gewinnen?&lt;&#x2F;p&gt;
+&lt;p&gt;Herr Urbach ist Vorstandsmitglied des Vereins 12 Miles Ahead und Aktivist im Telecomix-Cluster, das im letzten Jahr vor
+allem durch die Bemühungen während des „Arabischen Frühlings” Bekanntheit erlangt hat. In dieser Zeit ermöglichten sie
+der Bevölkerung und Journalisten in den Ländern Nordafrikas und des Nahen Ostens einen (unzensierten) Zugang zum
+Internet.&lt;&#x2F;p&gt;
+&lt;p&gt;Herr Urbach wird in seinem Vortrag in Oldenburg über den Arabischen Frühling und die Rolle der (digitalen) Medien
+sprechen: „Der arabische Frühling ist in vollem Gange – in Europa sind wir hautnah dabei, einige sogar näher, als ihnen
+lieb ist. Das Aufbegehren der Jugend gegen verkrustete Systeme lässt auch uns die Flammen der Revolution förmlich
+spüren.“, so Urbach.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Vortrag soll insbesondere aufzeigen, inwieweit die arabischen Revolutionsbewegungen nicht zuletzt aufgrund der
+internetgestützten Kommunikation Einfluss auf uns alle hat.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Veranstaltung findet am 29.02.2012 um 19:00 Uhr im Oldenburgischen Landtag statt. Nach dem Vortrag lädt der Verein
+Kreativität trifft Technik e.V. zu einem ungezwungenen Get-together ein. Dabei besteht zum einen die Möglichkeit, sich
+mit dem Referenten auszutauschen. Zum anderen stellt sich der Verein Kreativität trifft Technik e.V. vor. Der Eintritt
+zur Veranstaltung sowie die Teilnahme am Get-together sind kostenlos.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Verein Kreativität trifft Technik e.V. freut sich auf den Besuch von Medienvertretern.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V. Mitte vergangenen Jahres haben sich etwa 30 Oldenburger zum
+gemeinnützigen Verein Kreativität trifft Technik e.V. mit dem Ziel zusammengeschlossen, einen Treffpunkt zum offenen
+Austausch von technikaffinen und kreativ schaffenden Menschen in Oldenburg aufzubauen. Damit möchte der Verein zu einem
+Inkubator für neue kreative technische Projekte in der ganzen Region werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Darüber hinaus sollen aktuelle wissenschaftliche, technische und soziale Themen aktiv in die breite Öffentlichkeit
+getragen werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Textnutzung honorarfrei, elektronisches Belegexemplar bzw. Link per E-Mail erbeten.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ankündigung „Der Arabische Frühling … und was bei uns angekommen ist”</title>
+          <pubDate>Wed, 08 Feb 2012 12:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-02/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-02/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/2012-02/">&lt;p&gt;&lt;strong&gt;„Vortrag: Der Arabische Frühling … und was bei uns angekommen ist“&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Oldenburger Verein organisiert Veranstaltungsreihe zum
+Leben in der vernetzten Gesellschaft&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Vortrag am 29.02.2012 um 19:00 Uhr im Oldenburgischen
+Landtag mit dem Titel „Arabischer Frühling… und was bei uns
+angekommen ist.“ – Referent: Stephan Urbach – Eintritt frei, um
+Spenden wird gebeten&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unter der Überschrift „Universal. Sozial. Digital! – Veranstaltungsreihe zum Leben in der vernetzten Gesellschaft“ lädt
+der Oldenburger Verein Kreativität trifft Technik e.V. hochkarätige Experten aus den Bereichen Technologie, Politik und
+Kultur nach Oldenburg ein, um über Chancen, Möglichkeiten und Gefahren der Nutzung moderner Technik zu sprechen.&lt;&#x2F;p&gt;
+&lt;p&gt;„Arabischer Frühling… und was bei uns angekommen ist.“&lt;&#x2F;p&gt;
+&lt;p&gt;Nach dem großen Erfolg der Auftaktveranstaltung im vergangenen November. Konnten wir für den zweiten Vortrag Herrn
+Stephan Urbach gewinnen.&lt;&#x2F;p&gt;
+&lt;p&gt;Herr Urbach ist Vorstandsmitglied des Vereins 12 Miles Ahead und Aktivist im Telecomix-Cluster, das im letzten Jahr vor
+allem durch die Bemühungen während des „Arabischen Frühlings” Bekanntheit erlangt hat. In dieser Zeit ermöglichten sie
+der Bevölkerung und Journalisten in den Ländern Nordafrikas und des Nahen Ostens einen (unzensierten) Zugang zum
+Internet.&lt;&#x2F;p&gt;
+&lt;p&gt;Herr Urbach wird in seinem Vortrag die Rolle von Telecomix bei der Revolution in Ägypten und anderen Ländern
+beschreiben. Er wird vor allem über die Bedeutung von unzensierten Zugang zu Informationen für die Demokratie sprechen
+und dabei Bezug auf seine Arbeit bei Telecomix im Rahmen der Revolutionen im Nahen Osten nehmen:&lt;&#x2F;p&gt;
+&lt;p&gt;“Der arabische Frühling ist in vollem Gange – in Europa sind wir hautnah dabei, einige sogar näher, als ihnen lieb ist.
+Das Aufbegehren der Jugend gegen verkrustete Systeme lässt auch uns die Flammen der Revolution förmlich spüren.” so
+Urbach.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Veranstaltung findet am 29.02.2012 um 19:00 Uhr im Oldenburgischen Landtag statt. Nach dem Vortrag lädt der Verein
+Kreativität trifft Technik e.V. zu einem ungezwungenen Get Together ein. Dabei besteht zum einen die Möglichkeit, sich
+mit dem Referenten auszutauschen. Zum anderen stellt sich der Verein Kreativität trifft Technik e.V. vor. Der Eintritt
+zur Veranstaltung sowie die Teilnahme am Get Together sind kostenlos, um Spenden wird gebeten.&lt;&#x2F;p&gt;
+&lt;p&gt;Weitere Informationen, herunterladbare Flyer, eine
+Anfahrtsskizze sowie eine Beschreibung der Parkmöglichkeiten
+finden Sie unter&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;blog.kreativitaet-trifft-technik.de&#x2F;universal-sozial-digital&#x2F;&quot;&gt;http:&#x2F;&#x2F;blog.kreativitaet-trifft-technik.de&#x2F;universal-sozial-digital&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Verein Kreativität trifft Technik e.V. freut sich auf den Besuch von Medienvertretern.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V.&lt;&#x2F;p&gt;
+&lt;p&gt;Mitte vergangenen Jahres haben sich etwa 30 Oldenburger zum gemeinnützigen Verein Kreativität trifft Technik e.V. mit
+dem Ziel zusammengeschlossen, einen Treffpunkt zum offenen Austausch von technikaffinen und kreativschaffenden Menschen
+in Oldenburg aufzubauen. Damit möchte der Verein zu einem Inkubator für neue kreative technische Projekte in der ganzen
+Region werden. Darüber hinaus sollen aktuelle wissenschaftliche, technische und soziale Themen aktiv in die breite
+Öffentlichkeit getragen werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Auszug aus der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;stephanurbach.de&#x2F;medienundvortraege&quot;&gt;Pressemappe&lt;&#x2F;a&gt; von Stephan Urbach:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.arte.tv&#x2F;de&#x2F;Telecomix-gegen-Baschar-al-Assad&#x2F;6300170.html&quot;&gt;Telecomix gegen Baschar al-Assad&lt;&#x2F;a&gt;, arte.tv
+v.30.12.2011&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.arte.tv&#x2F;de&#x2F;Der-Krieg-um-das-Internet-_E2_80_93-Hacker-als-Revolutionshelfer&#x2F;6299208.html&quot;&gt;Hacker als Revolutionshelfer&lt;&#x2F;a&gt;,
+arte.tv. v. 30.12.2011&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.bbc.co.uk&#x2F;blogs&#x2F;outriders&#x2F;2011&#x2F;12&#x2F;turing_to_telecomix.shtml&quot;&gt;Turing to Telecomix&lt;&#x2F;a&gt;, bbc.co.uk v.
+28.12.2011&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.dw-world.de&#x2F;dw&#x2F;article&#x2F;0,,15324784,00.html&quot;&gt;International hacktivists help Syrian citizens circumvent Internet censorship&lt;&#x2F;a&gt;,
+dw-world.de v. 18.08.2011&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.zeit.de&#x2F;digital&#x2F;internet&#x2F;2011-02&#x2F;aegypten-funk-netzsperre&quot;&gt;Mit Modems und Funkgeräten gegen die Zensur&lt;&#x2F;a&gt;,
+zeit.de v.01.02.2011&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.zeit.de&#x2F;politik&#x2F;ausland&#x2F;2012-02&#x2F;syrien-aktivisten-urbach&quot;&gt;„Aus der Ferne das Richtige tun“&lt;&#x2F;a&gt;, zeit.de vom
+16.02.2012&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Eröffnung Beta-Space</title>
+          <pubDate>Mon, 21 Nov 2011 12:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/">&lt;p&gt;Der Verein Kreativität trifft Technik e.V. eröffnet im Oldenburger Bahnhofs- viertel unter dem Namen „Beta-Space“ einen
+Treffpunkt für kreative Bastler und Technikbegeisterte. Damit hat Oldenburg nun als erste Stadt im Nord- westen einen
+„Hackspace“. Die Einweihung findet am 28. November 2011 statt und wird von einem viertägigen Rahmenprogramm begleitet.
+Oldenburg. Am kommenden Montag, den 28. November 2011, um 19:00 Uhr lädt der Verein Kreativität trifft Technik e.V. zur
+Einweihung seines neuen Vereinsheims „Beta-Space“ in der Bleicherstraße 10 ein. Es ist nach dem Vorbild eines
+sogenannten Hackspaces aufgebaut. Hackspaces sind offene Räume für Menschen, die an Technologie, Wissenschaft und
+digitaler Kultur interessiert sind. Hier können sie gemeinsam an Projekten arbeiten oder Workshops und Vorträge
+veranstalten. In zahlreichen Städten auf der ganzen Welt lassen sich inzwischen solche Räume finden. Jetzt hat auch
+Nordwestdeutschland mit dem „Beta-Space“ in Oldenburg seinen ersten Hackspace.&lt;&#x2F;p&gt;
+&lt;p&gt;Mit dem in der öffentlichen Wahrnehmung oft negativ besetzten Image von Hackern hat der gemeinnützige Verein indes
+nichts zu tun. Dies zeigt schon ein Blick auf das viertägige Rahmenprogramm zur feierlichen Eröffnung. Hier bieten die
+Mitglieder einen Einblick in die typischen Aktivitäten in einem Hackspace: Bereits ab Sonntag, den 27. November, um 13:
+00 Uhr besteht für Besucher etwa die Möglichkeit, unter Anleitung in der Werkstatt des Vereins mit Mikrocontrollern und
+3D-Druckern zu experimentieren. Zudem werden vielfältige Workshops und Vorträge angeboten. Das Spektrum reicht von
+„Kochen für Nerds“ über neue Programmiertechniken bis hin zu Fragen des Datenschutzes in sozialen Netzwerken.&lt;&#x2F;p&gt;
+&lt;p&gt;Mit Unterstützung der Kulturetage und der Oldenburger Raiffeisenbank konnte der Verein Kreativität trifft Technik e.V.
+seine Idee von einem solchen Raum binnen weniger Monate realisieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Weitere Einzelheiten und das Veranstaltungsprogramm gibt es auf der Vereinshomepage.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V.&lt;&#x2F;p&gt;
+&lt;p&gt;Mitte des Jahres haben sich etwa 30 Oldenburger zum gemeinnützigen Verein Kreativität trifft Technik e.V. mit dem Ziel
+zusammengeschlossen, einen Treffpunkt zum offenen Austausch von technikaffinen und kreativ schaffenden Menschen in
+Oldenburg aufzubauen. Damit möchte der Verein zu einem Inkubator für neue kreative technische Projekte in der ganzen
+Region werden. Darüber hinaus sollen aktuelle wissenschaftliche, technische und soziale Themen aktiv in die breite
+Öffentlichkeit getragen werden.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Vortrag: Wenn der Staat das Internet hackt</title>
+          <pubDate>Wed, 16 Nov 2011 12:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-02/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-02/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-02/">&lt;p&gt;Vortrag: Wenn der Staat das Internet hackt&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Netzpolitischer Vortrag von Alvar C.H. Freude, Mitglied der Enquête-Kommission „Internet und digitale Gesellschaft“
+des Bundestages, am kommenden Montag um 20:00 Uhr im Oldenburger Schloss.&lt;&#x2F;li&gt;
+&lt;li&gt;Bürgermeisterin Susanne Menge begrüßt hochkarätigen Referenten.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;strong&gt;›Oldenburg‹&lt;&#x2F;strong&gt;. Am kommenden Montag, den 21. November 2011, hält Alvar C.H. Freude auf Einladung des Vereins
+Kreativität trifft Technik e.V. um 20:00 Uhr im Oldenburger Schloss einen Vortrag mit dem Titel „Wenn der Staat das
+Internet hackt …“. Herr Freude ist Mitglied der Enquête-Kommission „Internet und digitale Gesellschaft“ des Deutschen
+Bundestages und zählt zu den Mitbegründern des Arbeitskreises gegen Internetsperren und Zensur. In seinem Vortrag wird
+er insbesondere auf aktuelle netzpolitische Debatten wie beispielsweise den viel zitierten „Staatstrojaner“,
+Internetsperren oder die Vorratsdatenspeicherung eingehen.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Vortrag bildet den Auftakt für die Veranstaltungsreihe „Universal. Sozial. Digital! – Zum Leben in der vernetzten
+Gesellschaft“, bei der der Oldenburger Verein Kreativität trifft Technik e.V. hochkarätige Experten aus den Bereichen
+Technologie, Politik und Kultur nach Oldenburg einlädt, um über Möglichkeiten, Chancen und Gefahren der Nutzung moderner
+Technik zu sprechen.&lt;&#x2F;p&gt;
+&lt;p&gt;Bürgermeisterin Susanne Menge wird Alvar Freude am Abend im Namen der Stadt begrüßen. Im Anschluss an den Vortrag lädt
+der Verein “Kreativität trifft Technik e.V.” zu einem ungezwungenen „Get-together“ ein. Dabei besteht zum einen die
+Möglichkeit, sich mit dem Referenten auszutauschen.&lt;&#x2F;p&gt;
+&lt;p&gt;Zum anderen stellt sich der Verein Kreativität trifft Technik e.V. vor. Der Eintritt zur Veranstaltung sowie die
+Teilnahme am Get-together sind kostenlos.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Verein Kreativität trifft Technik e.V. freut sich auf den Besuch von Medienvertretern. &lt;&#x2F;p&gt;
+&lt;p&gt;Über den Referenten Alvar C.H. Freude Alvar C.H. Freude engagiert sich seit rund 15 Jahren für ein freies und offenes
+Internet und ist einer der Gründer des Arbeitskreises gegen Internet-Sperren und Zensur (AK Zensur), der erfolgreich
+gegen das Zugangserschwerungsgesetz opponiert hat. Seit Mai 2010 ist Alvar Freude als Sachverständiger Mitglied der
+Enquête-Kommission „Internet und digitale Gesellschaft” des Deutschen Bundestages.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V. Mitte des Jahres haben sich etwa 30 Oldenburger zum gemeinnützigen
+Verein Kreativität trifft Technik e.V. mit dem Ziel zusammengeschlossen, einen Treffpunkt zum offenen Austausch von
+technikaffinen und kreativschaffenden Menschen in Oldenburg aufzubauen. Damit möchte der Verein zu einem Inkubator für
+neue kreative technische Projekte in der ganzen Region werden. Darüber hinaus sollen aktuelle wissenschaftliche,
+technische und soziale Themen aktiv in die breite Öffentlichkeit getragen werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Textnutzung honorarfrei, elektronisches Belegexemplar bzw. Link per E-Mail erbeten.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Ankündigung: Universal. Sozial. Digital!</title>
+          <pubDate>Mon, 07 Nov 2011 12:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-01/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-01/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-01/">&lt;p&gt;Universal. Sozial. Digital!&lt;&#x2F;p&gt;
+&lt;p&gt;Veranstaltungsreihe zum Leben in der vernetzten
+Gesellschaft&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Oldenburger Verein organisiert Veranstaltungsreihe zum Leben in der vernetzten Gesellschaft&lt;&#x2F;li&gt;
+&lt;li&gt;Auftaktveranstaltung am 21.11.2011 um 20:00 Uhr im Festsaal des Oldenburger Schlosses – Titel: „Wenn der Staat das
+Internet hackt …“&lt;&#x2F;li&gt;
+&lt;li&gt;Erster Referent: Alvar Freude, Mitglied der Enquête-Kommission „Internet und digitale Gesellschaft“ des Deutschen
+Bundestages&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unter der Überschrift „Universal. Sozial. Digital! – Veranstaltungsreihe zum Leben in der vernetzten Gesellschaft“ lädt
+der Oldenburger Verein Kreativität trifft Technik e.V. hochkarätige Experten aus den Bereichen Technologie, Politik und
+Kultur nach Oldenburg ein, um über Chancen, Möglichkeiten und Gefahren der Nutzung moderner Technik zu sprechen.&lt;&#x2F;p&gt;
+&lt;p&gt;„Wenn der Staat das Internet hackt …“&lt;&#x2F;p&gt;
+&lt;p&gt;Für die Auftaktveranstaltung konnten wir Herrn Alvar C.H. Freude gewinnen. Herr Freude ist Mitglied der
+Enquête-Kommission „Internet und digitale Gesellschaft“ des Deutschen Bundestages und Mitbegründer des Arbeitskreises
+gegen Internetsperren und Zensur. Unter dem Titel „Wenn der Staat das Internet hackt …“ wird Alvar Freude nicht nur
+allgemein über die Chancen sprechen, die aus dem Einzug des Internets für unsere Gesellschaft erwachsen. Er wird
+vielmehr auch Bezug auf aktuelle politische Debatten wie beispielsweise den viel zitierten „Staatstrojaner“ oder die
+Vorratsdatenspeicherung nehmen.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Vortrag findet am 21. November 2011 um 20:00 Uhr im Festsaal des Oldenburger Schlosses statt. Nach dem Vortrag lädt
+der Verein Kreativität trifft Technik e.V. zu einem ungezwungenen „Get-together“ ein. Dabei besteht zum einen die
+Möglichkeit, sich mit dem Referenten auszutauschen. Zum anderen stellt sich der Verein Kreativität trifft Technik e.V.
+vor. Der Eintritt zur Veranstaltung sowie die Teilnahme am Get-together sind kostenlos.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Verein Kreativität trifft Technik e.V. freut sich auf den Besuch von Pressevertretern.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V.&lt;&#x2F;p&gt;
+&lt;p&gt;Mitte des Jahres haben sich etwa 30 Oldenburger zum gemeinnützigen Verein Kreativität trifft Technik e.V. mit dem Ziel
+zusammengeschlossen, einen Treffpunkt zum offenen Austausch von technikaffinen und kreativ schaffenden Menschen in
+Oldenburg aufzubauen.&lt;&#x2F;p&gt;
+&lt;p&gt;Damit möchte der Verein zu einem Inkubator für neue kreative technische Projekte in der ganzen Region werden. Darüber
+hinaus sollen aktuelle wissenschaftliche, technische und soziale Themen aktiv in die breite Öffentlichkeit getragen
+werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Vom 27. bis zum 30. November 2011 stellt der Verein seine vorläufigen Räumlichkeiten in der Bleicherstrasse 10 (
+quARTier)erstmals der Öffentlichkeit vor.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

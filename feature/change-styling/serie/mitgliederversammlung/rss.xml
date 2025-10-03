@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Mitgliederversammlung</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/mitgliederversammlung/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 22 Mar 2024 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Mitgliederversammlung 30.12.2022</title>
+          <pubDate>Sun, 01 Jan 2023 12:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2023/mv2022/">&lt;p&gt;Das Ende von 2022 näherte sich und wir haben noch schnell eine Mitgliederversammlung gemacht. OK, so schnell war es dann
+doch nicht, wie sonst auch haben wir ca. 2 Stunden gebraucht. Trotzdem waren alle entspannt und fröhlich und am Ende
+wurde die Fritteuse angeworfen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;media&#x2F;ifs-images&#x2F;1243.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Vorstand wurde wieder gewählt, im Detail:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Patrick Günther&lt;&#x2F;li&gt;
+&lt;li&gt;Lars Hüsemann&lt;&#x2F;li&gt;
+&lt;li&gt;André Schäfer&lt;&#x2F;li&gt;
+&lt;li&gt;Lars Hoffmann&lt;&#x2F;li&gt;
+&lt;li&gt;Christian Beyer&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;mit den Beisitzern:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Michael Olsen (Radstelle)&lt;&#x2F;li&gt;
+&lt;li&gt;Janik Wilder (Lasercutter)&lt;&#x2F;li&gt;
+&lt;li&gt;Nils Wollenteit (Schließfachmanager)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Die genauen Details könnt ihr in Protokoll nachlesen (sobald es da ist).&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

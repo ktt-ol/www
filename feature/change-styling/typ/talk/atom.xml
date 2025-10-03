@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Talk</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/change-styling/typ/talk/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-24T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/change-styling/typ/talk/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Einführung in GCode und LinuxCNC</title>
+        <published>2012-10-19T20:00:00+00:00</published>
+        <updated>2024-03-24T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            0xFF
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2012/gcode-und-linuxcnc/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2012/gcode-und-linuxcnc/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/gcode-und-linuxcnc/">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=go-i1ZhocUQ&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;talk-0002&#x2F;cover.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;&lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;talk-0002&#x2F;GCode.pdf&quot;&gt;Slides&lt;&#x2F;a&gt;&lt;&#x2F;h1&gt;
+&lt;p&gt;GCode ist die Sprache mit der viele CNC-Maschinen angesteuert werden. Auch wenn
+es als Programmiersprache den Charme der 70er versprüht und darauf optimiert
+ist, notfalls auf Rechnern mit nur ein paar Byte RAM und ein paar kB
+Code-Segment zu laufen, so ist es doch immer noch ein Standard, der auch bei
+den 3D-Druckern noch Anwendung findet. Mit LinuxCNC steht auch eine freie
+Implementierung zur Verfügung, die auch komplexere Features beherrscht und für
+große CNC-Maschinen geeignet ist. Anhand des LinuxCNC GCode-Dialekts werden
+die wichtigsten Features der Sprache vorgestellt:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Steuerung der Achsen, Werkzeuge und Hilfsaggregate&lt;&#x2F;li&gt;
+&lt;li&gt;Einstellung von Werkzeugparametern&lt;&#x2F;li&gt;
+&lt;li&gt;Arbeiten mit Koordinatensystemen&lt;&#x2F;li&gt;
+&lt;li&gt;Schleifen, Funktionen und Variable&lt;&#x2F;li&gt;
+&lt;li&gt;Spezialbefehle wie z.B. verschiedene Bohr-Programme&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Anschliessend solltet ihr in der Lage sein eine CNC-Maschine per
+GCode-Kommandozeile zu bedienen, kleine GCode-Programme selbst zu schreiben
+oder aber inkompatiblen GCode auf einen speziellen GCode Interpreter
+anzupassen.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Fourier-Analyse bis Arduino</title>
+        <published>2012-10-05T20:00:00+00:00</published>
+        <updated>2024-03-24T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            Stoffi
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2012/fourier-analyse-bis-arduino/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2012/fourier-analyse-bis-arduino/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/fourier-analyse-bis-arduino/">&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=bS7OyGMewHU&quot;&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;talk-0001&#x2F;cover.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;[Slides](&#x2F;media&#x2F;blog&#x2F;2012&#x2F;talk-0001&#x2F;Fourier-Analyse bis Arduino Slides.pdf)&lt;&#x2F;h1&gt;
+&lt;p&gt;Dieser Vortrag soll zunächst eine kurze Erinnerung an die komplexen Zahlen
+liefern. Dann soll die (mathematische) Theorie anhand der Fourierreihe und
+Fourier-Transformation erläutert werden. Das Hauptaugenmerk soll dann aber auf
+der diskreten Fourier-Transformation liegen mit der z.B. digitale Audiofilter
+erstellt werden können. Grundkenntnisse in der Integralrechnung sind hilfreich.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

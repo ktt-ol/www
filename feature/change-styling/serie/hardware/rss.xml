@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Hardware</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/hardware/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 24 Mar 2024 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Ladekoffer</title>
+          <pubDate>Fri, 09 Nov 2018 12:15:00 +0000</pubDate>
+          <author>asc</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2018/ladekoffer/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2018/ladekoffer/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2018/ladekoffer/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;IMG_20181109_193018.jpg_2k.jpg&quot; alt=&quot;Der Ladekoffer&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Als kleines Nachmittagsprojekt wurde ein Modellbauladegerät in einen alten “Alu-Koffer” eingebaut.
+Da einige Kabel recht kurz waren und dadurch das Laden erschwert wurde, wurden Durchführungen für die Kabel eingebaut.&lt;&#x2F;p&gt;
+&lt;p&gt;Dazu wurde an den notwendigen Stellen mit einem Forstner Bohrer ein Loch in den Koffer gebohrt (22mm).
+Alternativ kann dazu auch ein Hohlkernbohrer verwendet werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Für die Durchführungen wurden nun mit dem 3D-Drucker Abdeckkappen gedruckt.
+Ein erstes Test mit PLA als Druckmaterial hat sich nicht bewährt, da das Material für die Zinken zu spröde ist.
+In ABS oder PET(G) stellt das kein großes Problem dar. Wie auf den Bildern zu erkennen, verfärbt sich ABS an starken Knickstellen halt weiß.&lt;&#x2F;p&gt;
+&lt;p&gt;Da die Bananenstecker für das Ladegerät etwas störrisch durch die Durchführungen gehen, sollen diese dauerhaft nach außen geführt werden.
+Es wurde sich dagegen entschieden das Originalkabel abzuändern und z.B. abnehmbar zu machen.
+Damit die Stecker nun nicht lose in der Gegend hängen, wurde ein Halter gedruckt. Dieser wurde mit geschäumten Doppelseiteigen Tape an den Koffer angebracht.
+Der Halter für die Bananenstecker wurde auf einer Seite an den Löchern mit einer Fase versehen, damit die Stecker einfacher eingesteckt werden können.&lt;&#x2F;p&gt;
+&lt;p&gt;Beide Modelle wurden in Autodesk Fusion360 gezeichnet. Die Zeichnungen wurden parametrisch angelegt.
+[Das bedeutet, dass einzelne Elemente der Zeichnungen durch Abhängigkeiten (z.b. parralel, rechter Winkel, 2mm Abstand, usw.) miteinander verbunden sind.
+Daraus ergibt sich der Vorteil, dass Änderungen gemacht werden können und das Modell alle Abhängigkeiten behält die festgelegt wurden. Wenn jetzt der Durchmesser der Kabeldurchführung angepasst werden soll, würde sich das gesamte Modell für die neue Größe wieder aufbauen. Dafür müssen keine weiteren händischen Änderungen gemacht werden.]&lt;&#x2F;p&gt;
+&lt;p&gt;Beide Modelle wurden mit einem selbstgebauten JoSeb (I3 Stil) Drucker gedruckt.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layerhöhe 0.2 mm&lt;&#x2F;li&gt;
+&lt;li&gt;keine Stützstruktur&lt;&#x2F;li&gt;
+&lt;li&gt;Standard Temperaturen und Geschwindigkeiten für PLA (silber) bzw. ABS (Orange)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;Ladekoffer_modelle.zip&quot;&gt;Download der 3D-Modelle&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;0001.jpg&quot; alt=&quot;Foto 1&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;0002.jpg&quot; alt=&quot;Foto 2&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;IMG_20181109_192807.jpg_2k.jpg&quot; alt=&quot;Foto 3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;IMG_20181109_192814.jpg_2k.jpg&quot; alt=&quot;Foto 4&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2018&#x2F;ladekoffer&#x2F;IMG_20181109_193018.jpg_2k.jpg&quot; alt=&quot;Foto 5&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>I²C Tiny USB</title>
+          <pubDate>Sat, 10 Dec 2016 05:50:00 +0000</pubDate>
+          <author>sre</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/i2c-tiny-usb/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/i2c-tiny-usb/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/i2c-tiny-usb/">&lt;p&gt;For the access control system and different private and space related projects
+sre regularly uses I²C sensors&#x2F;devices. For testing purposes it helps a lot, if
+those devices can be connected to a notebook. So far he either used a VGA
+adapter (VGA cables contain an I²C signal to transport the display’s DDC
+information.  Most of the open source linux graphic card drivers allow users to
+access the i2c bus on the adapter using standard tools). Unfortunately newer
+hardware no longer provides VGA adapters and&#x2F;or muxes the connectors in a strange
+way, so that it’s no longer easily possible to use the I²C port.&lt;&#x2F;p&gt;
+&lt;p&gt;Another option is using a &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Bus_Pirate&quot;&gt;Bus Pirate&lt;&#x2F;a&gt;,
+which supports
+I²C and is connected to the notebook via USB. The Bus Pirate is not supported
+by the standard kernel interfaces, though. This is not very nice for
+application development.&lt;&#x2F;p&gt;
+&lt;p&gt;Fortunately the kernel supports a few USB based I²C adapters. Most of them are
+quite expensive in the 100€ range, but one of them requires just an ATtiny85, a
+crystal and a few resistors&#x2F;diodes. That one is a project from Till Harbaum,
+who developed the adapter and provides &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.harbaum.org&#x2F;till&#x2F;i2c_tiny_usb&#x2F;index.shtml&quot;&gt;instructions on his homepage&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;sre took that information and designed his own PCB, adding voltage regulators
+and logic level converts for 3.3V and 1.8V. So most common sensors can be connected
+easily. Also the PCB has a mini USB connector instead of the huge USB-B connector.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;i2c-tiny-usb&#x2F;rendering.png&quot; alt=&quot;Rendered image of the PCB&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The PCB design allows a nice sandwich-style case as visible in the graphic
+below (file for a lasercutter). The top left part can be put on top of the PCB
+and should have the same height as the USB connector. The bottom right part
+should be put directly below the PCB and should have at least the height of the
+crystal. Then the other two parts can be put at the bottom and on top of the
+other two parts. The result is quite stable and does not waste much space. It
+should be cut out of acryl glass or labels must be added to know the pin
+assignment.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;i2c-tiny-usb&#x2F;case.svg&quot; alt=&quot;Case Information for Lasercutter&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;PCB Description&lt;&#x2F;h2&gt;
+&lt;p&gt;So let’s have a short look at how it works. Below is the PCB’s schematic. It
+starts with a pull-up resistor from USB- to Vcc, which tells the USB host,
+that we are a low-speed device. Then there are two zener-diodes on the data
+lines to limit the voltage to 3.3V making the device comply with the USB
+standard. Next there are blocking capacitor for our ATtiny85. Then we have
+the USB connector, followed by the I²C pull-up resistors on SCL and SDA.&lt;&#x2F;p&gt;
+&lt;p&gt;In the next row the ATtiny85 and its crystal follows. Also there are
+termination resistors of 68 Ohm before the USB pins. Then in the third row we
+can see the logic level converter for SDA and SCL for 1.8V using a BSS138. Next
+to it the MCP1755S-1802E provides the 1.8V reference, which is also available
+from one of the PCB’s pins. Then last but not least the last row contains the
+logic level converts for 3.3V and the matching voltage regulator (TS1117).&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;i2c-tiny-usb&#x2F;schematic.svg&quot; alt=&quot;Schematic of the PCB&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;As you can see the hardware setup is pretty simple. The USB communication is
+implemented in software by bitbanging the ATtiny85’s pins, that are connected
+to the USB port.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;Driver Support&lt;&#x2F;h2&gt;
+&lt;p&gt;While I’ve been told, that there are Windows and Mac OSX drivers available, I
+have not tested those parts myself. On Linux the kernel driver has been
+upstreamed and most distributions have it enabled in their kernel config.  As a
+result it works out of the box. It can be tested by loading the i2c-dev module
+and using i2cdetect to find the right adapter (You will have to do the
+following as root). Get the number for the i2c device labeled i2c-tiny-usb
+and you can scan the bus for devices.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;modprobe i2c-dev
+&lt;&#x2F;span&gt;&lt;span&gt;i2cdetect -l
+&lt;&#x2F;span&gt;&lt;span&gt;i2cdetect 8
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;If that works you can start developing in your favourite programming language
+and switch to e.g. the Raspberry Pi’s native I²C interface at any point by
+just changing the I²C device number. Of course the adapter can also be used
+to develop I²C Linux kernel drivers.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>CFA1000 Display Grabber</title>
+          <pubDate>Sat, 10 Dec 2016 00:00:00 +0000</pubDate>
+          <author>sre</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/display-grabber/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/display-grabber/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/display-grabber/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;cover.jpg&quot; alt=&quot;Cover&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;For our access control system, we needed a motor lock for our main door.
+After having a look how other hackspaces solved the problem, we decided
+to get ourself an ABUS CFA1000. It’s quite popular among Hackspaces,
+Fablabs and Makerspaces for two reasons:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s cheap (&amp;lt; 100€) compared to other solutions, which often cost over 500€&lt;&#x2F;li&gt;
+&lt;li&gt;It does not require door modifications (our main door probably contains asbestos)&lt;&#x2F;li&gt;
+&lt;li&gt;The schematics are available from the Internet&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Once we received the piece of hardware, we opened it up and had a look at the
+hardware.  Usually the ABUS CFA1000 is used together with a simple radio remote
+control. The manual advertises, that a “secure” rolling-key system is used to
+encrypt the information exchange. We don’t trust that part and do not need
+wireless support, so we disabled that part of the ABUS. The radio support is
+conveniently placed onto its own PCB inside of the CFA1000, so we could just
+cut the interconnections (Vcc, GND, Signal) between the main PCB and the radio
+interface PCB. We also removed the radio PCB to gain some space inside of the
+case.&lt;&#x2F;p&gt;
+&lt;p&gt;That left us with a block of hardware, that can (un)lock the door by pressing
+its buttons. Obviously that’s not pretty useful on its own. Using a digital
+storage oscilloscope (DSO), we measured, that the buttons connect ground to
+a pin. Next we desoldered the buttons and soldered a couple of wires instead.
+These wires are connected to GPIO pins of our access control system sharing
+a common ground, so that it can “press” the buttons by shortly settings the
+relevant GPIO pins to low.&lt;&#x2F;p&gt;
+&lt;p&gt;So far so good. Other spaces use more or less the same setup and its pretty
+easy to implement the above changes. But the ABUS CFA1000 also has a small
+display, which displays its current state (locked&#x2F;unlocked). That state also
+changes if the door is opened manually, so we were interested in it. After
+unsuccessfully trying to find that information via some boolean style pin on
+the PCB, we decided trying to reverse engineer the protocol used for the
+display.&lt;&#x2F;p&gt;
+&lt;p&gt;The display is laying on top of the main PCB using some kind of foam connector.
+So it’s easy to probe the outputs from the CFA1000’s µC by removing the display
+and just connecting a DSO to the PCB pads. On the other hand its hard to do
+anything with the display without creating some PCB just for that task, since
+we cannot solder anything to it.&lt;&#x2F;p&gt;
+&lt;p&gt;The first thing we noticed after having a look on our scope was, that the
+display is driven using 4 different voltage levels: 0V, 1V, 2V, 3V, 4V (voltage
+differs based on the voltage supplied to the CFA1000). Also from the schematics
+we got the information, that 4 pins are labeled SEG and 5 pins are labeled COM.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;combined-layout-signal.svg&quot; alt=&quot;Signal&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Measuring 4 pins at a time due to our scope not providing more input channels,
+we had a look at all 9 pins and noticed a few things:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Pin 5-8 show a regular pattern independent of the display content&lt;&#x2F;li&gt;
+&lt;li&gt;The behaviour of the other pins changes with different display content&lt;&#x2F;li&gt;
+&lt;li&gt;Pin 5-8 have exactly the same pattern, but shifted&lt;&#x2F;li&gt;
+&lt;li&gt;0V is always followed by 4V on pin 5-8 and 4V is always followed by 0V on pin 0-4&lt;&#x2F;li&gt;
+&lt;li&gt;Similarly 2V and 3V follow each other&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We assume, that Pin 5-8 are our COM signals and are some kind of layer
+selection. It seems there are 4 time slots with each of them having two
+sub-slots. With that assumption we noticed, that each time slot either
+contains a 0V&#x2F;4V pair or a 2V&#x2F;3V pair. So we assume, that 0V&#x2F;4V pair
+means the time slot is a logic “1” and 2V&#x2F;3V pair is a logic “0”.&lt;&#x2F;p&gt;
+&lt;p&gt;We also noticed, that the sub-slots of the SEG pins are inverted compared to
+the COM pins. So if e.g. SEG4 is on 4V, then the COM pin is either in its
+middle state, or at 0V. With the second sub-slot being inverted compared to
+the first one it means the pins are driven in both voltage directions. We
+assume, that its probably some hack to get the polarity right.&lt;&#x2F;p&gt;
+&lt;p&gt;Anyways we still need to know, which pin is used for which segment on the
+display. Unfortunately we cannot easily connect the display to another PCB and
+on the ABUS pcb there is no easy method to inject a custom signal to the
+display. So instead we reconnected the display and let the CFA1000 generate
+something on the display for us. Then we put a piece of paper between the
+CFA1000’s PCB and on of the display’s pins and had a look, which segment was no
+longer displayed due to this. From time to time we had to press some buttons to
+generate other symbols on the display, because the segments must be enabled in
+the first place of course. Doing that we could identify basically all pins and
+created the following pin information graphic (C=COM, S=SEG):&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;pins.svg&quot; alt=&quot;Pin Identification&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With that we can decode the information from the display. We verified this by
+removing the display again, connecting our scope and trying to decode the
+display manually. After identifying a few incorrect pins (probably the piece of
+paper did accidently cover the wrong pin) and we were happy with the results,
+we started to think about a PCB doing the decoding for us.&lt;&#x2F;p&gt;
+&lt;p&gt;First of all we somehow needed to get the 4-voltage-level signal into a
+2-voltage-level binary signal. We initially tried to do that using zener-diodes
+to cap the voltage combined with some schmitt-triggers. The schmitt-triggeres
+feed the information into a ATmega then, which decodes the display pins and
+provides the information via I²C. Unfortunately, that turned out not to work
+that well. The voltage dropped, because the CFA1000’s µC did not provide enough
+energy for this setup. The image below shows our first attempt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;pcb-diodes.png&quot; alt=&quot;PCB with diodes&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;After finding a few more issues, we decided to start from scratch using a
+completly different design based on voltage comparators. We added a 4
+comparators checking if the COM pins are above a certain voltage level near the
+4V mark and another 5, that check if the SEG pins are below a reference voltage
+near the 1V mark. After the comparator we have a digital signal, where a segment
+is enabled if the SEG pin and the COM pin are high.&lt;&#x2F;p&gt;
+&lt;p&gt;In theory we could just connect this to an ATmega again and decode the signal
+now. This time we try to solve the problem in hardware though and add 4 latches&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;one for each layer&#x2F;COM pin. The latches will take over values from their
+input pins, if their “Load” pin is high. So we can simply connect the first COM
+pin to the first latch’s Load pin, the second COM pin to the second latch’s
+Load pin and so on. Then the latches will take over values when the layer is
+activated. The SEG pins on the other hand can simply be connected to each
+latch. The output pins will then provide the state of all segments (there are
+4*5 = 20 possible combinations, but some of them are not used).&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;We connected the relevant pins to a simple I²C port-expander (MCP23017), so
+that we can read the display state from our access control system. The expander
+also provides an interrupt pin to notify the host system, that one of the input
+pins changed.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;pcb-schematic.svg&quot; alt=&quot;PCB schematic&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;So far so good from the digital side. Unfortunately it again did not work as
+expected. So let’s get out our scope again and check the lines: The voltage
+comparators work greatly this time and we have nice boolean values behind it.&lt;&#x2F;p&gt;
+&lt;p&gt;The screenshot below shows one of the raw COM signals (yellow) together with
+the cleaned variant (cyan). Also visible is one of the raw SEG signals (purple)
+together with its cleaned variant (blue). So why is it not working?&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;scope1.png&quot; alt=&quot;Screenshot from DSO&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Looking further we noticed, that the COM signal is enabled slightly longer,
+than the SEG signal. Thus our latch will take over incorrect values. We
+actually want the COM signal to be enabled slightly later than the SEG signal
+and be disabled slightly before, so that the SEG signal is always valid when
+the latch takes over values.&lt;&#x2F;p&gt;
+&lt;p&gt;On the other hand we do not need good signal edges, so we solved the problem
+using capacitors. To ensure, that SEG is initialized before the COM signal we
+started with a capacitor on the COM line. To avoid increasing the problem for
+the falling edge side, we added a diode, so that the capacitor is discharged
+fastly here. Now we also added a capacitor to the SEG signals, so that it
+keeps its value a bit longer. This capacitor must be smaller than the one for
+the COM signal to avoid breaking the start behaviour.&lt;&#x2F;p&gt;
+&lt;p&gt;Below you can see screenshots of the resulting signals. The yellow one is a
+COM signal and the purple one is a SEG signal. The blue one shows the matching
+output of the latch. As you can see it keeps it value at high.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;flanks.png&quot; alt=&quot;Screenshot from DSO&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With that fixed we ordered a nice PCB in china and soldered it and found it
+mostly working. Unfortunately we still had two pins wrong, so we had to patch
+the PCB to get the right signal lines from the latches to the port expander.
+If we ever need another PCB, we add another port expander and add the
+additional signal lines and the buttons there instead of directly providing
+them to the host system.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;board.png&quot; alt=&quot;The resulting PCB&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;abus-cfa1000-display-grabber&#x2F;result.jpg&quot; alt=&quot;The resulting PCB&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Tiny WS2812 Controller</title>
+          <pubDate>Fri, 09 Dec 2016 00:00:00 +0000</pubDate>
+          <author>sre</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2016/tiny-ws2812-controller/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2016/tiny-ws2812-controller/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/tiny-ws2812-controller/">&lt;p&gt;For our access control system we &lt;del&gt;needed&lt;&#x2F;del&gt; wanted a few
+multi-colored status LEDs. Nowadays that basically means, that one gets a few
+ws2812b LEDs, since they are quite cheap and already provide a serial
+interface. Unfortunately most microcontrollers including the Raspberry Pi have
+no hardware accelerated interface for their protocol. For our access control
+system we thus use an ATtiny85 to translate from the ws2812 protocol to a more
+common serial protocol: I²C.&lt;&#x2F;p&gt;
+&lt;p&gt;Below you can see how the ATtiny85 is supposed to be wired. Basically it needs
+power supply, the I²C interface (SDA, SCL) and the input pin of the first ws2812b
+LED must be connected to the pin labeled WS2812b. There is also a mode pin, that
+should be connected to some GPIO of the system controlling the ATtiny85. More on
+that later.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;tiny-ws2812-controller&#x2F;attiny-connections.svg&quot; alt=&quot;Hardware Connection&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The ATtiny85 firmware consists of 3 parts: A driver for the ws2812b LEDs, a driver
+for the I²C interface and some glue-code. Let’s have a look at each part.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;WS2812b driver&lt;&#x2F;h2&gt;
+&lt;p&gt;Like most microcontrollers, the ATtiny does not have hardware support for the
+ws2812 protocol. That means we need to generate it ourself by bit-banging one
+of its I&#x2F;O pins. Since we did not connect any crystal to our ATtiny to keep the
+circuit simple, we use it with the internally generated 8MHz clock signal. So
+one instruction is supposed to be roughly 125ns. By studying the ws2812b timing
+diagram below, you can see, that we must be able to switch the pin at least
+within 350ns. As you can see the timing may be possible, but while we are
+updating the LEDs it’s impossible to do anything else.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;tiny-ws2812-controller&#x2F;ws2812b-timings.svg&quot; alt=&quot;WS2812b timings&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;The driver itself solves the timing issues by disabling interrupts, since any
+ever so short interruption will break the ws2812b timing. Then it loops over
+a supplied array of LED values. There it loops over the bits of each byte and
+based upon its value it either starts with a long high-sequence or a short
+high-sequence followed by the matching low-sequence. All of that is done in
+inline assembly to avoid the compiler doing optimizations breaking the timing.&lt;&#x2F;p&gt;
+&lt;p&gt;In theory it would be possible to handle interrupts during the ws2812 update,
+if we used a timer instead of counting instructions for the precise timing. But
+our interrupt service routine would have to be finished within 1 or 2
+instructions, since we must satisfy the 350ns timing. Obviously that’s not helping
+much.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;I²C driver&lt;&#x2F;h2&gt;
+&lt;p&gt;Fortunately the ATtiny85 does have hardware support for the I²C protocol making
+things a bit easier on this side. The hardware block capable of I²C (master and
+slave) support inside of the ATtiny85 is named Universal Serial Interface AKA
+&lt;b&gt;USI&lt;&#x2F;b&gt;. I²C is a bus-protocol, which usually has one master and multiple
+slave devices connected via two wires (not counting ground) named SDA and SCL.&lt;&#x2F;p&gt;
+&lt;p&gt;The communication is always started from the master using a start-condition and
+stopped by a matching stop-condition. After being initialized the USI module
+will generate a interrupt, if it sees a start or stop condition on the bus, so
+that it can be handled by our I²C driver.&lt;&#x2F;p&gt;
+&lt;p&gt;Then there is a second interrupt for all other i2c related events. Let’s ignore
+most of them here and just have a look how the data is exchanged. We basically
+get an event “data received” for each received byte and “data requested” for
+each byte, that should be send. The byte, that should be sent is simple written
+to a register of the USI block. Similarly reading the byte when the data received
+interrupts comes in, we get the byte written to the bus. All bit-level stuff is
+handled by the hardware.&lt;&#x2F;p&gt;
+&lt;p&gt;Our I²C driver also takes care of checking the address (while it receives the
+data destined for other devices it will ignore any ongoing communication, that
+was not started with its own address as recipient) and implementing an eeprom
+style interface.&lt;&#x2F;p&gt;
+&lt;p&gt;The base idea of our eeprom style interface is, that we receive
+colour-information from the I2C master by receiving a single byte for the LED
+number and 4 bytes with colour data. From a bus-level point of view this is
+exactly the same as an eeprom with 8-bit address size and 32-bit value size.
+For example if you want to set the 11th LED to white you would send the following via
+I²C: &lt;code&gt;&amp;lt;device-addr&amp;gt; 0x0a 0xff 0xff 0xff 0x00&lt;&#x2F;code&gt;. There will be more information
+about the additional byte in a later section of this documentation. Once the
+I²C driver received all 4 bytes it will call i2c_recv(led, data) in the glue
+code.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-2&quot;&gt;Glue code&lt;&#x2F;h2&gt;
+&lt;p&gt;The glue-code combines the I²C driver with the ws2812b driver to something
+useful.  For this task it stores all information received from the I²C driver
+into an array for the LEDs. Similarly it has a second array, which contains the
+LED colour information for the ws2812b driver. In theory the same array could be
+used for both implementations, but the split-architecture allows us to implement
+some fancy features in our glue-code. Unfortunately it also means, that we need
+quite a bit of memory (4 bytes for i2c data + 3 bytes for ws2812b data = 7 byte).
+With the ATtiny85 only having 512 byte of memory that means we can talk to a max.
+of about 60-70 LEDs.&lt;&#x2F;p&gt;
+&lt;p&gt;Now let’s have a look at the 4th byte sent via the I²C interface. Appart from
+directly setting a LED color, our ATtiny85 should also be able to blink LEDs
+and fade to some other color. This is encoded in the fourth byte. It’s upper
+two bits (7&amp;amp;8) can be used to let the ATtiny85 know, what we want to do with
+the LED:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;00 = set color directly&lt;&#x2F;li&gt;
+&lt;li&gt;01 = fade to color&lt;&#x2F;li&gt;
+&lt;li&gt;10 = blink (on&#x2F;off in specified color)&lt;&#x2F;li&gt;
+&lt;li&gt;11 = glow (slowly decrease brightness by 25% and then increase again)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;The remaining 6 bit are a time value, which is multiplied by 31.25ms (32Hz
+base). For fade mode it describes how long it the (linear) fading should take.
+For blink and glow mode it describes how long a half period (dark → bright &#x2F;
+bright → dark) should take. This means the max. encodable timing is 2 seconds.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-3&quot;&gt;Mode pin&lt;&#x2F;h2&gt;
+&lt;p&gt;As described in the ws2812b section, the update requires disabled interrupts.
+Updating 50 LEDs requires roughly 62.5us. Disabling the interrupts for such a
+long time results in problems with the I²C bus. Thus the USI module must be
+disabled while we update the LEDs (or interrupts must be enabled resulting in
+broken LED update if there is I²C traffic and thus random blinking).&lt;&#x2F;p&gt;
+&lt;p&gt;We worked around the issue by introducing another pin to choose between I²C
+mode and LED update mode. In I²C mode (mode pin = high) the LEDs are not
+updated and the timer engine for the fading is stopped (important to make the
+LEDs blink synchronously). In LED mode (mode pin = low) on the other hand the
+I²C interface is disabled.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-4&quot;&gt;Example&lt;&#x2F;h2&gt;
+&lt;p&gt;Once the firmware is flashed and the hardware wiring is done you can now
+control your LEDs using the following interface:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;txt&quot; style=&quot;background-color:#2b303b;color:#c0c5ce;&quot; class=&quot;language-txt &quot;&gt;&lt;code class=&quot;language-txt&quot; data-lang=&quot;txt&quot;&gt;&lt;span&gt;device_addr = 0x23;
+&lt;&#x2F;span&gt;&lt;span&gt;mode_blink = 0x2 &amp;amp;lt;&amp;amp;lt; 6;
+&lt;&#x2F;span&gt;&lt;span&gt;gpio_set(mode_pin, 1); &#x2F;&#x2F; send ATtiny85 into i2c mode
+&lt;&#x2F;span&gt;&lt;span&gt;usleep(1000); &#x2F;&#x2F; wait until ATtiny85 reached i2c mode
+&lt;&#x2F;span&gt;&lt;span&gt;i2c_send(device_addr, 0x00, 0x80, 0x00, 0x00, 0x00); &#x2F;&#x2F; LED0 = red
+&lt;&#x2F;span&gt;&lt;span&gt;i2c_send(device_addr, 0x01, 0x00, 0x80, 0x00, 0x00); &#x2F;&#x2F; LED1 = green
+&lt;&#x2F;span&gt;&lt;span&gt;i2c_send(device_addr, 0x02, 0x00, 0x00, 0x80, 0x00); &#x2F;&#x2F; LED2 = blue
+&lt;&#x2F;span&gt;&lt;span&gt;i2c_send(device_addr, 0x03, 0x30, 0x00, 0x20, mode_blink | 8); &#x2F;&#x2F; LED3 = blink purple @ 2Hz
+&lt;&#x2F;span&gt;&lt;span&gt;io_set(mode_pin, 0); &#x2F;&#x2F; send ATtiny85 into led mode
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</description>
+      </item>
+      <item>
+          <title>Platinendrucker</title>
+          <pubDate>Fri, 15 Aug 2014 17:00:00 +0000</pubDate>
+          <author>Hauke</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2014/pcb-printer/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2014/pcb-printer/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2014/pcb-printer/">&lt;h2 id=&quot;platinendrucker-pcb-printer-mit-modifiziertem-inkjet-drucker&quot;&gt;Platinendrucker&#x2F;PCB-Printer mit modifiziertem Inkjet-Drucker&lt;&#x2F;h2&gt;
+&lt;p&gt;Platinen werden üblicherweise aus einer, mit Fotolack und Kupfer beschichteten Trägerplatte, hergestellt.&lt;&#x2F;p&gt;
+&lt;p&gt;Es sind dann folgende Arbeitsschritte nötig:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Layout drucken&lt;&#x2F;li&gt;
+&lt;li&gt;Platine belichten&lt;&#x2F;li&gt;
+&lt;li&gt;Platine entwickeln&lt;&#x2F;li&gt;
+&lt;li&gt;Platine ätzen&lt;&#x2F;li&gt;
+&lt;li&gt;… (bohren etc)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Mit einem modifizierten Inkjet-Drucker ist es möglich das Layout direkt als
+ätzbeständige Farbschicht auf einer, nur mit Kupfer beschichteten Trägerplatte,
+aufzubringen. Danach kann die Platine direkt geätzt werden.[1]&lt;&#x2F;p&gt;
+&lt;p&gt;Man spart sich also zwei Arbeitsschritte (2 &amp;amp; 3) und eine Chemikalie
+(Entwickler).&lt;&#x2F;p&gt;
+&lt;p&gt;Erfolgreiche Umbauten eines Epson C84 bzw.  C87 für solche Zwecke kursieren
+schon seit ein paar Jahren im Netz [2]. Dieser Drucker besitzt einen
+keramischen Piezo Permanent-Druckkopf.&lt;&#x2F;p&gt;
+&lt;p&gt;Es muss zuerst der Drucker auseinandergebaut und die Schiene auf der der
+Druckkopf sich bewegt angehoben werden, da wir ja in Zukunft nicht mehr auf
+dünnem Papier drucken wollen sondern auf Platinenmaterial. Hierzu muss das
+Metallchassis an einer Stelle durchgesägt und dann höhergelegt und wieder
+fixiert werden (siehe Abbildung). Auf der rechten Seite des Druckes sorgen
+Unterlegscheiben für den nötigen Abstand. Auch ist es wichtig die „Parkstation“
+für den Druckkopf auf der linken Seite anzuheben, damit dieser nicht
+ausstrocknet!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;pcb-printer&#x2F;0000.jpg&quot; alt=&quot;Drucker&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Da das Platinenmaterial auf noch wesentlich unflexibler als Papier ist muss der
+Papiereinzug entsprechend so umgebaut werden, dass das Material horizontal
+durchgeführt werden kann und auch geführt wird.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;pcb-printer&#x2F;0001.jpg&quot; alt=&quot;Drucker von oben&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Die Hauptarbeit war das Testen unterschiedlicher Parameter wie der Erwärmung
+vor und nach dem Drucken auf das Platinenmaterial, Ätzmittel und der Tinte.
+Hier lagen auch die Hauptprobleme vieler Nutzer im Netz. Bei den
+Standard-Tinten konnten hauptsächlich nur Eisen(III)Chlorid verwendet werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Eines Tages und nach vielen Gesprächen später nahm ich allen Mut zusammen und
+versuchte es mit Edding(r)-Nachfülltinte aus dem Schreibwarenhandel. Diese
+Tinten gelten allgemein als ätzresistent und werde auch zur Nacharbeitung von
+Platinen vor dem Ätzen eingesetzt. Es funktionierte tatsächlich (siehe folgende
+Abbildungen).&lt;&#x2F;p&gt;
+&lt;p&gt;So sieht die Platine nach dem Druck aus:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;pcb-printer&#x2F;0002.jpg&quot; alt=&quot;Platine nach dem Druck&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nach dem Ätzen (Beispiel für eine SDR-Platine von DD7LP):&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;pcb-printer&#x2F;0003.jpg&quot; alt=&quot;Platine nach dem Druck 2&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Vorteil bei Verwendung besagter Tinte ist auch, das als Ätzmittel auch
+Natriumpersulfat verwendet werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Wichtig ist die Druckköpfe vor einer längeren nicht benutzung mit einer
+Patronen mit Isopropanol zu spülen, damit die Tinte in dem Druckkopf nicht
+eintrocknen kann. Generell sind nachfüllbare Tintenpatronen mit Auto-Reset Chip
+zu empfehlen.&lt;&#x2F;p&gt;
+&lt;p&gt;[1] &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;techref.massmind.org&#x2F;techref&#x2F;pcb&#x2F;etch&#x2F;directinkjetresist.htm&quot;&gt;http:&#x2F;&#x2F;techref.massmind.org&#x2F;techref&#x2F;pcb&#x2F;etch&#x2F;directinkjetresist.htm&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;[2] &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.cnczone.com&#x2F;forums&#x2F;general-cnc-machine-related-electronics&#x2F;30951-hacking-printer-directly-print-pcbs.html&quot;&gt;http:&#x2F;&#x2F;www.cnczone.com&#x2F;forums&#x2F;general-cnc-machine-related-electronics&#x2F;30951-hacking-printer-directly-print-pcbs.html&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Salatbaum</title>
+          <pubDate>Thu, 01 Aug 2013 10:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2013/salatbaum/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2013/salatbaum/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2013/salatbaum/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;salatbaum&#x2F;salatbaum.jpg&quot; alt=&quot;Salatbaum&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der Salatbaum ist ein Projekt, dass wir als Workshop auf dem
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;ffrei.de&quot;&gt;Freifeld-Festival&lt;&#x2F;a&gt; und am Tag der offenen Tür bei uns
+angeboten haben.&lt;&#x2F;p&gt;
+&lt;p&gt;Dabei handelt es sich im wesentlichen um ein Abwasser-Rohr, das mit Löchern
+versehen wird, und dann vertikal in einen Blumenkübel gestellt werden kann. So
+kann man ringsherum Salat oder andere Pflanzen anpflanzen, um auch ohne großen
+Garten oder Terrasse ein wenig Grünzeug in seiner Wohnung zu haben, und sich
+vielleicht sogar ab und zu einen Salat davon zu machen.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Siebdruck-Dings</title>
+          <pubDate>Thu, 01 Aug 2013 10:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2013/siebdruck-dings/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2013/siebdruck-dings/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2013/siebdruck-dings/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;siebdruck-dings&#x2F;siebdruck-dings.jpg&quot; alt=&quot;Siebdruck-Dings&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dieses “Siebdruck-Dings” nennt man eigentlich “Siebdruck-Maschine”, obwohl es
+eigentlich gar keine Maschine ist. Es handelt sich hierbei im Wesentlichen um
+eine freistehend montierte Holzplatte mit zwei Scharnieren, an denen man einen
+Siebdruckrahmen einspannen kann.&lt;&#x2F;p&gt;
+&lt;p&gt;Freistehend deswegen, damit man auch Textilien anständig bedrucken kann, indem
+man es über die Holzplatte zieht.  Das verhindert das Durchsickern der Farbe
+auf die zweite Lage Stoff und lässt sich auch einfacher fixieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Mit diesem Hilfsmittel lassen sich einfache Siebdrucke mit Schablonen
+anfertigen, die z.B. mit unserem Laser-Schneider geschnitten wurden. Auch
+beschichtete Rahmen lassen sich dort einspannen.&lt;&#x2F;p&gt;
+&lt;p&gt;Diese Gerätschaft kam bereits auf einem Siebdruck-Workshop an der Uni Oldenburg
+erfolgreich zum Einsatz.&lt;&#x2F;p&gt;
+&lt;p&gt;Inzwischen sind noch weitere derartige Hilfsmittel dazugekommen, damit mehrere
+Leute gleichzeitig drucken können.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Smartphone Debug Adapter</title>
+          <pubDate>Sun, 14 Jul 2013 23:00:00 +0000</pubDate>
+          <author>sre</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2013/smartphone-debug-adapter/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2013/smartphone-debug-adapter/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2013/smartphone-debug-adapter/">&lt;p&gt;Dieser Artikel beschreibt den Bau eines Debug-Adapters für das &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Nokia_N900&quot;&gt;Nokia
+N900&lt;&#x2F;a&gt; Smartphone. Dieser ermöglicht
+den Zugriff auf eine die serielle Schnittstelle, so dass Debug-Ausgaben des
+Kernels abgefangen werden können.&lt;&#x2F;p&gt;
+&lt;p&gt;Hürden für den Bau eines solchen Adapters stellen hauptsächlich zwei Probleme:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Die Testpads sind unter dem Akku plaziert&lt;&#x2F;li&gt;
+&lt;li&gt;Die Testpads arbeiten mit einer Spannung von 2.7 Volt&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Um einen nicht bootenden Linux-Kernel genauer zu analysieren wird üblicherweise
+auf eingebetteten Geräten &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;JTAG&quot;&gt;JTAG&lt;&#x2F;a&gt; und&#x2F;oder
+eine serielle Schnittstelle als Debug-Ausgabe verwendet. Auf dem von mir
+verwendeten Smartphone von Nokia, dem N900, wird eine solche serielle
+Schnittstelle in Form von Testpads herausgeführt. Das Pinout für die serielle
+Schnittstelle wurde bereits vor meiner Arbeit von Hackern der
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;maemo.org&#x2F;&quot;&gt;Maemo&lt;&#x2F;a&gt;-Gemeinschaft analysiert und dokumentiert (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;wiki.maemo.org&#x2F;N900_Hardware_Hacking#Debug_ports&quot;&gt;N900
+Debug Ports&lt;&#x2F;a&gt;), so dass
+auf vorhandenes Wissen zurückgegriffen werden konnte.&lt;&#x2F;p&gt;
+&lt;p&gt;Für den Bau des Adapters habe ich zunächst Federkontaktstifte (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.ingun.de&#x2F;media&#x2F;pdf&#x2F;ks&#x2F;gks_de&#x2F;gks-181-d.pdf&quot;&gt;GKS-181 305 080
+A 1500 L&lt;&#x2F;a&gt;) besorgt,
+welche den eigentlichen Kontakt zum Testpad herstellen sollen. Diese sind z.B.
+auf ebay erhältlich.&lt;&#x2F;p&gt;
+&lt;p&gt;Als nächstes habe ich das geöffnete Telefon in einen Flachbrettscanner gelegt,
+um die Positionen der Testpads zu erhalten. Zusätzlich habe ich die Maße des
+Akkufachs mit einer Schieblehre abgemessen, um die Grafik korrekt zu skalieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Als nächstes habe ich die Grafik in &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;inkscape.org&#x2F;&quot;&gt;Inkscape&lt;&#x2F;a&gt; geöffnet
+und die wichtigen Strukturen vektorisiert, so dass ich mittels
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;CNC&quot;&gt;CNC&lt;&#x2F;a&gt;-Technik einen eigenen Akku herstellen
+kann, der an den Testpads Löcher für die Kontaktstifte hat.&lt;&#x2F;p&gt;
+&lt;p&gt;An die Kontaktstifte wurde von mir ein Pegelwandler (&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sparkfun.com&#x2F;products&#x2F;8745&quot;&gt;Sparkfun
+8745&lt;&#x2F;a&gt;) angeschlossen, welcher das
+TTL-Signal von 5V oder 3.3V auf 2.7V wandeln kann.  Dazu benötigt er eine
+5V&#x2F;3.3V Referenzspannung, sowie eine 2.7V Referenzspannung. Hierzu wurde von
+mir ein &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.linear.com&#x2F;docs&#x2F;1818&quot;&gt;LM336Z&lt;&#x2F;a&gt; (von Pollin) verwendet,
+welcher aus 5V eine 2.5V Referenzspannung erstellt. Damit kann auf einer Seite
+des Pegelwandlers ein normaler 5V USB-TTL-Adapter angeschlossen werden und auf
+der anderen Seite der serielle Port des N900.&lt;&#x2F;p&gt;
+&lt;p&gt;Zum Schluss habe ich noch ein kleines Gehäuse für den Akku designt, damit
+dieser einfach mit dem Debug-Adapter verbunden werden kann.&lt;&#x2F;p&gt;
+&lt;p&gt;– Sebastian&lt;&#x2F;p&gt;
+&lt;p&gt;Einzelteile:
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;smartphone-debug-adapter&#x2F;0001.jpg&quot; alt=&quot;Einzelteile&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Elektronik:
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;smartphone-debug-adapter&#x2F;0002.jpg&quot; alt=&quot;Elektronik&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Adapter:
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;smartphone-debug-adapter&#x2F;0003.jpg&quot; alt=&quot;Adapter&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Flying Games Logo</title>
+          <pubDate>Tue, 06 Nov 2012 23:42:00 +0000</pubDate>
+          <author>fermate</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/flying-games-logo/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/flying-games-logo/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/flying-games-logo/">&lt;p&gt;Seit dem 1.11.12 bin ich Mitglied, und am 3.11. war ich das erste Mal “so
+richtig” im Hackspace, der jetzt den schönen Namen “Mainframe” trägt. Ich kam
+gerade rechtzeitig zu einem Vortrag der Mainframe-Reihe, über Fourier-Analysen:
+war spannend und gut erklärt, und ich konnte meine Mathe-Kenntnisse an einem
+praktischen Beispiel - mit Elektronik-Demo! - auffrischen.&lt;&#x2F;p&gt;
+&lt;p&gt;Danach fing ich mit meinem ersten kleinen Projekt an. Ich wollte das Logo des
+Spiele-Kleinverlags Flying Games aus Styropor ausschneiden, um es dann bei
+Spielevorstellungen an einer langen, dünnen Stange über dem Spieltisch
+“fliegen” lassen zu können. Das Logo hatte ich von Markus, dem Verleger, als
+PDF im Vektorformat bekommen. Im Original sah das so aus:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;flying-games-logo&#x2F;0000.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Das musste ich jetzt in eine SVG-Datei umwandeln, die nur noch einen langen
+Pfad enthält. Zunächst verband ich also die Umrisse des Logos (die beiden
+Flügel mit der Spieleschachtel in der Mitte) und erhielt das hier:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;flying-games-logo&#x2F;0001.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Die Buchstaben “F” und “G” machten mir etwas Kopfzerbrechen, ich beschloss
+schließlich, sie von unten her anzuschneiden und durch die gleiche Öffnung
+wieder zurückzukehren zum Umriss. Damit würde das Logo dann zwei schmale Löcher
+bekommen, aber die könnte ich hinterher vielleicht wieder kleben. Die Vorlage
+sah dann so aus:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;flying-games-logo&#x2F;0002.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Damit ging es dann zum PC, der den Styroschneider steuert. Die SVG-Datei wurde
+dort mit Inkscape geöffnet, und das Plugin sollte sie in GCode umwandeln. Damit
+wird der Schneider angesteuert - ist auch Thema im nächsten Mainframe-Vortrag.&lt;&#x2F;p&gt;
+&lt;p&gt;Zunächst war die generierte Datei aber leer. Ich hatte vergessen, den Pfad auch an einer Stelle zu öffnen, damit der
+Styroschneider einen Anfang hat. Außerdem mag das Plugin wohl keine gruppierten Objekte. Auch mit der Skalierung passte
+es noch nicht ganz (das Modell war viel zu klein), aber das konnte in Inkscape leicht angepasst werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Dann hatten wir gültigen GCode und mussten nur noch den Styroschneider an die richtige Position fahren und ihm sagen, wo
+im Koordinatensystem des Objekts er anfangen sollte. Und los gings! Schließlich war das Logo fertig und sah so aus:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;flying-games-logo&#x2F;0003.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Und mit dem Video vom Schnitt habe ich ein weiteres erstes Mal gewagt: mein erstes Youtube-Video.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=huOZjmjd00w&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Lauflicht</title>
+          <pubDate>Tue, 03 Jul 2012 12:15:00 +0000</pubDate>
+          <author>MarvinGS</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/lauflicht/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/lauflicht/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/lauflicht/">&lt;p&gt;Manchmal fällt uns ein Projekt auch einfach in den Schoß. So wie dieses
+Lauflicht aus 192 × 14 LEDs. Das Gerät gehört einem Freund des Vereins, der aber
+gerade wenig Zeit und Muße hat, sich der Herausforderung zu stellen, das gute
+Stück zu programmieren und somit wieder nutzbar zu machen. Denn dummer Weise
+fehlt die zur Programmierung notwendige proprietäre Tastatur zu diesem über 30
+Jahre alten Schätzchen. Also hat er es uns in der Hoffnung vorbeigebracht, dass
+sich bei uns jemand finden würde, der Lust auf diese Herausforderung hat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;lauflicht&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Hardware die nicht funktioniert oder von der niemand weiß wie sie funktioniert
+und dann auch noch mit blinkenden LEDs.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;CHALLENGE ACCEPTED!&lt;&#x2F;h1&gt;
+&lt;p&gt;Diesmal wurden unsere Spezialexperten für alte Hardware schwer gefordert. Es
+gab keine Handbücher und auch das vorhandene Typenschild verriet uns nur, dass
+die Hardware das letzte Mal 1985 gewartet wurde. Es musste also alles selbst
+herausgefunden werden. Gesagt, getan. Das Gehäuse wurde aufgeschraubt, der
+Controller teilweise ausgebaut mit einem Logic Analyser verbunden und die
+zuletzt einprogrammierte Animation durchlaufen gelassen. Der Logic Analyser
+hat dabei die Signale aufgezeichnet, die an den Controller geschickt wurden.
+Dadurch war es möglich, die einzelnen Kommandos nachträglich genau auszuwerten.
+Leider ist es natürlich nicht so, dass einem die Geräte sagen, was warum wann
+gerade getan wird. Also starrt man manchmal mehrere Stunden auf solche Kurven
+wie in dem Bild.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;lauflicht&#x2F;img2.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Man überlegt, warum gerade an dieser Stelle jetzt gerade Strom an oder aus
+gestellt wird, verrennt sich von einer in die nächste Theorie, weiß irgendwann
+nicht mehr, warum man die letzte wieder verworfen hat. Schließlich kommt man
+auf die selbe Idee zwei oder drei mal und ist am Ende soweit für den Tag
+Schluss zu machen, um es am nächsten Tag erneut zu probieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Und an dieser Stelle hat sich das Konzept Hackerspace voll ausgezahlt; es
+passierte, was passieren soll: Jemand, der bisher völlig unbeteiligt war, lief
+vorbei warf einen kurzen Blick auf den Bildschirm sagt etwas wie “Sieht für
+mich aus wie eine Binäradressierung”. “HEUREKA!” genau das war’s. Jede LED der
+ersten Spalte wird mit einer Zahl zwischen 0 und 13 in Binärdarstellung
+angesprochen, dann wird sie entweder auf an oder aus gestellt und, wenn man
+damit fertig ist, werden alle Spalten eins weiter geschoben. Danach wird die
+neue letzte Spalte bearbeitet. Dies geschieht so schnell, dass es am Ende wie
+eine flüssige Animation aussieht. Mittlerweile können wir also unsere eigenen
+Animationen abspielen. Und wie üblich, wenn wir sich bewegende LEDs haben,
+wollen wir auch damit spielen: Der nächste Schritt ist also die Implementierung
+eines Jump-and-Runs à la Super Mario auf 192×14 LEDs. Mal gucken wie schnell
+das fertig ist. Und wenn wir spielen können, freuen wir uns natürlich über neue
+Gegner, die versuchen, unsere High-Scores zu knacken.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=Ilu1I9LmIsU&quot;&gt;Video&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Terminals</title>
+          <pubDate>Thu, 17 May 2012 22:00:00 +0000</pubDate>
+          <author>olt</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/terminals/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/terminals/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/terminals/">&lt;p&gt;Wenn man vier mal in der Woche 15-25 kreative und technisch begabte Leute auf
+einem Haufen hat, denen man dann auch noch ein wenig Geld oder Hardware in die
+Hand drückt und sagt, “macht mal”, kann eigentlich nur Großes daraus entstehen.&lt;&#x2F;p&gt;
+&lt;p&gt;Vor lauter Basteln haben wir vielleicht etwas vergessen, auch mal
+Außenstehenden mitzuteilen, was wir eigentlich so alles Tolles machen. Das soll
+sich jetzt endgültig ändern. In der nächsten Zeit wird es an dieser Stelle
+immer wieder Berichte über die Projekte geben, die bei uns im Beta-Space
+entstanden sind oder gerade im Entstehen sind. Den Anfang macht:&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;projekt-terminals&quot;&gt;Projekt: “Terminals”&lt;&#x2F;h1&gt;
+&lt;p&gt;Im Beta-Space standen schon seit kurz nach der Eröffnung drei serielle
+Terminals, die vor Jahren von unserem ersten Vorsitzenden Patrick vor der
+Verschrottung gerettet wurden. Nun gibt es ein Projekt zu diesen alten Schätzen
+aus den 70er-Jahren. Erklärtes Ziel ist es, den Geräten wieder Leben
+einzuhauchen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;terminals&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Zunächst muss man vielleicht erklären was ein serielles Terminal ist: Bevor
+Personal Computer Einzug in Büros und Haushalte fanden, hatten viele
+Unternehmen Großrechner. Großrechner sind wie der Name schon andeutet vor allem
+groß und dabei laut, aber auch “leistungsstark” – zumindest für ihre Zeit.
+Mehrere Mitarbeiter teilten sich häufig die Rechenleistung eines dieser
+Rechner. Um gleichzeitiges Arbeiten zu ermöglichen, gab es Terminals, die über
+keine bzw. kaum eigene Rechenleistung verfügten. Die Eingaben, die ein Benutzer
+tätigte, wurden an den Großrechner gesendet. Dieser verarbeitete die Daten und
+sendete daraufhin eine Antwort an das Terminal zurück, das die Antwort auf dem
+Bildschirm anzeigte. Ein Terminal ist also im Wesentlichen eine Tastatur mit
+Monitor.&lt;&#x2F;p&gt;
+&lt;p&gt;Nachdem die Terminals nun schon über 20 Jahre alt sind, war der erste Schritt
+herauszufinden ob sie überhaupt noch funktionieren. Dank Handbüchern war es
+nicht so kompliziert mit einem angeschlossenen Computer ein “Hello World”
+auszugeben. Nach kurzer Zeit waren auch kleinere Animationen kein Problem mehr.
+So kam schnell die Idee auf, einfache Animationen über alle drei Geräten laufen
+zu lassen. Aber wer will dafür schon die ganze Zeit seinen stromhungrigen
+Laptop zur Verfügung stellen. Wir brauchten also einen “Großrechner”. In
+unserem Fall übernimmt ein kleiner Arduino diese Rolle.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;terminals&#x2F;img2.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Arduinos haben serielle Schnittstellen, mit denen die Terminals allerdings
+nicht direkt angesteuert werden konnten, da sie die falsche Spannung liefern
+(0&#x2F;5 V anstatt -12&#x2F;+12 V). Mit einem kleinen IC lies sich aber auch dieses
+Problem in den Griff bekommen, sodass jetzt alle drei Terminals von einem
+Arduino angesteuert werden können. Mit diesem Aufbau lässt sich beispielsweise
+eine Laufschrift über alle drei Monitore realisieren. Wer schon mal bei einer
+unserer Veranstaltungen war, konnte das auch schon live bestaunen.&lt;&#x2F;p&gt;
+&lt;p&gt;Aber wir wären ja keine richtigen Hacker, wenn uns eine einfache Laufschrift
+schon reichen würde. Die nächste Stufe war: “Warum können wir die Animationen
+während sie laufen nicht verändern?” Wenige Sekunden nachdem diese Frage
+gestellt wurde hieß es im Beta-Space dann weiter: “Warum können wir eigentlich
+nicht Pong auf den Dingern spielen?”&lt;&#x2F;p&gt;
+&lt;p&gt;Gesagt getan: Mittlerweile sind an den Arduino zwei Playstation Controller
+angeschlossen, Pong und Snake wurden programmiert, und wir freuen uns über
+entspannte Spieleabende in originalgetreuer grün-schwarzer- und oder
+bernsteinfarbender Monochromoptik.&lt;&#x2F;p&gt;
+&lt;p&gt;Wer auch mal spielen möchte, der kommt einfach mal im Beta-Space vorbei und
+fordert einen von uns heraus.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Styroschneider</title>
+          <pubDate>Sun, 12 Feb 2012 12:00:00 +0000</pubDate>
+          <author>0xFF</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2012/styroschneider/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2012/styroschneider/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/styroschneider/">&lt;p&gt;Als erstes Projekt, an dem wir im Space arbeiten, soll heute der Styroschneider
+vorgestellt werden.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;die-motivation&quot;&gt;Die Motivation&lt;&#x2F;h1&gt;
+&lt;p&gt;Die Idee einen Stryoschneider zu entwickeln hat sich aus einem anderen Projekt
+ergeben, dem Return-to-Launch-Wetterballon. Um für den Wetterballon ein
+Gehäuse, Steuerruder und ähnliches zu bauen wurde ein leichter,
+druckänderungsunempfindlicher und falls möglich auch kostengünstiger Werkstoff
+benötigt. Nach einiger Überlegung und der Entdeckung dieses Projekts fiel die
+Wahl auf Styropor und den Nachbau des CNC-Hotwires.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;die-idee&quot;&gt;Die Idee&lt;&#x2F;h1&gt;
+&lt;p&gt;Die Idee hinter dem Styroschneider ist relativ simpel. Man verwendet durch
+Schrittmotoren gesteuerte Aufhängungen, auf zwei Seiten eines Styropor-Blocks,
+die einen heißen Draht führen, der wiederum das Styropor schneidet. Die
+Ansteuerung geschieht dabei wie bei einer CNC-Fräse über G-Code Anweisungen.&lt;&#x2F;p&gt;
+&lt;p&gt;Das ist zwar nicht unser Styroschneider, unser soll aber am Ende auch so
+funktionieren. Um leichter transportabel zu sein, wir werden mit dem Beta-Space
+ja noch mindestens einmal umziehen müssen, soll unserer Variante allerdings
+unter einen Tisch montiert werden.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;stand-vom-12-02-2012&quot;&gt;Stand vom 12.02.2012&lt;&#x2F;h1&gt;
+&lt;p&gt;Mittlerweile sind die ersten Arbeiten an unserem Styroschneider abgeschlossen.
+Die Grundplatte auf der die Elektronik und die benötigten Motoren angebracht
+sind ist zugeschnitten und mit bisher zwei Schrittmotoren und einer Aufhängung
+für die Steuerung des Drahts versehen worden. Gestern konnte dann auch die
+Kalibirierung der beiden Motoren abgeschlossen werden und damit wir auch ein
+bisschen was zu präsentieren haben wurde der Styroschneider kurzerhand zum
+Behelfsplotter umgewandelt. Dank G-Code Steuerung und angeschlossener
+Verarbeitung von SVG-Dateien konnten dann gestern Pacmans, Nikolaushäuser und
+KtT-Logos geplottet werden. Und so sieht das ganze aus.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;styroschneider&#x2F;0000.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=r4XIohDZIYs&quot;&gt;Video 1&lt;&#x2F;a&gt;
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;youtube.com&#x2F;watch?v=vNpmt4UVJ5w&quot;&gt;Video 2&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Viel Spass mit den Videos und hoffentlich bis bald im Beta-Space.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Forumslader</title>
+          <pubDate>Thu, 01 Dec 2011 10:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2011/forumslader/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2011/forumslader/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2011/forumslader/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;forumslader&#x2F;forumslader.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.forumslader.de&#x2F;&quot;&gt;Forumslader&lt;&#x2F;a&gt; ist ein Ladegerät fürs Fahrrad, dessen Nachbau für private Nutzung
+erlaubt ist. Er ist dazu gedacht, Mobiltelefone oder Navigationsgeräte während des Radfahrens zu betreiben bzw.
+aufzuladen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir haben uns für den Nachbau die 12V Variante mit USB ausgesucht, und ein paar Anpassungen vorgenommen. So haben wir
+z.B. den 5V-Teil der Schaltung, die für die Spannungsregulierung für USB zuständig ist, durch einen fertigen Chip
+ersetzt.
+Gehäuse und Formfaktoren unterscheiden sich bei unseren Geräten danach, wie derjenige sein Gerät am Fahrrad montieren
+oder benutzen möchte. Auf dem Bild z.B. wurde der USB Ladeanschluss in den Lenker integriert. Einige Geräte wurden auch
+um eine 12V Anschlussmöglichkeit oder einen schönen Rundstecker für die Stromabnahme des Nabendynamos erweitert.&lt;&#x2F;p&gt;
+&lt;p&gt;Eine komplette Übersicht von Schaltplänen, Prototypen und vorgenommenen Anpassungen, gibt
+es &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;wiki.mainframe.io&#x2F;public&#x2F;Projekte&#x2F;Fahrradelektronik&#x2F;Forumslader&quot;&gt;im Wiki&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

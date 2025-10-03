@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - CoderDojo</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/coderdojo/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Tue, 30 Sep 2025 21:55:00 +0000</lastBuildDate>
+      <item>
+          <title>Wir feiern CoderDojo #100</title>
+          <pubDate>Tue, 30 Sep 2025 21:55:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2025/coderdojo-100/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2025/coderdojo-100/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2025/coderdojo-100/">&lt;p&gt;Kaum zu glauben – unser CoderDojo in Oldenburg findet im Oktober zum 100. Mal statt!
+Seit dem ersten Termin im März 2019 haben wir gemeinsam programmiert, gebaut,
+gelötet, genäht und ganz viel gelernt.&lt;&#x2F;p&gt;
+&lt;p&gt;Am 11. Oktober 2025 ab 13:00 ist es nun soweit: Der einhundertste Termin steht an.
+Das wollen wir gemeinsam mit euch im Mainframe feiern – natürlich so wie immer
+mit ganz viel Spaß, spannenden Projekten und ganz bestimmt auch mit Pommes und
+Getränken.&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn du mehr wissen willst oder dich anmelden möchtest, schau dir gerne den
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.ktt-ol.de&#x2F;aktuelles&#x2F;2025&#x2F;coderdojo-100&#x2F;&quot;&gt;ausführlichen Post auf der Vereins-Seite&lt;&#x2F;a&gt; an.&lt;&#x2F;p&gt;
+&lt;p&gt;Dort gibt es auch Informationen zum Programm, zur Anmeldung und zu weiteren Highlights.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2025&#x2F;coderdojo-100&#x2F;750-1662.jpg&quot; alt=&quot;Gruppenfoto von CoderDojo 98&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>CoderDojo Oldenburg</title>
+          <pubDate>Tue, 19 Mar 2019 20:15:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2019/coderdojo/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2019/coderdojo/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2019/coderdojo/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2019&#x2F;coderdojo&#x2F;CoderDojoHeader.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;CoderDojo ist eine weltweite Bewegung und davon überzeugt, dass Programmieren eine Fähigkeit ist, die in unserer
+modernen Welt immer wichtiger wird. Jeden Tag gibt es neue Entwicklungen und Technologie findet Einzug in immer mehr
+Bereiche unseres Alltags. Wer weiß schon wie die Welt in 10 Jahren aussieht, aber eines ist klar: sie wird mit Code
+laufen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Unsere Mission&lt;&#x2F;h1&gt;
+&lt;p&gt;CoderDojo ist eine globale Bewegung basierend auf einer Gemeinschaft aus Freiwilligen, die Programmierclubs für Kinder
+und Jugendliche organisiert. Mehr Informationen über die globale Bewegung unter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;coderdojo.com&#x2F;&quot;&gt;CoderDojo.com&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-1&quot;&gt;Unsere Vision&lt;&#x2F;h1&gt;
+&lt;p&gt;Kinder und Jugendliche sollen bei den Veranstaltungen die Möglichkeit bekommen, Programmieren auszuprobieren, zu lernen
+und ihre Fähigkeiten in einer ungezwungenen Atmosphäre auszutesten.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-2&quot;&gt;Was ist ein CoderDojo?&lt;&#x2F;h1&gt;
+&lt;p&gt;Dojo ist ein Begriff, der ursprünglich einen Trainingsraum für japanische Kampfkunst umschreibt. In einem CoderDojo geht
+es allerdings um das Trainieren von Programmierfähigkeiten. Der Fokus eines Dojos ist, dass Kinder und Jugendliche
+voneinander und gemeinsam lernen und auf fundiertes Wissen von Mentoren zurückgreifen können. Ein CoderDojo ist kein
+Kurs und folgt demnach keinem Lehrplan. Kinder und Jugendliche sollen ermutigt werden eigene Projekte zu starten und
+selbständig zu lernen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-3&quot;&gt;Wer kann mitmachen?&lt;&#x2F;h1&gt;
+&lt;p&gt;Jeder im Alter von 7 bis 17 kann an einem Dojo teilnehmen und Programmieren lernen, eine Webseite erstellen, ein Spiel
+oder eine App programmieren oder einfach neue Technologien kennenlernen. Löten, Vorlagen für Lasercutter und 3D-Drucker
+erstellen, Textilien veredeln. Beim CoderDojo wird kein Wissen vorausgesetzt!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-4&quot;&gt;Was Eltern Wissen sollten?&lt;&#x2F;h1&gt;
+&lt;p&gt;Die Teilnahme an einem CoderDojo ist kostenlos und mit keinerlei finanziellen Verpflichtungen verbunden. Alle Mentoren
+sind Freiwillige und Ausgaben werden durch Spenden und vereinseigene Mittel gedeckt.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-5&quot;&gt;Wichtig!&lt;&#x2F;h1&gt;
+&lt;p&gt;Kinder unter 14 müssen für das CoderDojo einen Elternteil oder eine Aufsichtsperson mitnehmen! Für Jugendliche über 14
+reicht eine schriftliche Bestätigung, dass sie teilnehmen dürfen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-6&quot;&gt;Mitnehmen&lt;&#x2F;h1&gt;
+&lt;p&gt;Pro Teilnehmer sollte ein Laptop (Betriebssystem egal) oder notfalls ein Tablet mitgebracht werden, um an einem Dojo
+teilzunehmen. Wer möchte, darf auch gerne zusätzlich seinen Mikrocontroller mitbringen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-7&quot;&gt;Anmelden&lt;&#x2F;h1&gt;
+&lt;p&gt;Zur Teilnahme an einem Dojo ist eine Anmeldung zum jeweiligen Event erforderlich. Wir nutzen hierfür die Technik auf
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;coderdojo.com&#x2F;&quot;&gt;CoderDojo.com&lt;&#x2F;a&gt;, die leider noch nicht vollständig übersetzt ist - bitte nicht wundern ;) Falls
+es Probleme gibt, einfach
+bei uns melden!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zen.coderdojo.com&#x2F;dojos&#x2F;de&#x2F;oldenburg&#x2F;oldenburg-ktt&quot;&gt;Anmeldung auf CoderDojo.com&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-8&quot;&gt;Termine &amp;amp; Location&lt;&#x2F;h1&gt;
+&lt;p&gt;Der Kreativität trifft Technik e.V. organisiert in seinen Räumlichkeiten etwa alle zwei Wochen jeweils Freitags und
+samstags im Wechsel ein CoderDojo. Die genauen Termine veröffentlichen wir auf der CoderDojo-Website, sowie auch im&lt;&#x2F;p&gt;
+&lt;p&gt;Ihr findet uns an der Adresse Bahnhofsplatz 10, direkt neben dem Oldenburger Hauptbahnhof, Eingang bei der kleinen
+Packstation, im 2. OG. Das CoderDojo beginnt jeweils um 17:30 Uhr. Bitte meldet euch immer an, dann können wir besser
+planen. Das CoderDojo versteht sich als Programmierclub, nicht als Kurs, daher könnt ihr auch später jederzeit
+einsteigen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-9&quot;&gt;Unterstützen: als Mentor&lt;&#x2F;h1&gt;
+&lt;p&gt;Man muss kein Coder sein, um Mentor zu werden! Beim Mentoring geht es vor allem um Unterstützung, Hilfestellung und Mut
+machen :) auch Freiwillige, die uns bei der Registrierung, Social Media, Werbung etc. unterstützen sind gern gesehen!&lt;&#x2F;p&gt;
+&lt;p&gt;Als erfahrener Coder kannst du unseren jungen wissbegierigen Ninjas etwas von deinem Wissen weitergeben.&lt;&#x2F;p&gt;
+&lt;p&gt;Bei Interesse einfach Kontakt aufnehmen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-10&quot;&gt;Unterstützen&lt;&#x2F;h1&gt;
+&lt;p&gt;Da die Teilnahme für Ninjas kostenlos sein soll, sind wir auf Spenden angewiesen. Mit externer Unterstützung wollen
+wir Technik und Verbrauchsmaterial beschaffen und die Ausstattung der Räume verbessern. Vielleicht bekommen wir sogar
+einen Satz Leih-Notebooks zusammen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-11&quot;&gt;Kontakt&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Anmeldungen bitte &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;zen.coderdojo.com&#x2F;dojos&#x2F;de&#x2F;oldenburg&#x2F;oldenburg-ktt&quot;&gt;hier&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;E-Mail: &lt;a href=&quot;mailto:oldenburg_ktt.de@coderdojo.com&quot;&gt;oldenburg_ktt.de@coderdojo.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Organisation&#x2F;Team: Lars Hüsemann, Tel.&#x2F;Messenger &lt;a href=&quot;tel:+491724332092&quot;&gt;0172&#x2F;4332092&lt;&#x2F;a&gt; und Patrick Günther,
+Tel.&#x2F;Messenger &lt;a href=&quot;tel:+491776837777&quot;&gt;0177-6837777&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+    </channel>
+</rss>

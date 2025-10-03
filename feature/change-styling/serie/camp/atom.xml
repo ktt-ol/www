@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Camp</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/change-styling/serie/camp/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-22T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/change-styling/serie/camp/atom.xml</id>
+    <entry xml:lang="de">
+        <title>MCH 2022</title>
+        <published>2022-08-07T17:36:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2022/mch2022/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2022/mch2022/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2022/mch2022/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2022&#x2F;mch2022&#x2F;MCH2022_Logo.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Die Mainframe-Crew war wieder campen. Mit sieben Teilnehmern fuhren wir in die Niederlande zur May Contain Hackers,
+kurz &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mch2022.org&#x2F;#&#x2F;&quot;&gt;MCH2022&lt;&#x2F;a&gt;, dem Nachfolger der &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2017&#x2F;sha2017&#x2F;&quot;&gt;SHA2017&lt;&#x2F;a&gt;. Im Gepäck hatten wir neben
+drei der obligatorischen 3D-Drucker natürlich auch unseren &lt;a href=&quot;#&quot;&gt;Kippenautomaten&lt;&#x2F;a&gt;. Dazu etwas Neues:
+Einen &lt;a href=&quot;#&quot;&gt;Geschirrspüler&lt;&#x2F;a&gt; - auf den wollen wir in Zukunft nie mehr verzichten.&lt;&#x2F;p&gt;
+&lt;p&gt;Der Kippomat stellte sich abermals als eye-catcher heraus, fast rund um die Uhr blieben immer wieder Besucher davor
+stehen. Einige waren enttäuscht, dort keine Zigaretten kaufen zu können, andere waren sehr froh, dringend benötigte
+USB-Kabel, Campingbesteck oder Mikrocontrollerboards am Automaten ziehen zu können.&lt;&#x2F;p&gt;
+&lt;p&gt;Das nächste Camp kommt bestimmt, egal ob „unser“ Nächstes das EMF oder CCCamp oder noch ein anderes wird, wir werden es
+auf der Mailingliste &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;mailman.ktt-ol.de&#x2F;postorius&#x2F;lists&#x2F;diskussion.lists.ktt-ol.de&#x2F;&quot;&gt;Diskussion&lt;&#x2F;a&gt;rechtzeitig
+bekannt geben.&lt;&#x2F;p&gt;
+&lt;p&gt;Bis dahin bleiben uns die Erinnerungen, u.a. fotografisch festgehalten im&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Chaos Communication Camp 2019</title>
+        <published>2019-09-13T23:42:00+00:00</published>
+        <updated>2023-03-19T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2019/cccamp2019/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2019/cccamp2019/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2019/cccamp2019/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2019&#x2F;cccamp2019&#x2F;DSC_0705.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nach dem CCCamp 2015 und der &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sha2017.org&quot;&gt;SHA2017&lt;&#x2F;a&gt; sind wieder zum Camping gefahren. Dieses Jahr stand
+das &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;events.ccc.de&#x2F;camp&#x2F;2019&#x2F;&quot;&gt;Chaos Communication Camp 2019&lt;&#x2F;a&gt; an und wir sind mit 15 Personen dort
+gewesen. Sehr schön ist es gewesen, jetzt heißt es wieder 2 Jahre warten auf das nächste Camp.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>SHA2017</title>
+        <published>2017-08-26T23:42:00+00:00</published>
+        <updated>2023-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2017/sha2017/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2017/sha2017/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2017/sha2017/">&lt;p&gt;Nachdem unsere Delegation vom &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;change-styling&#x2F;blog&#x2F;2015&#x2F;cccamp2015&#x2F;&quot;&gt;CCCamp 2015&lt;&#x2F;a&gt; quasi nur Gutes zu berichten hatte,
+sind dieses Mal mit ganzen 12 Personen zur &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.sha2017.org&quot;&gt;SHA2017&lt;&#x2F;a&gt; aufgebrochen.&lt;&#x2F;p&gt;
+&lt;p&gt;Nach den Erfahrungen vom letzten Camp sind wir dieses Mal bereits an Tag -1 angereist, um unser Village aufzubauen (und
+generell beim Aufbau zu helfen). Vor Ort wurde schonmal klar, warum unser Village kurz vor dem Event noch einmal
+verschoben wurde: Der ursprüngliche Platz bestand zum Teil aus einem Gebüsch und zum anderen Teil aus Sumpf. Kaum war
+der Pavillon aufgebaut began auch schon der erste Regen - keine Spur vom guten Wetter des Chaos Communication Camp 2015.
+Dies hat sich während des Camps zum Glück noch geändert, sodass man nicht 24&#x2F;7 im Pavilion hocken musste.&lt;&#x2F;p&gt;
+&lt;p&gt;An Tag -1 funktionierte das WLAN noch nicht (flächendeckend?), sodass relativ früh unsere mitgebrachten 50 Meter
+Twin-Verlegekabel mit Dosen versehen wurden, sodass vom nächsten Datenklo schnelles Internet organisiert werden konnte.
+Ebenfalls problematisch war initial die Stromversorgung - für diese hatten wir einen kleinen Stromgenerator dabei,
+allerdings auch längere Leitungen, um für Redundanz zu sorgen. Dies war gerade am ersten (und am letzten)Tag nötig, da
+der nächste Stromverteiler zunächst nicht funktionstüchtig war.&lt;&#x2F;p&gt;
+&lt;p&gt;Wie in den letzten Jahren für derartige Events üblich, hat auch die SHA2017-Crew ein hübsches Badge designt, welches aus
+einem ESP32(Microcontroller mit WLAN und Bluetooth), sowie einem Touch-Controller, einem Li-Ion-Akku und einem
+E-Paper-Display bestand. Für das Badge existierte eine Art App-Store, auf welchem bereits am Tag 1 Ransomware verteilt
+wurde (“Bring a Club-Mate to Tent XYZ to unlock your badge”).&lt;&#x2F;p&gt;
+&lt;p&gt;Eine bleibende Erinnerung haben sich auch die Finnen erarbeitet, die sich in ihr Village eine Sauna haben liefern
+lassen, oder das aus Leuchtstoffröhren gebaute Logo an einem Bauzaun.&lt;&#x2F;p&gt;
+&lt;p&gt;Alles in allem hat uns das Camp gut gefallen und wir freuen uns bereits auf das nächste CCCamp (einige spielen auch mit
+dem Gedanken nächstes Jahr zur EMF nach England zu reisen).&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Chaos Communication Camp 2015</title>
+        <published>2015-08-21T23:42:00+00:00</published>
+        <updated>2023-03-19T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2015/cccamp2015/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2015/cccamp2015/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2015/cccamp2015/">&lt;p&gt;Auch auf dem 4-jährigen Camp des CCCs ist der Mainframe selbstverständlich
+anzutreffen. Für den Aufbau des Villages und um dem großen Ansturm nach Tickets
+zu entgehen, sind wir bereits einen Tag früher angereist. Vor Ort angekommen
+wurde festgestellt, dass die meisten Zeltplätze bereits belegt waren. Nachdem
+eine Stunde nach einem guten Platz gesucht wurde, sind wir schließlich fast
+genau in der Mitte des Camps, direkt neben “Hackcenter 1” (&lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;cccamp2015&#x2F;misc&#x2F;map.pdf&quot;&gt;Karte&lt;&#x2F;a&gt;)
+untergekommen.&lt;&#x2F;p&gt;
+&lt;p&gt;Während am 12.08. mit vielen Wolken am Himmel in Oldenburg gestartet wurde, so
+war das Wetter im &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.ziegeleipark.de&#x2F;&quot;&gt;Ziegeleipark Mildenberg&lt;&#x2F;a&gt; die ganze Woche sehr sonnig bei über 30°
+Celsius. Durch die
+hohen Temperaturen und den fehlenden Regen war es zwar relativ staubig und
+langes ausschlafen war dank der hohen Temperaturen im Zelt nicht möglich, doch
+ein kleiner Badesee auf dem Camp-Gelände in Verbindung mit einer Talk-Pause von
+12:00 bis 16:00 machte die Temperaturen tagsüber erträglich.&lt;&#x2F;p&gt;
+&lt;p&gt;Das Mainframe Village wurde von uns an “Tag 0” als Kreis aus mehreren Iglu-
+und Tunnelzelten aufgebaut, in dessen Mitte Campingtische und Stühle
+aufgestellt wurden. Auf dem Camp stand eigentlich die gesamte vom Congress
+gewohnte Infrastruktur zur verfügung:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Netzwerk: Auf dem Camp-Gelände wurden wieder die, für das CCCamp berühmten,
+Datenklos aufgestellt, welche die aktive Netzwerktechnik des Camps beinhalten.
+Das Ablegen eines Netzwerkkabels nach unserer Ankunft führte dazu, dass wir
+1-2h später mit GBit ans Internet angebunden waren. Als Alternative gab es
+auch wieder mehrere WLAN-Netzwerke im 2.4 und 5 GHz Band.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Telefonie: Wie üblich gab es auch auf dem Congress wieder ein DECT-Funknetz,
+welches von den Teilnehmern für Camp-interne Kommunikation benutzt werden
+konnte. Wie auf den Congressen stand dieser Service auch wieder per SIP und
+per GSM zur Verfügung. Neu jedoch waren die Feldtelefone, welche vom &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;metalab.at&#x2F;&quot;&gt;Metalab&lt;&#x2F;a&gt; samt
+Vermittlungsstelle aufgebaut
+wurden.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Seidenstraße: Auch die Seidenstraße ist wieder aufgebaut worden, da dass
+Campgelände deutlich größer als das Congress Zentrum in Hamburg ist, war diese
+jedoch deutlich weniger auffällig.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;DVB-T: Wie in den letzten Jahren gab es auch wieder ein DVB-T Sender,
+welcher die Talks aus den größten Zelten gestreamt hat. Dies ermöglichte nicht
+nur das Betrachten von Talks außerhalb der üblicherweise sehr warmen
+Votragszelte, sondern führte auch dazu, dass einige DVB-T Receiver zum Testen
+der Badges mitgenommen wurden.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Strom: Der CCC hat mehrere größere Stromgeneratoren aufgestellt, um auf dem
+Gelände Strom zur Verfügung stellen zu können. Unser Village wurde direkt an
+“Tag 0” mit einer Kabeltrommel an die Infrastuktur angeschlossen.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Eine Besonderheit des Camps stellte aber auf jeden Fall das &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;rad1o&quot;&gt;rad1o Badge&lt;&#x2F;a&gt; dar, dass an die
+Teilnehmer verteilt wurde. Diese, vom &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;muc.ccc.de&quot;&gt;µCCC&lt;&#x2F;a&gt; designte
+Platine, ist eine Weiterentwicklung des &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20160205053603&#x2F;https:&#x2F;&#x2F;www.r0ket.de&#x2F;&quot;&gt;R0cket&lt;&#x2F;a&gt; vom 2011er-Camp. Diese beinhalte ein zum
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;greatscottgadgets.com&#x2F;hackrf&#x2F;&quot;&gt;HackRF One&lt;&#x2F;a&gt; kompatibles Software Defined Radio. Zu diesem gab es passende Talks,
+die z.B. das Versenden von DVB-T Signalen mit dem rad1o erklären.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

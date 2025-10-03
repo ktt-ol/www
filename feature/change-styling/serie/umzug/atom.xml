@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Umzug</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/change-styling/serie/umzug/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-22T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/change-styling/serie/umzug/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Umzug 3.0</title>
+        <published>2014-04-23T23:42:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2014/umzug/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2014/umzug/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2014/umzug/">&lt;h1 id=&quot;projekt-nerdpower&quot;&gt;Projekt “Nerdpower”&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;umzug&#x2F;nerdpower.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Es geht in die zweite Runde: der Transport von Inventar in den neuen Space.
+Planung: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;Nerdpower&quot;&gt;http:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;Nerdpower&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Projekt “Mob”&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;umzug&#x2F;plakat.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Wir machen den neuen Space sauber. Wer macht mit? Am Donnerstag um 20.00 Uhr gibt es die erste Runde im neuen Space.&lt;&#x2F;p&gt;
+&lt;p&gt;Planung: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;ProjektMob&quot;&gt;http:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;ProjektMob&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Umzug 2.0 Update</title>
+        <published>2012-07-13T11:15:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2-2/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2-2/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2-2/">&lt;p&gt;Langsam nähern sich alle Räume und die Infrastruktur dem gewünschten Zustand,
+die Umzugsstrapazen sind vergessen und wir leben uns in unserem tollen neuen
+Zuhause ein. Umfangreiche Arbeiten stehen nur noch in der Werkstatt an, in
+allen anderen Räumen fehlen nur noch Kleinigkeiten.&lt;&#x2F;p&gt;
+&lt;p&gt;Seht selbst:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2-2&#x2F;img1.jpg&quot; alt=&quot;Lounge&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In der Lounge stehen unsere Sofas, daneben direkt die Snack- und
+Getränke-Versorgung. Ein Barcode-Scanner vereinfacht die Abrechnung – endlich
+keine kaum abrechenbaren Strichlisten mehr!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2-2&#x2F;img2.jpg&quot; alt=&quot;Werkstatt&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;In der Werkstatt haben wir den Boden ausgetauscht, damit er einfach gesaugt und
+gewischt werden kann. Ob Metall oder Holz mit Handwerkzeugen oder Maschinen
+bearbeitet wird – hier ist der passende Raum dafür. Außerdem arbeiten wir hier
+mit dem Styroschneider und an den 3D-Druckern.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2-2&#x2F;img3.jpg&quot; alt=&quot;Konferenz&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Der multifunktionale Raum. Hier wird nach dem Space-Cooking mit 12 oder mehr
+Leuten getafelt, man kann aber auch in Ruhe am Laptop arbeiten. Außerdem finden
+hier natürlich unsere Vorträge und Workshops und gehostete Veranstaltungen wie
+der Webmontag Oldenburg statt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2-2&#x2F;img4.jpg&quot; alt=&quot;E-Werkstatt&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Auch unsere E-Werkstatt ist multifunktional. Wer die Lötkolben benötigt, holt
+sie bequem aus der Versenkung mitten in der Insel – wer nicht, lässt sie dort
+stehen. Im Workshop-Betrieb können hier 8 und mehr Leute parallel an
+Mikrocontrollern und Schaltungen arbeiten oder ihren 3D-Cube aufbauen, sonst
+laufen hier auch gern mal die 3D-Drucker, während am Nebenplatz schon das
+nächste Teil konstruiert wird …&lt;&#x2F;p&gt;
+&lt;p&gt;Im Vergleich zu unserem ersten Space hinter der Kulturetage sind wir hier zum
+ausgewachsenen Hackspace mit wesentlich mehr Möglichkeiten geworden. Wir sitzen
+zwar nicht mehr alle auf einem Haufen und jeder kriegt alles mit – aber das ist
+wahrscheinlich auch der entscheidende Vorteil: wenn im alten Raum mehr als zehn
+Leute waren, stieg die Lautstärke und konzentriertes Arbeiten war kaum noch
+möglich.&lt;&#x2F;p&gt;
+&lt;p&gt;Hier können wir uns bei Bedarf trotzdem noch alle zusammenrotten, alternativ
+können aber vier völlig unterschiedliche Tätigkeiten in den einzelnen Räumen
+nebeneinander laufen, ohne sich gegenseitig zu behindern. Klingt perfekt? Kommt
+vorbei und entscheidet selbst ;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Umzug 2.0</title>
+        <published>2012-06-26T12:00:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/umzug2/">&lt;p&gt;Am vergangenen Wochenende ist der Oldenburger Hackspace umgezogen. Von seiner ursprünglichen Heimat, dem „Beta-Space“ im
+quARTier, ging es gute 700 m weiter Richtung Nordwesten, in die Raiffeisenstraße 27. Im ehemaligen Stadtsteueramt – dem
+geografisch nahezu zentralsten Punkt Oldenburgs – haben wir Teile des Erdgeschosses bezogen. Damit stehen der
+Kreativität trifft Technik e.V. nun deutlich modernere und größere Räume zur Verfügung.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2&#x2F;img1.jpg&quot; alt=&quot;Flur&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Ein solcher Umzug bringt in aller Regel drei Gefühle mit sich: Wehmut, Vorfreude und Verdunstungskälte von Schweiß auf
+der Stirn.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Wehmut&lt;&#x2F;h1&gt;
+&lt;p&gt;Seit Montag letzter Woche war Packen angesagt. Ein kompletter Hackspace wollte verpackt werden. Aber nicht nur das: Bei
+einem echten Nerdumzug wäre einfaches Verpacken von Gegenständen doch ein wenig zu trivial. Also wurden zuvor alle
+Gegenstände, die sich innerhalb eines Jahres so angesammelt hatten, zunächst in einer Datenbank erfasst und
+inventarisiert. Diese Mammutaufgabe war binnen drei Tagen zum Großteil erledigt. Wir hoffen nun, dass uns das
+Inventarisierungssystem in Zukunft lästiges Suchen erspart: „Weiß jemand, ob wir 160pF-Elkos haben und wenn ja, wo?“&lt;&#x2F;p&gt;
+&lt;p&gt;Aber natürlich hat jeder Gegenstand, den man so einpackt, eine kleine Geschichte zu erzählen und jede kleine Geschichte
+ist eingebettet in eine größere; meist in die unseres Hackspaces. Da wurde das Umzugsteam schon so manches Mal wehmütig.
+Denn der Abschied von unseren Räumen im quARTier wird endgültig sein: Die Stadt hat das Gebäude zum Abriss freigegeben.
+Viele Stunden mehr oder minder fachlicher Gespräche wurden hier geführt, große Projekte – wie etwa unsere
+Vortragsreihe – wurden in den Räumen geplant, und sicherlich auch tausende Lötpunkte gesetzt.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-1&quot;&gt;Vorfreude&lt;&#x2F;h1&gt;
+&lt;p&gt;„Und jedem Anfang wohnt ein Zauber inne.“, so formulierte es schon Hermann Hesse. Also stieg mit jedem Tag, mit dem der
+Umzug näher rückte, auch die Vorfreude; die Vorfreude auf schönere, modernere Räume in noch zentralerer Lage. Parallel
+zum Auszugs- und Inventarisierungsteam, das im alten Beta-Space arbeitete, bereiteten Mitglieder im neuen Space die
+Räume für den Einzug vor: Die Netzwerkverkabelung wurde geprüft, die Stromversorgung fachmännischen Belastungstests
+unterzogen und insbesondere der Bodenbelag in der neuen Schmutzwerkstatt wurde ausgetauscht. Schließlich haben wir dann
+auch noch fleißig gestrichen und geputzt.&lt;&#x2F;p&gt;
+&lt;p&gt;Unser Umzugskoordinator blieb währenddessen äußerlich souverän. Trotz Dauerfeuers von etlichen Seiten und gefühlt
+dutzender Einkaufstouren zu Baumarkt und Möbelhaus versorgte er auch noch das Umzugsteam Tag für Tag mit einem Brunch.
+Dass ihm dabei dann doch nicht das eine oder andere graue Haar aus dem Kopf gesprießt ist, lag wohl auch daran, dass
+wir – wie so oft – großes Glück hatten. Beispielsweise kam eine überraschende und sehr großzügige Möbelspende auf den
+Tag genau passend, um uns davor zu bewahren, ohne Stühle in einen neuen Hackspace einziehen zu müssen.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-2&quot;&gt;Verdunstungskälte&lt;&#x2F;h1&gt;
+&lt;p&gt;Am letzten Samstag war es dann endlich so weit: Der zentrale Umzugstag war gekommen. Spätestens jetzt konnte man
+besagtes drittes Gefühl wahrnehmen; nämlich die angenehme Verdunstungskälte von Schweißperlen auf der Stirn. So würde
+man es jedenfalls formulieren, wollte man es denn positiv ausdrücken. Mit anderen Worten: Es wurde verladen und
+geschleppt. Tische, Werkzeug, Kisten und Kartons, alles musste hinüber in den neuen Space. Mit vereinten Kräften war der
+eigentliche Umzug dann aber auch schon nach wenigen Stunden vollbracht.&lt;&#x2F;p&gt;
+&lt;p&gt;Die meisten Menschen würden ihre Sachen nun einfach so in ihre neue Wohnung einräumen. Wir haben das an dieser Stelle
+einmal mehr etwas anders gehandhabt. Denn was nützt uns eine Erfassung unseres Inventars (immerhin über 1.300
+Gegenstände), wenn wir nicht auch erfassen, wo was lagert. Also musste jeder Gegenstand vor dem Einräumen in Regale und
+Schränke mit einer Ortskoordinate in der Inventardatenbank eingetragen werden. Ein Umzug unter Hackern eben.&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;-3&quot;&gt;Aktueller Status&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;umzug2&#x2F;img2.jpg&quot; alt=&quot;E-Werkstatt&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nach etwa 36 Stunden Arbeit stehen wir nun an dem Punkt, an dem neue Space de facto langsam hochgefahren werden kann.
+Sicherlich ist noch nicht alles fertig, geschweige denn perfekt. Aber vieles wird sich erfahrungsgemäß auch erst mit
+Benutzung der Räume einspielen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wie bei jedem Umzug darf auch bei uns eine standesgemäße Einweihungsfeier nicht fehlen. Einzelheiten dazu werden in den
+nächsten Tagen folgen. Aber soviel sei schon mal gesagt: Wie im alten Space heißen wir auch in unseren neuen Räumen
+Gäste jederzeit, sofern geöffnet ist, herzlich willkommen. Details zu unseren neuen Öffnungszeiten werden ebenfalls in
+Kürze an dieser Stelle bekannt gegeben. Also kommt vorbei und schaut Euch unsere neue Bleibe an!&lt;&#x2F;p&gt;
+&lt;p&gt;Allen direkt oder indirekt am Umzug beteiligten Helfern sei an dieser Stelle noch einmal gedankt. Ein Dank geht auch an
+unseren neuen Vermieter, ohne den das gesamte Unternehmen nicht möglich gewesen wäre. Wir freuen uns auf eine schöne
+gemeinsame Zeit.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Eröffnung Beta-Space</title>
+        <published>2011-11-21T12:00:00+00:00</published>
+        <updated>2011-11-21T12:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2011/2011-03/">&lt;p&gt;Der Verein Kreativität trifft Technik e.V. eröffnet im Oldenburger Bahnhofs- viertel unter dem Namen „Beta-Space“ einen
+Treffpunkt für kreative Bastler und Technikbegeisterte. Damit hat Oldenburg nun als erste Stadt im Nord- westen einen
+„Hackspace“. Die Einweihung findet am 28. November 2011 statt und wird von einem viertägigen Rahmenprogramm begleitet.
+Oldenburg. Am kommenden Montag, den 28. November 2011, um 19:00 Uhr lädt der Verein Kreativität trifft Technik e.V. zur
+Einweihung seines neuen Vereinsheims „Beta-Space“ in der Bleicherstraße 10 ein. Es ist nach dem Vorbild eines
+sogenannten Hackspaces aufgebaut. Hackspaces sind offene Räume für Menschen, die an Technologie, Wissenschaft und
+digitaler Kultur interessiert sind. Hier können sie gemeinsam an Projekten arbeiten oder Workshops und Vorträge
+veranstalten. In zahlreichen Städten auf der ganzen Welt lassen sich inzwischen solche Räume finden. Jetzt hat auch
+Nordwestdeutschland mit dem „Beta-Space“ in Oldenburg seinen ersten Hackspace.&lt;&#x2F;p&gt;
+&lt;p&gt;Mit dem in der öffentlichen Wahrnehmung oft negativ besetzten Image von Hackern hat der gemeinnützige Verein indes
+nichts zu tun. Dies zeigt schon ein Blick auf das viertägige Rahmenprogramm zur feierlichen Eröffnung. Hier bieten die
+Mitglieder einen Einblick in die typischen Aktivitäten in einem Hackspace: Bereits ab Sonntag, den 27. November, um 13:
+00 Uhr besteht für Besucher etwa die Möglichkeit, unter Anleitung in der Werkstatt des Vereins mit Mikrocontrollern und
+3D-Druckern zu experimentieren. Zudem werden vielfältige Workshops und Vorträge angeboten. Das Spektrum reicht von
+„Kochen für Nerds“ über neue Programmiertechniken bis hin zu Fragen des Datenschutzes in sozialen Netzwerken.&lt;&#x2F;p&gt;
+&lt;p&gt;Mit Unterstützung der Kulturetage und der Oldenburger Raiffeisenbank konnte der Verein Kreativität trifft Technik e.V.
+seine Idee von einem solchen Raum binnen weniger Monate realisieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Weitere Einzelheiten und das Veranstaltungsprogramm gibt es auf der Vereinshomepage.&lt;&#x2F;p&gt;
+&lt;p&gt;Über den Verein Kreativität trifft Technik e.V.&lt;&#x2F;p&gt;
+&lt;p&gt;Mitte des Jahres haben sich etwa 30 Oldenburger zum gemeinnützigen Verein Kreativität trifft Technik e.V. mit dem Ziel
+zusammengeschlossen, einen Treffpunkt zum offenen Austausch von technikaffinen und kreativ schaffenden Menschen in
+Oldenburg aufzubauen. Damit möchte der Verein zu einem Inkubator für neue kreative technische Projekte in der ganzen
+Region werden. Darüber hinaus sollen aktuelle wissenschaftliche, technische und soziale Themen aktiv in die breite
+Öffentlichkeit getragen werden.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

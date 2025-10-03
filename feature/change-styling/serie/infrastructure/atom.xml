@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Infrastructure</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/change-styling/serie/infrastructure/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-24T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/change-styling/serie/infrastructure/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Hackspace Access Control System</title>
+        <published>2016-12-06T00:00:00+00:00</published>
+        <updated>2016-12-06T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            sre
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2016/acs/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2016/acs/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2016/acs/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;acs&#x2F;hacs-logo.svg&quot; alt=&quot;Hacs logo&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;While the status-switch is nice, it does not help to actually
+get into a hackspace. For this you need some keys and with
+multiple people having access rights having a single key
+is quite annoying. While there are a few simple solutions
+they usually lack some desired features. Thus we decided to
+implement a digital access control system, that can open
+our doors.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;Hardware&lt;&#x2F;h2&gt;
+&lt;p&gt;As visible in the &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;map.mainframe.io&quot;&gt;Space Map&lt;&#x2F;a&gt;, there are multiple
+ways to get into our Hackspace. Let’s have a look at the main entrance for now.
+The first door is the building’s entrance downstairs. This is not yet handled
+by the access control system, since its not exclusively used by us and needs
+agreements with different people first.&lt;&#x2F;p&gt;
+&lt;p&gt;Then in the second floor (not counting the ground level - the building has no
+first floor) there is a glass-door from the staircase to our front corridor.
+This door has been armed with a few sensors by us, a door opener as well as a
+bell button next to it. The corridor is also used as emergency exit from our
+neighbours, so the glass-door contains a panic lock. It will automatically
+unlock the door if somebody uses the inner doorhandle. We notice any door
+opening by the door using a small reed-contact and always know if the door is
+locked using a bolt-switch. This information is fed into our
+&lt;a href=&quot;&#x2F;&#x2F;grafana.mainframe.io&quot;&gt;Grafana&lt;&#x2F;a&gt; instance. If the door is not locked,
+it can be opened using a door opener (buzzer). Our access control system opens
+the door, if the bell button is pressed and the space is not closed. If it is
+closed, the bell button rings the bell instead. A small ws2812b LED inside of
+the bell button gives a hint about the current space status.&lt;&#x2F;p&gt;
+&lt;p&gt;Next, there are two doors going from the corridor onto our main area. One going
+straight to the main area (AKA main-door) and one going via our conference
+room. The one going via the conference room is not yet upgraded, but the main-door
+has the same sensors as the glass-door, as well as the door opener and the bell
+button. Additionally it already had a keypad, which has been integrated into our
+access control system. This door also has a motor-lock (using an ABUS CFA1000).&lt;&#x2F;p&gt;
+&lt;p&gt;Historically we used the status-switch, to change the space-status and a normal
+key to (un)lock the door. We are currently migrating away from the switch to a
+SSH based setup (and an Android app using our custom ssh interface) for changing
+the space-status. Then the door-lock will automatically (un)lock the space based
+upon the status provided via ssh. Once unlocked the door can be opened by our
+members using the keypad. Guests can ring the bell using the bell button instead.
+There is also an “Open House” mode, which is called “open+” by us. In this mode
+the bell button directly opens the door.&lt;&#x2F;p&gt;
+&lt;p&gt;Below you can see a diagram of all hardware implementing the above. The green
+boxes are related to the glass-door and the blue boxes to the main-door. The
+orange boxes relate to hardware on our main area. The red dashed line is a
+ws2812b bus provided by an attiny85 and provides status indications. The green
+dashed lines are GPIO handles. Note that those are slightly simplified, as
+they sometimes contain pull-ups&#x2F;pull-downs, logic-level converters or even
+relays to control the actual hardware.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;acs&#x2F;hardware-overview.svg&quot; alt=&quot;Hardware Interconnection Overview&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;Sofware&lt;&#x2F;h2&gt;
+&lt;p&gt;The handling of the GPIOs and other hardware components happens on a Raspberry
+Pi 2 running a (minimal) Debian and Debian kernel. The &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Device_tree&quot;&gt;device tree&lt;&#x2F;a&gt;
+has been modificated
+slightly, so that the kernel knows about the mcp23017 port expanders and the
+keypad.&lt;&#x2F;p&gt;
+&lt;p&gt;Since there is no userspace support for DT overlays in the mainline&#x2F;Debian
+kernel so far; the standard DT blob must be modified instead. The one provided
+by Debian’s kernel package can be made readable again using &lt;code&gt;dtc -I dtb -O dts -o rpi.dts &#x2F;path&#x2F;to&#x2F;rpi.dtb&lt;&#x2F;code&gt;. Then we add our custom modifications from &lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;acs&#x2F;devicetree-additions.dts&quot;&gt;devicetree-additions.dts&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;With that done the software from the github repository linked above can be used.
+It comes with multiple daemons:&lt;&#x2F;p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;Binary&lt;&#x2F;th&gt;&lt;th&gt;Description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;acs-abus-cfa1000-sensor&lt;&#x2F;td&gt;&lt;td&gt;Send Bolt State of Abus CFA1000 to MQTT&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-abus-cfa1000-setup&lt;&#x2F;td&gt;&lt;td&gt;Setup Abus CFA1000 (use after power loss)&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-gio-actor&lt;&#x2F;td&gt;&lt;td&gt;Make output GPIO accessible from MQTT&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-gpio-sensor&lt;&#x2F;td&gt;&lt;td&gt;Make input  GPIO accessible from MQTT&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-i2c-led&lt;&#x2F;td&gt;&lt;td&gt;Control LEDs connected to the attiny85&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-keyboard&lt;&#x2F;td&gt;&lt;td&gt;Handle for keypad device&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-status-display&lt;&#x2F;td&gt;&lt;td&gt;Handler for usb-serial display&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-switch&lt;&#x2F;td&gt;&lt;td&gt;Handler for status switch&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-keyholder-interface&lt;&#x2F;td&gt;&lt;td&gt;SSH interface&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-mqtt-fwd&lt;&#x2F;td&gt;&lt;td&gt;Forward SSH data to MQTT&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-doorctrl&lt;&#x2F;td&gt;&lt;td&gt;Control ABUS CFA1000 based from SSH data&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-main-door&lt;&#x2F;td&gt;&lt;td&gt;Handler for main-door bell-button&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;acs-glass-door&lt;&#x2F;td&gt;&lt;td&gt;Handler for glass-door bell-button&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;-2&quot;&gt;SSH Setup&lt;&#x2F;h2&gt;
+&lt;p&gt;On the RPi a new system user is created e.g. “keyholder”. For this user
+the login shell is set to “acs-keyholder-interface”, which runs with
+suid bit. It only supports a few commands (actually just “set-status”
+and “set-next-status” at the moment). Apart from that you provide a
+~&#x2F;.ssh&#x2F;authorized_keys in the usual format. Last but not least the user
+information must be added to the user DB (usually &lt;code&gt;&#x2F;var&#x2F;lib&#x2F;acs.db&lt;&#x2F;code&gt;).&lt;&#x2F;p&gt;
+&lt;p&gt;If you now try to set the state using &lt;code&gt;ssh keyholder@access-control-system set-status open+ &quot;Open 4 all!&quot;&lt;&#x2F;code&gt; the system will check the fingerprint of the
+key, that did the ssh login and infer the user information from that generating
+a few simple files in &lt;code&gt;&#x2F;run&#x2F;acs-state&lt;&#x2F;code&gt;. These files are interpreted by
+acs-mqtt-fwd and acs-doorctrl respectively.&lt;&#x2F;p&gt;
+&lt;p&gt;If the deprecated status switch is used to change the status, the files in
+&lt;code&gt;&#x2F;run&#x2F;acs-state&lt;&#x2F;code&gt; are deleted.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>3D Logo</title>
+        <published>2013-01-28T23:42:00+00:00</published>
+        <updated>2013-01-28T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            Ben
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2013/3d-logo/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2013/3d-logo/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2013/3d-logo/">&lt;p&gt;Ich habe die Buchstaben einzeln mit dem Styroschneider ausgeschnitten.
+Als nächstes wurden die Buchstaben mit weißem Acrylack auf Wasserbasis zwei mal gestrichen.
+Da ich noch eine Dose KFZ-Lack hatte habe ich die Buchstaben damit lackiert.
+Die Grundierung mit dem Acrylack verhinderte das Zerfressen der Buchstaben durch das Lösungsmittel im KFZ-Lack.
+Aus einem Rundholz habe ich die Abstandshalter zugesägt.
+Mit unserem Drucker Plotter habe ich mit eine Schablone gedruckt um die Buchstaben später zu positionieren.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0001.jpg&quot; alt=&quot;Styroporbuchstaben&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Auf der Rückseite habe ich LED-Stripe verlötet.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0002.jpg&quot; alt=&quot;Beleuchtung&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Hier die Rückseiten mit Stripes und Abstandshaltern welche mit doppelseitigem
+Klebeband befestigt wurden und hoffentlich halten.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0003.jpg&quot; alt=&quot;Abstandshalter&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0004.jpg&quot; alt=&quot;Puzzle&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0005.jpg&quot; alt=&quot;fast fertig&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;3d-logo&#x2F;0006.jpg&quot; alt=&quot;DONE&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Spaceschalter</title>
+        <published>2012-05-07T10:00:00+00:00</published>
+        <updated>2024-03-24T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            Thorben
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/change-styling/blog/2012/spaceschalter/"/>
+        <id>https://www.mainframe.io/www/feature/change-styling/blog/2012/spaceschalter/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2012/spaceschalter/">&lt;p&gt;Ob unsere Räume gerade geöffnet sind kann schon seit März 2012 auf unserer
+Webseite neben unseren üblichen Öffnungszeiten live eingesehen werden.&lt;&#x2F;p&gt;
+&lt;p&gt;Wer es genauer wissen will sieht unter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;status.mainframe.io&quot;&gt;status.mainframe.ioz&lt;&#x2F;a&gt; sogar, wie lange der
+Space schon offen ist, wieviele Leute aktuell über unseren Freifunk-Knoten im
+Internet surfen und welches Wetter wir drinnen und draußen haben. Wer dann auf
+der Statusseite verbleibt, der wird sogar zu der sich ebenfalls live
+aktualisierenden Anzahl aller Leute, hinzugezählt, die den Space-Status im Auge
+haben.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;spaceschalter&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Hauptbestandteil ist ein aus China importierter imposant großer
+Messerschalter, der in Deutschland den VDE-Fingertest nicht bestehen würde.
+Dieser hängt an einem Mikrocontroller mit aufgestecktem Internetanschluss. Es
+werden nur unschädliche 5 Volt geschaltet, die dem Mikrocontroller sagen, ob
+jemand den Schalter gerade umgelegt hat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;spaceschalter&#x2F;img2.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn dies geschieht, geht sofort eine kleine Nachricht an unseren Server im
+Internet, der die frohe Botschaft spontan weiterverteilt. Da das Umlegen des
+Schalters nicht zuletzt wegen der spontanen Reaktion im Browser ungeheuer Spaß
+macht, haben wir das Posten der Nachricht auf Twitter um einige Minuten
+verzögert.&lt;&#x2F;p&gt;
+&lt;p&gt;All diese Informationen sind über die Space-API, die von 26 internationalen
+Hackerspaces genutzt und weiterentwickelt wird, global verfügbar.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;spaceschalter&#x2F;img3.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Und natürlich gilt: “There’s an App for that” (zumindest
+für &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;play.google.com&#x2F;store&#x2F;apps&#x2F;details?id=de.ring0.hackspace&quot;&gt;Android&lt;&#x2F;a&gt;)&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

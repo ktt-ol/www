@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Eingeloggt!</title>
+      <link>https://www.mainframe.io/www/feature/change-styling</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/change-styling/serie/eingeloggt/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sat, 22 Mar 2025 19:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Eingeloggt! Oldenburg</title>
+          <pubDate>Sat, 22 Mar 2025 19:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/change-styling/blog/2025/eingeloggt/</link>
+          <guid>https://www.mainframe.io/www/feature/change-styling/blog/2025/eingeloggt/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/change-styling/blog/2025/eingeloggt/">&lt;p&gt;In Oldenburg findet bereits zum dritten Mal die Eingeloggt!-Woche statt. Vom 23.03. bis 30.03.2025 laden wieder
+zahlreiche
+Organisationen in Oldenburg generationenübergreifend zu Workshops, Besichtigungen und Vorträgen rund um das Thema
+Digitalisierung ein.
+Auch der Verein Kreativität trifft Technik e.V. mit dem Hackspace Mainframe beteiligt sich mit gleich sieben
+Veranstaltungen.
+Hier können Jung und Alt ohne Berührungsängste erfahren, was in einem Hackspace los ist und auch einige unserer Angebote
+ausprobieren.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Veranstaltungen sind kostenlos und werden von erfahrenen und engagierten Mitgliedern unseres Vereins ehrenamtlich
+betreut.
+Für die meisten Angebote ist keine Anmeldung erforderlich, lediglich für den Workshop “Löten und Mikrocontroller” am
+Dienstag, 25.03.2025,
+bitten wir um Anmeldung per E-Mail an &lt;a href=&quot;mailto:&#x2F;&#x2F;pg@ktt-ol.de&quot;&gt;pg@ktt-ol.de&lt;&#x2F;a&gt;, da dort die Plätze begrenzt sind.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;unsere-veranstaltungen&quot;&gt;Unsere Veranstaltungen:&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sonntag, 23.03.2025, 18:00 - 20:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Spacewalk - Führung durch unseren Hackspace Mainframe mit Werkstätten für Elektronik, Lasercutter, 3D-Druck,
+Textilien, Holz und Metall&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Montag, 24.03.2025, 19:00 - 21:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Bewegung in der Virtuellen Realität&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Dienstag, 25.03.2025, 17:00 - 20:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Löten und Mikrocontroller: Temperatur und Luftfeuchtigkeitsmesser selber bauen&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Freitag, 28.03.2025, 15:00 - 17:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;IoT - das Internet der Dinge (SmartHome, Fitness-Tracker, Medizingeräte)&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Samstag, 29.03.2025, 16:00 - 19:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Textilien selbst veredeln&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sonntag, 30.03.2025, 15:00 - 17:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Spacewalk, zweite Chance - Führung durch unseren Hackspace Mainframe mit Werkstätten für Elektronik, Lasercutter,
+3D-Druck, Textilien, Fahrräder, Holz und Metall&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Sonntag, 30.03.2025, 18:00 - 20:00 Uhr&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Individuelle Holzboxen mit dem Lasercutter bauen&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Unser Hackspace Mainframe ist auch weiterhin immer für Besucher geöffnet, wenn
+auf &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;status.mainframe.io&quot;&gt;status.mainframe.io&lt;&#x2F;a&gt; als Status “AUF” oder “AUF+” steht. Dies ist meistens montags
+bis sonntags ab 19 Uhr bis Mitternacht der Fall, häufig auch früher und länger. Wir freuen uns auf Euren Besuch im
+Postgebäude direkt am Oldenburger Hauptbahnhof, Eingang gegenüber Europcar.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
