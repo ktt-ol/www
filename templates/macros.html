@@ -130,13 +130,15 @@
                 {% endif %}
 
                 <div class="col-sm-3 d-flex flex-column bg-body-tertiary rounded rounded-2 justify-content-center text-center">
-                    <img alt="Thumbnail Image for {{ page_title }}"
-                         src="{{ self::rel_url(path=thumbnail_url) }}"
-                         decoding="async"
-                         class="object-fit-contain"
-                         loading="lazy"
-                         style="height: 150px; max-width: 100%;"
-                    />
+                    <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}">
+                        <img alt="Thumbnail Image for {{ page_title }}"
+                             src="{{ self::rel_url(path=thumbnail_url) }}"
+                             decoding="async"
+                             class="object-fit-contain"
+                             loading="lazy"
+                             style="height: 150px; max-width: 100%;"
+                        />
+                    </a>
                 </div>
                 <div class="col-sm-9 d-flex flex-column">
                     <p style="min-height: 1rem;" class="text-secondary fs-6 m-0 text-truncate">
@@ -153,7 +155,9 @@
                             {% set lang_str = lang_str | replace(from="%author%", to='') %}
                         {% endif %}
 
-                        {{ lang_str }} {{ blog_page.word_count }}
+                        <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}" class="text-reset text-decoration-none">
+                            {{ lang_str }}
+                        </a>
                     </p>
                     <h4 class="text-primary mb-1 ps-0 border-bottom-0">
                         <a href="{{ self::rel_url(path='@/' ~ blog_page.relative_path, lang=lang) }}"
