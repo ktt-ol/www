@@ -5,7 +5,7 @@
 // PCB Background Configuration
 const PCB_CONFIG = {
     useRandomGeneration: true,  // Set to false to use only fixed traces
-    randomTraceCount: {min: 5, max: 15},  // Number of random traces when useRandomGeneration is true
+    randomTraceCount: { min: 5, max: 15 },  // Number of random traces when useRandomGeneration is true
     gridSize: 32,  // Grid cell size in pixels
 };
 
@@ -13,67 +13,95 @@ const PCB_CONFIG = {
 class PCBCanvas {
     constructor(canvasId) {
         this.canvas = document.getElementById(canvasId);
+        if (!this.canvas) {
+            console.error('PCB Canvas: Canvas element not found:', canvasId);
+            return;
+        }
+        
         this.ctx = this.canvas.getContext('2d');
-
+        if (!this.ctx) {
+            console.error('PCB Canvas: Could not get 2D context');
+            return;
+        }
+        
         // Grid system for alignment
         this.gridSize = PCB_CONFIG.gridSize;
-
+        
         this.init();
     }
-
+    
     init() {
-        this.resizeCanvas();
-        this.drawBackground();
-        this.setupEventListeners();
+        // Wait for next frame to ensure layout is complete
+        requestAnimationFrame(() => {
+            this.resizeCanvas();
+            this.drawBackground();
+            this.setupEventListeners();
+        });
     }
-
+    
     resizeCanvas() {
-        this.canvas.width = window.innerWidth;
-        this.canvas.height = window.innerHeight;
+        // Ensure we have valid dimensions
+        const width = window.innerWidth || document.documentElement.clientWidth;
+        const height = window.innerHeight || document.documentElement.clientHeight;
+        
+        if (width > 0 && height > 0) {
+            this.canvas.width = width;
+            this.canvas.height = height;
+        } else {
+            console.warn('PCB Canvas: Invalid dimensions, retrying...');
+            // Retry after a short delay if dimensions are invalid
+            setTimeout(() => this.resizeCanvas(), 100);
+        }
     }
-
+    
     snapToGrid(value) {
         return Math.round(value / this.gridSize) * this.gridSize;
     }
-
+    
     drawBackground() {
+        // Ensure canvas has valid dimensions before drawing
+        if (this.canvas.width === 0 || this.canvas.height === 0) {
+            console.warn('PCB Canvas: Canvas has zero dimensions, skipping draw');
+            return;
+        }
+        
         // Dark background (#222222)
         this.ctx.fillStyle = '#222222';
         this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
-
+        
         // Add decorative PCB traces in the background (no visible grid)
         this.drawDecorativeTraces();
     }
-
+    
     drawDecorativeTraces() {
         const w = this.canvas.width;
         const h = this.canvas.height;
-
+        
         // Calculate grid dimensions
         const gridCols = Math.floor(w / this.gridSize);
         const gridRows = Math.floor(h / this.gridSize);
-
+        
         // Track occupied grid cells to prevent overlaps
         const occupiedCells = new Set();
-
+        
         // Store all traces
         const traces = [];
-
+        
         // Draw multiple decorative traces with branching
         this.ctx.strokeStyle = 'rgba(0, 160, 255, 0.06)';
         this.ctx.lineWidth = 2;
         this.ctx.lineCap = 'round';
         this.ctx.lineJoin = 'round';
-
+        
         // Add fixed traces first
         this.addFixedTraces(gridCols, gridRows, occupiedCells, traces);
-
+        
         // Add random traces if enabled
         if (PCB_CONFIG.useRandomGeneration) {
             const numRandomTraces = Math.floor(
                 Math.random() * (PCB_CONFIG.randomTraceCount.max - PCB_CONFIG.randomTraceCount.min + 1)
             ) + PCB_CONFIG.randomTraceCount.min;
-
+            
             for (let i = 0; i < numRandomTraces; i++) {
                 // Generate a horizontal trace that starts from left or right edge
                 const trace = this.generateGridBasedTrace(gridCols, gridRows, occupiedCells);
@@ -84,7 +112,7 @@ class PCBCanvas {
             }
         }
     }
-
+    
     addFixedTraces(gridCols, gridRows, occupiedCells, traces) {
         // Fixed trace patterns that always appear
         const fixedTraceConfigs = [
@@ -94,9 +122,9 @@ class PCBCanvas {
                 startRow: Math.floor(gridRows * 0.2),
                 direction: 1,
                 segments: [
-                    {type: 'h', length: Math.floor(gridCols * 0.6)},
-                    {type: 'v', length: Math.floor(gridRows * 0.15)},
-                    {type: 'h', length: Math.floor(gridCols * 0.2)}
+                    { type: 'h', length: Math.floor(gridCols * 0.6) },
+                    { type: 'v', length: Math.floor(gridRows * 0.15) },
+                    { type: 'h', length: Math.floor(gridCols * 0.2) }
                 ]
             },
             // Trace 2: Top right to mid left
@@ -105,9 +133,9 @@ class PCBCanvas {
                 startRow: Math.floor(gridRows * 0.35),
                 direction: -1,
                 segments: [
-                    {type: 'h', length: Math.floor(gridCols * 0.5)},
-                    {type: 'v', length: -Math.floor(gridRows * 0.1)},
-                    {type: 'h', length: Math.floor(gridCols * 0.25)}
+                    { type: 'h', length: Math.floor(gridCols * 0.5) },
+                    { type: 'v', length: -Math.floor(gridRows * 0.1) },
+                    { type: 'h', length: Math.floor(gridCols * 0.25) }
                 ]
             },
             // Trace 3: Bottom left to mid right
@@ -116,9 +144,9 @@ class PCBCanvas {
                 startRow: Math.floor(gridRows * 0.7),
                 direction: 1,
                 segments: [
-                    {type: 'h', length: Math.floor(gridCols * 0.65)},
-                    {type: 'v', length: Math.floor(gridRows * 0.1)},
-                    {type: 'h', length: Math.floor(gridCols * 0.15)}
+                    { type: 'h', length: Math.floor(gridCols * 0.65) },
+                    { type: 'v', length: Math.floor(gridRows * 0.1) },
+                    { type: 'h', length: Math.floor(gridCols * 0.15) }
                 ]
             },
             // Trace 4: Bottom right to center
@@ -127,13 +155,13 @@ class PCBCanvas {
                 startRow: Math.floor(gridRows * 0.8),
                 direction: -1,
                 segments: [
-                    {type: 'h', length: Math.floor(gridCols * 0.55)},
-                    {type: 'v', length: -Math.floor(gridRows * 0.12)},
-                    {type: 'h', length: Math.floor(gridCols * 0.2)}
+                    { type: 'h', length: Math.floor(gridCols * 0.55) },
+                    { type: 'v', length: -Math.floor(gridRows * 0.12) },
+                    { type: 'h', length: Math.floor(gridCols * 0.2) }
                 ]
             }
         ];
-
+        
         for (const config of fixedTraceConfigs) {
             const trace = this.generateFixedTrace(config, gridCols, gridRows, occupiedCells);
             if (trace) {
@@ -142,86 +170,86 @@ class PCBCanvas {
             }
         }
     }
-
+    
     generateFixedTrace(config, gridCols, gridRows, occupiedCells) {
-        const path = [{col: config.startCol, row: config.startRow}];
+        const path = [{ col: config.startCol, row: config.startRow }];
         let currentCol = config.startCol;
         let currentRow = config.startRow;
-
+        
         // Mark starting cell
         occupiedCells.add(`${currentCol},${currentRow}`);
-
+        
         for (const segment of config.segments) {
             if (segment.type === 'h') {
                 // Horizontal movement
                 const direction = segment.length > 0 ? 1 : -1;
                 const absLength = Math.abs(segment.length);
-
+                
                 for (let i = 0; i < absLength; i++) {
                     const newCol = currentCol + direction;
                     if (newCol < 0 || newCol >= gridCols) break;
-
+                    
                     const cellKey = `${newCol},${currentRow}`;
                     if (occupiedCells.has(cellKey)) break;
-
+                    
                     currentCol = newCol;
-                    path.push({col: currentCol, row: currentRow});
+                    path.push({ col: currentCol, row: currentRow });
                     occupiedCells.add(cellKey);
                 }
             } else if (segment.type === 'v') {
                 // Vertical movement
                 const direction = segment.length > 0 ? 1 : -1;
                 const absLength = Math.abs(segment.length);
-
+                
                 for (let i = 0; i < absLength; i++) {
                     const newRow = currentRow + direction;
                     if (newRow < 0 || newRow >= gridRows) break;
-
+                    
                     const cellKey = `${currentCol},${newRow}`;
                     if (occupiedCells.has(cellKey)) break;
-
+                    
                     currentRow = newRow;
-                    path.push({col: currentCol, row: currentRow});
+                    path.push({ col: currentCol, row: currentRow });
                     occupiedCells.add(cellKey);
                 }
             }
         }
-
-        return path.length > 1 ? {main: path, branches: []} : null;
+        
+        return path.length > 1 ? { main: path, branches: [] } : null;
     }
-
+    
     generateGridBasedTrace(gridCols, gridRows, occupiedCells) {
         // Start from left or right edge
         const fromLeft = Math.random() > 0.5;
         const startCol = fromLeft ? 0 : gridCols - 1;
-
+        
         // Pick a Y position (grid row) that doesn't conflict
         let startRow;
         let attempts = 0;
         const maxAttempts = 50;
-
+        
         do {
             startRow = Math.floor(Math.random() * (gridRows - 2)) + 1; // Avoid top and bottom edges
             attempts++;
-
+            
             // Check if this row is available (not occupied)
             const cellKey = `${startCol},${startRow}`;
             if (!occupiedCells.has(cellKey)) {
                 break;
             }
         } while (attempts < maxAttempts);
-
+        
         if (attempts >= maxAttempts) {
             return null; // Couldn't find a good spot
         }
-
+        
         // Generate main trace path on the grid
         const mainTrace = this.generateGridPath(startCol, startRow, gridCols, gridRows, fromLeft, occupiedCells);
-
+        
         if (!mainTrace || mainTrace.length < 2) {
             return null;
         }
-
+        
         // 30% chance to add 1 branch
         const branches = [];
         if (Math.random() > 0.7 && mainTrace.length > 3) {
@@ -236,90 +264,90 @@ class PCBCanvas {
                 occupiedCells
             );
             if (branchPath && branchPath.length > 1) {
-                branches.push({start: branchIndex, path: branchPath});
+                branches.push({ start: branchIndex, path: branchPath });
             }
         }
-
-        return {main: mainTrace, branches: branches};
+        
+        return { main: mainTrace, branches: branches };
     }
-
+    
     generateGridPath(startCol, startRow, gridCols, gridRows, fromLeft, occupiedCells) {
-        const path = [{col: startCol, row: startRow}];
-
+        const path = [{ col: startCol, row: startRow }];
+        
         // Mark starting cell as occupied
         occupiedCells.add(`${startCol},${startRow}`);
-
+        
         let currentCol = startCol;
         let currentRow = startRow;
-
+        
         // Determine how far to traverse (70-100% of width) - increased for longer traces
         const targetColDistance = Math.floor((gridCols - 2) * (0.7 + Math.random() * 0.3));
         let colsTraveled = 0;
-
+        
         // Number of segments (2-4 turns)
         const numSegments = Math.floor(Math.random() * 3) + 2;
-
+        
         for (let i = 0; i < numSegments && colsTraveled < targetColDistance; i++) {
             if (i % 2 === 0) {
                 // Move horizontally
                 const direction = fromLeft ? 1 : -1;
                 const segmentLength = Math.floor(Math.random() * 10) + 6; // 6-15 grid cells (increased for longer traces)
-
+                
                 for (let step = 0; step < segmentLength && colsTraveled < targetColDistance; step++) {
                     const newCol = currentCol + direction;
-
+                    
                     // Check bounds
                     if (newCol < 0 || newCol >= gridCols) break;
-
+                    
                     // Check if cell is occupied
                     const cellKey = `${newCol},${currentRow}`;
                     if (occupiedCells.has(cellKey)) break;
-
+                    
                     currentCol = newCol;
                     colsTraveled++;
-                    path.push({col: currentCol, row: currentRow});
+                    path.push({ col: currentCol, row: currentRow });
                     occupiedCells.add(cellKey);
                 }
             } else {
                 // Move vertically (smaller movements)
                 const verticalMove = Math.floor(Math.random() * 5) - 2; // -2 to +2 grid cells
                 const newRow = Math.max(1, Math.min(gridRows - 2, currentRow + verticalMove));
-
+                
                 if (newRow !== currentRow) {
                     const direction = newRow > currentRow ? 1 : -1;
-
+                    
                     // Move one cell at a time vertically
                     while (currentRow !== newRow) {
                         currentRow += direction;
                         const cellKey = `${currentCol},${currentRow}`;
-
+                        
                         if (occupiedCells.has(cellKey)) {
                             currentRow -= direction; // Step back
                             break;
                         }
-
-                        path.push({col: currentCol, row: currentRow});
+                        
+                        path.push({ col: currentCol, row: currentRow });
                         occupiedCells.add(cellKey);
                     }
                 }
             }
         }
-
+        
         return path;
     }
-
+    
     generateGridBranch(startCol, startRow, gridCols, gridRows, fromLeft, occupiedCells) {
-        const path = [{col: startCol, row: startRow}];
-
+        const path = [{ col: startCol, row: startRow }];
+        
         let currentCol = startCol;
         let currentRow = startRow;
-
+        
         // Branches are shorter (2-3 segments)
         const numSegments = Math.floor(Math.random() * 2) + 2;
-
+        
         for (let i = 0; i < numSegments; i++) {
             const segmentLength = Math.floor(Math.random() * 4) + 2; // 2-5 grid cells
-
+            
             if (i % 2 === 0) {
                 // Move vertically or horizontally perpendicular
                 if (Math.random() > 0.5) {
@@ -328,12 +356,12 @@ class PCBCanvas {
                     for (let step = 0; step < segmentLength; step++) {
                         const newRow = currentRow + direction;
                         if (newRow < 1 || newRow >= gridRows - 1) break;
-
+                        
                         const cellKey = `${currentCol},${newRow}`;
                         if (occupiedCells.has(cellKey)) break;
-
+                        
                         currentRow = newRow;
-                        path.push({col: currentCol, row: currentRow});
+                        path.push({ col: currentCol, row: currentRow });
                         occupiedCells.add(cellKey);
                     }
                 } else {
@@ -342,12 +370,12 @@ class PCBCanvas {
                     for (let step = 0; step < segmentLength; step++) {
                         const newCol = currentCol + direction;
                         if (newCol < 0 || newCol >= gridCols) break;
-
+                        
                         const cellKey = `${newCol},${currentRow}`;
                         if (occupiedCells.has(cellKey)) break;
-
+                        
                         currentCol = newCol;
-                        path.push({col: currentCol, row: currentRow});
+                        path.push({ col: currentCol, row: currentRow });
                         occupiedCells.add(cellKey);
                     }
                 }
@@ -357,27 +385,27 @@ class PCBCanvas {
                 for (let step = 0; step < segmentLength; step++) {
                     const newCol = currentCol + direction;
                     if (newCol < 0 || newCol >= gridCols) break;
-
+                    
                     const cellKey = `${newCol},${currentRow}`;
                     if (occupiedCells.has(cellKey)) break;
-
+                    
                     currentCol = newCol;
-                    path.push({col: currentCol, row: currentRow});
+                    path.push({ col: currentCol, row: currentRow });
                     occupiedCells.add(cellKey);
                 }
             }
         }
-
+        
         return path;
     }
-
+    
     drawDecorativeTrace(trace) {
         // Convert grid coordinates to pixel coordinates
         const mainPath = trace.main.map(point => ({
             x: point.col * this.gridSize,
             y: point.row * this.gridSize
         }));
-
+        
         // Draw main trace
         this.ctx.strokeStyle = 'rgba(0, 160, 255, 0.06)';
         this.ctx.beginPath();
@@ -386,7 +414,7 @@ class PCBCanvas {
             this.ctx.lineTo(mainPath[i].x, mainPath[i].y);
         }
         this.ctx.stroke();
-
+        
         // Draw vias at grid intersections (all points are on grid intersections)
         this.ctx.fillStyle = 'rgba(0, 160, 255, 0.08)';
         for (let i = 0; i < mainPath.length; i++) {
@@ -395,14 +423,14 @@ class PCBCanvas {
                 this.drawVia(mainPath[i].x, mainPath[i].y);
             }
         }
-
+        
         // Draw branches
         for (const branch of trace.branches) {
             const branchPath = branch.path.map(point => ({
                 x: point.col * this.gridSize,
                 y: point.row * this.gridSize
             }));
-
+            
             this.ctx.strokeStyle = 'rgba(0, 160, 255, 0.06)';
             this.ctx.beginPath();
             this.ctx.moveTo(branchPath[0].x, branchPath[0].y);
@@ -410,27 +438,27 @@ class PCBCanvas {
                 this.ctx.lineTo(branchPath[i].x, branchPath[i].y);
             }
             this.ctx.stroke();
-
+            
             // Draw via at branch connection point and endpoint
             this.drawVia(branchPath[0].x, branchPath[0].y);
             this.drawVia(branchPath[branchPath.length - 1].x, branchPath[branchPath.length - 1].y);
         }
     }
-
+    
     drawVia(x, y) {
         // Draw a via (small circle with ring) at exact grid position
         this.ctx.fillStyle = 'rgba(0, 160, 255, 0.08)';
         this.ctx.beginPath();
         this.ctx.arc(x, y, 4, 0, Math.PI * 2);
         this.ctx.fill();
-
+        
         // Inner darker circle
         this.ctx.fillStyle = '#222222';
         this.ctx.beginPath();
         this.ctx.arc(x, y, 2, 0, Math.PI * 2);
         this.ctx.fill();
     }
-
+    
     setupEventListeners() {
         // Handle window resize - just redraw the background
         window.addEventListener('resize', () => {
@@ -440,13 +468,54 @@ class PCBCanvas {
     }
 }
 
-// Initialize PCB background when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
+// Initialize PCB background - multiple initialization strategies to ensure it always runs
+// Make instance global so PCBDebug can access it
+window.pcbCanvasInstance = null;
+
+function initializePCBCanvas() {
+    // Only initialize once
+    if (window.pcbCanvasInstance) {
+        console.log('PCB Canvas: Already initialized');
+        return;
+    }
+    
     const canvas = document.getElementById('pcbCanvas');
     if (canvas) {
-        new PCBCanvas('pcbCanvas');
+        console.log('PCB Canvas: Initializing...');
+        window.pcbCanvasInstance = new PCBCanvas('pcbCanvas');
+    } else {
+        console.warn('PCB Canvas: Canvas element not found, will retry...');
+        // Retry after a short delay if canvas isn't found yet
+        setTimeout(initializePCBCanvas, 100);
+    }
+}
+
+// Try multiple initialization strategies to catch different load scenarios
+
+// Strategy 1: Immediate initialization if DOM already loaded
+if (document.readyState === 'loading') {
+    // DOM not ready yet, use DOMContentLoaded
+    document.addEventListener('DOMContentLoaded', initializePCBCanvas);
+} else {
+    // DOM already loaded (script loaded async after DOM ready)
+    initializePCBCanvas();
+}
+
+// Strategy 2: Fallback initialization on window load (catches all cases)
+window.addEventListener('load', () => {
+    if (!window.pcbCanvasInstance) {
+        console.log('PCB Canvas: Fallback initialization on window load');
+        initializePCBCanvas();
     }
 });
+
+// Strategy 3: Safety timeout - initialize after 500ms if not already initialized
+setTimeout(() => {
+    if (!window.pcbCanvasInstance) {
+        console.log('PCB Canvas: Safety timeout initialization');
+        initializePCBCanvas();
+    }
+}, 500);
 
 /* =========================
    STATUS HANDLING
@@ -879,19 +948,16 @@ if (albumImageContainer) {
   - PCBDebug.setRandomCount(min, max)  // Set range for random trace count
   - PCBDebug.getConfig()  // View current configuration
   - PCBDebug.redraw()  // Redraw the background with current settings
+  - PCBDebug.forceInit()  // Force re-initialization if canvas didn't load
+  - PCBDebug.getStatus()  // Check if canvas is initialized
   - PCBDebug.help()
 */
 (() => {
-    let pcbCanvasInstance = null;
-
-    // Store reference when PCBCanvas is created
-    const originalDOMContentLoaded = document.addEventListener;
-
     function setRandomGeneration(enabled) {
         PCB_CONFIG.useRandomGeneration = enabled;
         console.info(`Random trace generation ${enabled ? 'enabled' : 'disabled'}. Call PCBDebug.redraw() to apply.`);
     }
-
+    
     function setRandomCount(min, max) {
         if (min < 0 || max < min) {
             console.error("Invalid range. Min must be >= 0 and max must be >= min.");
@@ -901,7 +967,7 @@ if (albumImageContainer) {
         PCB_CONFIG.randomTraceCount.max = max;
         console.info(`Random trace count set to ${min}-${max}. Call PCBDebug.redraw() to apply.`);
     }
-
+    
     function getConfig() {
         console.table({
             "Random Generation": PCB_CONFIG.useRandomGeneration,
@@ -911,27 +977,47 @@ if (albumImageContainer) {
         });
         return PCB_CONFIG;
     }
-
+    
     function redraw() {
-        const canvas = document.getElementById('pcbCanvas');
-        if (canvas) {
-            // Create new instance which will redraw
-            new PCBCanvas('pcbCanvas');
+        if (window.pcbCanvasInstance && window.pcbCanvasInstance.canvas) {
+            window.pcbCanvasInstance.resizeCanvas();
+            window.pcbCanvasInstance.drawBackground();
             console.info("PCB background redrawn with current configuration.");
         } else {
-            console.warn("PCB canvas element not found.");
+            console.warn("PCB canvas not initialized. Call PCBDebug.forceInit() first.");
         }
     }
-
+    
+    function forceInit() {
+        console.log("Forcing PCB Canvas re-initialization...");
+        // Reset the instance
+        window.pcbCanvasInstance = null;
+        initializePCBCanvas();
+    }
+    
+    function getStatus() {
+        const status = {
+            initialized: !!window.pcbCanvasInstance,
+            canvasExists: !!document.getElementById('pcbCanvas'),
+            canvasWidth: window.pcbCanvasInstance?.canvas?.width || 0,
+            canvasHeight: window.pcbCanvasInstance?.canvas?.height || 0,
+            config: PCB_CONFIG
+        };
+        console.table(status);
+        return status;
+    }
+    
     function help() {
         console.table([
             {cmd: "PCBDebug.setRandomGeneration(true/false)", desc: "Enable or disable random trace generation"},
             {cmd: "PCBDebug.setRandomCount(min, max)", desc: "Set range for random trace count (e.g., 5, 15)"},
             {cmd: "PCBDebug.getConfig()", desc: "View current PCB configuration"},
-            {cmd: "PCBDebug.redraw()", desc: "Redraw background with current settings"}
+            {cmd: "PCBDebug.redraw()", desc: "Redraw background with current settings"},
+            {cmd: "PCBDebug.forceInit()", desc: "Force re-initialization if canvas didn't load"},
+            {cmd: "PCBDebug.getStatus()", desc: "Check initialization status"}
         ]);
         console.log("Current config:", PCB_CONFIG);
     }
-
-    window.PCBDebug = {setRandomGeneration, setRandomCount, getConfig, redraw, help};
+    
+    window.PCBDebug = {setRandomGeneration, setRandomCount, getConfig, redraw, forceInit, getStatus, help};
 })();
