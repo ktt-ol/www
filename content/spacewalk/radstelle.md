@@ -23,6 +23,10 @@ Schau am Besten im [Terminkalender](@/calendar.md) oder im
 [Status](https://status.mainframe.io) nach, wann und ob die Radstelle geöffnet
 ist.
 
+![Radstelle](../../media/spacewalk/radstelle1.jpg)
+
+![Radstelle Eingang](../../media/spacewalk/radstelle2.jpg)
+
 ## Rundgang
 
 [Zum nächsten Bereich: Holz-Werkstatt](@/spacewalk/holz-werkstatt.md)
