@@ -121,3 +121,7 @@ leichter zu bedienen.
 {{ resize_image(path="/media/spacewalk/machines/knitting-machine-empisal.jpg", height=500, width=500, op="fit") }}
 
 {{ resize_image(path="/media/spacewalk/machines/knitting-machine-empisal-mini.jpg", height=500, width=500, op="fit") }}
+
+## Rundgang
+
+[Zum nächsten Bereich: Radstelle (Fahrrad-Werkstatt)](@/spacewalk/radstelle.md)

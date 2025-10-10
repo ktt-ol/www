@@ -37,3 +37,7 @@ Jugendlichen gelasert werden. Einige Teilnehmer*innen bringen auch schon eigene
 Laser-Vorlagen mit.
 
 ![Der Lasercutter in Aktion](../../media/spacewalk/machines/lasercutter-0007.jpg)
+
+## Rundgang
+
+[Zum nächsten Bereich: E-Werkstatt](@/spacewalk/elektronik-werkstatt.md)

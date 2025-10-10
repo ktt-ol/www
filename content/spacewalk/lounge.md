@@ -48,3 +48,7 @@ So sieht es in der großen Lounge aus:
 ![Conference](../../media/spacewalk/lounge4.jpg)
 
 ![Conference](../../media/spacewalk/lounge3.jpg)
+
+## Rundgang
+
+[Zurück zur Bereichs-Übersicht](@/spacewalk/overview.md)

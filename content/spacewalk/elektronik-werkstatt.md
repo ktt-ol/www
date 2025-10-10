@@ -12,3 +12,7 @@ Toastofen gebaut wurde), sowie eine im Bau befindliche Bestückungs-Maschine
 (Pick-and-Place-Maschine).
 
 ![Die E-Werkstatt](../../media/spacewalk/electronics.jpg)
+
+## Rundgang
+
+[Zum nächsten Bereich: 3D-Labor](@/spacewalk/3D-lab.md)

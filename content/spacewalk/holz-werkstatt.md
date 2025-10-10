@@ -15,3 +15,7 @@ Maschinen und Geräte. Ob die große Holzwerkstatt geöffnet ist, kannst du auf 
 [Status-Seite unter Woodworking Status](https://status.mainframe.io/) sehen.
 
 ![Kleine Holzwerkstatt](../../media/spacewalk/workshop.jpg)
+
+## Rundgang
+
+[Zum nächsten Bereich: Metall-Werkstatt](@/spacewalk/metall-werkstatt.md)

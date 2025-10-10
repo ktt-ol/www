@@ -94,3 +94,7 @@ der Dokumentation oder nach einer persönlichen Einweisung verwendet werden.
 Manche Maschinen sind in der Bedienung sehr komplex und dürfen nur von wenigen
 eingewiesenen Personen verwendet werden. Dazu gehören der Lasercutter, die
 CNC-Fräse und der große Schneideplotter.
+
+## Rundgang
+
+[Zum nächsten Bereich: Lasercutter](@/spacewalk/lasercutter.md)

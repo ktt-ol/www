@@ -15,3 +15,7 @@ sowie zwei Anycubic Chiron, die eine größere Druckfläche aufweisen.
 
 Etliche Mitglieder haben auch 3D-Drucker und Scanner zuhause, die zwischendurch
 zu Besuch in den Space kommen.
+
+## Rundgang
+
+[Zum nächsten Bereich: Schnittstelle (Textil-Werkstatt)](@/spacewalk/schnittstelle.md)

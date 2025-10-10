@@ -28,3 +28,7 @@ einscannen und direkt vor Ort oder (als Mitglied) per Bankeinzug bezahlen.
 {{ resize_image(path="/static/media/spacewalk/kueche1.jpg", height=500, width=900, op="fit") }}
 
 {{ resize_image(path="/static/media/spacewalk/kueche2.jpg", height=500, width=900, op="fit") }}
+
+## Rundgang
+
+[Zum nächsten Bereich: Conference, Freifläche, Lounge](@/spacewalk/lounge.md)
