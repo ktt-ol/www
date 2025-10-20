@@ -22,3 +22,7 @@ In Zukunft soll noch soll ein digitales Interface geschaffen werden.
 <!-- TODO Link REM Fotos
 <a href="/album.dark.html#/a/0/REM">Album mit Bildern vom REM</a>
 -->
+
+## Rundgang
+
+[Zum nächsten Bereich: Küche](@/spacewalk/kueche.md)

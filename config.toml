@@ -80,5 +80,6 @@ google_cal_id = "markusframer@gmail.com"
 google_api_key = "AIzaSyB9pTX1ewZeRPc-rmq-Xp32wuuTW1P4U1U"
 
 ktt_board_mail = "vorstand@kreativitaet-trifft-technik.de"
+ktt_url = "https://www.kreativitaet-trifft-technik.de"
 
 status_domain = "https://status.mainframe.io/"

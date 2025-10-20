@@ -51,3 +51,7 @@ hantiert wird, wird die Maschine nicht zum Fräsen von Holz benutzt.
 ## Drehbank
 
 ![Drehbank](../../media/spacewalk/machines/drehbank.jpg)
+
+## Rundgang
+
+[Zum nächsten Bereich: Foto-Labor](@/spacewalk/foto-lab.md)
