@@ -21,6 +21,8 @@ anrufen, dann machen wir dir auf.
 
 ![Building](../media/img/building.jpg)
 
+![Klingel](../media/img/klingel.jpg)
+
 ## Anreise mit den Öffentlichen
 
 Die nächstgelegene Bushaltestelle ist Hauptbahnhof Süd. Von dort sieht man schon
