@@ -38,6 +38,12 @@ Laser-Vorlagen mit.
 
 ![Der Lasercutter in Aktion](../../media/spacewalk/machines/lasercutter-0007.jpg)
 
+## Du möchtest etwas lasern?
+
+Dann schau mal unter [http://gelaser.ktt-ol.de/](http://gelaser.ktt-ol.de/),
+dort findest du Informationen zu den Materialien, die gelasert werden können,
+sowie zu den benötigten Dateiformaten.
+
 ## Rundgang
 
 [Zum nächsten Bereich: E-Werkstatt](@/spacewalk/elektronik-werkstatt.md)

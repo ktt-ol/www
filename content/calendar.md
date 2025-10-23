@@ -33,10 +33,14 @@ Hier ist eine aktuelle Auswahl.
 
 ### 👾 Programmierclubs für Kinder und Jugendliche
 
-* CoderDojos: Alle zwei Wochen am Freitag oder Wochenende
-* Einführung ins Programmieren mit Tools wie Scratch oder Mikrocontrollern (z. B. Arduino)
+* [CoderDojos](https://www.kreativitaet-trifft-technik.de/projekte/coderdojo/): Alle zwei Wochen am Freitag oder Wochenende
+  * Für alle von 7 bis 17 Jahren
+  * Einführung ins Programmieren mit Tools wie Scratch oder Mikrocontrollern (z. B. Arduino)
+* [Jugend hackt Lab](https://www.kreativitaet-trifft-technik.de/projekte/jugend-hackt-lab-oldenburg/): Einmal monatlich
+  * Speziell für Jugendliche von 12 bis 18 Jahren
+  * „Mit Code die Welt verbessern“ -- Verknüpfung von Technik und gesellschaftlichen Themen
 * Betreuung durch engagierte Ehrenamtliche
-* Keine Vorkenntnisse erforderlich
+* Keine Vorkenntnisse erforderlich -- ein Einstieg ist immer möglich!
 
 ### 🕹 LAN-Party / Video Game Night
 
