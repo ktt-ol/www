@@ -3,17 +3,14 @@
 ## TODO
 
 - Fix mini calendar (sometimes doesn't show any entries)
-- Remove "Verein" once new ktt.de site is up
-- Create a more visible link to the site of ktt.de
 
 ## Potential Improvements
 
-- Bring back introduction block on main page -- something like on https://jugendhackt.org/ perhaps?
+- Bring back introduction block on main page -- something like on <https://jugendhackt.org/> perhaps?
 - English translations?
 - Write more about Do's & Don't in the space (at about/about.md)
 - Write more about self-organised groups and how we make decisions
 - Move space status to top on mobile
-- Add more than 5 calendar appointments in the short view
 
 ## Development
 

@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - main
+  # Refresh to add new IFS images/albums
+  schedule:
+    - cron: '0 6 * * *' # 6:00 daily
+
 name: Build and Deploy
 jobs:
   build:
