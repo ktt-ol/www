@@ -10,10 +10,10 @@ bgb_vorstand = [
     "Christian Beyer",
 ]
 bgb_erweitert = [
-    "Erik Eilerts (Holzwerkstatt)",
-    "Anna Gillert (Jugendprojekte)",
+    "Nils Wollenteit (Schließfachmanagement)",
     "Timucin Lauenroth (Radstelle)",
+    "Anna Gillert (Jugendprojekte)",
     "Tjark Nieber (Lasercutter)",
-    "Nils Wollenteit (Schließfachmanager)",
+    "Erik Eilerts (Holzwerkstatt)",
 ]
 +++
