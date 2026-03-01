@@ -2,7 +2,7 @@
 title = "Netzwerktest am 3. April 2026"
 date = "2026-02-27T19:42:00"
 updated = "2026-02-27T19:42:00"
-description = 'Wir testen vor der Oster-LAN gemeinsam unsere Infrastruktur als BYOD-Event (Bring-Your-Own-Device). Macht mit und bringt alles mit, das Traffic erzeugt: PCs, Notebooks, Tablets, Konsolen, Steamdecks...'
+description = 'Wir testen gemeinsam unsere Infrastruktur als BYOD-Event (Bring-Your-Own-Device). Macht mit und bringt alles mit, das Traffic erzeugt: PCs, Notebooks, Tablets, Konsolen, Steamdecks...'
 
 [taxonomies]
 Serie = ["Infrastructure"]
