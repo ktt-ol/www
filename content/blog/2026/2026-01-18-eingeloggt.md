@@ -30,6 +30,6 @@ Details zum Angebot und zur Anmeldung finden sich auf der
 
 Mehr Informationen zum Format der Eingeloggt!-Woche sowie zu Veranstaltungen
 anderer Anbieter in Oldenburg finden sich unter
-[https://oldenburg.eingeloggt.net/](oldenburg.eingeloggt.net).
+[oldenburg.eingeloggt.net](https://oldenburg.eingeloggt.net).
 
 ![Spacewalk](../../../media/blog/2026/eingeloggt/spacewalk.jpg)
