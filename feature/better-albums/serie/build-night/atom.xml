@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Build Night</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/better-albums/serie/build-night/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/better-albums"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-22T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/better-albums/serie/build-night/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Lumi Build Night</title>
+        <published>2013-09-08T12:57:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/better-albums/blog/2013/lumi-build-night/"/>
+        <id>https://www.mainframe.io/www/feature/better-albums/blog/2013/lumi-build-night/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2013/lumi-build-night/">&lt;p&gt;Dazu wurde uns von &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.instructables.com&#x2F;&quot;&gt;instructables.com&lt;&#x2F;a&gt; eine Zusammenstellung von Lumi-Produkten zur
+Verfügung gestellt.&lt;&#x2F;p&gt;
+&lt;p&gt;Nach einer kurzen Erklärung, wie die Materialien zu bearbeiten sind, wurde Testweise ein Motiv zur Demonstration
+belichtet. Leider eignet der Tintenstrahldrucker nicht sonderlich dazu Folie zu bedrucken, was zu Querstreifen auf dem
+Ergebnis führte. Andere Versuche mit mehr Tinte verschwommen. Um nicht den Inkofilm von Lumi mit Fehlversuchen zu
+versauen, entschied man sich, handelsübliche OHP-Folie zu bedrucken. Auf diesen Folien war allerdings die schwarze Tinte
+nicht dicht genug, und es konnte Licht durchkommen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir entschieden uns also dafür, nun die Audrucke, die am besten geworden sind, auf die Textilien zu drucken. Das ein
+oder andere Motiv wurde mit schwarzem Edding aufgebessert, um auch wirklich so deckend wie möglich zu sein. Da man
+eigentlich bei sonnigem Wetter belichten soll, es gestern aber eher regnerisch war, belichteten wir die Motive länger
+als die empfohlenen 20 Minuten.&lt;&#x2F;p&gt;
+&lt;p&gt;Die Ergebnisse waren nicht alle optimal: durch dünne Tintenschichten wurde verdeckte Farbe leicht mit-belichtet, nicht
+dicht aufliegende Motive führten zu verschwommenen Ergebnissen, aber das ein oder andere Motiv schien durchaus gelungen.&lt;&#x2F;p&gt;
+&lt;p&gt;Unterm Strich war dies mehr ein gemeinsames Ausprobieren und Erfahrungen sammeln. Da wir aber noch etwas Farbe übrig
+haben, können wir diese Erfahrungen an einem sonnigeren Tag nutzen, um noch ein paar schöne Motive zu nutzen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wer Interesse daran hat und nicht beim Workshop war, darf sich gerne auf der Diskussionsliste melden.&lt;&#x2F;p&gt;
+&lt;p&gt;Fotos von den Fertigen Produkten gibt es, wenn diese mit dem speziellen Waschmittel gereinigt wurden. Die bisherigen
+Fotos enthalten immer noch überschüssige Farbe, die herausgewaschen wird!&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Sugru Build Night</title>
+        <published>2013-07-20T23:00:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/better-albums/blog/2013/sugru-build-night/"/>
+        <id>https://www.mainframe.io/www/feature/better-albums/blog/2013/sugru-build-night/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2013/sugru-build-night/">&lt;p&gt;In der Buildnight kommen wir zusammen und arbeiten an kleinen Projekten, die man möglichst an einem Nachmittag &#x2F; einer
+Nacht umsetzen kann. Dieses Mal werden wir Probepackungen von Sugru haben, einem Silikongummi, mit dem sich viele coole
+Dinge machen lassen.
+Auf &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?feature=player_embedded&amp;amp;v=Jortcsccg_c&quot;&gt;Youtube gibt es ein paar Beispiele zu Sugru&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Und hier eine Galerie mit technischen
+sugru-Hacks:&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sugru.com&#x2F;great-for&#x2F;gadgets-and-tech&quot;&gt;https:&#x2F;&#x2F;sugru.com&#x2F;great-for&#x2F;gadgets-and-tech&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Das Projekt findet in Zusammenarbeit mit &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;sugru.com&#x2F;&quot;&gt;Sugru&lt;&#x2F;a&gt;und &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.instructables.com&#x2F;&quot;&gt;Instructables&lt;&#x2F;a&gt;
+statt, die uns dafür gratis Sugru-Packs zur Verfügung stellen.&lt;&#x2F;p&gt;
+&lt;p&gt;Sie wünschen sich, dass wir hinterher 5 neue Instructables posten, für die wir Sugru verwendet haben; z.B. “Gegenstände,
+die ihr ergonomischer gemacht habt, einfache Reparaturen oder auch fortgeschrittene Anwendungen”.&lt;&#x2F;p&gt;
+&lt;p&gt;Hier die Links zu den Instructables, die wir gepostet haben (neue gerne per E-Mail an
+mich, &lt;a href=&quot;mailto:dani@miracle-solutions.de&quot;&gt;dani@miracle-solutions.de&lt;&#x2F;a&gt;):&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.instructables.com&#x2F;id&#x2F;Protect-a-bicycle-light-with-Sugru&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.instructables.com&#x2F;id&#x2F;Protect-a-bicycle-light-with-Sugru&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.instructables.com&#x2F;id&#x2F;Grip-for-Taishokoto-case&#x2F;&quot;&gt;http:&#x2F;&#x2F;www.instructables.com&#x2F;id&#x2F;Grip-for-Taishokoto-case&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Los geht’s um 16:00 Uhr mit einer kleinen Einführung in die Sugru-Bearbeitung, und dann wird gebastelt.&lt;&#x2F;p&gt;
+&lt;p&gt;Anmeldung und Ideensammlung in diesem
+Pad: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;BuildNight_Sugru&quot;&gt;https:&#x2F;&#x2F;pad.kreativitaet-trifft-technik.de&#x2F;p&#x2F;BuildNight_Sugru&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;ergebnisse&quot;&gt;Ergebnisse&lt;&#x2F;h1&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Sugru_Build_Night&#x2F;img1.jpg&quot; alt=&quot;Griff für Lockpicking Tool&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Sugru_Build_Night&#x2F;img2.jpg&quot; alt=&quot;Fix&#x2F;Deko für Fahrradlampe&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Sugru_Build_Night&#x2F;img3.jpg&quot; alt=&quot;Aufhängung für Kochutensilien&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;Sugru_Build_Night&#x2F;img4.jpg&quot; alt=&quot;Reperatur Notebook-Fuß&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

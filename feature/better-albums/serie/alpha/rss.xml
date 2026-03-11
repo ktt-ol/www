@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Alpha</title>
+      <link>https://www.mainframe.io/www/feature/better-albums</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/better-albums/serie/alpha/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Fri, 22 Mar 2024 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Alpha 3</title>
+          <pubDate>Thu, 13 Oct 2011 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha3/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha3/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha3/">&lt;p&gt;Die Pinte42 war genau der richtige Ort für unsere dritte Alpha. Die Vorträge
+konnten in Ruhe in einem separaten Raum gehalten werden und die Nähe zu den
+Studenten hat noch den einen oder anderen Zufallsgast gebracht ;)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;alpha3&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Hauptanziehungspunkt war erneut der uns leihweise zur Verfügung gestellte
+3D-Drucker.
+An Tag drei konnte er sogar dazu gebracht werden, Vereinslogos aus Kunststoff
+(ABS) zu drucken.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;alpha3&#x2F;img2.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Auch die Vorträge über „rechtliche Fallstricke bei Social Media“ oder
+„Bit-Twiddling“ waren gut besucht. Gleiches gilt für die angebotenen Workshops
+– beispielsweise zum Arduino-Einstieg. Am Abend des dritten Tages hatte der
+große Besucheransturm gar die Matecalypse ausgelöst – die gesamten 70 Liter
+waren ausgetrunken ;)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;alpha3&#x2F;img3.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Trotzdem wurde bis Sonntag spät an allen möglichen Projekten getüftelt und
+Interessenten das Löten beigebracht. Der Verein hat fünf neue Mitglieder und
+viele neue Freunde gewonnen. Die Alpha war ein voller Erfolg!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Terminplan&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Do, 13.10.2011
+&lt;ul&gt;
+&lt;li&gt;17:00 Aufbau&lt;&#x2F;li&gt;
+&lt;li&gt;19:00 Beginn&lt;&#x2F;li&gt;
+&lt;li&gt;21:00 – 22:00 Tutorial: Arduino Programmierung ohne Arduino IDE (olt)&lt;&#x2F;li&gt;
+&lt;li&gt;open end&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Fr, 14.10.2011
+&lt;ul&gt;
+&lt;li&gt;15:00 Beginn&lt;&#x2F;li&gt;
+&lt;li&gt;19:00 – 20:00 Vortrag: Rechtliche Fallstricke bei Social Media und Blogs (tmp)&lt;&#x2F;li&gt;
+&lt;li&gt;20:00 – 21:00 Vortrag: Von Hackern und Holländern – Microcontroller-Code-Optimierungen … (xinitrc)&lt;&#x2F;li&gt;
+&lt;li&gt;open end&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Sa, 15.10.2011
+&lt;ul&gt;
+&lt;li&gt;13:00 Beginn&lt;&#x2F;li&gt;
+&lt;li&gt;14:00 – 14:30 Vortrag: Arduino-Einführung (MarvinGS oder Thorben?)&lt;&#x2F;li&gt;
+&lt;li&gt;15:00 – 15:30 Tutorial: Lockpicking für Anfänger (ld)&lt;&#x2F;li&gt;
+&lt;li&gt;16:00 – 17:00 Workshop: Einführung Creative Commons (tmp)&lt;&#x2F;li&gt;
+&lt;li&gt;17:30 – 19:30 Workshop: Building a Blog-Engine with CouchDB and CouchApps (xinitrc)&lt;&#x2F;li&gt;
+&lt;li&gt;open end&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;So, 16.10.2011
+&lt;ul&gt;
+&lt;li&gt;13:00 Beginn&lt;&#x2F;li&gt;
+&lt;li&gt;15:00 – 15:30 Vortrag: Arduino-Einführung (MarvinGS oder Thorben?)&lt;&#x2F;li&gt;
+&lt;li&gt;16:00 – 17:00 Workshop: Erste Schritte mit dem Arduino (MarvinGS oder Thorben?)&lt;&#x2F;li&gt;
+&lt;li&gt;ca. 19:00 Abbau&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Alpha 2</title>
+          <pubDate>Tue, 20 Sep 2011 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha2/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha2/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2011/alpha2/">&lt;p&gt;Die freundlicherweise von der Kulturetage zur Verfügung gestellte Location war
+genau richtig für uns - Dank Unterstützung unserer Pressearbeit durch die
+Wirtschaftsförderung und das Presseamt fanden letzte Woche richtig viele neue
+Gesichter den Weg zu uns und machten unsere zweite bzw. erste öffentliche Alpha
+zu einem vollen Erfolg!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;alpha2&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Nach einem internen Test im Juli fand vom 20. bis 22.09.2011 unsere zweite bzw.
+die erste öffentliche Alpha im quARTier (Bahnhofsviertel) statt. Von Arduinos
+und Jeenodes über Messgeräte und Gadgets bis zu ihren aktuellen Projekten haben
+die Mitglieder und Interessenten alles Mögliche an Elektronik und Know-How
+mitgebracht. Am Mittwoch konnte sogar ein 3D-Drucker bei der Arbeit bestaunt
+werden.&lt;&#x2F;p&gt;
+&lt;p&gt;An allen drei Tagen waren um 17 Uhr schon die ersten da und vor Mitternacht
+sind die letzten nie gegangen. Bis zu 35 Personen waren gleichzeitig da und
+zwischen Beginn und Ende „durchgelaufen“ sind täglich bestimmt 50 oder 60
+Menschen; davon hatten mehr als die Hälfte vorher keinen Kontakt zu uns – die
+erste öffentliche Alpha war damit ein voller Erfolg!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;alpha2&#x2F;img2.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Am Donnerstag gab es entsprechen der Interessenlage noch vier
+Vorträge&#x2F;Workshops: Eine Arduino-Einführung, die Vorstellung von CouchDB, Zehn
+Irrtümer über das Urheberrecht und einen Twitter-Einstieg. Informationen und Folien
+dazu gibt es im Wiki …&lt;&#x2F;p&gt;
+&lt;p&gt;Wer dieses Mal nicht teilnehmen konnte, hat im Oktober und November noch eine
+Chance, denn zwei weitere Alphas sind geplant. Interessenten abonnieren am
+besten den Newsletter und verpassen so keinen Termin!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Good News!&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; Die Kulturetage hat uns die kostengünstige Nutzung eines Raumes im
+OG des quARTiers angeboten! Das Gebäude sollte eigentlich schon im August
+abgerissen werden, bleibt jetzt aber wahrscheinlich noch bis zum Frühjahr 2012
+oder länger erhalten. Wir haben noch keinen genauen Einzugs-Termin und keine
+Details besprochen, aber es sieht ganz danach aus, als hätten wir eine erste
+Heimat für mehr als drei Tage gefunden – besser als im Bahnhofsviertel hätten
+wir es kaum treffen können!&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Presse, Bilder und Videos&lt;&#x2F;h1&gt;
+&lt;p&gt;Am Mittwoch fand vor dem Beginn der eigentlichen Alpha mit Unterstützung der
+Wirtschaftsförderung Oldenburg eine Pressekonferenz im quARTier statt, die
+unter anderem ein schönes Video von &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20111109131512&#x2F;https:&#x2F;&#x2F;nwzonline.de&#x2F;Video&#x2F;Des-Tftlers-Paradies_1175142740001.html&quot;&gt;NWZ-TV&lt;&#x2F;a&gt;
+zur Folge hatte. Alle weiteren Berichte über uns und unsere Projekte finden
+sich im Pressespiegel.&lt;&#x2F;p&gt;
+&lt;p&gt;Unser Mitglied olt hat ein paar sehr schöne Eindrücke festgehalten. Wer auch
+Bilder gemacht hat und sie hier veröffentlicht sehen mag, möge sich bitte
+melden!&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Erstes Treffen</title>
+          <pubDate>Tue, 14 Jun 2011 19:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2011/init/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2011/init/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2011/init/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;init&#x2F;marvins_entrance.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Vielen Dank an alle, die beim ersten Treffen am 14.06. im &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.marvins.de&#x2F;&quot;&gt;Marvin’s&lt;&#x2F;a&gt; dabei waren - das war ein
+richtig gutes erstes Treffen! Wer nicht dabei war, darf sich mit Recht auf die zukünftigen Meetings freuen ;)&lt;&#x2F;p&gt;
+&lt;p&gt;Gekommen sind um die 26 Leute - also gleich mal fast doppelt so viele, wie erwartet! An dem langen Tisch wurde die Kommunikation so schon schwierig, aber wir haben es wohl ganz gut hinbekommen.&lt;&#x2F;p&gt;
+&lt;p&gt;Nach einer Vorstellungsrunde und ein paar Allgemein-Themen haben wir uns auf kleinere Gruppen aufgeteilt und in wechselnder Besetzung gequatscht und diskutiert. Nach ein paar Stunden hatten wir die Vorräte des Marvin’s an Club-Mate aufgebraucht und die Küche strapaziert. Ein harter Kern von fünf, 6 Leuten hat bis 1 Uhr früh durchgehalten und am Ende tatsächlich ohne Mord und Totschlag sogar noch über Politik und Religion diskutiert!&lt;&#x2F;p&gt;
+&lt;p&gt;… und ein paar Leute sind sogar noch länger geblieben … ;)&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;&quot;&gt;Themen große Runde&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Vorstellungsrunde aller: „Wer bin ich?“&lt;&#x2F;li&gt;
+&lt;li&gt;Wer wollte: „Was für einen Space stelle ich mir vor?“&lt;&#x2F;li&gt;
+&lt;li&gt;Informationen von Patrick zum vorgeschlagenen Raum&lt;&#x2F;li&gt;
+&lt;li&gt;Meinungen und Optionen zur Vereinsgründung&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;-1&quot;&gt;Themen kleine Runde(n)&lt;&#x2F;h1&gt;
+&lt;ul&gt;
+&lt;li&gt;CAcert http:&#x2F;&#x2F;www.cacert.org&#x2F;
+&lt;ul&gt;
+&lt;li&gt;Was ist CAcert?&lt;&#x2F;li&gt;
+&lt;li&gt;Ist CAcert gescheitert oder hat es Zukunft?&lt;&#x2F;li&gt;
+&lt;li&gt;Assurance wer wollte&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Freifunk http:&#x2F;&#x2F;www.freifunk-ol.de&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;Elektronik
+&lt;ul&gt;
+&lt;li&gt;Arduino http:&#x2F;&#x2F;arduino.cc&#x2F;&lt;&#x2F;li&gt;
+&lt;li&gt;JeeLabs JeeNode http:&#x2F;&#x2F;jeelabs.net&#x2F;projects&#x2F;hardware&#x2F;wiki&#x2F;JeeNode&lt;&#x2F;li&gt;
+&lt;li&gt;Haus-Automation, Eigenbauten, RFM01 … RFM12B, OOK&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;…&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+    </channel>
+</rss>

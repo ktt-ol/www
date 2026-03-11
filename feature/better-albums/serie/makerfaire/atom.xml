@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - MakerFaire</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/feature/better-albums/serie/makerfaire/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/better-albums"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-22T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/feature/better-albums/serie/makerfaire/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Makertreffen Hamburg</title>
+        <published>2012-10-20T20:00:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/feature/better-albums/blog/2012/makertreffen-hamburg/"/>
+        <id>https://www.mainframe.io/www/feature/better-albums/blog/2012/makertreffen-hamburg/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2012/makertreffen-hamburg/">&lt;p&gt;Wir sind mit einer kleinen Delegation zum &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20130601204414&#x2F;http:&#x2F;&#x2F;hamburger-makertreffen.de&#x2F;&quot;&gt;Hamburger Makertreffen&lt;&#x2F;a&gt;
+im &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;blog.attraktor.org&#x2F;&quot;&gt;Attraktor&lt;&#x2F;a&gt; gefahren. Da von den Fahrenden keiner momentan an sehenswerten Projekten
+arbeitet, sind wir nicht als Aussteller, sondern als Gäste dorthin gefahren.&lt;&#x2F;p&gt;
+&lt;p&gt;Pünktlich um 11:00 angekommen, wurden wir direkt mit Gäste-Ausweisen aus dem 3D-Drucker empfangen, und konnten uns
+direkt umschauen. Es war auf Anhieb viel Interessantes, alt bekanntes und auch neues zu entdecken. So zierten zum
+Beispiel selbstgebaute Steampunk-Artefakte oder Sortierboxen, ein hochauflösender 3D-Drucker, eine Floppy-Orgel, ein
+ferngesteuerter Quadrokopter sowie ein elektronisches “Siedler von Catan”-Spiel die Ausstellungsfläche des Attraktors.&lt;&#x2F;p&gt;
+&lt;p&gt;Zusätzlich zu den Exponaten waren auch gefühlt sämtliche Maschinen, also die(twitternde und singende!) CNC-Fräse, der
+Lasercutter und der Styroporschneider im Betrieb. Im Untergeschoss fanden währenddessen diverse Workshops statt, wie zum
+Beispiel eine Einführung in Arduino und Fritzing, sowie ein kleiner Einblick in die vorhandene Schlüssel-Werkstatt
+inklusive Nachfertigung von Schlüsseln mit Erklärung. Zur Erfrischung gab es frisch gepressten Birnen- oder Quittensaft.&lt;&#x2F;p&gt;
+&lt;p&gt;Alles in allem war es ein lohnenswerter Tagesausflug mit inspirierenden Ausstellern, interessanten Workshops und
+Gesprächspartnern und einem besuchenswerten Makerspace :-)&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Update&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;: &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;blog.attraktor.org&#x2F;2012&#x2F;10&#x2F;nachbetrachtung-zum-hamburger-makertreffen&#x2F;&quot;&gt;nachbereitender Blogartikel des Attraktors&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - News</title>
+      <link>https://www.mainframe.io/www/feature/better-albums</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/better-albums/serie/news/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 28 Sep 2025 21:55:00 +0000</lastBuildDate>
+      <item>
+          <title>Die neuen Websites sind online!</title>
+          <pubDate>Sun, 28 Sep 2025 21:55:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2025/neue-websites/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2025/neue-websites/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2025/neue-websites/">&lt;p&gt;Nach einiger Zeit in Planung und viel Arbeit ist es endlich soweit: Die neue Website
+für den Mainframe wurde komplett überarbeitet und ist jetzt online. 🎉&lt;&#x2F;p&gt;
+&lt;p&gt;Bisher gab es eine gemeinsame Website für &lt;strong&gt;Mainframe&lt;&#x2F;strong&gt; und den Verein
+&lt;strong&gt;Kreativität trifft Technik e.V. (KtT)&lt;&#x2F;strong&gt; – nur einmal im dark mode und einmal
+im light mode. Allerdings sprechen Mainframe und Verein &lt;strong&gt;unterschiedliche Zielgruppen&lt;&#x2F;strong&gt; an
+und bisher konnten wir keiner davon wirklich gerecht werden. Deshalb gibt es
+nun eine &lt;strong&gt;Trennung&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Der KtT hat ab sofort eine eigene, unabhängige Website:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&quot;&gt;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Die Space-Seite ist unter &lt;code&gt;mainframe.io&lt;&#x2F;code&gt; zu finden:&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;better-albums&#x2F;&quot;&gt;https:&#x2F;&#x2F;mainframe.io&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Auf der &lt;strong&gt;KtT-Seite&lt;&#x2F;strong&gt; finden sich Infos, die sich eher an die Allgemeinheit,
+sowie öffentliche Stellen und potenzielle Förderpartner richten. Zusätzlich
+liegen dort die Vereinssatzung und Informationen zu Mitgliedschaft im Verein
+sowie Spendenmöglichkeiten.&lt;&#x2F;p&gt;
+&lt;p&gt;Die &lt;strong&gt;Mainframe-Seite&lt;&#x2F;strong&gt; ist Anlaufstelle für alles, was im Space Tag für Tag passiert. Hier
+finden sich auch das IFS, Blogbeiträge aus Projekten im Space sowie der
+Terminkalender.&lt;&#x2F;p&gt;
+&lt;p&gt;Aber das ist natürlich noch nicht alles! Wir haben Inhalte grundlegend
+überarbeitet, neue Seiten hinzugefügt und Menüstrukturen verbessert.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;was-ist-neu-auf-der-mainframe-seite&quot;&gt;Was ist neu auf der Mainframe-Seite?&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Space Seite, &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;better-albums&#x2F;&quot;&gt;mainframe.io&lt;&#x2F;a&gt; gibt es weiterhin. Sie
+behält bewusst das grundsätzliche Design der alten Seite bei. Bei den Inhalten
+und bei der Technik hat sich allerdings eine Menge getan:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Neue Menüführung und About-Seiten:&lt;&#x2F;strong&gt;
+Die Navigation haben wir vereinfacht, sodass der Terminkalender und die
+Blogposts schneller zu finden sind. Außerdem gibt es mehrere neue Seiten unter
+“Über uns”, die erklären, was der Space ist und wie man zu uns findet.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Neue Bereichs-Seiten:&lt;&#x2F;strong&gt;
+Die einzelnen Bereiche im Space sowie die Maschinen und Werkzeuge dort sind
+neu beschrieben. Dafür haben wir neue Fotos gemacht und Inhalte neu gruppiert.
+Einige Seiten können noch mehr im Detail beschrieben werden – das holen wir
+in den kommenden Wochen nach. Gerne mit deiner Hilfe!&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;KtT-Inhalte verschoben:&lt;&#x2F;strong&gt;
+Die Inhalte zum Verein, wie Mitgliedschaft, Satzung und Sponsoren sind jetzt
+auf der neuen KtT-Seite zu finden.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Schnellere Ladezeiten&lt;&#x2F;strong&gt;:
+Bilder und Seiten – insbesondere das IFS – laden jetzt schneller, auch auf
+der mobilen Seite. Den Lade-Pacman wirst du hoffentlich nur noch selten sehen.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Technisches Fundament erneuert:&lt;&#x2F;strong&gt;
+Wir setzen jetzt einen moderneren Static-Site-Generator ein, der schneller und
+einfacher zu handhaben ist als der alte. Der neue Generator verwendet nun
+Markdown als Template-Sprache. Dafür mussten wir zwar alle Inhalte einzeln
+migrieren, aber das hat sich gelohnt: In Zukunft ist es deutlich einfacher,
+eigene Beiträge oder Änderungen beizusteuern.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;strong&gt;Aufgeräumt:&lt;&#x2F;strong&gt;
+Einige alte Funktionen, zum Beispiel aus dem alten Kalender, haben wir
+komplett entfernt.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;wie-geht-s-weiter&quot;&gt;Wie geht’s weiter?&lt;&#x2F;h2&gt;
+&lt;p&gt;Die Website lebt von den Inhalten dort! Egal ob du über ein Projekt berichten
+möchtest, oder einfach ein IFS-Bild teilen willst: Wir freuen uns auf deine
+Beiträge!&lt;&#x2F;p&gt;
+&lt;p&gt;Falls du dich mit GitHub oder dem IFS-Workflow (noch) nicht so wohl fühlst,
+sprich uns gerne direkt im Space an und wir helfen dir weiter.&lt;&#x2F;p&gt;
+&lt;p&gt;Also – schau dich direkt mal um:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;feature&#x2F;better-albums&#x2F;&quot;&gt;https:&#x2F;&#x2F;mainframe.io &lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&quot;&gt;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</description>
+      </item>
+      <item>
+          <title>Lasercutter lebt wieder</title>
+          <pubDate>Tue, 13 Jul 2021 20:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2021/laser-death/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2021/laser-death/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2021/laser-death/">&lt;p&gt;&lt;strong&gt;Update:&lt;&#x2F;strong&gt; Es wurde eine neue Röhre beschafft und der Laser ist
+wieder funktionstüchtig!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Moin,&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;heute ist leider die Röhre unseres Lasercutters gestorben. Ursache war wohl eine Verstopfung im Kühlsystem, welche in
+Verbindung mit einem größeren Laserjob der Röhre den Rest gegeben hat. Bis auf Weiteres kann jedenfalls nicht mehr im
+Space gelasert werden.&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;del&gt;Gruß,
+das Lasercutterteam&lt;&#x2F;del&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>

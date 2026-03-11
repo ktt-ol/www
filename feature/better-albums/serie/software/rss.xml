@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Software</title>
+      <link>https://www.mainframe.io/www/feature/better-albums</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/feature/better-albums/serie/software/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 24 Mar 2024 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>Lederschuhe</title>
+          <pubDate>Thu, 18 Jul 2013 10:00:00 +0000</pubDate>
+          <author>Fermate</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2013/lederschuhe/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2013/lederschuhe/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2013/lederschuhe/">&lt;p&gt;Der Laser schneidet nicht nur Holz oder Polypropylen, sondern auch Leder. Mein
+erstes Projekt waren Bundschuhe - oft als Mittelalterschuhe tituliert, aber
+eigentlich viel älter. In der einfachen Landbevölkerung hielten sie sich jedoch
+bis ins späte Mittelalter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;de.wikipedia.org&#x2F;wiki&#x2F;Bundschuh&quot;&gt;[1]&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;zu habe ich erst ein paar Lederreste gekauft - zum Kilopreis bei Leder
+Schomaker &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.leder-schomaker.de&#x2F;&quot;&gt;[2]&lt;&#x2F;a&gt; (netter Laden, nur leider recht
+eingeschränkte Öffnungszeiten).&lt;&#x2F;p&gt;
+&lt;p&gt;Für die Vorlage habe ich einen meiner eigenen Bundschuhe auseinander genommen
+und flach fotografiert:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0000.jpg&quot; alt=&quot;Bundschuh&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Mit dem Foto als Hintergrund habe ich das als Pfad abgezeichnet. Bei den
+Bohrlöchern musste ich darauf achten, dass sie “Klone” sind, damit sie alle
+gemeinsam in der Größe geändert werden können. Damit kann man die Vorlage
+nämlich einmal auf die Schuhgröße skalieren und und zum anderen die Löcher an
+das Band anpassen, das man durchziehen will.&lt;&#x2F;p&gt;
+&lt;p&gt;So sah dann die Vorlage aus:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;a href=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;schuh.dxf&quot;&gt;Vorlage als DXF-Datei&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0000.jpg&quot; alt=&quot;Bundschuhvorlage&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Mein Leder reichte nicht für große Schuhe, aber für ein Kleinkind.
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;http:&#x2F;&#x2F;www.ratgeber-babykleidung.de&#x2F;groesse&#x2F;babyschuhe-schuhgroesse&quot;&gt;Hier&lt;&#x2F;a&gt;
+habe ich die passenden Zentimeter für das Alter gefunden, und die Vorlage auf
+einen Fuß der Länge 11cm skaliert. (Hinterher ist man schlauer: beim nächsten
+Mal werde ich sie dabei auch noch stauchen, weil Babyfüße im Verhältnis breiter
+sind).&lt;&#x2F;p&gt;
+&lt;p&gt;Aber bevor das Leder geschnitten wurde, probierten wir es einmal auf
+Polypropylen, ob der Schnitt passt. Das ergab dann niedliche Plastikschuhe; als
+Knöpfe durften zwei missglückte Zahnräder aus dem
+[3D-Drucker]({{ content_url(“images&#x2F;images_from_space.html”) }}?image=77)
+mitspielen:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0002.jpg&quot; alt=&quot;Bundschuh Test&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Dann haben wir erstmal mit den verschiedenen Ledersorten und einem Bastelfilz
+die richtige Geschwindigkeit und Intensität des Lasers erprobt.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0003.jpg&quot; alt=&quot;Leder Schnitttest&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Beim ersten Lasern des Leders für die Schuhe hatten wir vergessen, ihn richtig zu fokussieren. Das ergab aber einen netten Effekt, nämlich wurde die Oberfläche nur eingebrannt, und kann jetzt als Demonstration und Unterlage für die Plastikschuhe herhalten:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0004.jpg&quot; alt=&quot;erster Schnitt&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Und das sind schließlich die finalen Leder-Schuhe, genäht mit einem Seidenband:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0005.jpg&quot; alt=&quot;Ergebnis&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;An den Zehen werden sie einfach im Kreis zusammengenäht, zum Schließen wird auf eine Seite ein Knopf festgenäht, auf der anderen Seite ein Band einmal rund eingezogen. Die Ferse ist ein kleines bisschen anspruchsvoller, deswegen hier eine Anleitung. Die Löcher sind im Bild benannt, in der Anleitung bedeutet L3-I “von innen durch das Loch L3” und L5-A dementsprechend “von außen durch das Loch L5”:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0006.jpg&quot; alt=&quot;Nähanleitung&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;R1-A R2-I N1-I M2-A L3-A L4-I M3-I R5-A R6-I L6-A L5-I N3-A R4-A R3-I N2-I M1-A L2-A L1-I&lt;&#x2F;p&gt;
+&lt;p&gt;Die beiden Enden (die ja aus R1 und L1 rauskommen) werden dann nach innen
+gezogen und vor der Mittellasche verknotet (dabei hilft es, den Schuh kurz auf
+links zu drehen). Der Knoten wird dann halb von den beiden Seitenlaschen (die
+mit den Löschen L1-L6&#x2F;R1-R6) verdeckt.&lt;&#x2F;p&gt;
+&lt;p&gt;Hier nochmal ein Detailbild von hinten:&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;lederschuhe&#x2F;0007.jpg&quot; alt=&quot;Ergebnis Rückseite&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Arduino Comic</title>
+          <pubDate>Tue, 22 May 2012 18:00:00 +0000</pubDate>
+          <author>thorben</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2012/arduino-comic/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2012/arduino-comic/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2012/arduino-comic/">&lt;p&gt;Ein echter Dauerbrenner bei uns ist das kreative Arbeiten mit Mikrocontrollerschaltungen. Auch gerade auf neue Gäste im
+Beta-Space übt dieser Bereich der Elektronik große Anziehungskraft aus. Um hier den Einstieg möglichst leicht zu machen
+und unsere Aufbauten möglichst untereinander kompatibel zu halten, hat sich die quelloffene
+Mikrocontrollerprogrammierung mit Arduino quasi als „Standard“ etabliert. Auch mit überschaubaren Hardware- und
+Programmierkenntnissen ist es damit möglich, interaktive Objekte zu steuern oder reaktive, anfassbare Dinge zu bauen.
+Entwickelt wurde die Plattform maßgeblich von Massimo Banzi, einem italienischen Professor. Ihm waren die hohen Kosten
+und die hohen technischen Hürden ein Dorn im Auge, die man für die Programmierung von Mikrocontrollern in der Zeit vor
+der Einführung des Arduinos nehmen musste.&lt;&#x2F;p&gt;
+&lt;p&gt;Um die ersten Schritte im Umgang mit der Arduino-Plattform zu erlernen, haben wir sehr gute Erfahrung mit dem
+großartigen Comic von Jody Culkin gemacht. Hier wird in quietschbunten Comicgrafiken das Grundlagenwissen rund um den
+kleinen blauen Tausendsassa und seine Software vermittelt.&lt;&#x2F;p&gt;
+&lt;p&gt;Leider gab es den Comic bislang nur in englischer Sprache. Da wir nun aber auch einige Mitglieder haben, die gerade beim
+Erlernen neuer Dinge lieber auf die eigene Sprache zurückgreifen, hat sich unser Mitglied Thorben Weber der Übersetzung
+des Comics ins Deutsche angenommen. Da das Original unter einer Creative-Commons-Lizenz steht, war dieses Unterfangen
+auch unproblematisch möglich, sogar erwünscht.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2012&#x2F;arduino-comic&#x2F;img1.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Die deutsche Übersetzung des Comics kann sich nun jeder
+unter &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;arduinocomic.mainframe.io&quot;&gt;https:&#x2F;&#x2F;arduinocomic.mainframe.io&lt;&#x2F;a&gt;
+ansehen und herunterladen. Überzeugen Sie sich selbst wie einfach es ist in die Mikrocontrollerprogrammierung mit
+Arduino einzusteigen.&lt;&#x2F;p&gt;
+&lt;p&gt;Wer Lust hat, selbst einfach mal mit einem Arduino zu experimentieren, kann uns gerne im Space besuchen. Wir halten
+immer einige unserer selbstgemachten Arduino-Einsteigersets mit Arduino und weiteren Bauteilen zum Ausprobieren vor.
+Natürlich helfen wir Einsteigern immer gerne, die ersten Schritte in die Welt der Mikrocontroller zu gehen.&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Inventarsystem</title>
+          <pubDate>Thu, 01 Dec 2011 10:00:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2011/inventarsystem/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2011/inventarsystem/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2011/inventarsystem/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;inventarsystem&#x2F;inventarsystem.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;TODO :)&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>Shopsystem</title>
+          <pubDate>Thu, 01 Dec 2011 10:00:00 +0000</pubDate>
+          <author>sre</author>
+          <link>https://www.mainframe.io/www/feature/better-albums/blog/2011/shopsystem/</link>
+          <guid>https://www.mainframe.io/www/feature/better-albums/blog/2011/shopsystem/</guid>
+          <description xml:base="https://www.mainframe.io/www/feature/better-albums/blog/2011/shopsystem/">&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2011&#x2F;shopsystem&#x2F;shopsystem.jpg&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Mit steigender Mitgliederzahl und mehr als 5 verschiedenen Produkten im “Kiosk“des Hackspaces wurde das führen und
+auswerten von Strichlisten immer aufwändiger. Aus diesem Grund wurde von uns Software entwickelt, welche die Daten von
+Beginn an digital vorhält.&lt;&#x2F;p&gt;
+&lt;p&gt;Das Shopsystem läuft auf einem Raspberry Pi, an welchen ein serieller Barcode Scanner angeschlossen ist. Des Weiteren
+ist an den Raspberry Pi ein Monitor angeschlossen, welcher die letzten Vorgänge protokolliert. Jedes Mitglied kann sich
+mit einem (ungeschützten und leicht fälschbaren) Barcode einloggen, dann beliebige Produkte kaufen, indem er deren EAN
+Barcode scannt und sich schließlich mittels eines logout barcodes ausloggen. Um zu verhindern, dass Personen den Barcode
+anderer Mitglieder scannen bekommen diese gegen 8 Uhr eine E-Mail, in der die eingekauften Produkte des Vortages
+aufgelistet sind. Am Anfang des folgenden Monats kommt dann, ebenfalls per E-Mail, die Rechnung für den gesamten Monat.
+Diese wird, zusammen mit einer einfach auswertbaren CSV-Datei auch an den Schatzmeister geschickt, welcher dann das Geld
+von den Mitglieder Konten einzieht.&lt;&#x2F;p&gt;
+&lt;p&gt;Das Eintragen neuer Produkte geschieht über ein Web-Interface. Über dieses kann auch die Mitgliederdatenbank des Systems
+aktualisiert werden (import einer CSV-Datei) oder der aktuelle Warenbestand eingesehen werden.&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
