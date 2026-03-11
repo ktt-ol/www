@@ -136,12 +136,14 @@ def create_image_md(path_components: list[str], tmp_folder_albums: str, metadata
     image_file.write('file_uri_1200 = "' + thumbs_base + "1200-" + metadata["filename"] + '"\n')
 
     if index > 0:
+        prev_filename_web = generate_image_filename(path_components, lang, index - 1).replace(os.path.sep, "/")
         image_file.write(
-            'previous = "/' + albums_web_path + "/" + generate_image_filename(path_components, lang, index - 1) + '"\n')
+            'previous = "/' + albums_web_path + "/" + prev_filename_web + '"\n')
 
     if (index + 1) < image_count:
+        next_filename_web = generate_image_filename(path_components, lang, index + 1).replace(os.path.sep, "/")
         image_file.write(
-            'next = "/' + albums_web_path + "/" + generate_image_filename(path_components, lang, index + 1) + '"\n')
+            'next = "/' + albums_web_path + "/" + next_filename_web + '"\n')
 
     image_file.write("+++\n")
     image_file.close()
