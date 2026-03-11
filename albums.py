@@ -149,11 +149,11 @@ def create_image_md(path_components: list[str], tmp_folder_albums: str, metadata
     image_file.close()
 
 
-def normalize_images(image_metadata: list[dict]) -> list[tuple[dict, datetime]]:
+def normalize_images(images_metadata: list[dict]) -> list[tuple[dict, datetime]]:
     images = []
     current_date = None
 
-    for image_metadata in image_metadata:
+    for image_metadata in images_metadata:
         if image_metadata["exif"]["time"] is not None:
             new_date = datetime.fromtimestamp(int(image_metadata["exif"]["time"]) / 1000)
 
