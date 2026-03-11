@@ -132,8 +132,8 @@ def create_image_md(path_components: list[str], tmp_folder_albums: str, metadata
     # Albums do not have 750 pixel thumbnail, use 1200 instead
     thumbs_base = albums_url + "/" + base_uri + "/.thumbs/"
     image_file.write('file_uri_300 = "' + thumbs_base + "300-" + metadata["filename"] + '"\n')
-    image_file.write('file_uri_750 = "' + thumbs_base + "/1200-" + metadata["filename"] + '"\n')
-    image_file.write('file_uri_1200 = "' + thumbs_base + "/1200-" + metadata["filename"] + '"\n')
+    image_file.write('file_uri_750 = "' + thumbs_base + "1200-" + metadata["filename"] + '"\n')
+    image_file.write('file_uri_1200 = "' + thumbs_base + "1200-" + metadata["filename"] + '"\n')
 
     if index > 0:
         image_file.write(
