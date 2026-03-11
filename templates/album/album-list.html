@@ -57,7 +57,8 @@
 
                     {% set scaling = 200 / latest_page.extra.height %}
                     {% set height = 200 %}
-                    {% set width = latest_page.extra.width * scaling %}
+                    {% set width = latest_page.extra.width * scaling  %}
+                    {% set width = width | round(method="ceil", precision=0) %}
 
                     {% if width > 1150 %}
                         {% set image_uri = latest_page.extra.file_uri %}
