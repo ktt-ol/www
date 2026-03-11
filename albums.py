@@ -178,7 +178,7 @@ def normalize_folders(folder_metadata: list[dict]) -> list[tuple[dict, datetime]
 
     for folder in folder_metadata:
         # Use folder["time"], fallback to 0 if missing
-        folder_time = folder["time"]
+        folder_time = folder.get("time", 0)
         if folder_time is not None:
             new_date = datetime.fromtimestamp(int(folder_time) / 1000)
             if current_date is None or new_date > current_date:
