@@ -3,7 +3,7 @@ title = "Öffnungszeiten"
 weight = 15
 +++
 
-Wir haben **praktisch täglich geöffnet** – und 2026 im Schnitt rund **14 Stunden pro Tag**. Darum kümmern sich die Keyholder, die wir ganz unten auf [Über uns](@/about.md) erklären.
+Wir haben **praktisch täglich geöffnet** – und 2026 im Schnitt rund **14 Stunden pro Tag**. Darum kümmern sich die Keyholder, die wir ganz unten auf [Über uns](@/about/_index.md) erklären.
 
 Da unser Space komplett ehrenamtlich betrieben wird, gibt es allerdings keine festen
 Öffnungszeiten wie durch einen Schichtplan. Geöffnet wird, wenn die/der erste Keyholder*in vor Ort ist und wieder geschlossen, wenn die/der letzte geht. Das ist zwar eigentlich Zufall, klappt aber erstaunlich gut. 
@@ -28,7 +28,7 @@ Sonderräume wie zum Beispiel die Radstelle oder die Holzwerkstatt gerade aktiv 
 Wenn der Status auf **AUF** oder **AUF+** steht, kannst du jederzeit gerne
 vorbeikommen – ganz spontan!
 
-Die lebendigsten Tage im Space sind in der Regel Dienstag, Donnerstag und Samstag mit dem größten Andrang zwischen 19 und 22 Uhr. Falls du es etwas ruhiger magst, sind die anderen Tage/Zeiten oft etwas entspannter. Wir haben aber so viel Platz, dass Du auch bei vollem Space ruhigere Ecken findest.
+Die lebendigsten Tage im Space sind in der Regel Dienstag, Donnerstag und Samstag mit dem größten Andrang zwischen 19 und 22 Uhr. Falls du es etwas ruhiger magst, sind die anderen Tage/Zeiten oft etwas entspannter. Wir haben aber so viel Platz, dass du auch bei vollem Space ruhigere Ecken findest.
 
 Eine tolle Übersicht über unsere langfristigen Öffnungsstatistiken bietet zudem
 die Heatmap von [mapall.space](https://mapall.space/heatmap/show.php?id=Mainframe).
