@@ -20,7 +20,7 @@ meisten sagen aber einfach **Space**.
 Wir haben in der Regel Montag bis Sonntag **ab spätestens 19:00 Uhr geöffnet**
 (häufig sogar deutlich früher) und Interessierte, egal mit welchem Hintergrund,
 sind jederzeit willkommen. Wenn du vorbei kommen willst, schau einfach mal in die
-[Öffnungszeiten](@/about/opening_times.md) rein -- eine Anmeldung brauchst du nicht.
+[Öffnungszeiten](@/about/opening_times.md) rein -- eine Anmeldung oder Mitgliedschaft brauchst du nicht.
 
 ![Rainbow keyboard](../../media/img/keyboard.png)
 
@@ -70,17 +70,17 @@ Komm einfach vorbei!
 
 ## Kostet das was?
 
-Nein.
+Nein. Wir finden, dass Technikbegeisterung nicht vom Geldbeutel oder einem Vertrag abhängen sollte und sind in der glücklichen Lage, dass wir das ermöglichen können.
 
 Der Mainframe finanziert sich größtenteils mithilfe der Mitgliedsbeiträge seines
 gemeinnützigen Trägervereins, dem [**Kreativität trifft Technik e.V. (KtT)**](@/about/verein.md) --
-wir haben uns aber ganz bewusst dazu entschieden, die Nutzung unabhängig von
+und wir haben uns ganz bewusst dazu entschieden, die Nutzung unabhängig von
 einer Mitgliedschaft zu machen. Auch wer nach Jahren im Space nicht Mitglied im
-Verein ist, wird deswegen nicht schief angeguckt. Viele Nicht-Mitglieder tragen
+Verein ist, wird deswegen nicht schief angeguckt. Auch viele Nicht-Mitglieder tragen
 durch Einbringen ihrer Freizeit (zum Beispiel zum Weiterbau des Space oder zur
-Mithilfe bei Veranstaltungen) so viel bei, das wollen wir nicht missen.
+Mithilfe bei Veranstaltungen) unglaublich viel bei.
 
-Auch wenn sich das bei unserer Größe und Breite kaum jemand vorstellen kann,
+Übrigens: auch wenn sich das bei unserer Größe und Breite kaum jemand vorstellen kann,
 sind wir keine städtische Einrichtung und bekommen auch keine institutionelle
 Förderung. Daher freuen wir uns sehr über Spenden, die uns dabei helfen, den
 Space weiter zu betreiben.
@@ -104,8 +104,8 @@ bietet eine tolle Übersicht über einige, aber nicht alle Spaces, die es so gib
 * Einfach Spaß haben :)
 
 Es ist immer mindestens ein **Keyholder** im Space. Keyholder sind langjährige
-Mitglieder, die den Space für die Allgemeinheit aufschließen dürfen. Sie sind
-Vertrauenspersonen, die dadurch besondere Rechte, aber auch besondere Pflichten
+Aktive, die die Verantwortung tragen und den Space für die Allgemeinheit aufschließen können. Sie sind
+Vertrauenspersonen, die dadurch besondere Rechte, aber auch zusätzliche Pflichten
 haben.  Bei Fragen oder Problemen kannst du dich immer auch gerne an diese
 Person wenden -- oder auch alle anderen im Space ansprechen. Wer gerade
 Keyholder ist, erfährst du auf der [Status-Seite](https://status.mainframe.io).
