@@ -57,7 +57,7 @@
 
                     {% set scaling = 200 / latest_page.extra.height %}
                     {% set height = 200 %}
-                    {% set width = latest_page.extra.width * scaling %}
+                    {% set width = latest_page.extra.width * scaling  %}
 
                     {% if width > 1150 %}
                         {% set image_uri = latest_page.extra.file_uri %}
@@ -69,6 +69,8 @@
                         {% set image_uri = latest_page.extra.file_uri_300 %}
                     {% endif %}
                 {% endif %}
+
+                {% set width = width | round(method="ceil", precision=0) %}
 
                 <a href="{{ macros::rel_url(path=subsection_data.path, lang=lang) }}"
                    class="text-decoration-none rounded-1 p-0 overflow-hidden border border-1"
@@ -118,6 +120,8 @@
             {% else %}
                 {% set image_uri = page.extra.file_uri_300 %}
             {% endif %}
+
+            {% set width = width | round(method="ceil", precision=0) %}
 
             <a class="text-decoration-none" href="{{ macros::rel_url(path=page.path, lang=lang) }}"
                style="height: {{ height }}px; width: {{ width }}px;">
