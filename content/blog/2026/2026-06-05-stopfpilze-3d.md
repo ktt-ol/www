@@ -90,7 +90,7 @@ etwas von unseren neuen Stopfpilzen haben, haben wir sie natürlich unter einer
 offenen Lizenz online gestellt.
 
 Als Plattform dafür haben wir uns für
-[**printables.com**](https://www.printables.com/) entschieden, eine große
+**printables.com** entschieden, eine große
 Website für 3D-Modelle auf der es bereits über eine Million andere Modelle zu
 finden gibt, die man kostenlos herunterladen kann. (Dort gab es vorher sogar
 schon andere Versionen von Stopfpilzen -- allerdings keine flachen und großen
