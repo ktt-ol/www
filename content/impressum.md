@@ -5,7 +5,6 @@ template = "impressum.html"
 [extra]
 bgb_vorstand = [
     "Patrick Günther",
-    "Lars Hüsemann",
     "André Schäfer",
     "Christian Beyer",
 ]
