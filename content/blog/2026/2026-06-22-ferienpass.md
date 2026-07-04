@@ -1,7 +1,7 @@
 +++
 title = "Ferienpass 2026"
-date = "2026-06-22T19:43:00"
-updated = "2026-06-22T19:43:00"
+date = "2026-07-04T19:43:00"
+updated = "2026-07-04T19:43:00"
 description = 'Diese Sommerferien gibt es sieben Ferienpass-Aktionen im Mainframe. Wir freuen uns über Unterstützung.'
 
 [taxonomies]
@@ -21,11 +21,12 @@ Mainframe möglich ist -- vom Nähen und Sticken über Programmieren und Elektro
 bis hin zu Lasercutter, 3D-Druck und unserem Rasterelektronenmikroskop.
 
 Die meisten Plätze sind inzwischen vergeben. Trotzdem möchten wir euch einen
-kleinen Einblick geben, was wir in den Sommerferien vorhaben; und gleichzeitig
-fragen, ob noch einige der Aktiven Lust haben mitzuhelfen. Unterstützung können
-wir sowohl während der Workshops als auch beim Auf- und Abbau, Vorbereiten oder
-Aufräumen gut gebrauchen. Meldet euch einfach, wenn ihr Zeit und Interesse habt!
-Die genauen Termine findet ihr natürlich auch im [Terminkalender](@/calendar.md).
+kleinen Einblick geben, was wir in den Sommerferien vorhaben. Gleichzeitig ist
+dies ein Aufruf an die aktiven Menschen, die Lust haben mitzuhelfen.
+Unterstützung können wir sowohl während der Workshops als auch beim Auf- und
+Abbau, Vorbereiten oder Aufräumen gut gebrauchen. Meldet euch einfach, wenn ihr
+Zeit und Interesse habt! Die genauen Termine findet ihr natürlich auch im
+[Terminkalender](@/calendar.md).
 
 Falls jemand keinen Platz bekommen hat, schaut gerne mal in ein CoderDojo oder einen
 Jugend hackt Lab-Termin nach den Sommerferien rein -- auch hier können der
