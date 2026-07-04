@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Praxisforum Digitalisierung</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/blog/sommerferien2026/serie/praxisforum-digitalisierung/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2024-03-22T23:42:00+00:00</updated>
+    <id>https://www.mainframe.io/www/blog/sommerferien2026/serie/praxisforum-digitalisierung/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Praxisforum Digitalisierung</title>
+        <published>2023-05-10T23:42:00+00:00</published>
+        <updated>2024-03-22T23:42:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026/blog/2023/praxisforum-digitalisierung/"/>
+        <id>https://www.mainframe.io/www/blog/sommerferien2026/blog/2023/praxisforum-digitalisierung/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2023/praxisforum-digitalisierung/">&lt;p&gt;Zugegeben, eine Veranstaltung mit 180+ Anmeldungen durchzuführen, das kommt auch bei uns nicht alltäglich vor. Zwar
+richten wir häufiger Veranstaltungen wie z.B. das &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;blog&#x2F;sommerferien2026&#x2F;calendar&#x2F;&quot;&gt;CoderDojo&lt;&#x2F;a&gt; oder
+die &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;blog&#x2F;sommerferien2026&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;&quot;&gt;Ersti LAN Party&lt;&#x2F;a&gt; aus, aber diese bewegen sich i.d.R. bei unter
+50 Personen. Die 3-4 fache Menge war auch für uns eine besondere Herausforderung und bedarf einer gewissen Vorbereitung
+sowie ordentlicher Planung.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir möchten euch in diesem Blogpost etwas über unsere Ideen, Anstrengungen und Erfahrungen berichten. Fokussiert auf den
+technischen Part der Infrastruktur.&lt;&#x2F;p&gt;
+&lt;p&gt;Wer schonmal ein Event bzw. Netzwerk dieser Größe geplant hat, dem werden folgende Punkte bekannt vorkommen.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ausreichend große DHCP Range (&#x2F;24 könnte mitunter knapp werden)&lt;&#x2F;li&gt;
+&lt;li&gt;Bewusst gering gesetzte Leasetime (um Adressen nicht unnötig lange blockiert zu haben)&lt;&#x2F;li&gt;
+&lt;li&gt;Ausreichende Kapazität im WAN, LAN, und WLAN.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Aufmerksame Leser des Blogs werden den letzten Beitrag über
+die &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;blog&#x2F;sommerferien2026&#x2F;blog&#x2F;2023&#x2F;lan-party-2023-04-review&#x2F;&quot;&gt;Ersti LAN Party&lt;&#x2F;a&gt; gelesen haben. Das dort beschriebene Problem
+mit unserem ISP bzw. dessen Modem konnte in der Zwischenzeit erfolgreich behoben werden, womit wir auf eine stabile
+Internetverbindung für das Praxisforum Digitalisierung zugreifen konnten.&lt;&#x2F;p&gt;
+&lt;p&gt;Das übergeordnete Netzdesign auf der physischen Schicht sieht dabei wie folgt aus.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;01-overview-lan.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;01-01-wan.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Das Besondere an dieser Situation war, dass wir das OCM, welches direkt ein Stockwerk über uns liegt, mit zusätzlichen
+Access Points unterstützten um die erhöhte Menge an Gästen performant bedienen zu können.&lt;&#x2F;p&gt;
+&lt;p&gt;Im LAN Bereich nutzten wir für die Veranstaltung ein eigenes Event VLAN, welches primär über unsere WLAN-Infrastruktur
+zur Verfügung gestellt wurde. Wir entschieden uns für die Veranstaltung sowohl im OCM, als auch bei uns, dasselbe
+Netzwerk bereitzustellen. Das im OCM bereitgestellte WLAN führte entsprechend über unsere Routinginfrastruktur den Weg
+ins Internet.&lt;&#x2F;p&gt;
+&lt;p&gt;Um der Menge an Gästen performant begegnen zu können, arbeiteten wir mit einem &#x2F;23 Netzwerk (512 Adressen) sowie einer
+DHCP Leasetime von 60min bzw. max 120min. Somit war sichergestellt, dass nicht plötzlich der Pool an zu vergebenden
+Adressen ausgeschöpft ist.&lt;&#x2F;p&gt;
+&lt;p&gt;Das WLAN erstreckt sich im Mainframe vom Treppenaufgang bis zur Toilette (ja wir haben auch auf der Toiletten gutes
+WLAN) mit insgesamt 5x 802.11ac fähigen Access Points.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;02-overview-wlan.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Um ein möglichst leistungsfähiges WLAN anbieten zu können, ist die Infrastruktur so gebaut, dass es so gut wie keine
+Kanalüberlappungen mit anderen Access Points gibt und somit Interferenzen verhindert werden. Zudem werden die WLANs für
+Nutzerendgeräte exklusiv in 5 GHz angeboten, während IoT und anderer “Kleinscheiß” dafür im 2.4GHz Band beherbergt ist.&lt;&#x2F;p&gt;
+&lt;p&gt;Für das Praxisforum Digitalisierung gab es eine eigene SSID welche standortübergreifend sowohl im Mainframe als auch im
+OCM zur Verfügung stand.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir knackten an diesem Freitag die Gesamtmenge von 200 Endgeräten im WLAN, mit einem Peak von 60+ Geräten auf dem Access
+Point in der Lounge.&lt;&#x2F;p&gt;
+&lt;p&gt;Nachstehend sind die Verläufe des Tages für Usermenge pro Lokation dargestellt mit Zeitverlauf von 09:00 - 21:00 Uhr.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;03-laser.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;04-lounge.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2023&#x2F;praxisforum-digitalisierung&#x2F;05-vorstand.png&quot; alt=&quot;&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Als Fazit lässt sich sagen, die Vorbereitungen haben sich ausgezahlt. Die Infrastruktur blieb stabil und hat trotz der
+hohen Menge an Clients auf engem Raum gut funktioniert.&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn Ihr mehr davon wissen wollt, kommt gerne einfach vorbei - wir haben i.d.R von 19:00 - 24:00 geöffnet - oder meldet
+euch auf unserer Mailingliste an. Informationen dazu findet ihr jeweils unter: &lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;blog&#x2F;sommerferien2026&#x2F;contact&#x2F;&quot;&gt;Kontakt&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

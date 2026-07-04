@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - 3D-Druck</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/blog/sommerferien2026/serie/3d-druck/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2026-06-20T19:43:00+00:00</updated>
+    <id>https://www.mainframe.io/www/blog/sommerferien2026/serie/3d-druck/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Projekt: Stopfpilze aus dem 3D-Drucker</title>
+        <published>2026-06-20T19:43:00+00:00</published>
+        <updated>2026-06-20T19:43:00+00:00</updated>
+        
+        <author>
+          <name>
+            tljuniper
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026/blog/2026/stopfpilze-3d/"/>
+        <id>https://www.mainframe.io/www/blog/sommerferien2026/blog/2026/stopfpilze-3d/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2026/stopfpilze-3d/">&lt;p&gt;Wer schon einmal Löcher in Socken gestopft hat, kennt als Hilfsmittel dafür
+bestimmt Stopfpilze oder Stopfeier.&lt;&#x2F;p&gt;
+&lt;p&gt;Auch im Repair Café in Bad Zwischenahn werden die genutzt. Besonders gerne kommt
+dort eine große Stopfscheibe zum Einsatz; quasi ein sehr großer und flacher
+Stopfpilz mit einer Rille, um den Stoff mit einem Gummiband auf der Scheibe zu
+fixieren, sodass man ihn nicht selbst festhalten muss und er sich nicht
+verzieht.&lt;&#x2F;p&gt;
+&lt;p&gt;Solche Stopfscheiben aus Holz kann man in einer schönen gedrechselten Variante
+auch online kaufen – meist allerdings zu Preisen von über 30 Euro pro Stück und
+nur in einer sehr begrenzten Auswahl an Größen.&lt;&#x2F;p&gt;
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_6203.2dabb793def5cf80.jpg&quot;&#x2F;&gt;
+&lt;p&gt;Das muss doch besser gehen, haben wir uns gedacht. Mit einem 3D-Drucker.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;erste-version-einfaches-modell-mit-einer-rotations-extrusion&quot;&gt;Erste Version: Einfaches Modell mit einer Rotations-Extrusion&lt;&#x2F;h2&gt;
+&lt;p&gt;Es gibt verschiedene Möglichkeiten, um dreidimensionale Objekte am Computer zu
+entwerfen. Eine sehr einfache Methode ist es, ein bestehendes zweidimensionales
+Bild zu nehmen und es gerade hochzuziehen, bis die gewünschte Höhe erreicht wird
+(das nennt man “Extrusion”). Nur ein ganz bisschen komplizierter ist die
+“Rotations-Extrusion”. Dort wird das Bild 360 Grad um eine angegebene Achse
+gedreht. Aus einem gedrehten Kreis kann dadurch (je nachdem, wo sich die Achse
+befindet) eine Kugel oder ein Donut entstehen.&lt;&#x2F;p&gt;
+&lt;p&gt;Für die erste Version des Modells haben wir daher einen Querschnitt als 2D-Pfad
+in &lt;strong&gt;Inkscape&lt;&#x2F;strong&gt; entworfen und diesen mithilfe von &lt;strong&gt;OpenSCAD&lt;&#x2F;strong&gt; einmal um die
+Mitte gedreht.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;querschnitt-v1.91704e369604873a.png&quot;&#x2F;&gt;
+
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;render-v1.627430c1d170ed2e.png&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Dieses Objekt kann dann direkt an eine Software für 3D-Druck (genannt
+&lt;strong&gt;Slicer&lt;&#x2F;strong&gt;) übergeben werden, die das Modell in einzelne Schichten zerlegt und
+dann für jede Schicht Bewegungsmuster für den 3D-Drucker erzeugt.&lt;&#x2F;p&gt;
+&lt;p&gt;Im Space steht aktuell ein &lt;strong&gt;Bambu Lab A1 mini&lt;&#x2F;strong&gt;, der die ersten Prototypen gedruckt
+hat. Basierend auf der Stopfscheibe aus Holz haben wir SVG-Dateien für Varianten
+in 8 cm, 10 cm und 12 cm getestet.&lt;&#x2F;p&gt;
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_6293.9042d9e22129abe8.jpg&quot;&#x2F;&gt;
+&lt;p&gt;Das Feedback für die ersten Versionen aus dem Repair Café war schon sehr
+positiv. Besonders die ganz großen Stopfscheiben haben sich als praktisch für
+bestimmte Anwendungen herausgestellt. In den folgenden Tagen haben wir mit leicht
+anderen Größen und Formen für den “Schirm” unserer Stopfpilze experimentiert.&lt;&#x2F;p&gt;
+&lt;p&gt;Wie von ganz allein kam dann auch die Idee auf, einen speziellen “Pilz” nur für
+Socken zu entwerfen, der etwa die Form einer Fußspitze hat. Auch hier haben wir
+eine Rotations-Extrusion verwendet, allerdings in einem zweiten Schritt den
+runden Pilz noch mit einer Skalierung “flachgedrückt”.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_6796.38fe7e12433fa4e5.jpg&quot;&#x2F;&gt;
+
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_6797.129762633cff5089.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Etwas komplizierter wurde es dann, als wir eine weitere Idee umsetzen wollten –
+eine hohle Version des Stopfpilzes, die von unten beleuchtet werden kann. Das
+macht Reparaturen an dunklen Stoffen einfacher und macht dünne Stellen in einem
+Stoff sichtbar. Hier haben wir das Modell in zwei Teile zerlegt, um den Druck
+einfacher zu machen. Das Resultat spricht für sich und wird aktuell sehr gern zum
+Reparieren eingesetzt.&lt;&#x2F;p&gt;
+&lt;p&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_8141.9bf6da5576d7412c.jpg&quot;&#x2F;&gt;
+
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_8159.02d2e734e964e14c.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;p&gt;Mit diesen ersten Modellen in unterschiedlichen Größen und Formen ausgestattet
+war dann erstmal Schluss. Bestimmt lässt sich da kaum noch was verbessern, oder?&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;exkursion-upload-auf-printables-com&quot;&gt;Exkursion: Upload auf printables.com&lt;&#x2F;h2&gt;
+&lt;p&gt;Damit wir im Space und im Repair Café nicht die Einzigen sind, die in Zukunft
+etwas von unseren neuen Stopfpilzen haben, haben wir sie natürlich unter einer
+offenen Lizenz online gestellt.&lt;&#x2F;p&gt;
+&lt;p&gt;Als Plattform dafür haben wir uns für
+&lt;strong&gt;printables.com&lt;&#x2F;strong&gt; entschieden, eine große
+Website für 3D-Modelle auf der es bereits über eine Million andere Modelle zu
+finden gibt, die man kostenlos herunterladen kann. (Dort gab es vorher sogar
+schon andere Versionen von Stopfpilzen – allerdings keine flachen und großen
+Stopfscheiben wie wir sie entworfen haben und auch keine beleuchteten
+Varianten.)&lt;&#x2F;p&gt;
+&lt;p&gt;Falls ihr die ersten Modelle drucken möchtet, könnt ihr also das 3D-Modell dafür
+auf printables.com herunterladen und entweder bei uns im Space, auf einem eigenen
+Drucker oder von einem Online-Service drucken lassen. Auch die SVGs und
+OpenSCAD-Dateien könnt ihr auf printables herunterladen.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1582428-darning-tools-with-groove-v1&quot;&gt;Darning tools with groove (v1) - printables.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1582434-sock-darning-tool-v1&quot;&gt;Sock darning tool (v1) - printables.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2026&#x2F;stopfpilze-3d&#x2F;printables.png&quot; alt=&quot;Die Stopfpilze auf printables&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;&quot;&gt;Zweite Version: Vollständig anpassbar mit OpenSCAD und BOSL2&lt;&#x2F;h2&gt;
+&lt;p&gt;Wie schon angeteasert, war dann mit der Version 1 doch noch nicht jeder
+Anwendungsfall gelöst.&lt;&#x2F;p&gt;
+&lt;p&gt;Wir hatten den tollen beleuchteten Stopfpilz, allerdings nur in einer Größe.
+Bekommen wir auch andere Größen beleuchtet hin? Könnte man den Socken-Stopfpilz
+beleuchten? Gerade wenn Socken schon dünne Stellen haben, wäre das doch schick.
+Was ist mit den klassischen Modellen, die einen Stiel haben, in dem man die
+Stopfnadeln aufbewahren kann? Und was mit super engen Stellen, zum Beispiel in
+Handschuhen? Können wir auch Stopfeier bauen?&lt;&#x2F;p&gt;
+&lt;p&gt;Gerade die &lt;strong&gt;parametrisierbaren Modelle&lt;&#x2F;strong&gt;, bei denen man also einzelne Parameter
+wie die Höhe oder Breite eines Objektes einstellen kann, sind ein
+Anwendungsfeld, in dem OpenSCAD glänzt. Wir sind also nochmal einen Schritt
+zurückgegangen und haben ein konfigurierbares Modell des Stopfpilzes entworfen,
+bei dem man die Größe, Form und Ausführung des Pilzes einstellen kann. Für jeden
+Entwurf gibt es zusätzlich auch eine Variante mit Stiel (der mit einem Gewinde
+eingeschraubt wird) und eine hohle Variante, die beleuchtet werden kann.
+Weil man die Form des Schirms recht frei einstellen kann, sind mit dem selben
+Generator auch Stopfeier möglich.&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn ihr einen der neuen Stopfpilze durcken wollt, euch die Details zum neuen
+Modell interessieren oder ihr noch eine ganz neue Form des Stopfpilzes bauen
+wollt, schaut gerne direkt ins Modell rein.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1688284-darnlings-darning-mushroom-collection-in-various-s&quot;&gt;Darnlings - Darning mushroom collection in various sizes and shapes - printables.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;render.c4e32165c1b87e85.png&quot;&#x2F;&gt;
+
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_2510.62dc2fe7f623a1a6.jpg&quot;&#x2F;&gt;
+
+
+&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;processed_images&#x2F;IMG_9969.233f01fbf71d6fe0.jpg&quot;&#x2F;&gt;
+&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;-1&quot;&gt;Relevante Links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1688284-darnlings-darning-mushroom-collection-in-various-s&quot;&gt;Verbesserte Stopfpilz-Sammlung - printables&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1582428-darning-tools-with-groove-v1&quot;&gt;Stopfscheiben v1 - printables&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.printables.com&#x2F;model&#x2F;1582434-sock-darning-tool-v1&quot;&gt;Sockenstopfpilz v1 - printables&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;inkscape.org&#x2F;&quot;&gt;2D-Design-Software: Inkscape&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;openscad.org&#x2F;&quot;&gt;3D-Design-Software: OpenSCAD&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.weniger-ist-machbar.de&#x2F;repair_cafe_83.html&quot;&gt;Repair Café Bad Zwischenahn&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;-2&quot;&gt;Interesse geweckt? Kommt im Space vorbei!&lt;&#x2F;h2&gt;
+&lt;p&gt;Falls ihr jetzt ganz dringend auch einen 3D-gedruckten Stopfpilz braucht, oder
+ein anderes Projekt drucken möchtet, schaut gerne im Space vorbei. Vorkenntnisse
+braucht ihr dazu nicht – es sind oft Leute da, die in die Drucker eingewiesen
+sind und euch gerne helfen, einen Druck zu starten.&lt;&#x2F;p&gt;
+&lt;p&gt;Falls Kinder oder Jugendliche 3D-Druck ausprobieren möchten, bieten sich dafür
+auch ganz besonders unsere CoderDojos und Jugend hackt Labs an. Im
+&lt;a href=&quot;https:&#x2F;&#x2F;www.mainframe.io&#x2F;www&#x2F;blog&#x2F;sommerferien2026&#x2F;calendar&#x2F;&quot;&gt;Terminkalender&lt;&#x2F;a&gt; könnt ihr sehen, wann die nächsten Aktionen
+stattfinden.&lt;&#x2F;p&gt;
+&lt;p&gt;Und schließlich freut sich auch das
+&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.weniger-ist-machbar.de&#x2F;repair_cafe_83.html&quot;&gt;Repair Café in Bad Zwischenahn&lt;&#x2F;a&gt;
+immer über Leute, die dort reparieren, helfen oder einfach einen Kuchen essen möchten.
+Repariert wird dort jeden ersten Samstag im Monat.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2026&#x2F;stopfpilze-3d&#x2F;IMG_9896.jpeg&quot; alt=&quot;Die neuen Stopfpilze – Auswahl&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

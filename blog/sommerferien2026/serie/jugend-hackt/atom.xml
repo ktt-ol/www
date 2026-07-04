@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="de">
+    <title>Mainframe - Jugend hackt</title>
+    <subtitle>Website des Hackspace Mainframe</subtitle>
+    <link rel="self" type="application/atom+xml" href="https://www.mainframe.io/www/blog/sommerferien2026/serie/jugend-hackt/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-11-30T21:55:00+00:00</updated>
+    <id>https://www.mainframe.io/www/blog/sommerferien2026/serie/jugend-hackt/atom.xml</id>
+    <entry xml:lang="de">
+        <title>Weihnachts-Editionen CoderDojo und Jugend hackt Lab 🎄</title>
+        <published>2025-11-30T21:55:00+00:00</published>
+        <updated>2025-11-30T21:55:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/coderdojo-jh-nikolausedition/"/>
+        <id>https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/coderdojo-jh-nikolausedition/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/coderdojo-jh-nikolausedition/">&lt;p&gt;Am Samstag, den &lt;strong&gt;6.12. um 15:30&lt;&#x2F;strong&gt; laden wir alle Interessierten herzlich zu unserem &lt;strong&gt;CoderDojo #103&lt;&#x2F;strong&gt; ein. 👾&lt;&#x2F;p&gt;
+&lt;p&gt;Auch dieses Jahr erwartet euch wieder die besondere &lt;strong&gt;Nikolaus-Edition&lt;&#x2F;strong&gt;: &lt;strong&gt;Lasercutter, Nähmaschinen und 3D-Drucker&lt;&#x2F;strong&gt; sind in Betrieb um Weihachtsgeschenke, Deko-Ideen und allerlei Festliches herzustellen. Dazu gibt es auch die passende Weihnachtsatmosphäre im Space und Snacks. 🎅🔔&lt;&#x2F;p&gt;
+&lt;p&gt;Zusätzlich zum Nikolaus-Angebot wird natürlich auch wieder programmiert – mit Scratch, Python, Mikrocontrollern und vielem mehr.&lt;&#x2F;p&gt;
+&lt;p&gt;Die CoderDojos sind für alle von 7-17 Jahren geeignet. Mehr Informationen und den Link zur Anmeldung findet ihr hier:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&#x2F;projekte&#x2F;coderdojo&#x2F;&quot;&gt;Infos: ktt-ol.de&#x2F;projekte&#x2F;coderdojo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;codeclub.org&#x2F;en&#x2F;clubs&#x2F;de&#x2F;oldenburg&#x2F;oldenburg-ktt&#x2F;&quot;&gt;Anmeldung: codeclub.org Oldenburg&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Doch das ist noch nicht alles:&lt;&#x2F;p&gt;
+&lt;p&gt;Direkt in der Woche danach, am &lt;strong&gt;13.12. um 15:00&lt;&#x2F;strong&gt;, findet das nächste Oldenburger &lt;strong&gt;Jugend hackt Lab&lt;&#x2F;strong&gt; statt, das ebenfalls in einer weihnachtlichen Sonderedition angeboten wird. Ergänzend zum Open Lab, bei dem die Jugendlichen ohne festes Programm an eigenen Projekten arbeiten können, bieten wir einen &lt;strong&gt;Workshop&lt;&#x2F;strong&gt; an, in dem wir gemeinsam &lt;strong&gt;individuelle Keksausstecher&lt;&#x2F;strong&gt; entwerfen und herstellen. 🍪🎄&lt;&#x2F;p&gt;
+&lt;p&gt;Jugend hackt ist ein Angebot speziell für alle Jugendlichen von 12-18 Jahren. Passende Informationen und den Link zur Anmeldung findet ihr hier:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&#x2F;projekte&#x2F;jugend-hackt-lab-oldenburg&#x2F;&quot;&gt;Infos: ktt-ol.de&#x2F;projekte&#x2F;jugend-hackt-lab-oldenburg&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jugendhackt.org&#x2F;lab&#x2F;oldenburg&#x2F;&quot;&gt;Anmeldung: jugendhackt.org&#x2F;lab&#x2F;oldenburg&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Schaut vorbei – gerne mit Anmeldung oder auch spontan. Wir freuen uns auf euch! ✨&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2025&#x2F;coderdojo-jh-nikolausedition&#x2F;1020.jpg&quot; alt=&quot;Bunter gelöteter Lichtring&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="de">
+        <title>Neu: Jugend hackt Lab</title>
+        <published>2025-10-03T18:00:00+00:00</published>
+        <updated>2025-10-03T18:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Markus Framer
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/jugend-hackt-lab-opening/"/>
+        <id>https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/jugend-hackt-lab-opening/</id>
+        
+        <content type="html" xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2025/jugend-hackt-lab-opening/">&lt;p&gt;Wir freuen uns riesig, euch ein neues Format im Mainframe vorzustellen: Das
+Jugend hackt Lab! 👾&lt;&#x2F;p&gt;
+&lt;p&gt;Nach jetzt schon 100 CoderDojos gibt es ab sofort ein zusätzliches Angebot für
+Jugendliche von 12-18 Jahren mit Interesse an Technik, Programmierung und
+digitaler Gesellschaft. Hier kannst du gemeinsam mit anderen Jugendlichen
+spannende Projekte entwickeln, vom Leucht-Schal bis zur App für deine
+Zimmerpflanzen – ganz ohne Vorwissen, aber mit viel Spaß und Unterstützung.&lt;&#x2F;p&gt;
+&lt;p&gt;Wenn das für dich spannend klingt, dann komm doch zum ersten Jugend hackt Lab in
+Oldenburg am 18. Oktober 2025 um 15:00!&lt;&#x2F;p&gt;
+&lt;p&gt;Schau für Infos zum Lab, zur Eröffnung und zum Mitmachen in den ausführlichen
+Artikel auf &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;www.kreativitaet-trifft-technik.de&#x2F;aktuelles&#x2F;2025&#x2F;neu-jugend-hackt&#x2F;&quot;&gt;ktt-ol.de&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Mehr Infos zu Jugend hackt findest du auf &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;jugendhackt.org&#x2F;&quot;&gt;jugendhackt.org&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;img&#x2F;jugendhackt-banner-small.png&quot; alt=&quot;Jugend hackt Banner&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Mainframe"/>
+    <meta property="og:locale" content='de_DE'/>
+
+    
+        <meta property="og:url" content="https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/acs/"/>
+        <meta name="twitter:url" content="https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/acs/"/>
+        <meta name="twitter:domain" content="mainframe.io/www/blog/sommerferien2026"/>
+    
+
+
+    
+        
+    
+
+    <meta name="author" content="sre">
+
+    
+    <meta property="og:type" content='article'/>
+
+    
+
+    
+
+    
+
+    
+
+
+
+    
+
+        
+        
+
+    
+
+    <title>Hackspace Access Control System | Mainframe</title>
+    <meta property="og:title" content='Hackspace Access Control System | Mainframe'/>
+    <meta property="og:description" content=''/>
+    <meta name="twitter:title" content="Hackspace Access Control System | Mainframe"/>
+    <meta name="twitter:description" content=''/>
+    <meta name="description" content=''>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "image": "https://www.mainframe.io/www/blog/sommerferien2026/media/img/logo-ktt.png",
+            "url": "https://www.mainframe.io/www/blog/sommerferien2026",
+            "logo": "https://www.mainframe.io/www/blog/sommerferien2026/media/img/logo-mainframe.svg",
+            "name": "Mainframe",
+            "description": "Hackspace Oldenburg",
+            "email": "vorstand@kreativitaet-trifft-technik.de",
+            "telephone": "+49441-559 700 32",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bahnhofsplatz 10",
+                "addressLocality": "Oldenburg",
+                "addressCountry": "DE",
+                "addressRegion": "Innenstadt",
+                "postalCode": "26122"
+            },
+            "vatID": "",
+            "iso6523Code": ""
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../css/site.css">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href='../../../rss.xml'>
+
+    <link rel="alternate" type="application/rss+xml" title="ATOM"
+          href='../../../atom.xml'>
+
+    
+    
+
+</head>
+
+<body class="vh-100 m-0 p-0" style="background-color: #222222">
+<div class="container-lg h-100 px-lg-0 px-4 d-flex flex-column text-white">
+
+    <header id="navbar" class="row my-2">
+    <div class="col">
+        <nav class="navbar navbar-expand-lg bg-body-secondary rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href='../../../'
+                   style="padding-top: 10px; padding-bottom: 10px;">
+                    <img style="height: 28px;"
+                         id="img-logo-mainframe"
+                         src="../../../media/img/logo-mainframe.svg"
+                         alt="Mainframe Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Der Space
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/about/">
+                    Über uns
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/opening-times/">
+                    Öffnungszeiten
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/communication/">
+                    Kommunikation und Tools
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/verein/">
+                    Der Verein
+                </a>
+            </li>
+        
+
+        
+    </ul>
+</li>
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Bereiche
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/overview/">
+                    Übersicht
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/lasercutter/">
+                    Lasercutter
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/elektronik-werkstatt/">
+                    Elektronik-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/3d-lab/">
+                    3D-Labor
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/schnittstelle/">
+                    Schnittstelle (Textilien)
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/radstelle/">
+                    Radstelle
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/holz-werkstatt/">
+                    Holz-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/metall-werkstatt/">
+                    Metall-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/foto-lab/">
+                    Foto-Labor
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/rem/">
+                    Raster-Elektronen-Mikroskop
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/kueche/">
+                    Küche
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/lounge/">
+                    Conference, Freifläche, Lounge
+                </a>
+            </li>
+        
+
+        
+    </ul>
+</li>
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Bilder
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../images/panorama/">
+                    Virtual Tour
+                </a>
+            </li>
+        
+
+        
+            
+            <li>
+                <a class="dropdown-item" href="../../../images/ifs/">
+                    Images From Space
+                </a>
+            </li>
+        
+            
+            <li>
+                <a class="dropdown-item" href="../../../images/albums/">
+                    Fotoalben
+                </a>
+            </li>
+        
+    </ul>
+</li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../blog/'>
+                                
+                                Blog
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../calendar/'>
+                                
+                                Termine
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../contact/'>
+                                
+                                Kontakt
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../contact/#anreise/'>
+                                Anreise
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false" href="https://www.kreativitaet-trifft-technik.de">
+                               <img id="img-icon-ktt" src="../../../media/img/logo-ktt-white-background.svg" style="height: 40px;" alt="KtT">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    
+        <main id="content" class="row">
+            <div class="col-lg-9">
+                
+    <h1 class="d-flex justify-content-between">
+        Hackspace Access Control System
+
+        
+            <span class="text-end">
+                <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light"
+                   href="https://github.com/ktt-ol/access-control-system/">
+                    Repository
+                </a>
+            </span>
+        
+    </h1>
+    <div class="main-content">
+        <p><img src="../../../media/blog/2016/acs/hacs-logo.svg" alt="Hacs logo" loading="lazy" decoding="async" /></p>
+<p>While the status-switch is nice, it does not help to actually
+get into a hackspace. For this you need some keys and with
+multiple people having access rights having a single key
+is quite annoying. While there are a few simple solutions
+they usually lack some desired features. Thus we decided to
+implement a digital access control system, that can open
+our doors.</p>
+<h2 id="">Hardware</h2>
+<p>As visible in the <a rel="noopener nofollow noreferrer" target="_blank" href="https://map.mainframe.io">Space Map</a>, there are multiple
+ways to get into our Hackspace. Let’s have a look at the main entrance for now.
+The first door is the building’s entrance downstairs. This is not yet handled
+by the access control system, since its not exclusively used by us and needs
+agreements with different people first.</p>
+<p>Then in the second floor (not counting the ground level - the building has no
+first floor) there is a glass-door from the staircase to our front corridor.
+This door has been armed with a few sensors by us, a door opener as well as a
+bell button next to it. The corridor is also used as emergency exit from our
+neighbours, so the glass-door contains a panic lock. It will automatically
+unlock the door if somebody uses the inner doorhandle. We notice any door
+opening by the door using a small reed-contact and always know if the door is
+locked using a bolt-switch. This information is fed into our
+<a href="//grafana.mainframe.io">Grafana</a> instance. If the door is not locked,
+it can be opened using a door opener (buzzer). Our access control system opens
+the door, if the bell button is pressed and the space is not closed. If it is
+closed, the bell button rings the bell instead. A small ws2812b LED inside of
+the bell button gives a hint about the current space status.</p>
+<p>Next, there are two doors going from the corridor onto our main area. One going
+straight to the main area (AKA main-door) and one going via our conference
+room. The one going via the conference room is not yet upgraded, but the main-door
+has the same sensors as the glass-door, as well as the door opener and the bell
+button. Additionally it already had a keypad, which has been integrated into our
+access control system. This door also has a motor-lock (using an ABUS CFA1000).</p>
+<p>Historically we used the status-switch, to change the space-status and a normal
+key to (un)lock the door. We are currently migrating away from the switch to a
+SSH based setup (and an Android app using our custom ssh interface) for changing
+the space-status. Then the door-lock will automatically (un)lock the space based
+upon the status provided via ssh. Once unlocked the door can be opened by our
+members using the keypad. Guests can ring the bell using the bell button instead.
+There is also an “Open House” mode, which is called “open+” by us. In this mode
+the bell button directly opens the door.</p>
+<p>Below you can see a diagram of all hardware implementing the above. The green
+boxes are related to the glass-door and the blue boxes to the main-door. The
+orange boxes relate to hardware on our main area. The red dashed line is a
+ws2812b bus provided by an attiny85 and provides status indications. The green
+dashed lines are GPIO handles. Note that those are slightly simplified, as
+they sometimes contain pull-ups/pull-downs, logic-level converters or even
+relays to control the actual hardware.</p>
+<p><img src="../../../media/blog/2016/acs/hardware-overview.svg" alt="Hardware Interconnection Overview" loading="lazy" decoding="async" /></p>
+<h2 id="-1">Sofware</h2>
+<p>The handling of the GPIOs and other hardware components happens on a Raspberry
+Pi 2 running a (minimal) Debian and Debian kernel. The <a rel="noopener nofollow noreferrer" target="_blank" href="https://en.wikipedia.org/wiki/Device_tree">device tree</a>
+has been modificated
+slightly, so that the kernel knows about the mcp23017 port expanders and the
+keypad.</p>
+<p>Since there is no userspace support for DT overlays in the mainline/Debian
+kernel so far; the standard DT blob must be modified instead. The one provided
+by Debian’s kernel package can be made readable again using <code>dtc -I dtb -O dts -o rpi.dts /path/to/rpi.dtb</code>. Then we add our custom modifications from <a href="../../../media/blog/2016/acs/devicetree-additions.dts">devicetree-additions.dts</a>.</p>
+<p>With that done the software from the github repository linked above can be used.
+It comes with multiple daemons:</p>
+<table><thead><tr><th>Binary</th><th>Description</th></tr></thead><tbody>
+<tr><td>acs-abus-cfa1000-sensor</td><td>Send Bolt State of Abus CFA1000 to MQTT</td></tr>
+<tr><td>acs-abus-cfa1000-setup</td><td>Setup Abus CFA1000 (use after power loss)</td></tr>
+<tr><td>acs-gio-actor</td><td>Make output GPIO accessible from MQTT</td></tr>
+<tr><td>acs-gpio-sensor</td><td>Make input  GPIO accessible from MQTT</td></tr>
+<tr><td>acs-i2c-led</td><td>Control LEDs connected to the attiny85</td></tr>
+<tr><td>acs-keyboard</td><td>Handle for keypad device</td></tr>
+<tr><td>acs-status-display</td><td>Handler for usb-serial display</td></tr>
+<tr><td>acs-switch</td><td>Handler for status switch</td></tr>
+<tr><td>acs-keyholder-interface</td><td>SSH interface</td></tr>
+<tr><td>acs-mqtt-fwd</td><td>Forward SSH data to MQTT</td></tr>
+<tr><td>acs-doorctrl</td><td>Control ABUS CFA1000 based from SSH data</td></tr>
+<tr><td>acs-main-door</td><td>Handler for main-door bell-button</td></tr>
+<tr><td>acs-glass-door</td><td>Handler for glass-door bell-button</td></tr>
+</tbody></table>
+<h2 id="-2">SSH Setup</h2>
+<p>On the RPi a new system user is created e.g. “keyholder”. For this user
+the login shell is set to “acs-keyholder-interface”, which runs with
+suid bit. It only supports a few commands (actually just “set-status”
+and “set-next-status” at the moment). Apart from that you provide a
+~/.ssh/authorized_keys in the usual format. Last but not least the user
+information must be added to the user DB (usually <code>/var/lib/acs.db</code>).</p>
+<p>If you now try to set the state using <code>ssh keyholder@access-control-system set-status open+ "Open 4 all!"</code> the system will check the fingerprint of the
+key, that did the ssh login and infer the user information from that generating
+a few simple files in <code>/run/acs-state</code>. These files are interpreted by
+acs-mqtt-fwd and acs-doorctrl respectively.</p>
+<p>If the deprecated status switch is used to change the status, the files in
+<code>/run/acs-state</code> are deleted.</p>
+
+    </div>
+
+            </div>
+            <div class="col-lg-3">
+                
+                    <aside class="d-flex flex-column gap-1 mb-auto">
+
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="https://status.mainframe.io/">Space-Status</a>
+        </h3>
+
+        <div id="space-status" class="px-2 pt-1 small list-group">
+            <template id="status-item-template">
+                <a class="list-group-item border rounded-3" href="https://status.mainframe.io/">
+                    <div class="status-text d-none fw-semibold" data-state="unknown">
+                        ???
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="closed">
+                        Geschlossen
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="closing">
+                        Schließt bald
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="open">
+                        Geöffnet
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="member">
+                        Geschlossen (Member Only)
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="keyholder">
+                        Geschlossen (Keyholder Only)
+                    </div>
+                </a>
+            </template>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="../../../calendar/">Nächste Termine</a>
+        </h3>
+
+        <div class="px-2 pt-1 small">
+            <ul class="list-group" id="event-list" data-calendar-id="markusframer@gmail.com"
+                data-api-key="AIzaSyB9pTX1ewZeRPc-rmq-Xp32wuuTW1P4U1U" data-max="7"></ul>
+
+            <template id="event-item-template">
+                <li class="list-group-item">
+                    <div class="row g-3 align-items-start">
+                        <div class="ms-0 ps-0 col-5 col-sm-2 col-lg-4 col-xxl-3">
+                            <div class="d-flex flex-column text-nowrap">
+                                <time class="event-date text-secondary small"></time>
+                                <time class="event-time text-secondary small"></time>
+                            </div>
+                        </div>
+                        <div class="col ps-3 pe-0 me-0">
+                            <b>
+                                <a class="event-link stretched-link text-reset text-decoration-none focus-ring"
+                                   target="_blank" rel="noopener">
+                                </a>
+                            </b>
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <template id="event-empty-template">
+                <li class="list-group-item">Keine Termine</li>
+            </template>
+
+            <template id="event-error-template">
+                <li class="list-group-item">Could not load events.</li>
+            </template>
+        </div>
+    </section>
+</aside>
+                
+            </div>
+        </main>
+    
+
+    <footer id="footer" class="border-top pt-2 mt-5 row">
+        <div class="col">
+            <p style="text-align: center;">
+                © 2025 <a href="https://www.kreativitaet-trifft-technik.de">Kreativität trifft Technik</a> | License: <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
+                    href="../../../impressum/">Impressum</a>
+            </p>
+        </div>
+    </footer>
+</div>
+
+<script type="module" async src="../../../js/site.js"
+        integrity="sha384-xOPnlEJ5hFIYcAbyi2uDovgR8D8Yr8zofC37YAfrbiEIR6OsdteUg0lBTb8ZcJI1">
+</script>
+
+<script type="module" async src="../../../js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q">
+</script>
+
+<script>
+    const ROOMS = [{"name":"spaceOpen","title":{"de":"Mainframe","en":"Mainframe"}}];
+</script>
+
+</body>
+</html>

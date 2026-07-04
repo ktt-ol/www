@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: https://ogp.me/ns#" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:site_name" content="Mainframe"/>
+    <meta property="og:locale" content='de_DE'/>
+
+    
+        <meta property="og:url" content="https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/tiny-ws2812-controller/"/>
+        <meta name="twitter:url" content="https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/tiny-ws2812-controller/"/>
+        <meta name="twitter:domain" content="mainframe.io/www/blog/sommerferien2026"/>
+    
+
+
+    
+        
+    
+
+    <meta name="author" content="sre">
+
+    
+    <meta property="og:type" content='article'/>
+
+    
+
+    
+        
+        
+
+        
+
+        
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org/",
+            "@type": "ImageObject",
+            "contentUrl": "https://www.mainframe.io/www/blog/sommerferien2026/processed_images/thumbnail.bfefde61d2c58e9e.jpg",
+        "license": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "acquireLicensePage": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "creditText": "Tiny WS2812 Controller | Mainframe",
+        "creator": {
+            "@type": "Person",
+            "name": "",
+            "url": "https://www.mainframe.io/www/blog/sommerferien2026"
+        },
+        "copyrightNotice": ""
+    }
+    </script>
+
+        
+    <meta property="og:image" content="https://www.mainframe.io/www/blog/sommerferien2026/processed_images/thumbnail.bfefde61d2c58e9e.jpg"/>
+    <meta property="og:image:type" content="image/jpeg"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="1053"/>
+    <meta property="og:image:alt" content="Tiny WS2812 Controller | Mainframe"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image" content="https://www.mainframe.io/www/blog/sommerferien2026/processed_images/thumbnail.bfefde61d2c58e9e.jpg"/>
+
+    
+
+    
+
+    
+
+
+
+    
+
+        
+        
+
+    
+
+    <title>Tiny WS2812 Controller | Mainframe</title>
+    <meta property="og:title" content='Tiny WS2812 Controller | Mainframe'/>
+    <meta property="og:description" content=''/>
+    <meta name="twitter:title" content="Tiny WS2812 Controller | Mainframe"/>
+    <meta name="twitter:description" content=''/>
+    <meta name="description" content=''>
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "image": "https://www.mainframe.io/www/blog/sommerferien2026/media/img/logo-ktt.png",
+            "url": "https://www.mainframe.io/www/blog/sommerferien2026",
+            "logo": "https://www.mainframe.io/www/blog/sommerferien2026/media/img/logo-mainframe.svg",
+            "name": "Mainframe",
+            "description": "Hackspace Oldenburg",
+            "email": "vorstand@kreativitaet-trifft-technik.de",
+            "telephone": "+49441-559 700 32",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Bahnhofsplatz 10",
+                "addressLocality": "Oldenburg",
+                "addressCountry": "DE",
+                "addressRegion": "Innenstadt",
+                "postalCode": "26122"
+            },
+            "vatID": "",
+            "iso6523Code": ""
+        }
+    </script>
+
+    <link rel="stylesheet" href="../../../css/site.css">
+
+    <link rel="alternate" type="application/rss+xml" title="RSS"
+          href='../../../rss.xml'>
+
+    <link rel="alternate" type="application/rss+xml" title="ATOM"
+          href='../../../atom.xml'>
+
+    
+    
+
+</head>
+
+<body class="vh-100 m-0 p-0" style="background-color: #222222">
+<div class="container-lg h-100 px-lg-0 px-4 d-flex flex-column text-white">
+
+    <header id="navbar" class="row my-2">
+    <div class="col">
+        <nav class="navbar navbar-expand-lg bg-body-secondary rounded">
+            <div class="container-fluid">
+                <a class="navbar-brand" href='../../../'
+                   style="padding-top: 10px; padding-bottom: 10px;">
+                    <img style="height: 28px;"
+                         id="img-logo-mainframe"
+                         src="../../../media/img/logo-mainframe.svg"
+                         alt="Mainframe Logo">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Der Space
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/about/">
+                    Über uns
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/opening-times/">
+                    Öffnungszeiten
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/communication/">
+                    Kommunikation und Tools
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../about/verein/">
+                    Der Verein
+                </a>
+            </li>
+        
+
+        
+    </ul>
+</li>
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Bereiche
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/overview/">
+                    Übersicht
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/lasercutter/">
+                    Lasercutter
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/elektronik-werkstatt/">
+                    Elektronik-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/3d-lab/">
+                    3D-Labor
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/schnittstelle/">
+                    Schnittstelle (Textilien)
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/radstelle/">
+                    Radstelle
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/holz-werkstatt/">
+                    Holz-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/metall-werkstatt/">
+                    Metall-Werkstatt
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/foto-lab/">
+                    Foto-Labor
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/rem/">
+                    Raster-Elektronen-Mikroskop
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/kueche/">
+                    Küche
+                </a>
+            </li>
+        
+            <li>
+                <a class="dropdown-item" href="../../../spacewalk/lounge/">
+                    Conference, Freifläche, Lounge
+                </a>
+            </li>
+        
+
+        
+    </ul>
+</li>
+
+                        
+                        
+
+<li class="nav-item dropdown">
+    <a href="#" class="text-white text-decoration-none d-block py-2 pe-3 dropdown-toggle" data-bs-toggle="dropdown"
+       aria-expanded="false" role="button">
+        Bilder
+    </a>
+    <ul class="dropdown-menu">
+        
+            <li>
+                <a class="dropdown-item" href="../../../images/panorama/">
+                    Virtual Tour
+                </a>
+            </li>
+        
+
+        
+            
+            <li>
+                <a class="dropdown-item" href="../../../images/ifs/">
+                    Images From Space
+                </a>
+            </li>
+        
+            
+            <li>
+                <a class="dropdown-item" href="../../../images/albums/">
+                    Fotoalben
+                </a>
+            </li>
+        
+    </ul>
+</li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../blog/'>
+                                
+                                Blog
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../calendar/'>
+                                
+                                Termine
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../contact/'>
+                                
+                                Kontakt
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false"
+                               href='../../../contact/#anreise/'>
+                                Anreise
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav navbar-right">
+                        <li class="nav-item">
+                            <a class="text-white text-decoration-none d-block py-2 pe-3" role="button"
+                               aria-expanded="false" href="https://www.kreativitaet-trifft-technik.de">
+                               <img id="img-icon-ktt" src="../../../media/img/logo-ktt-white-background.svg" style="height: 40px;" alt="KtT">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    
+        <main id="content" class="row">
+            <div class="col-lg-9">
+                
+    <h1 class="d-flex justify-content-between">
+        Tiny WS2812 Controller
+
+        
+            <span class="text-end">
+                <a target="_blank" rel="nofollow noreferrer noopener" class="badge text-bg-light"
+                   href="https://github.com/ktt-ol/access-control-system/tree/master/tiny-led-firmware">
+                    Repository
+                </a>
+            </span>
+        
+    </h1>
+    <div class="main-content">
+        <p>For our access control system we <del>needed</del> wanted a few
+multi-colored status LEDs. Nowadays that basically means, that one gets a few
+ws2812b LEDs, since they are quite cheap and already provide a serial
+interface. Unfortunately most microcontrollers including the Raspberry Pi have
+no hardware accelerated interface for their protocol. For our access control
+system we thus use an ATtiny85 to translate from the ws2812 protocol to a more
+common serial protocol: I²C.</p>
+<p>Below you can see how the ATtiny85 is supposed to be wired. Basically it needs
+power supply, the I²C interface (SDA, SCL) and the input pin of the first ws2812b
+LED must be connected to the pin labeled WS2812b. There is also a mode pin, that
+should be connected to some GPIO of the system controlling the ATtiny85. More on
+that later.</p>
+<p><img src="../../../media/blog/2016/tiny-ws2812-controller/attiny-connections.svg" alt="Hardware Connection" loading="lazy" decoding="async" /></p>
+<p>The ATtiny85 firmware consists of 3 parts: A driver for the ws2812b LEDs, a driver
+for the I²C interface and some glue-code. Let’s have a look at each part.</p>
+<h2 id="">WS2812b driver</h2>
+<p>Like most microcontrollers, the ATtiny does not have hardware support for the
+ws2812 protocol. That means we need to generate it ourself by bit-banging one
+of its I/O pins. Since we did not connect any crystal to our ATtiny to keep the
+circuit simple, we use it with the internally generated 8MHz clock signal. So
+one instruction is supposed to be roughly 125ns. By studying the ws2812b timing
+diagram below, you can see, that we must be able to switch the pin at least
+within 350ns. As you can see the timing may be possible, but while we are
+updating the LEDs it’s impossible to do anything else.</p>
+<p><img src="../../../media/blog/2016/tiny-ws2812-controller/ws2812b-timings.svg" alt="WS2812b timings" loading="lazy" decoding="async" /></p>
+<p>The driver itself solves the timing issues by disabling interrupts, since any
+ever so short interruption will break the ws2812b timing. Then it loops over
+a supplied array of LED values. There it loops over the bits of each byte and
+based upon its value it either starts with a long high-sequence or a short
+high-sequence followed by the matching low-sequence. All of that is done in
+inline assembly to avoid the compiler doing optimizations breaking the timing.</p>
+<p>In theory it would be possible to handle interrupts during the ws2812 update,
+if we used a timer instead of counting instructions for the precise timing. But
+our interrupt service routine would have to be finished within 1 or 2
+instructions, since we must satisfy the 350ns timing. Obviously that’s not helping
+much.</p>
+<h2 id="-1">I²C driver</h2>
+<p>Fortunately the ATtiny85 does have hardware support for the I²C protocol making
+things a bit easier on this side. The hardware block capable of I²C (master and
+slave) support inside of the ATtiny85 is named Universal Serial Interface AKA
+<b>USI</b>. I²C is a bus-protocol, which usually has one master and multiple
+slave devices connected via two wires (not counting ground) named SDA and SCL.</p>
+<p>The communication is always started from the master using a start-condition and
+stopped by a matching stop-condition. After being initialized the USI module
+will generate a interrupt, if it sees a start or stop condition on the bus, so
+that it can be handled by our I²C driver.</p>
+<p>Then there is a second interrupt for all other i2c related events. Let’s ignore
+most of them here and just have a look how the data is exchanged. We basically
+get an event “data received” for each received byte and “data requested” for
+each byte, that should be send. The byte, that should be sent is simple written
+to a register of the USI block. Similarly reading the byte when the data received
+interrupts comes in, we get the byte written to the bus. All bit-level stuff is
+handled by the hardware.</p>
+<p>Our I²C driver also takes care of checking the address (while it receives the
+data destined for other devices it will ignore any ongoing communication, that
+was not started with its own address as recipient) and implementing an eeprom
+style interface.</p>
+<p>The base idea of our eeprom style interface is, that we receive
+colour-information from the I2C master by receiving a single byte for the LED
+number and 4 bytes with colour data. From a bus-level point of view this is
+exactly the same as an eeprom with 8-bit address size and 32-bit value size.
+For example if you want to set the 11th LED to white you would send the following via
+I²C: <code>&lt;device-addr&gt; 0x0a 0xff 0xff 0xff 0x00</code>. There will be more information
+about the additional byte in a later section of this documentation. Once the
+I²C driver received all 4 bytes it will call i2c_recv(led, data) in the glue
+code.</p>
+<h2 id="-2">Glue code</h2>
+<p>The glue-code combines the I²C driver with the ws2812b driver to something
+useful.  For this task it stores all information received from the I²C driver
+into an array for the LEDs. Similarly it has a second array, which contains the
+LED colour information for the ws2812b driver. In theory the same array could be
+used for both implementations, but the split-architecture allows us to implement
+some fancy features in our glue-code. Unfortunately it also means, that we need
+quite a bit of memory (4 bytes for i2c data + 3 bytes for ws2812b data = 7 byte).
+With the ATtiny85 only having 512 byte of memory that means we can talk to a max.
+of about 60-70 LEDs.</p>
+<p>Now let’s have a look at the 4th byte sent via the I²C interface. Appart from
+directly setting a LED color, our ATtiny85 should also be able to blink LEDs
+and fade to some other color. This is encoded in the fourth byte. It’s upper
+two bits (7&amp;8) can be used to let the ATtiny85 know, what we want to do with
+the LED:</p>
+<ul>
+<li>00 = set color directly</li>
+<li>01 = fade to color</li>
+<li>10 = blink (on/off in specified color)</li>
+<li>11 = glow (slowly decrease brightness by 25% and then increase again)</li>
+</ul>
+<p>The remaining 6 bit are a time value, which is multiplied by 31.25ms (32Hz
+base). For fade mode it describes how long it the (linear) fading should take.
+For blink and glow mode it describes how long a half period (dark → bright /
+bright → dark) should take. This means the max. encodable timing is 2 seconds.</p>
+<h2 id="-3">Mode pin</h2>
+<p>As described in the ws2812b section, the update requires disabled interrupts.
+Updating 50 LEDs requires roughly 62.5us. Disabling the interrupts for such a
+long time results in problems with the I²C bus. Thus the USI module must be
+disabled while we update the LEDs (or interrupts must be enabled resulting in
+broken LED update if there is I²C traffic and thus random blinking).</p>
+<p>We worked around the issue by introducing another pin to choose between I²C
+mode and LED update mode. In I²C mode (mode pin = high) the LEDs are not
+updated and the timer engine for the fading is stopped (important to make the
+LEDs blink synchronously). In LED mode (mode pin = low) on the other hand the
+I²C interface is disabled.</p>
+<h2 id="-4">Example</h2>
+<p>Once the firmware is flashed and the hardware wiring is done you can now
+control your LEDs using the following interface:</p>
+<pre data-lang="txt" style="background-color:#2b303b;color:#c0c5ce;" class="language-txt "><code class="language-txt" data-lang="txt"><span>device_addr = 0x23;
+</span><span>mode_blink = 0x2 &amp;lt;&amp;lt; 6;
+</span><span>gpio_set(mode_pin, 1); // send ATtiny85 into i2c mode
+</span><span>usleep(1000); // wait until ATtiny85 reached i2c mode
+</span><span>i2c_send(device_addr, 0x00, 0x80, 0x00, 0x00, 0x00); // LED0 = red
+</span><span>i2c_send(device_addr, 0x01, 0x00, 0x80, 0x00, 0x00); // LED1 = green
+</span><span>i2c_send(device_addr, 0x02, 0x00, 0x00, 0x80, 0x00); // LED2 = blue
+</span><span>i2c_send(device_addr, 0x03, 0x30, 0x00, 0x20, mode_blink | 8); // LED3 = blink purple @ 2Hz
+</span><span>io_set(mode_pin, 0); // send ATtiny85 into led mode
+</span></code></pre>
+
+    </div>
+
+            </div>
+            <div class="col-lg-3">
+                
+                    <aside class="d-flex flex-column gap-1 mb-auto">
+
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="https://status.mainframe.io/">Space-Status</a>
+        </h3>
+
+        <div id="space-status" class="px-2 pt-1 small list-group">
+            <template id="status-item-template">
+                <a class="list-group-item border rounded-3" href="https://status.mainframe.io/">
+                    <div class="status-text d-none fw-semibold" data-state="unknown">
+                        ???
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="closed">
+                        Geschlossen
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="closing">
+                        Schließt bald
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="open">
+                        Geöffnet
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="member">
+                        Geschlossen (Member Only)
+                    </div>
+                    <div class="status-text d-none fw-semibold" data-state="keyholder">
+                        Geschlossen (Keyholder Only)
+                    </div>
+                </a>
+            </template>
+        </div>
+    </section>
+
+    <section>
+        <h3 class="mb-2">
+            <a class="ms-2" href="../../../calendar/">Nächste Termine</a>
+        </h3>
+
+        <div class="px-2 pt-1 small">
+            <ul class="list-group" id="event-list" data-calendar-id="markusframer@gmail.com"
+                data-api-key="AIzaSyB9pTX1ewZeRPc-rmq-Xp32wuuTW1P4U1U" data-max="7"></ul>
+
+            <template id="event-item-template">
+                <li class="list-group-item">
+                    <div class="row g-3 align-items-start">
+                        <div class="ms-0 ps-0 col-5 col-sm-2 col-lg-4 col-xxl-3">
+                            <div class="d-flex flex-column text-nowrap">
+                                <time class="event-date text-secondary small"></time>
+                                <time class="event-time text-secondary small"></time>
+                            </div>
+                        </div>
+                        <div class="col ps-3 pe-0 me-0">
+                            <b>
+                                <a class="event-link stretched-link text-reset text-decoration-none focus-ring"
+                                   target="_blank" rel="noopener">
+                                </a>
+                            </b>
+                        </div>
+                    </div>
+                </li>
+            </template>
+
+            <template id="event-empty-template">
+                <li class="list-group-item">Keine Termine</li>
+            </template>
+
+            <template id="event-error-template">
+                <li class="list-group-item">Could not load events.</li>
+            </template>
+        </div>
+    </section>
+</aside>
+                
+            </div>
+        </main>
+    
+
+    <footer id="footer" class="border-top pt-2 mt-5 row">
+        <div class="col">
+            <p style="text-align: center;">
+                © 2025 <a href="https://www.kreativitaet-trifft-technik.de">Kreativität trifft Technik</a> | License: <a
+                    href="https://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA 4.0</a> | <a
+                    href="../../../impressum/">Impressum</a>
+            </p>
+        </div>
+    </footer>
+</div>
+
+<script type="module" async src="../../../js/site.js"
+        integrity="sha384-xOPnlEJ5hFIYcAbyi2uDovgR8D8Yr8zofC37YAfrbiEIR6OsdteUg0lBTb8ZcJI1">
+</script>
+
+<script type="module" async src="../../../js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q">
+</script>
+
+<script>
+    const ROOMS = [{"name":"spaceOpen","title":{"de":"Mainframe","en":"Mainframe"}}];
+</script>
+
+</body>
+</html>

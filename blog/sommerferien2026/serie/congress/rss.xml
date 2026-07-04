@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Mainframe - Congress</title>
+      <link>https://www.mainframe.io/www/blog/sommerferien2026</link>
+      <description>Website des Hackspace Mainframe</description>
+      <generator>Zola</generator>
+      <language>de</language>
+      <atom:link href="https://www.mainframe.io/www/blog/sommerferien2026/serie/congress/rss.xml" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Sun, 19 Mar 2023 23:42:00 +0000</lastBuildDate>
+      <item>
+          <title>33C3</title>
+          <pubDate>Sat, 31 Dec 2016 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/33c3/</link>
+          <guid>https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/33c3/</guid>
+          <description xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2016/33c3/">&lt;p&gt;Natürlich ist der Mainframe auch in diesem Jahr auf dem Chaos Communication
+Congress vertreten. Informationen zu unserer &lt;a rel=&quot;noopener nofollow noreferrer&quot; target=&quot;_blank&quot; href=&quot;https:&#x2F;&#x2F;events.ccc.de&#x2F;congress&#x2F;2016&#x2F;wiki&#x2F;Assembly:Mainframe&quot;&gt;Assembly lassen sich direkt im 33C3 Wiki finden&lt;&#x2F;a&gt;.
+Dieses Jahr sind wir voraussichtlich mit über 20 Personen vor Ort, von denen rund die Hälfte bereits am zweiten
+Weihnachtstag anreist. Geplant ist unter anderem einen Workshop für MQTT
+basiertes Kühlschrankmonitoring anzubieten.&lt;&#x2F;p&gt;
+&lt;p&gt;Aus diesem Grund ist vom 26.12.2016 bis zum 30.12.2016 mit
+reduzierten Öffnungszeiten des Mainframes zu rechnen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2016&#x2F;33C3&#x2F;33c3-logo.svg&quot; alt=&quot;33C3 Logo&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>32C3</title>
+          <pubDate>Thu, 31 Dec 2015 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/blog/sommerferien2026/blog/2015/32c3/</link>
+          <guid>https://www.mainframe.io/www/blog/sommerferien2026/blog/2015/32c3/</guid>
+          <description xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2015/32c3/">&lt;p&gt;Nach etwas Stress bei der Frage, wie unser Equipment zum nach Hamburg kommt
+haben sich am Ende zwei Mitglieder gefunden, die per Auto zum Congress gefahren
+sind und unsere LED-Wand, ein Rollup, ein Banner, 3D-Drucker, sowie Switches,
+Steckdosenleisten, sowie Kleinkram wie Werkzeug und Lötkolben mitgenommen haben.&lt;&#x2F;p&gt;
+&lt;p&gt;Vor Ort stellte es sich heraus, dass die Anmeldung der Assembly nicht so gut
+wie im letzeten Jahr funktioniert hat, und wir uns zunächst darum kümmern mussten
+einen passenden Platz zu finden. Das Ergebnis war eine Ecke direkt in Halle 3,
+welche wir mit der LED-Wand gut füllten.&lt;&#x2F;p&gt;
+&lt;p&gt;Die von uns rund 20 angreisten Mitglieder, einige nach München und Hamburg
+verzogene Ex-Mitglieder, sowie Bekanntschaften von den letzten CCC Events
+füllten den Tisch regelmäßig, so dass ein reger Austausch stattfand und wohl
+nur spät in der Nacht niemand vorzufinden war, der etwas zum Mainframe und
+unseren Projekten sagen kann.&lt;&#x2F;p&gt;
+&lt;p&gt;Ansonsten haben wir einfach die Zeit zusammen mit den anderen Hackern genossen,
+das Bällebad besucht, uns die Vorträge angehört und die Installationen anderer
+Spaces angeschaut.&lt;&#x2F;p&gt;
+&lt;p&gt;Das Fazit: Auch beim 33C3 werden wir wieder dabei sein.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4509.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4518.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4532.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4551.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4551.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4566.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4569.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4573.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4574.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4575.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4576.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4581.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_4582.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2015&#x2F;32C3&#x2F;IMG_20151228_024647.JPG&quot; alt=&quot;CCH während des 32C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>31C3</title>
+          <pubDate>Wed, 31 Dec 2014 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/blog/sommerferien2026/blog/2014/31c3/</link>
+          <guid>https://www.mainframe.io/www/blog/sommerferien2026/blog/2014/31c3/</guid>
+          <description xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2014/31c3/">&lt;p&gt;Wie nach dem 30C3 schon angekündigt waren wir auch dieses Jahr wieder auf dem
+Chaos Communication Congress - diesesmal mit über zwanzig Personen. Im
+Gegensatz zum letzten Jahr waren wir dieses Jahr nicht im Hackcenter, sondern
+in der Quiet-Area (und damit etwas abgeschiedener) untergebracht. Dafür gab es
+ausreichend Platz für Banner, einen JoSeb (3D-Drucker), eine fette
+LED-Laufschrift, unser Mainframe Schild und einiges an Kleinkram.&lt;&#x2F;p&gt;
+&lt;p&gt;Ansonsten haben wir einfach die Zeit zusammen mit den anderen Hackern genossen,
+das Bällebad besucht, uns die Vorträge angehört und die Installationen anderer
+Spaces angeschaut.&lt;&#x2F;p&gt;
+&lt;p&gt;Resume: CCCamp wir kommen!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;31C3&#x2F;building.jpg&quot; alt=&quot;CCH während des 31C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;31C3&#x2F;schild.jpg&quot; alt=&quot;CCH während des 31C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;31C3&#x2F;tisch.jpg&quot; alt=&quot;CCH während des 31C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2014&#x2F;31C3&#x2F;nsa.jpg&quot; alt=&quot;CCH während des 31C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      <item>
+          <title>30C3</title>
+          <pubDate>Tue, 31 Dec 2013 23:42:00 +0000</pubDate>
+          <author>Markus Framer</author>
+          <link>https://www.mainframe.io/www/blog/sommerferien2026/blog/2013/30c3/</link>
+          <guid>https://www.mainframe.io/www/blog/sommerferien2026/blog/2013/30c3/</guid>
+          <description xml:base="https://www.mainframe.io/www/blog/sommerferien2026/blog/2013/30c3/">&lt;p&gt;Dieses Jahr ist eine ganze Delegation des Oldenburger Hackspaces offiziell beim 30C3 gewesen. Dort haben wir im Hackcenter unsere üblichen Ausstellungsstücke dabei gehabt (3D-Drucker, LED-Cube) und ein Banner aufgestellt.&lt;&#x2F;p&gt;
+&lt;p&gt;Ansonsten haben wir einfach die Zeit zusammen mit den anderen Hackern genossen, das Bällebad besucht und uns die Vorträge angehört.&lt;&#x2F;p&gt;
+&lt;p&gt;Resume: 2014 werden wir wieder, dann vermutlich mit einer noch größeren Delegation in Hamburg ankommen.&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;..&#x2F;..&#x2F;..&#x2F;media&#x2F;blog&#x2F;2013&#x2F;30C3&#x2F;building.jpg&quot; alt=&quot;CCH während des 30C3&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+    </channel>
+</rss>
