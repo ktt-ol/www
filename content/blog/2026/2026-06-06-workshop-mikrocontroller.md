@@ -1,7 +1,7 @@
 +++
 title = "Workshop Mikrocontroller und Löten"
-date = "2026-06-06T19:43:00"
-updated = "2026-06-06T19:43:00"
+date = "2026-06-06T19:42:00"
+updated = "2026-06-06T19:42:00"
 description = 'Am Sonntag, den 14. Juni, von 15:00-18:00 könnt ihr bei uns in die Welt der günstigen Mikrocontroller eintauchen. Für alle zwischen 14 und 114.'
 
 [taxonomies]

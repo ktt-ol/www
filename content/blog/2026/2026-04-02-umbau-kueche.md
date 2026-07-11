@@ -1,7 +1,7 @@
 +++
 title = "Küchenumbau April 2026"
-date = "2026-04-04T19:43:00"
-updated = "2026-04-04T19:43:00"
+date = "2026-04-04T19:42:00"
+updated = "2026-04-04T19:42:00"
 description = 'Nach Ostern startet die erste Phase des Küchenumbaus. Die Space-Nutzung ist daher (insbesondere an den Wochenenden) etwas eingeschränkt. Kommt gerne zum Helfen vorbei.'
 
 [taxonomies]

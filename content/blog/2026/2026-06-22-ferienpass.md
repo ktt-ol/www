@@ -1,7 +1,7 @@
 +++
 title = "Ferienpass 2026"
-date = "2026-07-04T19:43:00"
-updated = "2026-07-04T19:43:00"
+date = "2026-07-04T19:42:00"
+updated = "2026-07-04T19:42:00"
 description = 'Diese Sommerferien gibt es sieben Ferienpass-Aktionen im Mainframe. Wir freuen uns über Unterstützung.'
 
 [taxonomies]
