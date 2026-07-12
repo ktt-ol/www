@@ -1,7 +1,7 @@
 +++
 title = "Projekt: Stopfpilze aus dem 3D-Drucker"
-date = "2026-06-20T19:43:00"
-updated = "2026-06-20T19:43:00"
+date = "2026-06-20T19:42:00"
+updated = "2026-06-20T19:42:00"
 authors = ["tljuniper"]
 description = 'Zusammen mit dem Stopf-Team aus dem Repair Café Bad Zwischenahn haben wir Stopfpilze entworfen, die in verschiedenen Größen 3D-gedruckt werden können.'
 
