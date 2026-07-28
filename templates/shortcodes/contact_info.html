@@ -18,8 +18,13 @@
 <div class="row">
     <div class="col-sm-2 fw-bolder text-decoration-underline">Kontakt</div>
     <div class="col-sm-10">
-        <p class="mb-0">
-            Wenn du ohne einen Besuch mit Leuten aus dem Mainframe in
+        <p class="mt-2">
+            Bei Fragen oder Anliegen rund um den Space erreichst du uns unter
+            <a href="mailto:{{ config.extra.mainframe_contact_mail | safe }}">{{ config.extra.mainframe_contact_mail | safe }}</a>.
+            Dort kannst du allgemeine, persönliche oder offizielle Anfragen stellen.
+        </p>
+        <p class="mt-2">
+            Wenn du ohne einen Besuch mit verschiedenen Leuten aus dem Mainframe in
             Kontakt treten möchtest, dann schau mal unter
             <a href="{{ macros::rel_url(path="@/about/communication.md", lang=lang) }}">Kommunikation</a>
             vorbei.
