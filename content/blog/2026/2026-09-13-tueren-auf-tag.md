@@ -45,7 +45,7 @@ Denkbare Mitmachaktionen sind:
 * **3D-Druck**: Namensschilder und Fidgets
 * **Buttonmaschine**: Eigene Motive und Buttons mit Maus, Ente und Elefant
 * Ein **Snake-Turnier** auf der großen LED-Matrix
-* **Rasterelektronenmikroskop**: Demo der Technik und 
+* **Rasterelektronenmikroskop**: Demo der Technik und Bestaunen von kleinen Wundern
 
 Die Vorschläge oben sind optional -- wir können auch noch etwas ganz Neues
 hinzufügen, wenn jemand das organisieren will. Was wir konkret anbieten können,
