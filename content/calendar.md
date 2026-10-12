@@ -25,12 +25,6 @@ Hier ist eine aktuelle Auswahl.
 * Besprochen werden organisatorische und inhaltliche Themen rund um den Space
 * Gäste und Interessierte sind jederzeit willkommen
 
-### 🚲 Radstelle -- Offene Fahrradwerkstatt
-
-* Möglichkeit zur eigenständigen Fahrradreparatur in unserer [Fahrradwerkstatt](@/spacewalk/radstelle.md)
-* Werkzeug ist vorhanden, Unterstützung durch erfahrene Personen vor Ort
-* Ersatzteile sollten in der Regel selbst mitgebracht werden
-
 ### 👾 Programmierclubs für Kinder und Jugendliche
 
 * [CoderDojos](https://www.kreativitaet-trifft-technik.de/projekte/coderdojo/): Alle zwei Wochen am Freitag oder Wochenende
@@ -50,10 +44,28 @@ Hier ist eine aktuelle Auswahl.
   oder Smartphone
 * Manche dieser Events führen wir zusammen mit externen Partnern durch
 
-### 🎲 Brettspiel-Abende
+### 🎲 Brettspiel-Abende und Rollenspiel-Treffen
 
 * Offener Spieleabend mit Brett- und Kartenspielen
 * Zum Beispiel der „Mensa-Spieleabend“
+* Rollenspiel-Treffen, zum Beispiel die „SOLA Spielegruppe“
+
+### 💻 Chaostreff
+
+* Regelmäßig jeden ersten und dritten Mittwoch im Monat
+* Lockeres Zusammentreffen von Menschen aus dem CCC-Umfeld
+* Themen zum Beispiel: freie Software, IT-Sicherheit, besondere Hardware, Aktivitäten rund ums Chaos
+
+### 🔓 Digitaler Unabhängigkeitstag (DID/DUT)
+
+* An jedem ersten Sonntag im Monat
+* Entdecke demokratiefreundliche Alternativen zu Big Tech und werde digital unabhängiger
+* Mehr Informationen unter [di.day](https://di.day/de)
+
+### 🧵 Nähtreffs
+
+* Aktuell regelmäßig am Donnerstagnachmittag
+* Nähen aller Art, mit besonderem Fokus auf historische Kleidung
 
 ### 💸 Veranstaltungen zum Thema Finanzen
 
@@ -66,8 +78,11 @@ Hier ist eine aktuelle Auswahl.
 Zusätzlich finden über das Jahr verteilt weitere Aktionen statt, zum Beispiel:
 
 * 🍳 Space Cooking -- gemeinsames Kochen oder Grillen [im Space](@/spacewalk/kueche.md)
-* 🧶 Workshops in der [Schnittstelle](@/spacewalk/schnittstelle.md) -- z. B. T-Shirt-Druck oder kreatives Gestalten mit
-  Textilien
+* 🧶 Workshops in der [Schnittstelle](@/spacewalk/schnittstelle.md) -- z. B.
+  T-Shirt-Druck, historisches Nähen oder kreatives Gestalten mit Textilien
+* 🪵 Holzstammtisch, ein Treffen zur Weiterentwicklung der [Holzwerkstatt](@/spacewalk/holz-werkstatt.md)
+* 📸 [Fotolabor](@/spacewalk/foto-lab.md)-Treffen, zum Beispiel auch zum „Worldwide Pinhole Photography Day“ (WPPD)
+* 🚲 [Radstelle](@/spacewalk/radstelle.md) -- Offene Fahrradwerkstatt mit Möglichkeiten zur eigenständigen Fahrradreparatur
 * 🎭 Treffen der Gruppe „Improvisationstheater“
 * 🎮 „Offline-Gaming“, bei dem regelmäßig Konsolenspiele gespielt werden
 * 🏝️ Ferienpass-Aktionen in den Sommerferien in Kooperation mit der Stadt Oldenburg
