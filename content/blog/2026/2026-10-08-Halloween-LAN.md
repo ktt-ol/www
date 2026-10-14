@@ -9,7 +9,7 @@ Serie = ["LAN Party"]
 Typ = ["Event"]
 
 [extra]
-thumbnail = "/media/blog/2026/halloween-lan/poster-wide.jpg"
+thumbnail = "/media/blog/2026/halloween-lan/HalloweenLan.26.slpg.2.wide.png"
 +++
 
 Zwischen flackernden LEDs und Mate-Nachschub verwandeln wir den Mainframe am Halloween-Wochenende wieder ins Hauptquartier für Gaming und veranstalten eine Grusel-LAN, auf der fast vier Tage am Stück gezockt werden kann.
@@ -70,4 +70,4 @@ Details zur Anreise und zu Parkplätzen findest du im Menü unter
 Für kurzes Napping haben wir begrenzt Couches oder Sitzsäcke. Vollumfängliche
 Schlafplätze können wir nicht anbieten.
 
-{{ resize_image(path="/media/blog/2026/halloween-lan/poster.jpg", height=500, width=300, op="fit") }}
+{{ resize_image(path="/media/blog/2026/halloween-lan/HalloweenLan.26.slpg.2.1600x1131.png", height=500, width=300, op="fit") }}
