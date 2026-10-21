@@ -21,7 +21,7 @@ Hier die Eckdaten:
 
 Alle sind eingeladen, egal ob ihr...
 
-* an der Konsole zockt oder den gesamten Gaming-Setup inklusive PC und Monitor mitbringt
+* an der Konsole zockt oder das gesamte Gaming-Setup inklusive PC und Monitor mitbringt
 * nur für ein paar Stunden dabei seid oder den Space zwischen Donnerstag und Montag gar nicht verlasst
 * regelmäßig im Space seid oder das erste Mal für die LAN bei uns vorbei schaut
 * sonst jede freie Minute am PC verbringt oder nach Jahren endlich mal wieder das gute alte LAN-Feeling erleben wollt
